@@ -1,0 +1,25 @@
+.mainStaffBox{
+    
+    height: 500px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100px 100px 1fr ;
+}
+.mainStaffBox h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainStaffBox1{
+    background-color: aqua;
+}
+.mainStaffBox2{
+    background-color: rgb(4, 26, 26);
+}
+.mainStaffBox3{
+    background-color: rgb(60, 0, 255);
+}
+.mainStaffBox4{
+    background-color: rgb(0, 255, 85);
+}
