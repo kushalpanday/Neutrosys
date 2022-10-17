@@ -1,0 +1,44 @@
+.titleM{
+    text-align: center;
+}
+
+.mainmission{
+  background: rgb(205, 231, 239);
+  width: 80%;
+  margin: auto;
+
+}
+
+
+.Mgrid {
+    display: grid;
+    grid-template-columns:  30% 15% 15% 30%;
+    gap: 1.5rem;
+    justify-content: center;
+    /* text-align: center; */
+    padding-bottom :1rem;
+    width: 80%;
+    margin:auto;
+    text-align: justify;
+    background-color: rgb(205, 231, 239);
+  }
+  .m1{
+    height: 100px;
+    width: 100%;
+    /* margin-left: 123px; */
+  }
+  .m2{
+    height: 100px;
+    width: 100%;
+    /* padding-left: 40px; */
+  }
+  .m3{
+    height: 100px;
+    width: 100%;
+    /* margin-left: 123px; */
+  }
+  .m4{
+    height: 100px;
+    width: 100%;
+    /* padding-left: 40px; */
+  }

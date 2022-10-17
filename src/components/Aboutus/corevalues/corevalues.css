@@ -1,0 +1,74 @@
+.ctext{
+       text-align: center;
+}
+.coremain{
+  background-color: aqua;
+}
+
+.coregrid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 1.5rem;
+    
+    text-align: center;
+    padding-bottom :1rem;
+    width: 82.5%;
+    margin:auto;
+  }
+  .icon1{
+    height: 88px ;
+    width: 100px;
+  }
+  .icon3{
+    height: 30px;
+    width: auto;
+  }
+  .icon2{
+    height: 20px;
+    width: auto;
+
+  }
+  .valuetext1{
+    margin-top: 7rem;
+    text-align: justify;
+    width: 80%;
+
+  }
+  .valuetext2{
+    margin-top: 3.5rem;
+    text-align: justify;
+    width: 80%;
+    
+  }
+  .valuetext3{
+    text-align: justify;
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .coregrid {
+    
+      grid-template-columns: 80% ;
+      /* text-align: center; */
+      /* margin:auto; */
+    } 
+    .valuetext1{
+     margin-top: 0px;
+    text-align: justify;
+    width: 100%;
+    margin-left: 20px;
+  
+    }
+    .valuetext2{
+      margin-top: 0px;
+      text-align: justify;
+      width: 100%;
+      margin-left: 20px;
+      
+    }
+    .valuetext3{
+      text-align: justify;
+      width: 100%;
+      margin-left: 20px;
+    }
+  }

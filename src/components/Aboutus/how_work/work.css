@@ -1,0 +1,49 @@
+.work{
+   
+    
+    width: 90%;
+    /* margin: auto; */
+    display: grid;
+    grid-template-columns: 35% 35%;
+    text-align: justify;
+    padding-bottom: 1rem;
+    row-gap: 50px;
+    margin: auto;
+    column-gap: 30rem;
+
+
+}
+
+.titleh{
+    color:red;
+    text-align: center;
+}
+.step1{
+    text-align: justify;
+    width: 60%;
+    margin: 0 0 0 50px;
+
+}
+.step2{
+    text-align: justify;
+    width: 60%;
+
+}
+.step2 p{
+    margin: 0px;
+}
+@media only screen and (max-width: 600px) {
+  .work{
+    width: 90%;
+    /* margin: auto; */
+    display: grid;
+    grid-template-columns: 80%;
+    text-align: justify;
+    padding-bottom: 1rem;
+    /* row-gap: 50px; */
+    margin: auto;
+    /* column-gap: 30rem; */
+
+  } 
+  }
+  
