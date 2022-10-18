@@ -74,35 +74,63 @@
     width: 300px; 
     background-color: white;
     border: 1px solid rgba(135, 207, 235, 0.411);
-  
+    box-shadow: 0 4px 8px 0 rgba(133, 200, 245, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 }
 .location-col:hover
 {
-    box-shadow: 0 4px 8px 0 rgba(133, 200, 245, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(69, 10, 230, 0.322), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     
 
    
 }
 .locationicon-div
 {
-    margin-top: 25px;
+    margin-top: 30px;
+   
+}
+.viewlocation-div
+{
+    
+    padding-top: 33px;
 }
 .timeicon-div
 {
-    margin-top: 30px;
+    margin-top: 33px;
+    
+}
+.socialicon-div
+{
+    margin-top: 33px;
+    
+}
+.socialsicon-div
+{
+    /* border: 1px solid;  */
+    padding-top: 10px;
+}
+.image-class
+{
+    margin-right: 10px;
 }
 .location-col h6
 {
     padding-top: 15px;
     font-size: large;
+    font-weight: bold;
+    font-size: 20px;
+    color: rgba(0, 0, 255, 0.651);
+}
+.location-col p
+{
+    font-size: 16px;
 }
 
 .getintouch
 {
     text-align: center;
     margin-bottom: 0px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .helpquote-p
 {
@@ -161,7 +189,7 @@
 .form-col
 {
     /* width: 70%; */
-    background-color: rgb(35, 171, 229, 96%);
+    background-color: rgba(35, 171, 229, 0.699);
    
 }
 .heading-form
@@ -169,13 +197,13 @@
     padding-top: 15px;
     padding-left: 15px;
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
 }
 .heading-para
 {
     padding-left: 15px;
     color: white;
-    margin-bottom: 4px;
+    margin-bottom: 10px;
     
 }
 .field-row1

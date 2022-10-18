@@ -111,9 +111,9 @@ export default function LocationDetail() {
                                 name="text"></textarea>
                                 </Col>
                             </Row>
-                            <Row className='table-form-row mb-1 mt-2'>
+                            <Row className='table-form-row mb-1 mt-3'>
                                 <Col sm={5}>
-                                <input type="file" id="files" name="files" class="uploadfiles" multiple></input>
+                                <input type="file" id="files" name="files" className="uploadfiles" multiple></input>
                                 </Col>
                             </Row>
                             <Row className='table-form-row button-row mb-4'>
