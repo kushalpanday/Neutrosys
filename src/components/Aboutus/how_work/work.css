@@ -1,49 +1,67 @@
-.work{
-   
-    
-    width: 90%;
-    /* margin: auto; */
-    display: grid;
-    grid-template-columns: 35% 35%;
-    text-align: justify;
-    padding-bottom: 1rem;
-    row-gap: 50px;
-    margin: auto;
-    column-gap: 30rem;
-
-
+/* .work {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 35% 35%;
+  text-align: justify;
+  padding-bottom: 1rem;
+  row-gap: 50px;
+  margin: auto;
+  column-gap: 30rem;
 }
 
-.titleh{
-    color:red;
-    text-align: center;
+.titleh {
+  color: red;
+  text-align: center;
 }
-.step1{
-    text-align: justify;
-    width: 60%;
-    margin: 0 0 0 50px;
+.step1 {
+  text-align: justify;
+  width: 60%;
+  margin: 0 0 0 50px;
+}
+.step2 {
+  text-align: justify;
+  width: 60%;
+}
+.step2 p {
+  margin: 0px;
+}
 
-}
-.step2{
-    text-align: justify;
-    width: 60%;
-
-}
-.step2 p{
-    margin: 0px;
-}
 @media only screen and (max-width: 600px) {
-  .work{
+  .work {
     width: 90%;
-    /* margin: auto; */
     display: grid;
     grid-template-columns: 80%;
     text-align: justify;
     padding-bottom: 1rem;
-    /* row-gap: 50px; */
     margin: auto;
-    /* column-gap: 30rem; */
-
-  } 
   }
-  
+} */
+.work{
+  width:100%;
+  /* margin:1rem; */
+}
+.container-fluid{
+  width:85%;
+}
+.row{
+  text-align: center;
+}
+.line2.col-sm-12{
+  width:70%;
+  margin:1rem auto; 
+}
+.card1 h6,.card2 h6,.card3 h6,.card4 h6,.card5 h6{
+  text-transform:uppercase;
+  font-size:.7rem;
+  color:#23ABE5;
+}
+.card1 h3,.card2 h3,.card3 h3,.card4 h3,.card5 h3{
+  text-transform: uppercase;
+  font-size:1.3rem;
+}
+.card1 img,.card3 img,.card4 img,.card5 img{
+  margin:1rem 0;
+}
+.line1.col-sm-4,.line3.col-sm-4 {
+  margin: auto;
+}
