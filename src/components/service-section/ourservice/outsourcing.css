@@ -1,0 +1,74 @@
+.outsourcingmain h3{
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hrcontent hr{
+    width: 20%;
+    margin: 10px auto;
+   color: #000000;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.outsourcingbox{
+    display: flex;
+}
+.outbox1{
+    flex: 4;
+}
+.outbox2{
+    flex: 4;
+}
+.outbox2 img{
+    width:100%;
+    margin-top: 35%;
+}
+.outbox3{
+    flex: 4;
+}
+ .box11{
+    margin-top: 18%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: antiquewhite; */
+}
+.box11 p{
+   width: 90%;
+   justify-content: center;
+    text-align: justify;
+}
+@media only screen and (max-width: 550px){
+    .outsourcingbox{
+        display: flex;
+        flex-direction: column;
+    }
+    .box11{
+        margin-top: 5%;
+    }
+    .outbox2 img{
+        
+        width:50%;
+        margin-top:5%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+  }
+
+  @media screen and (max-width: 700px) and (min-width: 550px){
+    .outbox2 img{
+         margin-top:80%;
+        
+    }
+}
+/* .iconbox .staffBoxHeadicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+

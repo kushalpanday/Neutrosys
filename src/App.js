@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/service-section/header/Header';
 import Ourservice from './components/service-section/ourservice/Ourservice';
 import Letschat from './components/service-section/letschat/Letschat';
+import Map from './components/service-section/Map/Map';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <Header />
     <Ourservice />
     <Letschat />
+    
     </div>
   );
 }
