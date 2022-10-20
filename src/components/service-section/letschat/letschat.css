@@ -1,5 +1,5 @@
 .letschatmain{
-    /* background-color:#1f76c7; */
+    background-color:#bfdbfe;
     
     /* background: rgba(102, 191, 230, 0.8); */
    /* padding: 2rem ; */
@@ -9,7 +9,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 0 3vh 0;
+    padding: .5rem 0 2rem  0;
+    /* margin: 10px auto; */
 }
 .letschatcontent h3{
     /* color: white; */
@@ -18,15 +19,18 @@
     padding: 2rem 0 0 0;
 }
 .letschatcontent button{
-    height: 4vh;
-    width:7vw;
+    /* height: 4vh; */
+    /* width:7vw; */
+    padding: .5rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: .5rem;
     background: #23ABE6;
+   
    
 }
 .letschatcontent p{
-    width: 40%;
+    /* width: 40%; */
+    
     
 }
 /* <Modal.Body>
