@@ -17,10 +17,10 @@
     /* grid-template-rows: 300px 300px; */
     grid-template-columns: 25% 25% 25% 25%;
     grid-column-gap: 2%;
-    grid-row-gap: 4%;
+    /* grid-row-gap: 4%; */
     width: 90%;
     margin: auto auto;
-    padding: 2rem;
+    /* padding: 2rem; */
     /* background-color: aqua; */
 }
 .mainData{
@@ -40,8 +40,8 @@
     
 }
 .mainData img{
-    height:45%;
-    width: 45%;
+    /* height:45%; */
+    width: 40%;
     /* padding: 0 0 1rem 0; */
     margin: 0 0 1rem 0;
     border-radius: 1rem;
@@ -78,13 +78,31 @@
 } */
 div .modalmain{
     
-    max-width: 1000px;
-    height: 800px !important;
+    max-width: 1100px;
+    /* height: 800px !important; */
 }
 .modal-content{
    
     height: 80%;
     
+}
+div .modalmain .modalbody{
+    padding: 0;
+}
+div .modalmain .modalheader{
+    padding: 1rem;
+    position: relative;
+}
+ div .modalmain .closeicon{
+    /* color: blue; */
+    font-size: 1.7rem;
+}
+div .modalmain .closeicon :hover{
+    color: blue;
+    
+}
+div .modalmain  .closeicon{
+    position: absolute; right:1.5rem; top: .8rem;
 }
 @media only screen and (max-width: 900px){
     .mainbox{
@@ -104,7 +122,7 @@ div .modalmain{
         line-height: 100%;
     }
     .mainData img{
-        height: 35%;
+        /* height: 35%; */
         width: 55%;
         /* padding: 0 0 1rem 0; */
         margin: 0 0 0rem 0;
@@ -120,6 +138,7 @@ div .modalmain{
     .modal-content:nth-child(1){
         height: 110%;
     }
+
     
 }
 @media screen and (max-width: 700px) and (min-width: 600px){
@@ -127,6 +146,11 @@ div .modalmain{
    
         height: 125%;
         
+    }
+    div .modalmain{
+    
+        
+       /* height: 100% !important; */
     }
 }
 @media screen and (max-width: 800px) and (min-width: 700px){

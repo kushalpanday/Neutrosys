@@ -2,7 +2,7 @@
 const data=[
 { id:1,
     image:" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVze58aVkMdbZS42smRaKtadEUnhSodr6TLpJs3_TVWSyjeJFFx8-HHSNKb7yqDTZPakI&usqp=CAU",
-heading:"Staffing",
+heading:"Talent Solution",
 disc:" Firebase provides tools to grow your app and business, for startups & global enterprises.  "
 },
 {id:2,

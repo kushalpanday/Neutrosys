@@ -1,4 +1,4 @@
-.outsourcingmain h3{
+.outsourcingmain h2{
     /* background-color: aqua; */
     display: flex;
     justify-content: center;
@@ -14,7 +14,14 @@
 }
 .outsourcingbox{
     display: flex;
+    padding: 2rem;
+    
+    margin: 2rem 0 4rem 0;
 }
+/* <RadioButtonCheckedIcon
+fontSize="small"
+className="staffBoxHeadicon"
+/> */
 .outbox1{
     flex: 4;
 }
@@ -23,21 +30,31 @@
 }
 .outbox2 img{
     width:100%;
-    margin-top: 35%;
+    margin-top: 3rem;
 }
 .outbox3{
     flex: 4;
 }
  .box11{
-    margin-top: 18%;
+    /* margin-top: 5rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: antiquewhite; */
 }
+.box11 h4{
+    margin-bottom:1rem;
+}
+
+.outbox1 .box11:nth-child(1) , .outbox3 .box11:nth-child(1){
+    /* margin-top: 3rem; */
+}
+.outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
+    margin-top: 5.5rem;
+}
 .box11 p{
-   width: 90%;
+   width: 85%;
    justify-content: center;
     text-align: justify;
 }

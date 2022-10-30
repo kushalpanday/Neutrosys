@@ -4,31 +4,20 @@ import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 const Outsourcing = () => {
   return (
     <div className="outsourcingmain">
-      <h3>OutSourcing</h3>
-      <div className="hrcontent">
-        <hr />
-      </div>
+      <h2>OutSourcing</h2>
+      
       <div className="outsourcingbox">
         <div className="outbox1">
           <div className="box11">
-            <div className="iconbox">
-              <RadioButtonCheckedIcon
-                fontSize="small"
-                className="staffBoxHeadicon"
-              />
-            </div>
-            <h3>Professional</h3>
+            <h4>Professional</h4>
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.
             </p>
           </div>
           <div className="box11">
-            <RadioButtonCheckedIcon
-              fontSize="small"
-              className="staffBoxHeadicon"
-            />
-            <h3>Call Center</h3>
+           
+            <h4>Call Center</h4>
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.
@@ -40,22 +29,16 @@ const Outsourcing = () => {
         </div>
         <div className="outbox3">
           <div className="box11">
-            <RadioButtonCheckedIcon
-              fontSize="small"
-              className="staffBoxHeadicon"
-            />
-            <h3>Project</h3>
+            
+            <h4>Project</h4>
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.
             </p>
           </div>
           <div className="box11">
-            <RadioButtonCheckedIcon
-              fontSize="small"
-              className="staffBoxHeadicon"
-            />
-            <h3>Software Testing</h3>
+            
+            <h4>Software Testing</h4>
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.

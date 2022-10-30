@@ -1,8 +1,8 @@
 .mainStaffBox{
     display: flex;
     cursor: pointer;
-    padding: 1rem;
-    margin: 2rem 0;
+    padding: 1.5rem 2rem 3rem 2rem;
+    /* margin: 2rem 0; */
     
 }
 .staffheading{
@@ -39,8 +39,8 @@ border-radius: 2rem;
 .staffBoxHead{
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
-    margin-top: -2px;
+    margin-left: 6px;
+    margin-top: -5px;
     
 }
 .staffBoxHeadicon{
@@ -48,19 +48,21 @@ border-radius: 2rem;
 color: #05A5FF;
     
 }
-.staffheading h3{
+.staffheading h2{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
 }
 /* .staffBoxHead h5{
     margin-left: 7px;
     margin-top: -3px;
 } */
 .mainStaffBox1 p{
-   width: 90%;
+   width: 80%;
+   /* margin: auto; */
   
-   line-height: 1.4rem;
+   /* line-height: 1.4rem; */
 }
 .mainStaffBox11{
     margin: 1rem 0;

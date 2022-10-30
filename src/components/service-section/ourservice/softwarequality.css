@@ -1,0 +1,62 @@
+.softwarequality h2{
+    /* background-color: bisque; */
+    text-align: center;
+}
+.qualityitem{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    /* grid-column-gap: 2%; */
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+   
+}
+.mainitem{
+    padding: .5rem;
+}
+.mainitem  img{
+    
+    width: 15%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+}
+.mainitem h4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainitem p{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: justify; */
+    
+}
+
+
+.qualityitem:nth-of-type(odd){
+    background: #FFFFFF;
+    /* background-color: blue; */
+}
+
+.qualityitem :nth-of-type(even){
+    background: rgba(217, 217, 217, 0.15);
+  
+}
+@media only screen and (max-width: 550px){
+    .qualityitem{
+        grid-template-columns: 50% 50%;
+    }   
+}
+@media only screen and (max-width: 415px){
+    .qualityitem{
+        grid-template-columns: 100%;
+    }   
+}
+
+
+

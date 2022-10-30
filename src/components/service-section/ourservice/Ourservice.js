@@ -10,6 +10,7 @@ import Softwaretesting from "./Softwaretesting";
 import Outsourcing from "./Outsourcing";
 import ServiceData from "./ServiceData";
 import Softwarequality from "./Softwarequality";
+import CloseIcon from '@mui/icons-material/Close';
 
 const Ourservice = () => {
   const [state, setstate] = useState(false);
@@ -55,8 +56,10 @@ const Ourservice = () => {
         })}
       </div>
       <Modal dialogClassName="modalmain" style={{paddingLeft:"0px"}}  show={state} className="dbyaModal">
-        <Modal.Header closeButton onClick={closeButton}></Modal.Header>
-        <Modal.Body>{nextstate}</Modal.Body>
+        <Modal.Header className="modalheader" className="border-0" >
+        <CloseIcon onClick={closeButton}  className="closeicon" />
+        </Modal.Header>
+        <Modal.Body className="modalbody">{nextstate}</Modal.Body>
       </Modal>
     </div>
   );
