@@ -56,11 +56,18 @@ export default function LocationDetail() {
                                 <Col sm={2} className='field-col1'>
                                 <p>Software Testing</p>
                                 </Col>
-                                
+
+                                <Col sm={2} className='field-col1'>
+                                    <p>Looking for a job</p>
+                                </Col>
+
+                                <Col sm={2} className='field-col1'>
+                                <p>Other</p>
+                                </Col>
                                 
                             </Row>
 
-                            <Row className='field-row2 mt-1'>
+                            {/* <Row className='field-row2 mt-1'>
                                 <Col sm={2} className='field-col1'>
                                     <p>Looking for a job</p>
                                 </Col>
@@ -70,7 +77,7 @@ export default function LocationDetail() {
                                 </Col>
 
                                 
-                            </Row>
+                            </Row> */}
                             
                             <Row className='table-form-row'>
                                 <Col>
@@ -123,7 +130,7 @@ export default function LocationDetail() {
                             </Row>
                             <Row className='table-form-row mt-2'>
                                 <Col sm={5}>
-                                <input type="file" id="files" name="files" className="uploadfiles" multiple></input>
+                                <input type="file" id="files" name="files" className="uploadfiles" multiple/>
                                 </Col>
                             </Row>
                             <Row className='table-form-row button-row mb-4'>
