@@ -7,7 +7,8 @@
 {
    
     height: auto;
-    /* margin: auto; */
+    width: 100%;
+    margin: 0; 
     background-color: rgba(13, 73, 147, 0.74);
 }
 .col-p
@@ -61,8 +62,8 @@
     background-color: rgba(217, 217, 217, 0.281);
     justify-content: center;
     text-align: center;
-   width: 100%;
-   margin: 0;
+    width: 100%;
+    margin: 0;
    
 }
 .location-col
@@ -75,7 +76,7 @@
     width: 300px; 
     background-color: white;
     /* border: 1px solid rgba(135, 207, 235, 0.411); */
-    box-shadow: 0 4px 8px 0 rgba(133, 200, 245, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 2px 4px 0 rgba(133, 200, 245, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.10);
     
    
 }
@@ -107,19 +108,19 @@
 .my-modal
 {
     
-    max-width: 45vw; 
-    
+    max-width: 40vw; 
+   
 }
 .map-btn
 {
     background-color: white;
     border: none;
-    font-size: 20px;
+    font-size: 16px;
     height: 35px;
     width: 40px;
-    padding: 0px;
+    padding-top: 5px;
     position: relative;
-    color: black;
+    color: blue;
 }
 .map-btn:hover
 {
@@ -138,8 +139,9 @@
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
-    top: 1px;
-    right: 90%;
+    top: 3px;
+    right: 78%;
+    font-size: 13px;
   }
   
   .map-btn:hover .tooltiptext {
@@ -149,13 +151,15 @@
 {
     font-size: 10px;
     padding-right: 20px;
+    
 }
 
 #example-custom-modal-styling-title
 {
     font-weight: 450;
-    font-size: 20px;
-    margin-right: 400px;
+    font-size: 17px;
+    margin-right: 342px;
+    margin-left: 8px;
 }
 .timeicon-div
 {
@@ -167,10 +171,14 @@
     margin-top: 33px;
     
 }
+.follow-para
+{
+    margin-bottom: 5px;
+}
 .socialsicon-div
 {
     /* border: 1px solid;  */
-    padding-top: 10px;
+    padding-top: 0px;
 }
 .image-class
 {
@@ -496,4 +504,33 @@
             margin-right: 123px;
         } 
   }
+    
   
+  @media only screen and (min-width: 540px) and (max-width: 720px) {
+    #example-custom-modal-styling-title{
+    margin-right: 100px;
+    }
+  }
+  @media only screen and (min-width: 280px) and (max-width: 653px) {
+    #example-custom-modal-styling-title{
+    font-size: 17px;
+    margin-right: 80px;
+    }
+    .close-btn{
+        margin-right: 25px;
+    }
+  }
+  
+  @media only screen and (min-width: 412px) and (max-width: 914px) {
+    #example-custom-modal-styling-title{
+    margin-right: 160px;
+    }
+  }
+  @media only screen and (min-width: 360px) and (max-width: 740px) {
+    #example-custom-modal-styling-title{
+    margin-right: 130px;
+    }
+    .close-btn{
+        margin-right: 6px;
+    }
+  }

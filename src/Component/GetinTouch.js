@@ -60,13 +60,13 @@ export default function LocationDetail() {
                                 
                             </Row>
 
-                            <Row className='field-row2'>
+                            <Row className='field-row2 mt-1'>
                                 <Col sm={2} className='field-col1'>
                                     <p>Looking for a job</p>
                                 </Col>
 
                                 <Col sm={2} className='field-col1'>
-                                <p>Others</p>
+                                <p>Other</p>
                                 </Col>
 
                                 

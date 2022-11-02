@@ -61,7 +61,7 @@ export default function LocationDetail() {
                         <img src='social.png' height={35} width={35}></img>
                     </div>
                         <h6>Socials</h6>
-                        <p>Follow us</p>
+                        <p className='follow-para'>Follow us</p>
                         <div className='socialsicon-div'>
                             <a href='#'><img src='fbicon.png' className='image-class' height={40} width={40}></img></a>
                             <a href='#'><img src='linkedinicon.png' height={41} width={41}></img></a>
