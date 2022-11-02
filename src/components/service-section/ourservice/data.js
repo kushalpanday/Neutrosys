@@ -1,24 +1,24 @@
 // import Letschat from "../letschat/Letschat"
 const data=[
 { id:1,
-    image:" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVze58aVkMdbZS42smRaKtadEUnhSodr6TLpJs3_TVWSyjeJFFx8-HHSNKb7yqDTZPakI&usqp=CAU",
+    image:"https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/Flying_drone_re_ti5k.svg",
 heading:"Talent Solution",
 disc:" Firebase provides tools to grow your app and business, for startups & global enterprises.  "
 },
 {id:2,
     image:" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-eYPl1o6UaZGnv07HoFeVMQ3fmoux-Gj9tRA6TxNP42uA7xhmFqiMZegsQLMC7bkQUk&usqp=CAU",
 heading:"Software Development",
-disc:"using client-side and server-side programming to develop an application that is accessible over the web"
+disc:"using client-side and server-side programming to develop an application."
 },
 {id:3,
-    image:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrYa8Y4mRjGrDJzZAGQEb-5ZaYHYg7_X_CxFdfNgUR3kTHHcQiVUzB7e8A8TpCsZy6YMI&usqp=CAU",
+    image:"https://miro.medium.com/max/1400/1*mDuAvJM9_B_IDlfYiQ2P8Q.png",
 heading:"OutSourcing",
-disc:" provides certain functionality such as word processing, spreadsheets, or project management tools."
+disc:" provides certain functionality such as word processing, project management tools."
 },
 
 
 {id:4,
-    image:" https://res.cloudinary.com/practicaldev/image/fetch/s--U_859tYO--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/2c8au8e0emyyw1y2092o.png",
+    image:" https://miro.medium.com/max/700/1*wcrv3-eUOx84Xf5XnVi27w.png",
 heading:"Software QA",
 disc:"Be up to speed on the latest insights and trends in APAC. Ideas. Inspiration. "
 }

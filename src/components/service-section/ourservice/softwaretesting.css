@@ -1,8 +1,9 @@
-.softwaretesting h2{
+.softwaretesting h4{
     /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -10px;
 
 }
 .hrcontent hr{
@@ -15,38 +16,39 @@
 }
 .softwaredatabox{
     /* margin: 1rem; */
-    padding: 1rem 2rem;
+    padding: .2rem 2rem;
     display: grid;
    grid-template-columns: 50% 49%;
-   grid-row-gap: 3%;
+   grid-row-gap: 1%;
    /* grid-column-gap: 1%; */
    /* height: 35rem; */
    /* width: 90%; */
-   margin-bottom: 3rem;
+   margin-bottom: 1rem;
    cursor: pointer;
    
 }
 .dataitems{
-    margin-top: 1rem ;
+    margin-top: .3rem ;
     /* padding: 2rem; */
     /* border: 1px solid #F5E9E9;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 1rem; */
 }
-.dataitems h4{
+.dataitems h5{
     display: flex;
     justify-content: center;
     align-items: center;
     color: #CF1865F7;
     cursor: pointer;
+    font-size: 1rem;
 }
 /* className="border-0"  */
 .dataitems p{
     width: 90%;
-    margin: auto;
+    margin:0 auto;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
+    
     /* text-align: justify; */
     /* text-align: center; */
     /* margin: 1rem auto; */
@@ -56,15 +58,16 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20%; 
+    width: 16%; 
     cursor: pointer;
-    margin-bottom: 1rem;
+    margin-bottom: .7rem;
     /* width: 50%; */
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 700px){
   .softwaredatabox {
     grid-template-columns: 100%;
     grid-row-gap: 1%;
+    padding-bottom: 2rem;
   }
 }
 /* .images img:hover{

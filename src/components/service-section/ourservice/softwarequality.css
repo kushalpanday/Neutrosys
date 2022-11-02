@@ -1,39 +1,53 @@
-.softwarequality h2{
+.softwarequality{
+    
+}
+.softwarequality h4{
     /* background-color: bisque; */
     text-align: center;
+    font-size: 1.4rem;
+    margin-top: -10px;
+    margin-bottom: .09rem;
 }
 .qualityitem{
-    margin-top: 2rem;
+    margin: 1rem 0 0 0 ;
     display: grid;
-    grid-template-columns: 30% 30% 30%;
+    grid-template-columns: 33% 33% 34%;
     /* grid-column-gap: 2%; */
     /* display: flex; */
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
    
 }
 .mainitem{
-    padding: .5rem;
+    padding: .1rem;
 }
 .mainitem  img{
     
-    width: 15%;
+    width: 11%;
     display: block;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 1rem;
+    margin-top: .8rem;
+    margin-bottom: .7rem;
 }
-.mainitem h4{
+.mainitem h5{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1rem;
+    margin-bottom: .2rem;
 }
 .mainitem p{
-    width: 90%;
-    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: .2rem;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
-    /* text-align: justify; */
+    text-align: justify;
+    align-items: center; */
+    /* align-items: center;
+   text-align: center; */
     
 }
 
@@ -47,10 +61,21 @@
     background: rgba(217, 217, 217, 0.15);
   
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 750px){
     .qualityitem{
         grid-template-columns: 50% 50%;
+    } 
+}
+@media only screen and (max-width: 550px){
+    .qualityitem{
+        grid-template-columns: 100%;
     }   
+    
+    .mainitem  img{
+    
+        
+        margin-top: 1rem ;
+    }
 }
 @media only screen and (max-width: 415px){
     .qualityitem{

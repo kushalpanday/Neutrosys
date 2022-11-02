@@ -38,7 +38,7 @@ const Ourservice = () => {
 
   return (
     <div className="Servicemainbody">
-    <h2>We are currently providing IT services</h2>
+    <h3>We are currently providing IT services</h3>
     <p style={{color: "blue"}}>We provide services from USA, Nepal, India, and Finland.</p>
       <div className="mainbox">
         {data.map((item) => {
@@ -47,8 +47,10 @@ const Ourservice = () => {
               className="mainData"
               key={item.id}
               onClick={() => callMe(item)}
-            >
-              <img src={item.image} alt="" />
+            >  <div className="serviceimage">
+            <img src={item.image} alt="" />
+            </div>
+              
               <h4>{item.heading}</h4>
               <p>{item.disc}</p>
             </div>

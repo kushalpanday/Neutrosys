@@ -4,12 +4,18 @@ import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 const Outsourcing = () => {
   return (
     <div className="outsourcingmain">
-      <h2>OutSourcing</h2>
+      <h4>OutSourcing</h4>
       
       <div className="outsourcingbox">
         <div className="outbox1">
           <div className="box11">
-            <h4>Professional</h4>
+          <div className="box111">
+          <RadioButtonCheckedIcon
+           fontSize="small"
+          className="staffBoxHeadicon"
+          />
+            <h5>Professional</h5></div>
+          
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.
@@ -17,7 +23,12 @@ const Outsourcing = () => {
           </div>
           <div className="box11">
            
-            <h4>Call Center</h4>
+          <div className="box111">
+          <RadioButtonCheckedIcon
+           fontSize="small"
+          className="staffBoxHeadicon"
+          />
+            <h5>Call Center</h5></div>
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.
@@ -30,7 +41,12 @@ const Outsourcing = () => {
         <div className="outbox3">
           <div className="box11">
             
-            <h4>Project</h4>
+          <div className="box111">
+          <RadioButtonCheckedIcon
+           fontSize="small"
+          className="staffBoxHeadicon"
+          />
+            <h5>SoftwareTesting</h5></div>
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.
@@ -38,7 +54,12 @@ const Outsourcing = () => {
           </div>
           <div className="box11">
             
-            <h4>Software Testing</h4>
+          <div className="box111">
+          <RadioButtonCheckedIcon
+           fontSize="small"
+          className="staffBoxHeadicon"
+          />
+            <h5>Project</h5></div>
             <p>
               Involves being reliable, setting your own high standards, and
               showing that you care about every aspect of your job.

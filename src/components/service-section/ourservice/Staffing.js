@@ -6,28 +6,28 @@ import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 const Staffing = () => {
   return (
     <div className="staffheading">
-    <h2>Talent Solution</h2>
+    <h4>Talent Solution</h4>
     
     <div className="mainStaffBox bg-gradient">
     <div className="mainStaffBox1">
     <div className="mainStaffBox11">
     <RadioButtonCheckedIcon fontSize="small" className='staffBoxHeadicon' />
     <div className="staffBoxHead">
-    <h4>Direct Hire</h4>
+    <h5>Direct Hire</h5>
     <p>A staffing agency works to find, qualify and hire permanent staff members on behalf of their client qualify and hire permanent staff members on behalf of their client. </p>
     </div> </div>
     <div className="mainStaffBox11">
     
     <RadioButtonCheckedIcon fontSize="small" className='staffBoxHeadicon' />
     <div className="staffBoxHead">
-    <h4>Resume</h4>
+    <h5>Resume</h5>
     <p> Our professional Resume Designs are proven to land interviews professional Resume Designs are proven to land interviews.</p>
     </div> </div>
     <div className="mainStaffBox11">
     
     <RadioButtonCheckedIcon fontSize="small" className='staffBoxHeadicon' />
     <div className="staffBoxHead">
-    <h4>Personality</h4>
+    <h5>Personality</h5>
     <p>I am moderately intelligent and generally friendly with my colleagues. I do follow a discipline during the day I do follow a discipline during the day.</p>
     </div> </div>
     </div>
