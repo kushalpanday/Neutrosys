@@ -23,7 +23,7 @@ const Outsourcing = () => {
               showing that you care about every aspect of your job.
             </p>
           </div>
-          <div className="box11">
+          <div className="box11 ">
             <RadioButtonCheckedIcon
               fontSize="small"
               className="staffBoxHeadicon"

@@ -21,15 +21,13 @@ const Ourservice = () => {
     } else if (item.id == 2) {
       setstate(!state);
       setNextstate(<Softwaretesting />);
-    } else if(item.id==3) {
+    } else if (item.id == 3) {
       setstate(!state);
       setNextstate(<Outsourcing />);
-    }
-    else {
+    } else {
       setstate(!state);
       setNextstate(<Softwarequality />);
     }
-    
   };
   const closeButton = () => {
     setstate(false);
@@ -37,8 +35,10 @@ const Ourservice = () => {
 
   return (
     <div className="Servicemainbody">
-    <h2>We are currently providing IT services</h2>
-    <p style={{color: "blue"}}>We provide services from USA, Nepal, India, and Finland.</p>
+      <h2>We are currently providing IT services</h2>
+      <p style={{ color: "blue" }}>
+        We provide services from USA, Nepal, India, and Finland.
+      </p>
       <div className="mainbox">
         {data.map((item) => {
           return (
@@ -47,14 +47,21 @@ const Ourservice = () => {
               key={item.id}
               onClick={() => callMe(item)}
             >
-              <img src={item.image} alt="" />
+              <div className="service-image">
+                <img src={item.image} alt="" />
+              </div>
               <h4>{item.heading}</h4>
               <p>{item.disc}</p>
             </div>
           );
         })}
       </div>
-      <Modal dialogClassName="modalmain" style={{paddingLeft:"0px"}}  show={state} className="dbyaModal">
+      <Modal
+        dialogClassName="modalmain"
+        style={{ paddingLeft: "0px" }}
+        show={state}
+        className="dbyaModal"
+      >
         <Modal.Header closeButton onClick={closeButton}></Modal.Header>
         <Modal.Body>{nextstate}</Modal.Body>
       </Modal>

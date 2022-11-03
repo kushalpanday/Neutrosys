@@ -14,6 +14,7 @@
 }
 .outsourcingbox{
     display: flex;
+    margin:3rem 0;
 }
 .outbox1{
     flex: 4;
@@ -28,8 +29,12 @@
 .outbox3{
     flex: 4;
 }
+.outbox1 .box11:nth-child(2),.outbox3 .box11:nth-child(2){
+    margin-top:4rem;
+}
  .box11{
-    margin-top: 18%;
+    /* margin-top: 18%; */
+
     display: flex;
     flex-direction: column;
     justify-content: center;
