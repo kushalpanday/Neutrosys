@@ -1,0 +1,107 @@
+.header-image
+{
+    height: 350px;
+    width: 100%;
+}
+.header-image img
+{
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+.header-image::before
+{
+    position: absolute;
+    content: "";
+    left: 0;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(49, 158, 221, 0.212);
+    z-index: 2;
+}
+.text
+{
+    z-index: 3;
+    color: white;
+    position: absolute;
+    top: 15%;
+    left: 4%;
+    text-align: left;
+}
+.heading-career
+{
+    margin-bottom: 0px;
+}
+.text p
+{
+    margin-top: 5px;
+}
+.buttonjobs-div
+{
+    /* border: 1px solid; */
+    text-align: center;
+}
+.mainbg-div
+{
+    background-color: rgba(135, 207, 235, 0.363);
+    
+    
+}
+.mainbg-div h2
+{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+.partners-bg
+{
+    background-color: rgba(135, 207, 235, 0.055);
+    height: 300px;
+}
+.partner-row
+{
+    /* border: 1px solid ; */
+    justify-content: center;
+    text-align: center;
+}
+.partner-col
+{
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 0 2px 4px 0 rgba(133, 200, 245, 0.3), 0 4px 10px 0 rgba(0, 0, 0, 0.10);;
+}
+.inner-row
+{
+    /* border: 1px solid; */
+    justify-content: center;
+}
+.cirleimage
+{
+    /* border: 1px solid red; */
+   
+    margin-top: 25px;
+    border-radius: 50%;
+    height: 150px;
+}
+.cirleimage img
+{
+    object-fit: cover;
+    border-radius: 50%;
+    height: 150px;
+    width: 100%;
+}
+.textparagraph
+{
+    
+    background-color: rgba(250, 235, 215, 0.705);
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 4px 0 rgba(224, 230, 235, 0.178), 0 4px 10px 0 rgba(0, 0, 0, 0.10);
+}
+.textparagraph p
+{
+    padding: 15px;
+    text-align: justify;
+}
