@@ -1,15 +1,12 @@
-import React from 'react';
-import './contactUs.css';
-
-
-
+import React from "react";
+import "./contactUs.css";
 
 export default function GetAquote() {
-    return(
-        <>
-            
-            <button class="button"><span>Get a Quote </span></button>
-            
-        </>
-    )
+  return (
+    <>
+      <button className="button">
+        <span>Get a Quote </span>
+      </button>
+    </>
+  );
 }

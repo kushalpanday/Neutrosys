@@ -4,6 +4,7 @@ import LocationDetail from "./Component/LocationDetail";
 import GetinTouch from "./Component/GetinTouch";
 import GetAquote from "./Component/GetAquote";
 import FAQ from "./Component/FAQ";
+import FormWithMui from "./Component/FormWithMui";
 
 function App() {
   return (
@@ -12,7 +13,9 @@ function App() {
       <LocationDetail/>
       <GetinTouch/>
       <GetAquote/>
-      <FAQ/>
+      {/* <FormWithMui /> */}
+
+      {/* <FAQ/> */}
     </div>
   );
 }

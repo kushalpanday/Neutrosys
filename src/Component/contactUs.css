@@ -200,17 +200,42 @@
 .form-col {
   /* width: 70%; */
   background-color: rgba(35, 171, 229, 0.699);
+  /* border:1px solid black; */
+}
+/* form using mui */
+.container{
+  padding:0;
+}
+.form_container{
+  width:100%;
+  padding:2rem;
+  margin:1rem auto;
+  background-color: white;
+}
+.textfield{
+  background-color:white;
+/* color:green; */
+}
+.tel{
+  display: flex;
+  gap:1.5rem;
+}
+.txtfield_country_code{
+  width:37%;
+}
+.txtfield_phone{
+  width:60%;
 }
 .heading-form {
   padding-top: 20px;
   padding-left: 15px;
-  color: white;
+  /* color: white; */
   margin-bottom: 5px;
   font-size: 33px;
 }
 .heading-para {
   padding-left: 15px;
-  color: white;
+  /* color: white; */
   margin-bottom: 10px;
   font-size: 20px;
 }
@@ -221,7 +246,7 @@
 }
 .field-col1 {
   margin-top: 0.5rem;
-  background-color: white;
+  background-color: skyblue;
   margin-left: 15px;
   height: 35px;
   width: auto;
