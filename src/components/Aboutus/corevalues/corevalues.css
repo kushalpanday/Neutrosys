@@ -7,9 +7,8 @@
 
 .coregrid {
     display: grid;
-    grid-template-columns: 33% 33% 33%;
-    gap: 1.5rem;
-    
+    grid-template-columns: 30% 2% 30% 2%30%;
+    gap: 1.5rem;   
     text-align: center;
     padding-bottom :1rem;
     width: 82.5%;
@@ -22,6 +21,15 @@
   .icon3{
     height: 30px;
     width: auto;
+  }
+  .line hr{
+    transform: rotate(180deg);
+    /* border:1px solid black; */
+    /* padding:.1rem; */
+    background-color:black;
+    width:.1rem;
+    height:80%;
+    text-align: center;
   }
   .icon2{
     height: 20px;

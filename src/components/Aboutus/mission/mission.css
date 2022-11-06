@@ -1,44 +1,130 @@
-.titleM{
-    text-align: center;
+.titleM {
+  text-align: center;
+  padding-top: 15px;
+  margin-bottom: 3rem;
 }
 
-.mainmission{
+.mainmission {
   background: rgb(205, 231, 239);
-  width: 80%;
+  /* width: 80%; */
   margin: auto;
-
 }
-
 
 .Mgrid {
-    display: grid;
-    grid-template-columns:  30% 15% 15% 30%;
-    gap: 1.5rem;
-    justify-content: center;
-    /* text-align: center; */
-    padding-bottom :1rem;
-    width: 80%;
-    margin:auto;
-    text-align: justify;
-    background-color: rgb(205, 231, 239);
-  }
-  .m1{
+  display: grid;
+  grid-template-columns: 30% 15% 15% 30%;
+  gap: 7.5rem 0;
+  justify-content: center;
+  /* text-align: center; */
+  padding-bottom: 3rem;
+  padding-top: 1.5rem;
+  /* width: 80%; */
+  margin: auto;
+  text-align: justify;
+  background-color: rgb(205, 231, 239);
+}
+p.missleft {
+  margin-right: 20px;
+}
+p.missright {
+  margin-left: 20px;
+}
+
+.box {
+  background-color: white;
+  -ms-transform: rotate(20deg);
+  transform: rotate(300deg);
+  position: relative;
+  width: 13rem;
+  height:7rem;
+}
+.box-heading {
+  position: absolute;
+  top: 2rem;
+  left: 3rem;
+}
+.mission {
+  transform: rotate(50deg);
+}
+.mission-focus {
+  transform: rotate(116deg);
+}
+.mission-expertise {
+  transform: rotate(130deg);
+}
+.mission-vision {
+  transform: rotate(55deg);
+}
+.box:nth-child(2) {
+  -ms-transform: rotate(20deg);
+  transform: rotate(310deg);
+}
+.box:nth-child(3) {
+  -ms-transform: rotate(20deg);
+  transform: rotate(230deg);
+}
+.box:nth-child(6) {
+  -ms-transform: rotate(20deg);
+  transform: rotate(227deg);
+}
+.box:nth-child(7) {
+  -ms-transform: rotate(20deg);
+  transform: rotate(300deg);
+}
+
+.mission-image {
+  width: 35%;
+  position: absolute;
+  top: 1.5rem;
+  left: 7rem;
+}
+.i1 {
+  transform: rotate(79deg);
+}
+.i2 {
+  transform: rotate(165deg);
+}
+.i3 {
+  transform: rotate(163deg);
+}
+.i4 {
+  transform: rotate(101deg);
+}
+/* .m1{
     height: 100px;
     width: 100%;
-    /* margin-left: 123px; */
-  }
+    object-fit: cover;
+      }
   .m2{
     height: 100px;
     width: 100%;
-    /* padding-left: 40px; */
-  }
+    object-fit: cover;
+     }
   .m3{
     height: 100px;
     width: 100%;
-    /* margin-left: 123px; */
-  }
+    object-fit: cover;
+      }
   .m4{
     height: 100px;
     width: 100%;
-    /* padding-left: 40px; */
+    object-fit: cover;
+      } */
+
+@media only screen and (max-width: 850px) {
+  .Mgrid {
+    /* width: 90%; */
   }
+}
+@media only screen and (max-width: 650px) {
+  .Mgrid {
+    grid-template-columns: 50% 50%;
+    /* width: 80%; */
+  }
+  p.missleft {
+    margin: 0px;
+  }
+  p.missright {
+    margin: 0px;
+  }
+}

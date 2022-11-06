@@ -5,6 +5,7 @@ import CoreValues from './components/Aboutus/corevalues/Corevalues'
 import Mission from './components/Aboutus/mission/mission'
 import Howwork from './components/Aboutus/how_work/Work'
 import Map from './components/Aboutus/map/map'
+import OurMission from './components/Aboutus/mission/OurMission'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
            <Diffrent />
            <CoreValues />
             <Mission />
+            {/* <OurMission /> */}
             <Howwork />
             <Map />
            
