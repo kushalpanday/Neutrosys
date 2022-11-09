@@ -17,7 +17,7 @@ export default function Header() {
                 </Col>
 
                 <Col sm={7} className="col-image">
-                    <img src='headerimg1.jpg'></img>
+                    <img src='headerimg1.jpg' alt="icons"></img>
                 </Col>
             </Row>
         </>

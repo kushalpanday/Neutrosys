@@ -9,6 +9,10 @@
   margin: 0;
   background-color: rgba(13, 73, 147, 0.74);
 }
+
+ /* .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
+  border-color:white;
+} */
 .col-p {
   /* justify-content: center; */
   text-align: left;
@@ -198,9 +202,7 @@
   justify-content: center;
 }
 .form-col {
-  /* width: 70%; */
-  background-color: rgba(35, 171, 229, 0.699);
-  /* border:1px solid black; */
+  background-color: rgba(35,171,229,.699);
 }
 /* form using mui */
 .container{
@@ -214,14 +216,50 @@
 }
 .textfield{
   background-color:white;
+  border-color:white;
 /* color:green; */
 }
+div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root:before{
+  border-bottom:0;
+}
+
+div .css-1p6y6ap-MuiInputBase-root-MuiFilledInput-root,div .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root,div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
+  background-color: white;
+}
+div .checkbox{
+  display:none;
+}
+/* div .checkbox:checked{
+  background-color:green;
+}
+div.form-button:visited{
+  background-color: blue;
+} */
+div .form-button{
+  padding:.5rem 1rem;
+  background-color:skyblue;
+  border-radius:10px;
+  margin:.2rem ;
+}
+div .form-button:hover{
+  background-color: pink;
+}
+
+/* div .form-button:checked{
+  background-color:green;
+} */
+/* div input[type=checkbox]:checked+label {
+  color: #f00;
+  font-style: normal;
+} */
 .tel{
   display: flex;
   gap:1.5rem;
 }
 .txtfield_country_code{
   width:37%;
+ background-color: white;
+ /* border-color:white; */
 }
 .txtfield_phone{
   width:60%;
@@ -246,11 +284,11 @@
 }
 .field-col1 {
   margin-top: 0.5rem;
-  background-color: skyblue;
-  margin-left: 15px;
-  height: 35px;
+  /* background-color: skyblue; */
+  /* margin-left: 15px; */
+  /* height: 35px; */
   width: auto;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 .field-col1 p {
   text-align: center;
@@ -258,9 +296,9 @@
   font-size: 15px;
 }
 
-.field-col1:hover {
+/* .field-col1:hover {
   background-color: pink;
-}
+} */
 .field-row2 {
   /* border: 1px solid;  */
   margin: auto;
