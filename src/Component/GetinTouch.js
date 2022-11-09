@@ -3,7 +3,7 @@ import './contactUs.css';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Form from './Form';
+// import Form from './Form';
 import FormWithMui from './FormWithMui';
 
 
@@ -38,7 +38,7 @@ export default function LocationDetail() {
                             <p className='icon-para'>Info@neutrosys.com</p>
                         </Col>
                     </Row>
-                <Form />
+                <FormWithMui />
             </Container>
             </div>
             
