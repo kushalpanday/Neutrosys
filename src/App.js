@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './components/Aboutus/header/header'
 import Diffrent from './components/Aboutus/difference/difference'
 import CoreValues from './components/Aboutus/corevalues/Corevalues'
-import Mission from './components/Aboutus/mission/mission'
+import Mission from './components/Aboutus/mission/Mission'
 import Howwork from './components/Aboutus/how_work/Work'
 import Map from './components/Aboutus/map/map'
 

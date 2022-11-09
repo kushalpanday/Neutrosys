@@ -1,7 +1,7 @@
 import React from "react";
 import "./mission.css";
 
-function mission() {
+function Mission() {
   return (
     <div className="mainmission">
       <h2 className="titleM">Our mission</h2>
@@ -64,5 +64,5 @@ function mission() {
   );
 }
 
-export default mission;
+export default Mission;
 
