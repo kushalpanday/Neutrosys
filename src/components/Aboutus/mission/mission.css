@@ -132,52 +132,38 @@ p.missright {
     left: 1.5rem;
   }
 }
-@media only screen and (max-width: 980px){
+@media only screen and (max-width: 980px) {
   .Mgrid {
     display: grid;
     grid-template-columns: 30% 8rem 8rem 30%;
   }
-.box{
-  height: 6rem;
-  width:6rem;
-  left:0.5rem;
-  bottom: -1rem;
-}
-.box:nth-child(3),.box:nth-child(2){
-  bottom:-1rem;
-}
-.box:nth-child(6),.box:nth-child(7){
-  bottom:0;
-}
-}
-@media only screen and (max-width: 850px) {
-  .Mgrid {
-    /* width: 90%; */
+  .box {
+    height: 6rem;
+    width: 6rem;
+    left: 0.5rem;
+    bottom: -1rem;
   }
+  .box:nth-child(3),
   .box:nth-child(2) {
-    /* top: 0.3rem; */
+    bottom: -1rem;
   }
-  .box:nth-child(3) {
-    /* top: 0.3rem; */
-  }
-  .box:nth-child(even) {
-    /* left: 0.5rem; */
-  }
-  .box:nth-child(odd) {
-    /* left: 0.5rem; */
+  .box:nth-child(6),
+  .box:nth-child(7) {
+    bottom: 0;
   }
 }
+
 @media only screen and (max-width: 815px) {
-  .box:nth-child(2), .box:nth-child(3) {
+  .box:nth-child(2),
+  .box:nth-child(3) {
     bottom: -2.5rem;
   }
-
 }
 @media only screen and (max-width: 683px) {
-  .box:nth-child(2), .box:nth-child(3) {
+  .box:nth-child(2),
+  .box:nth-child(3) {
     bottom: -4rem;
   }
-
 }
 
 @media only screen and (max-width: 650px) {
@@ -200,16 +186,58 @@ p.missright {
     left: 5rem;
     top: 0.1rem;
   }
-  .box:nth-child(n + 1),
+  /* .box:nth-child(n + 1),
   .i1,
   .i2,
   .i3,
   .i4,
   .box h4 {
     transform: skew(0deg);
-  }
+  } */
   .box:nth-child(3) {
     top: 0;
+  }
+  .box:nth-child(6) {
+    top: 0;
+    transform: skew(-24deg);
+  }
+  .i3,
+  .mission-expertise {
+    transform: skew(24deg);
+  }
+
+  .box:nth-child(7) {
+    top: 0;
+    transform: skew(28deg);
+  }
+  .i4,
+  .mission-vision {
+    transform: skew(-28deg);
+  }
+  .mission-image {
+    top: 0.5rem;
+  }
+  .i3 {
+    left: 1rem;
+  }
+  .i4 {
+    left: 2rem;
+  }
+  .box-heading {
+    top: 3rem;
+  }
+
+  .mission,
+  .mission-focus,
+  .mission-vision {
+    left: 1.4rem;
+  }
+
+  .Mgrid {
+    align-items: center;
+  }
+  .box {
+    display: flex;
   }
 }
 @media only screen and (max-width: 362px) {
