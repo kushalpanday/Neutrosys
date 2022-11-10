@@ -227,8 +227,17 @@
 div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root:before{
   border-bottom:0;
 }
+div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root:focus{
+  border-bottom:0;
+  /* background-color: aqua; */
+ 
+}
+
+
+ 
+
 div .css-sghohy-MuiButtonBase-root-MuiButton-root{
-  /* background-color: #3b6da7; */
+  /* background-color: #030f1c; */
   background-color: #fff;
   color: black;
 }
@@ -239,8 +248,8 @@ div .css-sghohy-MuiButtonBase-root-MuiButton-root{
   padding: 0%;
 }
 div .css-sghohy-MuiButtonBase-root-MuiButton-root:hover{
-  /* background-color: #3b6da7; */
-  
+  /* background-color: #a73b63;
+   */
   
 }
 
@@ -251,12 +260,20 @@ div .css-1p6y6ap-MuiInputBase-root-MuiFilledInput-root,div .css-19mk8g1-MuiInput
 
 
 
-
-div .checkbox{
-  display:none;
-    accent-color: red;
+div .form-button > .Mui-checked {
+  background-color: aquamarine;
+    
+    
 }
 
+
+div .checkbox{
+  /* display:none; */
+   
+}
+/* .field-row1{
+ padding-left:22.5px;
+} */
 /* /* div .checkbox:checked{
   background-color:green;
 
@@ -264,12 +281,13 @@ div.form-button:visited{
   background-color: blue;
 } */
 div .form-button{
-  padding:.5rem 1rem;
+  padding:.7rem 1rem;
   background-color: #fff;
   border-radius:5px;
   /* margin:.2rem ; */
   margin-top: 0.5rem;
   margin-left: 11px;
+ 
 }
 div .form-button:checked{
   background-color: aqua;

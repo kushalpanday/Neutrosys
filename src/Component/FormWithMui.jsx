@@ -9,20 +9,21 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 import { green } from "@mui/material/colors";
 import { style } from "@mui/system";
+import { pink } from '@mui/material/colors';
 // import Switch from '@mui/material/Switch';
 export default function FormWithMui() {
   const[tick,setTick]=useState(false)
  const [state, setstate] = useState("white")
  
   const clickme=()=>{
-    setTick(!tick);
-   if(tick){
-    setstate("white")
+  //   setTick(!tick);
+  //  if(tick){
+  //   setstate("white")
   
-   }else{
-    setstate("pink")
+  //  }else{
+  //   setstate("pink")
     
-   }
+  //  }
   
     
  }
@@ -53,13 +54,16 @@ export default function FormWithMui() {
                 {/* className="formgroup-check" */}
                 <FormControlLabel
                   className="form-button"
-                    control={<Checkbox className="checkbox"  onClick={clickme}  />}
+                    control={<Checkbox className="checkbox"  onClick={clickme}  
+                    />}
                     name="interest"
                     value="Talent Solutions"
                     {...register("interest")}
                     label="Talent Solutions" 
                    
                     style={{backgroundColor:state}}
+                    
+                    
                    
                   />
                   <FormControlLabel
@@ -111,6 +115,7 @@ export default function FormWithMui() {
             <Container className="mt-2 mb-5 formContainer">
               <TextField
                 // required
+              
                 fullWidth
                 label="Name"
                 margin="dense"
@@ -123,6 +128,17 @@ export default function FormWithMui() {
                 // error={!!myForm.errors.companyName}
                 // helperText={myForm.errors.name}
                 autoComplete="off"
+                sx={{
+                  "& .MuiFilledInput-underline:before": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:after": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                    borderBottom: "none",
+                  },
+                }}
                 {...register("name", { required: "Required", minLength: 3 })}
                 error={!!errors?.name}
                 helperText={errors?.name ? errors.name.message : null}
@@ -138,6 +154,18 @@ export default function FormWithMui() {
                 variant="filled"
                 placeholder="Your Email"
                 autoComplete="off"
+                sx={{
+                  "& .MuiFilledInput-underline:before": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:after": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                    borderBottom: "none",
+                  },
+                }}
+
                 {...register("email", {
                   required: "Required field",
                   pattern: {
@@ -150,6 +178,7 @@ export default function FormWithMui() {
               />
               <div className="tel">
                 <TextField
+                
                   // fullWidth
                   placeholder="Nepal +977"
                   label="Country Code"
@@ -157,7 +186,17 @@ export default function FormWithMui() {
                   name="country_code"
                   autoComplete="off"
                   variant="filled"
-                  
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                      borderBottom: "none",
+                    },
+                  }}
                   className="txtfield_country_code"
                   {...register("country_code")}
                 />
@@ -173,6 +212,17 @@ export default function FormWithMui() {
                   variant="filled"
                   placeholder=" Landline/Mobile Number"
                   className="txtfield_phone "
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                      borderBottom: "none",
+                    },
+                  }}
                   {...register("phone")}
                 />
               </div>
@@ -185,6 +235,17 @@ export default function FormWithMui() {
                 variant="filled"
                 placeholder="Your Location"
                 className="txtfield_country_code"
+                sx={{
+                  "& .MuiFilledInput-underline:before": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:after": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                    borderBottom: "none",
+                  },
+                }}
                 {...register("location")}
               />
               <TextField
@@ -199,7 +260,19 @@ export default function FormWithMui() {
                 // onChange={myForm.handleChange}
                 // error={!!myForm.errors.companyName}
                 // helperText={myForm.errors.subject}
+
                 autoComplete="off"
+                sx={{
+                  "& .MuiFilledInput-underline:before": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:after": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                    borderBottom: "none",
+                  },
+                }}
                 {...register("subject")}
               />
               <TextField
@@ -217,6 +290,17 @@ export default function FormWithMui() {
                 // error={!!myForm.errors.companyName}
                 // helperText={myForm.errors.message}
                 autoComplete="off"
+                sx={{
+                  "& .MuiFilledInput-underline:before": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:after": {
+                    borderBottom: "none",
+                  },
+                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                    borderBottom: "none",
+                  },
+                }}
                 {...register("message")}
               />
               <label htmlFor="upload_file">
