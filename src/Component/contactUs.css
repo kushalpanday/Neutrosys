@@ -206,7 +206,7 @@
 }
 /* form using mui */
 .container{
-  padding:0;
+ 
 }
 .form_container{
   width:100%;
@@ -217,29 +217,62 @@
 .textfield{
   background-color:white;
   border-color:white;
+  border-radius: 8px;
 /* color:green; */
+}
+.field-row1 {
+  margin: auto 0.2rem;
+  padding-top: 0;
 }
 div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root:before{
   border-bottom:0;
 }
+div .css-sghohy-MuiButtonBase-root-MuiButton-root{
+  /* background-color: #3b6da7; */
+  background-color: #fff;
+  color: black;
+}
+
+.css-qfz70r-MuiFormGroup-root{
+  /* background-color: aqua; */
+  margin: 0;
+  padding: 0%;
+}
+div .css-sghohy-MuiButtonBase-root-MuiButton-root:hover{
+  /* background-color: #3b6da7; */
+  
+  
+}
 
 div .css-1p6y6ap-MuiInputBase-root-MuiFilledInput-root,div .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root,div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
   background-color: white;
+  border-radius: 10px;
 }
+
+
+
+
 div .checkbox{
   display:none;
+    accent-color: red;
 }
-/* div .checkbox:checked{
+
+/* /* div .checkbox:checked{
   background-color:green;
-}
+
 div.form-button:visited{
   background-color: blue;
 } */
 div .form-button{
   padding:.5rem 1rem;
-  background-color:skyblue;
-  border-radius:10px;
-  margin:.2rem ;
+  background-color: #fff;
+  border-radius:5px;
+  /* margin:.2rem ; */
+  margin-top: 0.5rem;
+  margin-left: 11px;
+}
+div .form-button:checked{
+  background-color: aqua;
 }
 div .form-button:hover{
   background-color: pink;
@@ -254,26 +287,30 @@ div .form-button:hover{
 } */
 .tel{
   display: flex;
-  gap:1.5rem;
+  gap:1rem;
 }
 .txtfield_country_code{
-  width:37%;
+  width:40%;
  background-color: white;
+ border-radius: 8px;
  /* border-color:white; */
 }
+
 .txtfield_phone{
   width:60%;
+  background-color: white;
+  border-radius: 8px;
 }
 .heading-form {
   padding-top: 20px;
   padding-left: 15px;
-  /* color: white; */
+  color: white;
   margin-bottom: 5px;
   font-size: 33px;
 }
 .heading-para {
   padding-left: 15px;
-  /* color: white; */
+  color: white;
   margin-bottom: 10px;
   font-size: 20px;
 }
