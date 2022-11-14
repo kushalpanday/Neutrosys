@@ -7,6 +7,7 @@ import { Col, Row } from "react-bootstrap";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
+import checkboxClasses from "@mui/material/Checkbox";
 import { green } from "@mui/material/colors";
 import { style } from "@mui/system";
 import { pink } from '@mui/material/colors';
@@ -15,7 +16,7 @@ export default function FormWithMui() {
   const[tick,setTick]=useState(false)
  const [state, setstate] = useState("white")
  
-  const clickme=()=>{
+  const clickme=(id)=>{
   //   setTick(!tick);
   //  if(tick){
   //   setstate("white")
@@ -54,7 +55,8 @@ export default function FormWithMui() {
                 {/* className="formgroup-check" */}
                 <FormControlLabel
                   className="form-button"
-                    control={<Checkbox className="checkbox"  onClick={clickme}  
+                    control={<Checkbox className="checkbox"   onClick={()=>clickme(1)} 
+                    
                     />}
                     name="interest"
                     value="Talent Solutions"
@@ -68,7 +70,7 @@ export default function FormWithMui() {
                   />
                   <FormControlLabel
                   className="form-button"
-                    control={<Checkbox className="checkbox" onClick={clickme}/>}
+                    control={<Checkbox className="checkbox" onClick={()=>clickme(2)}/>}
                     name="interest"
                     value="Software Development"
                     {...register("interest")}

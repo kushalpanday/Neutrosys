@@ -261,15 +261,18 @@ div .css-1p6y6ap-MuiInputBase-root-MuiFilledInput-root,div .css-19mk8g1-MuiInput
 
 
 div .form-button > .Mui-checked {
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
     
     
 }
 
 
 div .checkbox{
-  /* display:none; */
+  display:none;
    
+}
+.checkbox:checked + .form-button{
+  background-color: aqua;
 }
 /* .field-row1{
  padding-left:22.5px;
@@ -289,9 +292,7 @@ div .form-button{
   margin-left: 11px;
  
 }
-div .form-button:checked{
-  background-color: aqua;
-}
+
 div .form-button:hover{
   background-color: pink;
 }
