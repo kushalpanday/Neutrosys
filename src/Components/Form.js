@@ -19,14 +19,11 @@ const FormEl = () => {
   return (
     <div className="container">
       <div className="form-left">
-        <h2>REQUEST TALENTS</h2>
-        <span>
+        <h2 className="frompara">REQUEST TALENTS</h2>
+        <p className="spanclass">
           Please fill out the form with your details. We will contact you soon.
-        </span>
-        {/* <form action=""> */}
-        {/* <input type="text" placeholder='Your Full Name' />
-                  <input type="email" name="" id="" placeholder='Your Email' />
-                  <input type="number" name="" id="" placeholder="Phone Number" /> */}
+        </p>
+       
       <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
         <div>
           <TextField
@@ -38,6 +35,7 @@ const FormEl = () => {
             size="small"
             margin="dense"
             name="name"
+            autoComplete="off"
             sx={{
               "& .MuiFilledInput-underline:before": {
                 borderBottom: "none",
@@ -51,7 +49,7 @@ const FormEl = () => {
             }}
             {...register("name", { required: "Required", minLength: 3 })}
                 error={!!errors?.name}
-                // helperText={errors?.name ? errors.name.message : null}
+                
           />
         </div>
         <div>
@@ -64,6 +62,7 @@ const FormEl = () => {
             size="small"
             margin="dense"
             name="email"
+            autoComplete="off"
             sx={{
               "& .MuiFilledInput-underline:before": {
                 borderBottom: "none",
@@ -83,7 +82,7 @@ const FormEl = () => {
               },
             })}
             error={!!errors?.email}
-            // helperText={errors?.email ? errors.email.message : null}
+            
           />
         </div>
         <div>
@@ -96,6 +95,7 @@ const FormEl = () => {
             size="small"
             margin="dense"
             name="phoneNumber"
+            autoComplete="off"
             sx={{
               "& .MuiFilledInput-underline:before": {
                 borderBottom: "none",
@@ -112,8 +112,7 @@ const FormEl = () => {
         </div>
         <div className="wrap">
           <div className="first">
-            {/* <input type="text" placeholder = "Company Name"/>
-                          <input type="text" placeholder = "Job Title"/> */}
+            
             <div>
               <TextField
                 id="outlined-basic"
@@ -123,6 +122,7 @@ const FormEl = () => {
                 size="small"
                 margin="dense"
                 name="CompanyName"
+                autoComplete="off"
                 sx={{
                   "& .MuiFilledInput-underline:before": {
                     borderBottom: "none",
@@ -148,6 +148,7 @@ const FormEl = () => {
                 size="small"
                 margin="dense"
                 name="Job"
+                autoComplete="off"
                 sx={{
                   "& .MuiFilledInput-underline:before": {
                     borderBottom: "none",
@@ -166,8 +167,7 @@ const FormEl = () => {
           </div>
           <div className="second">
             <div className="country">
-              {/* <input type="text" placeholder = "Country"/>
-                                <input type="text" placeholder="City/State" /> */}
+              
               <div>
                 <TextField
                   id="outlined-basic"
@@ -177,6 +177,7 @@ const FormEl = () => {
                   size="small"
                   margin="dense"
                   name="Country"
+                  autoComplete="off"
                   sx={{
                     "& .MuiFilledInput-underline:before": {
                       borderBottom: "none",
@@ -203,6 +204,7 @@ const FormEl = () => {
                   size="small"
                   name="city"
                   margin="dense"
+                  autoComplete="off"
                   sx={{
                     "& .MuiFilledInput-underline:before": {
                       borderBottom: "none",
@@ -231,10 +233,7 @@ const FormEl = () => {
                 variant="filled"
                 placeholder="Your Meassage"
                 className="txtfield_country_code"
-                // value={myForm.values.message}
-                // onChange={myForm.handleChange}
-                // error={!!myForm.errors.companyName}
-                // helperText={myForm.errors.message}
+                
                 autoComplete="off"
                 sx={{
                   "& .MuiFilledInput-underline:before": {
@@ -249,37 +248,38 @@ const FormEl = () => {
                 }}
                 {...register("message")}
               />
-
-        <label htmlFor="upload_file">
-        <input
-          style={{ display: "none" }}
-          id="upload_file"
-          name="upload_file"
-          type="file"
-          className="upload"
-          // value={formValues.upload_file}
-          // value={""}
-          // onChange={handleChange}
-          accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-          {...register("upload_file")}
-        />
-        <Button
-          // color="light"
-          variant="contained"
-          
-          // component="span"
-          className="file_button "
-        >
-          {/* <AiOutlineUpload className="uploadIcon" /> */}
-          upload files
-        </Button>
-        {/* <small style={{ color: "#b1a40d" }}>Upload file </small> */}
-      </label>
+              <div className="form-file">
+              <label htmlFor="upload_file">
+              <input
+                style={{ display: "none" }}
+                id="upload_file"
+                name="upload_file"
+                type="file"
+                
+                // value={formValues.upload_file}
+                // value={""}
+                // onChange={handleChange}
+                accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
+                {...register("upload_file")}
+              />
+              <Button
+                color="success"
+                variant="contained"
+                component="span"
+                className="file_button mt-3"
+              >
+                {/* <AiOutlineUpload className="uploadIcon" /> */}
+                upload files
+              </Button>
+              
+              {/* <small style={{ color: "#b1a40d" }}>Upload file </small> */}
+            </label>
+            </div>
+        
         <div className="button">
         <Button className="btn btn-primary mt-4"
         style={{ display: "block", margin: "auto", width: "8rem", color:"white",backgroundColor: "#3b6da7",  }}
-        // disabled={!myForm.isValid}
-        // onClick={myForm.submitForm}
+        
         type="submit"
         variant="contained"
         

@@ -17,7 +17,14 @@
     padding: 15px;
     margin-top: 20px;
 }
+h2{
+    margin: .6rem;
+}
 
+.spanclass{
+    text-align: left;
+    margin: 0 .2rem;
+}
 .left h2 {
     font-weight: 500;
     font-size: 18px;
@@ -27,10 +34,7 @@
     font-size: 15px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
+ 
 
 input {
     width: 600px;
@@ -60,7 +64,25 @@ textarea {
     align-items: center;
 }
 .btn:hover{
-    background-color: #0D4A93;
+    /* background-color: #0D4A93; */
+}
+div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover {
+    /* background-color: rgba(0, 0, 0, 0.09); */
+    background-color: white;
+}
+div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:focus-visible {
+    /* background-color: rgba(0, 0, 0, 0.09); */
+    background-color: white;
+}
+.css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root.Mui-focused{
+    background-color: #FFFFFF;
+}
+.form-file{
+    width: 25%;
+}
+label .file_button{
+    margin-top: 1rem;
+    width:100%;
 }
 
 .submit {
@@ -74,7 +96,7 @@ textarea {
 }
 
 .submit:hover {
-    color: #0D4A93;
+    /* color: #0D4A93; */
     background-color: #fff;
     font-weight: bold;
 }
@@ -87,7 +109,7 @@ textarea {
 .country input,.first input {
     width: 285px;
     /* margin-right: 25px; */
-    color: #fff;
+    /* color: #fff; */
 }
 
 /* .country label{
@@ -186,4 +208,14 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
 .file_button {
     margin-left: 2rem;
 }
-
+.css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
+    background-color: #fff;
+}
+div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root.Mui-focused,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover{
+    background-color: white;
+}
+@media (hover: none){
+div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover {
+    background-color: white;
+}
+}
