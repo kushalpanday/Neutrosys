@@ -50,70 +50,7 @@ export default function FormWithMui() {
           <Col sm={9} className="form-col ">
             <h4 className="heading-form">Contact Us</h4>
             <p className="heading-para">I'm interested in..</p>
-            <Row className="field-row1">
-                <FormGroup row >
-                {/* className="formgroup-check" */}
-                <FormControlLabel
-                  className="form-button"
-                    control={<Checkbox className="checkbox"   onClick={()=>clickme(1)} 
-                    
-                    />}
-                    name="interest"
-                    value="Talent Solutions"
-                    {...register("interest")}
-                    label="Talent Solutions" 
-                   
-                    style={{backgroundColor:state}}
-                    
-                    
-                   
-                  />
-                  <FormControlLabel
-                  className="form-button"
-                    control={<Checkbox className="checkbox" onClick={()=>clickme(2)}/>}
-                    name="interest"
-                    value="Software Development"
-                    {...register("interest")}
-                    label="Software Development"
-                    style={{backgroundColor:state}}
-                  />
-                  <FormControlLabel
-                  className="form-button"
-
-                    control={<Checkbox className="checkbox" />}
-                    name="interest"
-                    value="outSourcing"
-                    {...register("interest")}
-                    label="outSourcing"
-                  />
-                  <FormControlLabel
-                  className="form-button"
-
-                    control={<Checkbox className="checkbox" />}
-                    name="interest"
-                    value="Software Testing"
-                    {...register("interest")}
-                    label="Software Testing"
-                  />
-                  <FormControlLabel
-                  className="form-button"
-                    control={<Checkbox className="checkbox"/>}
-                    name="interest"
-                    value="Looking for a job"
-                    {...register("interest")}
-                    label="Looking for a job"
-                  />
-                  <FormControlLabel
-                  className="form-button"
-                    control={<Checkbox className="checkbox"/>}
-                    name="interest"
-                    value="Other"
-                    {...register("interest")}
-                    label="other"
-                  />
-                </FormGroup>
             
-            </Row>
             <Container className="mt-2 mb-5 formContainer">
               <TextField
                 // required
