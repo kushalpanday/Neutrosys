@@ -1,0 +1,136 @@
+/* .contract-div
+{
+    border: 1px solid;
+} */
+.contract-div h2
+{
+    padding-top: 2rem;
+}
+.contract-div p
+{
+    text-align: center;
+    font-size: 18px;
+}
+.top-row
+{
+    /* border: 1px solid red; */
+    padding-top: 1rem;
+    justify-content: center;
+}
+.top-col
+{
+     /* border: 1px solid;  */
+    text-align: center;
+    width: 14%;
+}
+.cricle-div
+{
+    /* border: 1px solid; */
+    /* background: linear-gradient(90.87deg, rgba(35, 171, 230, 0.37) 0.75%, rgba(35, 171, 230, 0.205) 54.19%); */
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    text-align: center;
+    margin-left: 55px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+}
+.top-col:hover 
+{
+   transition: 1s ease-out;
+    
+}
+.top-col:hover .cricle-div
+{
+    background: linear-gradient(90.87deg, rgba(35, 171, 230, 0.479) 0.75%, rgba(35, 171, 230, 0.493) 54.19%);
+    border: none;
+    cursor: pointer;
+    
+}
+.top-col:hover h5
+{
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+}
+.top-col h5
+{
+    font-weight: 400;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.top-col p
+{
+    color: rgba(128, 128, 128, 0.719);
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.textrow
+{
+    /* border: 1px solid red; */
+    justify-content: center;
+    text-align: center;
+    padding-top: 1rem;
+}
+.textcol
+{
+    /* border: 1px solid; */
+    text-align: center;
+    height: 200px;
+    background: linear-gradient(90.87deg, rgba(35, 171, 230, 0.29) 0.75%, rgba(35, 171, 230, 0.1) 54.19%);
+    margin-top: 1rem;
+    
+}
+.textcol h4
+{
+    padding-top: 23px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.textcol p
+{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.progress-div
+{
+    /* border: 2px solid; */
+    margin-top: 1rem;
+    
+}
+.progress
+{
+    max-height: 6px;
+    width: 72%;
+    text-align: center;
+    margin: auto;
+    
+}
+.bar1
+{
+    background-color: blueviolet;
+    margin-right: 2rem;
+}
+
+.bar2
+{
+    background-color: blueviolet;
+    margin-right: 2rem;
+}
+.bar3
+{
+    background-color: blueviolet;
+    margin-right: 2rem;
+}
+.bar4
+{
+    background-color: blueviolet;
+    margin-right: 2rem;
+}
+.bar5
+{
+    background-color: blueviolet;
+    
+}

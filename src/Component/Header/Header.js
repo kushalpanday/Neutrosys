@@ -1,11 +1,11 @@
 import React from 'react';
-import './Career.css';
+import './Header.css';
 
 
 export default function Header() {
     return(
         <>
-            <div className='header-image mb-5'>
+            <div className='header-image'>
                 <img src='careerbg.jpg'></img>
                 <div className='text'>
                     <h2 className='heading-career'>Careers</h2>
