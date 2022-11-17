@@ -6,7 +6,10 @@
     gap: 50px;
     padding: 10px 30px;
 }
-
+.form-paragraph{
+ text-align: left;
+ margin:0 .5rem;
+}
 .form-left {
     width: 650px;
     background-color: #487eb0;
@@ -27,10 +30,6 @@
     font-size: 15px;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-}
 
 input {
     width: 600px;
@@ -87,7 +86,7 @@ textarea {
 .country input,.first input {
     width: 285px;
     /* margin-right: 25px; */
-    color: #fff;
+    /* color: #fff; */
 }
 
 /* .country label{
@@ -183,7 +182,22 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
     background-color: white;
    border-radius: 10px;
 }
-.file_button {
-    margin-left: 2rem;
+.form-file{
+    width:25%;
 }
 
+label .file_button {
+    /* margin-left: 2rem; */
+    margin-top:1rem;
+    width:100%;
+    /* display: flex; */
+}
+
+div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root.Mui-focused,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover{
+    background-color: white;
+}
+@media (hover: none){
+div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover {
+    background-color: white;
+}
+}
