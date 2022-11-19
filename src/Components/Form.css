@@ -175,3 +175,62 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
 }
 
 
+@media screen and (max-width:430px){
+  .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  } 
+  .form-right{
+    width: 100%;
+    padding: 5px;
+  }
+  .form-left{
+    width: 350px;
+  }
+  .info{
+    font-size: 14px;
+    text-align: left;
+  } 
+}
+@media screen  and (max-width:320px){
+ .container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+ }  
+ 
+ .form-left{
+    margin: 0;
+    padding: 5px;
+    width: 300px;
+ }
+.content{
+    width: 300px;
+}
+ #outlined-basic{
+    width: 255px;
+ }
+ #textarea{
+    width: 280px;
+ }
+ .form-left span{
+    font-size: 15px;
+    margin-bottom: 20px;
+ }
+div .css-c5v1qu-MuiInputBase-input-MuiFilledInput-input {
+    background-color: #fff;
+    
+}
+ 
+.first,.country{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-right{
+    padding: 10px;
+}
+}
+

@@ -165,37 +165,160 @@
     bottom: -104px;
 }
 
-@media screen and (max-width:500px){
-    .offer{
+
+@media screen and (max-width:770px){
+   .offer{
+    width: 100%;
+    flex-direction: column;
+   } 
+
+   .left{
+    width: 100%;
+    margin: 0;
+    padding: 5px;
+   }
+
+   .title-info{
+    font-size: 14px;
+   }
+
+   .offer-content{
+    font-size: small;
+    width: 310px;
+   }
+
+   .box{
+    width: 250px;
+    padding: 10px 20px;
+   }
+
+   .right{
+    width: 100%;
+    padding: 5px;
+   }
+
+   .subtitle{
+    font-size: 24px;
+   }
+
+   .process-text{
+    font-size: 15px;
+   }
+   .process{
+    padding: 0;
+   }
+   .process-content{
+    font-size: 14px;
+    width: 260px;
+   }
+}
+
+
+@media screen and (max-width:425px) {
+
+    .offer {
         flex-direction: column;
         width: 100%;
-        padding: 0;
     }
 
-    .left{
+    .left {
+        width: 100%;
+        margin: 0;
+        padding: 7px;
+    }
+
+    .title-info {
+        font-size: 14px;
+    }
+
+    .offer-content {
+        font-size: small;
+        width: 310px;
+    }
+
+    .box {
+        width: 250px;
+        padding: 10px 20px;
+    }
+
+    .right {
+        width: 100%;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .process {
+        padding: 0;
+        margin: 0;
+    }
+
+    .process-text {
+        font-size: 14px;
+    }
+
+    .process-content {
+        font-size: 12px;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .offer {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .title-info {
+        font-size: 15px;
+    }
+
+    .left {
         width: 100%;
         justify-content: center;
         align-items: center;
         margin: 0;
+        /* padding: 10px; */
+        padding: 6px;
+    }
+
+    .offer-content {
+        text-align: left;
+    }
+
+    .box {
+        width: 250px;
+    }
+
+
+    .details {
+        width: 260px;
+        bottom: -140px;
+    }
+
+    .offer-content {
+        font-size: 14px;
+    }
+
+    .process-content {
+        margin-left: 43px;
+        text-align: left;
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .right {
+        width: 100%;
+        margin: 0;
         padding: 10px;
-    }
-    .offer-content{
-      text-align: center;
+
     }
 
-    .box{
-        width: 280px;
-    }
 
-    .details{
-        width: 310px;
-        bottom: -123px;
-    }
-
-   
-        .process-content{
-            margin-left: 0;
-            text-align: left;
-            width: 100%;
-        }
 }
