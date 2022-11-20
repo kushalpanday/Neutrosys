@@ -8,7 +8,7 @@
 }
 
 .form-left {
-    width: 650px;
+    width: 60%;
     background-color: #487eb0;
     /* background-color: #3498db; */
     color: #FFFFFF;
@@ -33,7 +33,7 @@ form {
 }
 
 input {
-    width: 600px;
+    /* width: 600px; */
     padding: 14px 10px;
     outline: none;
     border: none;
@@ -45,8 +45,8 @@ textarea {
     outline: none;
     border: none;
     resize: none;
-    width: 600px;
-    height: 70px;
+    /* width: 600px; */
+    /* height: 70px; */
     border-radius: 4px;
     padding: 10px;
     margin-top: 10px;
@@ -78,6 +78,9 @@ textarea {
     display: flex;
     gap: 15px;
 }
+.first{
+    gap:15px;
+}
 
 .country input,.first input {
     width: 260px;
@@ -90,7 +93,8 @@ textarea {
 } */
 
 #textarea{
-    width: 610px;
+    /* width: 610px; */
+    display: block;
     background-color: #fff;    
 }
 
@@ -139,7 +143,7 @@ textarea {
 .contact-details{
     display: block;
     font-weight: bold;
-    float: left;
+    /* float: left; */
 }
 
 .first{
@@ -183,7 +187,7 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
     padding: 0;
   } 
   .form-right{
-    width: 100%;
+    width: 90%;
     padding: 5px;
   }
   .form-left{
@@ -234,3 +238,16 @@ div .css-c5v1qu-MuiInputBase-input-MuiFilledInput-input {
 }
 }
 
+@media only screen and (max-width: 666px){
+    .container{
+        flex-direction: column;
+        align-items: center;
+padding:0;
+    }
+    .form-left{
+        width:90%;
+    }
+    .form-right{
+        margin:0 1rem;
+    }
+}

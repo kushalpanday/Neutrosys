@@ -1,5 +1,6 @@
 .features {
     padding: 20px 0;
+    width:100%;
 }
 
 .section-title {
@@ -97,7 +98,7 @@
         align-items: center;
         justify-content: center;
         /* width: 250px; */
-        width: 300px;
+        width: 90%;
         font-size: 14px;
     }
 
