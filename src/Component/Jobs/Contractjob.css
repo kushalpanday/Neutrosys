@@ -247,17 +247,29 @@
     justify-content: space-between;
     /* border-bottom: 2px dotted gray; */
     
+    
+}
+
+.div-bggrey
+{
+    /* border: 1px solid red; */
+    background-color: rgba(128, 128, 128, 0.068);
 }
 /* .inner-col
 {
     border: 1px solid; 
-    border-bottom: 2px dotted gray; 
-} */
+    
+} 
+.inner-col2
+{
+    border: 1px solid; 
+    
+}  */
 .inner-col h5
 {
     text-align: left;
     font-size: 1.3rem;
-    padding-top: 1.5rem;
+    padding-top: 1rem;
     padding-left: 1.2rem;
 }
 .inner-col h5 a:hover
@@ -280,6 +292,7 @@
     text-align: left;
     font-size: 15px;
     padding-left: 1.3rem;
+    
 }
 /* .inner-col2
 {

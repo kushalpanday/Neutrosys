@@ -195,6 +195,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
 
                                     </div>
 
+                                    <div className='div-bggrey'> 
                                     <Row className='inner-row'>
                                         <Col sm={9} className='inner-col'>
                                             <h5><a href='#'>Sales Intern -On-site</a></h5>
@@ -207,10 +208,11 @@ import InputGroup from 'react-bootstrap/InputGroup';
                                         <Col sm={2} className='inner-col2'>
                                             <h5><a href='#'>Apply</a></h5>
                                         </Col>
-                                        <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr>
+                                        {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
                                     </Row>
-                                        
-                                    <Row className='inner-row'>
+                                    </div>
+                                     
+                                     <Row className='inner-row'>
                                         <Col sm={9} className='inner-col'>
                                             <h5><a href='#'>Sales Intern</a></h5>
                                             <h6>Irving, Texas, United States | Technology | Full Time</h6>
@@ -222,9 +224,11 @@ import InputGroup from 'react-bootstrap/InputGroup';
                                         <Col sm={2} className='inner-col2'>
                                             <h5><a href='#'>Apply</a></h5>
                                         </Col>
-                                        <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr>
+                                        {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
                                     </Row>
-
+                                      
+                                    
+                                    <div className='div-bggrey'> 
                                     <Row className='inner-row'>
                                         <Col sm={9} className='inner-col'>
                                             <h5><a href='#'>Account Manager</a></h5>
@@ -237,10 +241,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
                                         <Col sm={2} className='inner-col2'>
                                             <h5><a href='#'>Apply</a></h5>
                                         </Col>
-                                        <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr>
+                                        {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
                                     </Row>
+                                    </div>
 
-                                    <Row className='inner-row'>
+                                    
+                                    <Row className='inner-row-bg'>
                                         <Col sm={9} className='inner-col'>
                                             <h5><a href='#'>Linux Administrator - Chicago</a></h5>
                                             <h6>Chicago, Illinois, United States | Technology | Contract</h6>
@@ -253,9 +259,10 @@ import InputGroup from 'react-bootstrap/InputGroup';
                                         <Col sm={2} className='inner-col2'>
                                             <h5><a href='#'>Apply</a></h5>
                                         </Col>
-                                        <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr>
+                                        {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
                                     </Row>
-
+                                    
+                                    <div className='div-bggrey'> 
                                     <Row className='inner-row'>
                                         <Col sm={9} className='inner-col'>
                                             <h5><a href='#'>Facets Tester - Remote</a></h5>
@@ -267,10 +274,12 @@ import InputGroup from 'react-bootstrap/InputGroup';
                                         <Col sm={2} className='inner-col2'>
                                             <h5><a href='#'>Apply</a></h5>
                                         </Col>
-                                        <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr>
+                                        {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
                                     </Row>
+                                    </div>
 
-                                    <Row className='inner-row'>
+                                    
+                                    <Row className='inner-row-bg'>
                                         <Col sm={9} className='inner-col'>
                                             <h5><a href='#'>Health Care ETL Tester - Remote</a></h5>
                                             <h6>TX, Texas, United States | Technology | Contract</h6>
@@ -282,6 +291,7 @@ import InputGroup from 'react-bootstrap/InputGroup';
                                             <h5><a href='#'>Apply</a></h5>
                                         </Col>
                                     </Row>
+                                    
                                 </Col>
                             </Row>
                          

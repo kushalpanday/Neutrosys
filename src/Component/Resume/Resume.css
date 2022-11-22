@@ -16,22 +16,23 @@
     margin-top: 2rem;
     margin-bottom: 2rem;
     height: auto;
-    
+    text-align: end;
    
 }
 .resume-col1 img
 {
-    height: 250px;
-    width: 85%;
+    height: 260px;
+    width: 88%;
     /* object-fit: cover; */
     border-radius: 15px 50px;
-    
+    text-align: end;
     
 }
 .resume-col2
 {
-    /* border: 2px solid blue; */
+    /* border: 2px solid blue;  */
     margin-top: 2rem;
+    
 }
 .resume-col2 h2
 {
@@ -41,8 +42,8 @@
 {
     font-size: 18px;
     padding-top: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 11px;
 }
 /* .btn-3div
 {
@@ -53,7 +54,7 @@
     background-color: #FFFFFF;
     color: black;
     border: 1px solid #159A9C;
-    margin: 25px;
+    margin: 13px;
     margin-top: 10px;
 
 }
