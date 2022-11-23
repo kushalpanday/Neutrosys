@@ -19,6 +19,7 @@
     /* border: 2px solid; */
     justify-content: center;
     text-align: center;
+    width:100%;
 }
 .emp-topm
 {
@@ -72,6 +73,7 @@
     /* border: 1px solid red; */
     margin-top: 2rem;
      justify-content: center;
+     width:100%;
    
 }
 .openposition-col

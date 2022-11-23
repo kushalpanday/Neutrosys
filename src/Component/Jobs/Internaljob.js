@@ -14,7 +14,7 @@ const Internaljob = () => {
                 
                 <Row className='emp-row'>
                     <Col sm={5} className='emp-col1 emp-topm'>
-                        <img src='emp1.jpg'></img>
+                        <img src='emp1.jpg' alt="employee1"></img>
                     </Col>
                     <Col sm={6} className='emp-col2'>
                         <h5>Uncover Limitless Opportunities</h5>
@@ -31,12 +31,12 @@ const Internaljob = () => {
                          your journey.</p>
                     </Col>
                     <Col sm={5} className='emp-col1'>
-                        <img src='emp2.jpg'></img>
+                        <img src='emp2.jpg' alt="employee2"></img>
                     </Col>
                 </Row>
                 <Row className='emp-row'>
                     <Col sm={5} className='emp-col1 col-buttom'>
-                        <img src='emp3.jpg'></img>
+                        <img src='emp3.jpg'alt="employee3"></img>
                     </Col>
                     <Col sm={6} className='emp-col2'>
                         <h5>Uncover Limitless Opportunities</h5>

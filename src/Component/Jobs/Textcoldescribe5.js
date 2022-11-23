@@ -10,7 +10,7 @@ const Textcoldescribe5 = () => {
         <>
         <Container>
             <Row className='textrow'>
-                    <Col sm={8} className='textcol'>
+                    <Col sm={12} className='textcol'>
                         <h4>Continuous Follow Up</h4>
                         <p>Our team will assess your experience and education to suggest the right path
                          for your career growth. With proper training from our experts, we are 

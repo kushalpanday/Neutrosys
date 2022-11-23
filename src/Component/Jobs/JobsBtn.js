@@ -23,7 +23,7 @@ export default function JobsBtn() {
                     &nbsp;&nbsp;&nbsp;
                     <Button variant="outline-primary" size="lg" className='primary-btn' onClick={inte}>Internal jobs</Button>
                 </div>
-                <p>{job}</p>
+                <div>{job}</div>
             </div>
         </>
     )
