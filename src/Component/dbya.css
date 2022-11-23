@@ -1,0 +1,29 @@
+.dbyadatamain{
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+}
+.buttons:nth-child(odd){
+    background-color: beige;
+}
+.bth{
+    
+}
+button{
+    margin-left: 2rem;
+}
+.mainbtn{
+    margin-bottom: 4rem;
+}
+.db{
+    background-color: blue;
+}
+.dc{
+    background-color: bisque;
+}
+button:active{
+    background-color: aquamarine;
+}
+button:focus{
+    margin-top: 2rem;
+}
