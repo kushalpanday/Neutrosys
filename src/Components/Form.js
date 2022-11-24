@@ -1,9 +1,8 @@
 import React from "react";
-import {TextField ,Button} from "@mui/material";
+import { TextField, Button } from "@mui/material";
 import "./Form.css";
 import { useForm } from "react-hook-form";
 const FormEl = () => {
-
   const {
     register,
     handleSubmit,
@@ -17,15 +16,14 @@ const FormEl = () => {
     resetField();
   };
   return (
-    <div className="container">
+    <div className="form-container">
       <div className="form-left">
         <h2 className="frompara">REQUEST TALENTS</h2>
         <p className="spanclass">
           Please fill out the form with your details. We will contact you soon.
         </p>
-       
-      <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
-        <div>
+
+        <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
           <TextField
             id="outlined-basic"
             className="textfield"
@@ -48,11 +46,9 @@ const FormEl = () => {
               },
             }}
             {...register("name", { required: "Required", minLength: 3 })}
-                error={!!errors?.name}
-                
+            error={!!errors?.name}
           />
-        </div>
-        <div>
+
           <TextField
             id="outlined-basic"
             className="textfield"
@@ -82,10 +78,8 @@ const FormEl = () => {
               },
             })}
             error={!!errors?.email}
-            
           />
-        </div>
-        <div>
+
           <TextField
             id="outlined-basic"
             label="Phone Number"
@@ -109,61 +103,60 @@ const FormEl = () => {
             }}
             {...register("phoneNumber")}
           />
-        </div>
-        <div className="wrap">
-          <div className="first">
-            
-              <TextField
-                id="outlined-basic"
-                label="Company Name"
-                className="textfield"
-                variant="filled"
-                size="small"
-                margin="dense"
-                name="CompanyName"
-                autoComplete="off"
-                sx={{
-                  "& .MuiFilledInput-underline:before": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:after": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
-                    {
+          <div className="wrap">
+            <div className="first">
+              <div className="apple">
+                <TextField
+                  id="outlined-basic"
+                  label="Company Name"
+                  className="textfield"
+                  variant="filled"
+                  size="small"
+                  margin="dense"
+                  name="CompanyName"
+                  autoComplete="off"
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
                       borderBottom: "none",
                     },
-                }}
-                {...register("CompanyName")}
-              />
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                      {
+                        borderBottom: "none",
+                      },
+                  }}
+                  {...register("CompanyName")}
+                />
 
-              <TextField
-                id="outlined-basic"
-                label="Job Title"
-                className="textfield"
-                variant="filled"
-                size="small"
-                margin="dense"
-                name="Job"
-                autoComplete="off"
-                sx={{
-                  "& .MuiFilledInput-underline:before": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:after": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
-                    {
+                <TextField
+                  id="outlined-basic"
+                  label="Job Title"
+                  className="textfield"
+                  variant="filled"
+                  size="small"
+                  margin="dense"
+                  name="Job"
+                  autoComplete="off"
+                  sx={{
+                    "& .MuiFilledInput-underline:before": {
                       borderBottom: "none",
                     },
-                }}
-                {...register("Job")}
-              />
-          </div>
-          <div className="second">
-            <div className="country">
-              
+                    "& .MuiFilledInput-underline:after": {
+                      borderBottom: "none",
+                    },
+                    "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                      {
+                        borderBottom: "none",
+                      },
+                  }}
+                  {...register("Job")}
+                />
+              </div>
+            </div>
+            <div className="second">
+              <div className="country">
                 <TextField
                   id="outlined-basic"
                   label="Country"
@@ -187,7 +180,7 @@ const FormEl = () => {
                   }}
                   {...register("Country")}
                 />
-                
+
                 <TextField
                   id="outlined-basic"
                   label="City/State"
@@ -211,42 +204,40 @@ const FormEl = () => {
                   }}
                   {...register("city")}
                 />
+              </div>
             </div>
           </div>
-        </div>
-        <TextField
-                fullWidth
-                multiline
-                rows={3}
-                label="Message"
-                margin="dense"
-                name="message"
-                variant="filled"
-                placeholder="Your Meassage"
-                className="txtfield_country_code"
-                
-                autoComplete="off"
-                sx={{
-                  "& .MuiFilledInput-underline:before": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:after": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
-                    borderBottom: "none",
-                  },
-                }}
-                {...register("message")}
-              />
-              <div className="form-file">
-              <label htmlFor="upload_file">
+          <TextField
+            fullWidth
+            multiline
+            rows={3}
+            label="Message"
+            margin="dense"
+            name="message"
+            variant="filled"
+            placeholder="Your Meassage"
+            className="txtfield_country_code"
+            autoComplete="off"
+            sx={{
+              "& .MuiFilledInput-underline:before": {
+                borderBottom: "none",
+              },
+              "& .MuiFilledInput-underline:after": {
+                borderBottom: "none",
+              },
+              "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                borderBottom: "none",
+              },
+            }}
+            {...register("message")}
+          />
+          <div className="form-file">
+            <label htmlFor="upload_file">
               <input
                 style={{ display: "none" }}
                 id="upload_file"
                 name="upload_file"
                 type="file"
-                
                 // value={formValues.upload_file}
                 // value={""}
                 // onChange={handleChange}
@@ -254,7 +245,7 @@ const FormEl = () => {
                 {...register("upload_file")}
               />
               <Button
-                color="success"
+                // color="success"
                 variant="contained"
                 component="span"
                 className="file_button mt-3"
@@ -262,48 +253,54 @@ const FormEl = () => {
                 {/* <AiOutlineUpload className="uploadIcon" /> */}
                 upload files
               </Button>
-              
+
               {/* <small style={{ color: "#b1a40d" }}>Upload file </small> */}
             </label>
-            </div>
-        
-        <div className="button">
-        <Button className="btn btn-primary mt-4"
-        style={{ display: "block", margin: "auto", width: "8rem", color:"white",backgroundColor: "#3b6da7",  }}
-        
-        type="submit"
-        variant="contained"
-        
-      >
-        Submit
-      </Button>
-        </div>
+          </div>
+
+          <div className="button">
+            <Button
+              className="btn btn-primary mt-4"
+              style={{
+                display: "block",
+                margin: "auto",
+                width: "6rem",
+                color: "black",
+                backgroundColor: "#6acaffab",
+              }}
+              type="submit"
+              variant="contained"
+            >
+              Submit
+            </Button>
+          </div>
         </form>
-        
       </div>
 
       <div className="form-right">
-        <div className="connected">Let's get connected!</div>
-        <div className="info">
+        <h2 className="connected">Let's get connected!</h2>
+        <p className="info">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
           accusamus nulla repellat consectetur eveniet iure saepe aperiam nemo,
           assumenda harum odio, ipsa recusandae error facere enim neque labore.
           Architecto, alias?
-        </div>
+        </p>
         <div className="contact-details">Contact Details</div>
         <br />
-        <div className="contact">
-          <div className="icon-container">
-            <i class="fa-solid fa-phone"></i>
+        <div className="contact-container">
+          <div className="contact">
+            <div className="icon-container">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <div className="icon-text">+977-71-577820</div>
           </div>
-          <div className="icon-text">+977-71-577820</div>
-        </div>
 
-        <div className="contact">
-          <div className="icon-container">
-            <i class="fa-solid fa-envelope"></i>
+          <div className="contact">
+            <div className="icon-container">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div className="icon-text">info@neutroline.com</div>
           </div>
-          <div className="icon-text">info@neutroline.com</div>
         </div>
       </div>
     </div>

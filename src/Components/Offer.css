@@ -1,6 +1,6 @@
 .offer {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: flex-start;
     width: 100%;
     background-color:#f5f6fa;
@@ -36,7 +36,7 @@
 
 .offer-content {
     font-size: 15px;
-    text-align: left;
+    text-align: justify;
 }
 
 .boxes {
@@ -86,7 +86,7 @@
     align-items: flex-start;
     flex-direction: column;
     /* padding-top: 20px; */
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
     margin-top: 50px;
     width: 45%;
 }
@@ -121,7 +121,8 @@
 .process:hover {
     /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.19); */
     /* background-color: #ecf0f1; */
-    background-color: #dff9fb;
+    /* background-color: #dff9fb; */
+    background-color: #e2e8f0;
 /* box-shadow: 4px 3px 12px 0px rgba(0, 0, 0, 0.75); */
 }
 
@@ -138,7 +139,7 @@
     height: 27px;
     border-radius: 50%;
     color: #130f40;
-    background-color: #dff9fb;
+    background-color: #e2e8f0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,21 +157,27 @@
 .parent{
     position: relative;
     width:100%;
+    margin-bottom: 1rem;
+    /* background-color: red ; */
+}
+.accordion-button{
+    font-size:1.2rem;
+}
+
+.accordion-item:first-of-type .accordion-button,.bg-color-contract{
+    background-color: #22c55e;
 }
 .details{
-    /* border-radius: 10px; */
-    font-size: 14px;
-    /* width: 430px; */
-    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
-    padding: 15px 5px;
-    margin: 0;
-    position: absolute;
-    z-index: 2;
-    background-color: #fff;
-    bottom: -104px;
+    background-color: white;
 }
-
-
+div .accordion-button:focus{
+    border:none;
+    box-shadow:none;
+    color:black;
+}
+div .accordion-button{
+    background-color: #3498db;
+}
 @media screen and (max-width:770px){
    /* .offer{
     width: 100%;
@@ -180,7 +187,7 @@
    .left{
     width: 70%;
     margin: auto;
-    padding: 5px;
+    /* padding: 5px; */
    }
 
    .title-info{
@@ -198,8 +205,8 @@
    }
 
    .right{
-    /* width: 98%; */
-    padding: 5px;
+    width: 60%;
+    /* padding: 5px; */
     margin:auto;
    }
 
@@ -223,6 +230,9 @@
     .offer{
         display: flex;
         flex-direction: column;
+    }
+    .right{
+        padding:0;
     }
 } 
 
@@ -306,12 +316,6 @@
 
     .box {
         width: 250px;
-    }
-
-
-    .details {
-        width: 260px;
-        bottom: -140px;
     }
 
     .offer-content {
