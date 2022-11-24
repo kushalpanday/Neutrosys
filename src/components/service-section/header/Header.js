@@ -2,7 +2,7 @@ import React from 'react'
 import './header.css'
 const Header = () => {
   return (
-    <div>
+    <div className='header-container'>
     <div className="gridcontainer">
     <div className="content">
     <div className="contentheader">

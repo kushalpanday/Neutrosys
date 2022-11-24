@@ -10,9 +10,11 @@
     padding:1rem;
     /* margin: 10px auto; */
 }
-.letschatcontent p{
-    padding:1rem 0;
-    margin:0;
+.letschatcontent h3{
+    /* color: white; */
+   
+    font-size: 1.5rem;
+    padding: 2rem 0 0 0;
 }
 
 .letschatcontent button{
@@ -24,7 +26,11 @@
    
    
 }
-
+.letschatcontent p{
+    /* width: 40%; */
+    
+    
+}
 /* <Modal.Body>
    <h5 className=''>MobileApp Development </h5>
    <p>Mobile app development creates applications specifically for mobile devices. 

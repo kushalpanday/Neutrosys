@@ -1,3 +1,6 @@
+.headercontainer{
+    height:350px;
+}
 .gridcontainer{
     display: grid;
     /* grid-template-rows:30%; */
@@ -15,10 +18,8 @@
 }
 .headerimage img{
     height:100%;
-    width: 55%;
-    margin-left: 30%;
-    
-    
+    width: 75%;
+    margin-left: 20%;
 }
 
 .contentheader p{
@@ -40,7 +41,7 @@
   } */
   @media only screen and (max-width: 600px) {
     .gridcontainer{
-        grid-template-columns: 100%;
+        /* grid-template-columns: 100%; */
     }
     .contentheader{
         width: 90%;
@@ -52,7 +53,7 @@
     }
     .headerimage img{
         height:100%;
-        width: 30%;
+        width: 70%;
         /* margin-left: 50%; */
         
         

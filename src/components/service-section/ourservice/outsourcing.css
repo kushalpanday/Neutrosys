@@ -1,8 +1,12 @@
-.outsourcingmain h3{
+.outsourcingmain{
+    
+}
+.outsourcingmain h4{
     /* background-color: aqua; */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -10px;
 }
 .hrcontent hr{
     width: 20%;
@@ -14,8 +18,8 @@
 }
 .outsourcingbox{
     display: flex;
-    margin:3rem 0;
 }
+
 .outbox1{
     flex: 4;
 }
@@ -24,7 +28,7 @@
 }
 .outbox2 img{
     width:100%;
-    margin-top: 35%;
+    margin-top: 2rem;
 }
 .outbox3{
     flex: 4;
@@ -33,18 +37,35 @@
     margin-top:4rem;
 }
  .box11{
-    /* margin-top: 18%; */
-
+    margin-top: 18%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* background-color: antiquewhite; */
 }
+.box111{
+    display: flex;
+}
+.box11 h5{
+    margin-bottom:.8rem;
+    margin-top: -.9px;
+    margin-left: 11px;
+    font-size: 1.1rem;
+    
+}
+
+.outbox1 .box11:nth-child(1) , .outbox3 .box11:nth-child(1){
+    /* margin-top: 3rem; */
+}
+.outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
+    margin-top: 5rem;
+}
 .box11 p{
-   width: 90%;
+   width: 85%;
    justify-content: center;
     text-align: justify;
+    margin-top: -5px;
 }
 @media only screen and (max-width: 550px){
     .outsourcingbox{

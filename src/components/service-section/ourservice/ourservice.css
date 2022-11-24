@@ -1,100 +1,160 @@
-.Servicemainbody {
-  margin:1rem;
+.Servicemainbody{
+    /* height:400px; */
+    /* background-color: aquamarine; */
+    padding: 1rem;
 }
-.Servicemainbody h2,
-p {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* color: #05A5FF; */
+.Servicemainbody h2,p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* color: #05A5FF; */
 }
 
-.mainbox {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 24% 24% 24% 24%;
-  grid-column-gap: 2%;
-  width: 100%;
-  margin: auto;
-  padding: 1rem;
-}
-.mainData {
-    padding: 0 1rem; 
-  height: 19rem;
+.mainbox{
   cursor:pointer;
-  /* border: .5px solid gray; */
-  display: flex;
-  flex-direction: column;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    /* grid-template-rows: 300px 300px; */
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-column-gap: 2%;
+    /* grid-row-gap: 4%; */
+    width: 100%;
+    /* margin: auto auto; */
+    padding: 0 1rem;
+    /* background-color: aqua; */
+}
+.mainData{
+  width: 100%;
+  padding:1rem .5rem;
+    /* height: 19rem; */
+    gap:1rem;
+    /* border: .5px solid gray; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
-  justify-content: space-around;
-  align-items: center;
-
+    
 }
-.service-image{
-    /* width: 100%; */
-    padding:0 1rem;
-    height:100%;
+.mainData img{
+    height:45%;
+    width: 45%;
+    /* padding: 0 0 1rem 0; */
+    margin: 0 0 1rem 0;
+    border-radius: 1rem;
+    /* background-color: blue; */
+  
 }
-.mainData img {
-  width: 95%;
-  border-radius: 1rem;
-}
-.mainData h4 {
-  font-size: 1rem;
-  display: flex;
-  justify-content: center;
+.mainData h4{
+   font-size: 1rem;
+   /* width: 80%; */
+   display: flex;
+   justify-content: center;
   align-items: center;
 }
 
 .mainData p{
-    width:100%;
+    /* font-size: .9rem; */
+    width: 95%;
+    /* line-height: 110%; */
 }
-.mainData:hover {
-  /* height: 18rem; */
-  /* border: 1px solid #f5e9e9; */
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 1rem;
+.mainData:hover{
+    /* height: 18rem; */
+    /* border: 1px solid #F5E9E9; */
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+}
+.dbyaModal h5{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+/* .dbyaModal p{
+    width: 90%;
+    margin: 1rem auto;
+} */
+div .modalmain{
+    
+    max-width: 1000px;
+    height: 800px !important;
+}
+.modal-content{
+   
+    height: 80%;
+    
+}
+@media only screen and (max-width: 900px){
+    .mainbox{
+        
+        grid-template-columns: 50% 50% ;
+        padding: .1rem;
+        /* background-color: aqua; */
+    }
+    .mainData{
+        /* height: 17rem; */
+        gap:.5rem;
+        padding: .7rem;
+    }
+    .mainData p{
+        font-size: .7rem;
+        width: 90%;
+        /* margin: auto; */
+        line-height: 100%;
+    }
+    .mainData img{
+        height: 35%;
+        width: 55%;
+        /* padding: 0 0 1rem 0; */
+        margin: 0 0 0rem 0;
+        border-radius: 1rem;
+        /* background-color: blue; */
+      
+    }
+    
 }
 
-div .modalmain {
-  max-width: 1000px;
-  /* height: 800px !important; */
+
+@media screen and (max-width: 600px) and (min-width: 500px){
+    .modal-content:nth-child(1){
+        height: 110%;
+    }
+    
 }
-.modal-content {
-  height: 100%;
+@media screen and (max-width: 700px) and (min-width: 600px){
+    .modal-content:nth-child(1){
+   
+        height: 125%;
+        
+    }
 }
-@media only screen and (max-width: 900px) {
-  .mainbox {
-    grid-template-columns: 50% 50%;
-    padding: 0.1rem;
-    /* background-color: aqua; */
-  }
-  .mainData {
-    height: 17rem;
-    padding: 0.7rem;
-  }
-  .mainData p {
-    font-size: 0.9rem;
-    /* line-height: 100%; */
-  }
+@media screen and (max-width: 800px) and (min-width: 700px){
+    .modal-content:nth-child(1){
+   
+        height: 100%;
+    }
 }
 
-
-
-@media only screen and (max-width: 500px) {
-  .mainbox {
-    grid-template-columns: 50% 50%;
-    padding: 0.1rem;
-    /* background-color: aqua; */
-  }
-
+@media only screen and (max-width: 500px){
+    .mainbox{
+        /* gap:.2rem; */
+        grid-template-columns: 50% 50%;
+        padding: .1rem;
+        /* background-color: aqua; */
+    }
+    .modal-content{
+   
+        height: 115%;
+    }
+    
+    
 }
 @media only screen and (max-width: 350px) {
   .mainbox {
+    /* gap:.2rem; */
     grid-template-columns: 99%;
     padding: 0.1rem;
-    row-gap: 0px;
+    /* row-gap: 0px; */
     /* background-color: aqua; */
   }
 }

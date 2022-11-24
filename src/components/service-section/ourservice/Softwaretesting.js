@@ -4,10 +4,8 @@ import softwaredata from './softwaredata'
 const Softwaretesting = () => {
   return (
     <div className="softwaretesting">
-    <h3>Software Development</h3>
-    <div className="hrcontent">
-    <hr />
-    </div>
+    <h4>Software Development</h4>
+    
  
    <div className="softwaredatabox">
     {softwaredata.map((curElem)=>{
@@ -17,7 +15,7 @@ const Softwaretesting = () => {
            <img src={curElem.image} alt=""  class="center"/>
         </div>
         
-         <h4>{curElem.headings}</h4>
+         <h5>{curElem.headings}</h5>
          <p>{curElem.discrip}</p>
         </div>
        )

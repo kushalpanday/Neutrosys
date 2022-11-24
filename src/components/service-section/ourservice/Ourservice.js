@@ -10,18 +10,21 @@ import Softwaretesting from "./Softwaretesting";
 import Outsourcing from "./Outsourcing";
 import ServiceData from "./ServiceData";
 import Softwarequality from "./Softwarequality";
+import CloseIcon from "@mui/icons-material/Close";
 
 const Ourservice = () => {
+  const [open, setOpen] = React.useState(false);
+
   const [state, setstate] = useState(false);
   const [nextstate, setNextstate] = useState();
   const callMe = (item) => {
-    if (item.id == 1) {
+    if (item.id === 1) {
       setstate(!state);
       setNextstate(<Staffing />);
-    } else if (item.id == 2) {
+    } else if (item.id === 2) {
       setstate(!state);
       setNextstate(<Softwaretesting />);
-    } else if (item.id == 3) {
+    } else if (item.id === 3) {
       setstate(!state);
       setNextstate(<Outsourcing />);
     } else {
@@ -33,6 +36,8 @@ const Ourservice = () => {
     setstate(false);
   };
 
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
   return (
     <div className="Servicemainbody">
       <h2>We are currently providing IT services</h2>
@@ -47,9 +52,7 @@ const Ourservice = () => {
               key={item.id}
               onClick={() => callMe(item)}
             >
-              <div className="service-image">
-                <img src={item.image} alt="" />
-              </div>
+              <img src={item.image} alt="" />
               <h4>{item.heading}</h4>
               <p>{item.disc}</p>
             </div>
@@ -57,8 +60,10 @@ const Ourservice = () => {
         })}
       </div>
       <Modal
+        open={open}
+        onClose={handleClose}
         dialogClassName="modalmain"
-        style={{ paddingLeft: "0px" }}
+        // style={{ paddingLeft: "0px" }}
         show={state}
         className="dbyaModal"
       >

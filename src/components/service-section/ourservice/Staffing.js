@@ -6,9 +6,8 @@ import RadioButtonCheckedIcon from '@mui/icons-material/RadioButtonChecked';
 const Staffing = () => {
   return (
     <div className="staffheading">
-    <h3>Staffing</h3>
-    <div className="hrcontent">
-    <hr /></div>
+    <h4>Talent Solution</h4>
+    
     <div className="mainStaffBox bg-gradient">
     <div className="mainStaffBox1">
     <div className="mainStaffBox11">
