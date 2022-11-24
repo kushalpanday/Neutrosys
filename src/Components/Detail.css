@@ -1,0 +1,229 @@
+.detail-container{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #dfe6e9;
+    padding: 50px 10px;
+    gap: 20px;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid #bdc3c7;
+    border-top: 3px solid #0089ca;
+    width: 80%;
+    padding: 40px 20px;
+}
+
+.top-left{
+    color: #0089ca;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.top-btn{
+    outline: none;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    background-color: #0089ca;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.top-btn:hover{
+    opacity: 0.8;
+}
+
+.bottom{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 83%;
+    gap: 30px;
+}
+
+.left-top{
+    width: 360px;
+    height: 450px;
+    border: 1px solid #bdc3c7;
+    border-top: 3px solid #0089ca;
+    background-color: #fff;
+    padding: 0px 20px;
+    text-align: left;
+}
+
+ .title{
+    font-size: 23px;
+    color: #0089ca;
+    font-weight: 500;
+}
+
+.left-info{
+    font-size: 18px;
+}
+#highlight{
+    font-weight: 500;
+}
+
+.section{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+    margin-top: 15px;
+}
+
+.fa-solid{
+    font-size: 22px;
+}
+
+.inner-section{
+    text-align: left;
+}
+
+.inner-section h1{
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.left-bottom{
+    width: 360px;
+    height: 280px;
+    border: 1px solid #bdc3c7;
+    border-top: 3px solid #0089ca;
+    background-color: #fff;
+    padding: 0px 20px;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.socials .fa-brands{
+    margin-right: 25px;
+    font-size: 2.3rem;
+}
+
+.fa-square-facebook{
+    color: #3b5998;
+}
+
+.fa-linkedin{
+    color: #0077b5;
+}
+
+.fa-square-twitter{
+    color:#1a91da ;
+}
+
+.horizontal{
+    display: flex;
+    align-items: center;
+}
+
+.vertical{
+    width: 1px;
+    height: 60px;
+    background-color: #999;
+    margin-right: 20px;
+}
+
+.share-section{
+    margin: 10px 0;
+}
+.share-section .fa-solid{
+    margin-right: 10px;
+}
+
+.share-section a{
+    font-size: 17px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.fa-envelope{
+    color: #3b5998;
+}
+
+.fa-print{
+color: #0077b5;
+}
+
+.fa-copy{
+color: #1a91da;
+}
+
+.right{
+    border: 1px solid #bdc3c7;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 700px;
+    height: 940px;
+    border-top: 3px solid #0089ca;
+    background-color: #fff;
+    padding: 0 20px;
+    position: relative;
+}
+
+.job-des{
+    text-align: left;
+    margin-top: -10px;
+    margin-bottom: 1rem;
+}
+
+.right-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 5px 0;
+}
+ul{
+    padding: 0px 1rem;
+}
+ul li{
+    text-align: left;
+}
+
+.right-section span{
+    color: #0077b5;
+    font-weight: 700;
+    font-size: 15px;
+    
+}
+
+.benefits{
+    color: black;
+    font-size: 16px;
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+.italic{
+    color: #2ecc71;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.apply-btn{
+    padding: 14px 25px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background-color: #77b55a;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
