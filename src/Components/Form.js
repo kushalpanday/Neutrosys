@@ -215,7 +215,7 @@ const FormEl = () => {
             margin="dense"
             name="message"
             variant="filled"
-            placeholder="Your Meassage"
+            placeholder="Your Message"
             className="txtfield_country_code"
             autoComplete="off"
             sx={{
@@ -285,19 +285,18 @@ const FormEl = () => {
           assumenda harum odio, ipsa recusandae error facere enim neque labore.
           Architecto, alias?
         </p>
-        <div className="contact-details">Contact Details</div>
-        <br />
+        <h5 className="contact-details">Contact Details</h5>
         <div className="contact-container">
           <div className="contact">
             <div className="icon-container">
-              <i class="fa-solid fa-phone"></i>
+              <i className="fa-solid fa-phone"></i>
             </div>
             <div className="icon-text">+977-71-577820</div>
           </div>
 
           <div className="contact">
             <div className="icon-container">
-              <i class="fa-solid fa-envelope"></i>
+              <i className="fa-solid fa-envelope"></i>
             </div>
             <div className="icon-text">info@neutroline.com</div>
           </div>

@@ -168,7 +168,7 @@
 }
 .accordion-item:first-of-type .accordion-button,
 .bg-color-contract {
-  background-color: #22c55e;
+  background-color: #0f766e;
 }
 .details {
   background-color: white;
@@ -176,15 +176,20 @@
 div .accordion-button:focus {
   border: none;
   box-shadow: none;
-  color: black;
+  /* color: black; */
+}
+div .accordion-button{
+  color:white;
+  font-size: 1.1rem;
+  font-weight: 600;
 }
 .accordion-item:nth-child(2) .accordion-button,
 .bg-color-hire {
-  background-color: #1eef6bde;
+  background-color:#0f766e;
 }
 .accordion-item:nth-child(3) .accordion-button,
 .bg-color-cont2hire {
-  background-color: #0fef6136;
+  background-color: #0d9488;
 }
 /* div .accordion-button{
     background-color: #22c55e;
@@ -193,6 +198,9 @@ div .accordion-button:focus {
   color: #ffffff;
   background-color: #29008a;
   box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+.accordion-button:not(.collapsed)::after{
+  background-image:var(--bs-accordion-btn-icon);
 }
 @media screen and (max-width: 770px) {
   /* .offer{
@@ -253,7 +261,7 @@ div .accordion-button:focus {
   }
   .process{
     margin:1rem 0 ;
-    padding:1rem .5rem;
+    padding:.5rem;
   }
   .process:nth-child(1){
     margin-top:0;
