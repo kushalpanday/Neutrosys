@@ -1,0 +1,132 @@
+.ctext{
+       text-align: center;
+       padding: .8rem 0 0 0;
+}
+.coremain{
+  background-color: aqua;
+}
+
+.coregrid {
+    display: grid;
+    grid-template-columns: 30% 2% 30% 2%30%;
+    gap: 1.5rem;   
+    text-align: center;
+    padding-bottom :1rem;
+    width: 82.5%;
+    margin:auto;
+    justify-content: space-between;
+  }
+  .icon1{
+    height: 82px;
+    width: 73px;
+    margin-left: -10px;
+  }
+  .icon2{
+    height: 40px;
+    width: 50px;
+    margin-bottom: 10px
+
+  }
+  .icon3{
+    height: 50px;
+    width: auto;
+    
+  }
+  .line hr{
+    transform: rotate(180deg);
+    /* border:1px solid black; */
+    /* padding:.1rem; */
+    background-color:black;
+    width:.1rem;
+    height:80%;
+    text-align: center;
+  }
+  .cvp{
+    font-size: 1.5rem;
+  }
+  
+  .valuetext1{
+    margin-top: 5.5rem;
+    text-align: justify;
+    width: 80%;
+    /* margin: auto; */
+
+  }
+  .valuetext2{
+    margin-top: 4rem;
+    text-align: justify;
+    width: 80%;
+    /* margin: auto; */
+    
+  }
+  .valuetext3{
+    text-align: justify;
+    width: 80%;
+    /* margin: auto; */
+  }
+
+  @media only screen and (max-width: 1150px) {
+    .valuetext1{
+      width: 100%;
+  
+    }
+    .valuetext2{
+      width: 100%;
+      
+    }
+    .valuetext3{
+      width: 100%;
+    }
+
+ }
+ @media only screen and (max-width: 950px){
+  p.cvp{
+    font-size: 1.2rem;
+
+  }
+  .coregrid{
+    gap: 1rem;
+  }
+  p.corep {
+    font-size: 12px;
+  }
+
+
+ }
+ 
+
+
+
+
+
+  @media only screen and (max-width: 650px) {
+    .coregrid {
+    
+      grid-template-columns: 85% ;
+      /* text-align: center; */
+      /* margin:auto; */
+    } 
+
+    .line {
+      content-visibility: hidden;
+  }
+    .valuetext1{
+     margin-top: 0px;
+    text-align: justify;
+    width: 100%;
+    margin-left: 20px;
+  
+    }
+    .valuetext2{
+      margin-top: 0px;
+      text-align: justify;
+      width: 100%;
+      margin-left: 20px;
+      
+    }
+    .valuetext3{
+      text-align: justify;
+      width: 100%;
+      margin-left: 20px;
+    }
+  }
