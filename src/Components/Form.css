@@ -132,8 +132,9 @@ label .file_button{
 }
 
 .form-right {
-    width:28%;
-    margin-top: 90px;
+    /* width:28%; */
+    /* margin-top: 90px; */
+    margin: 5rem 1rem 1rem 1rem;
 }
 
 .connected {
@@ -230,6 +231,9 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
 div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root.Mui-focused,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover{
     background-color: white;
 }
+/* div .css-191j2fa{
+    background-color:red;
+} */
 @media (hover: none){
 div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover {
     background-color: white;
@@ -238,12 +242,14 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover {
 
 @media screen and (max-width:700px){
 .form-container{
-    padding:0;
+    padding:1rem;
 }
 }
 @media screen and (max-width:550px){
     .form-container{
         flex-direction: column;
+        padding:0;
+        gap:0;
     }
     .form-left{
         width:90%;
@@ -252,5 +258,8 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover {
     .form-right{
         width:90%;
         margin:auto;
+    }
+    .info{
+        margin-bottom:1rem;
     }
 }

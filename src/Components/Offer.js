@@ -79,8 +79,8 @@ const Offer = () => {
               distinctio iusto dignissimos.
             </div>
           </div> */}
-
-<Accordion defaultActiveKey="0" style={{width:"100%"}} flush>
+<Accordion  style={{width:"100%"}} flush={true}>
+{/* defaultActiveKey="0" */}
 <Accordion.Item eventKey="0" className="parent bg-color-contract">
         <Accordion.Header className="offer-btn" flush>Contract</Accordion.Header>
         <Accordion.Body className="details">
@@ -94,7 +94,7 @@ const Offer = () => {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1" className="parent bg-color-hire">
-        <Accordion.Header className="offer-btn" flush>Direct Hire</Accordion.Header>
+        <Accordion.Header className="offer-btn" >Direct Hire</Accordion.Header>
         <Accordion.Body className="details">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
