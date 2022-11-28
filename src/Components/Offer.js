@@ -82,7 +82,7 @@ const Offer = () => {
 <Accordion  style={{width:"100%"}} flush={true}>
 {/* defaultActiveKey="0" */}
 <Accordion.Item eventKey="0" className="parent bg-color-contract">
-        <Accordion.Header className="offer-btn" flush="true">Contract</Accordion.Header>
+        <Accordion.Header className="offer-btn">Contract</Accordion.Header>
         <Accordion.Body className="details">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad

@@ -19,7 +19,13 @@ const Different = () => {
               </div>
           </div>
         <div className="part2">
-          <img src={team} alt="" />
+        <div className='difference-circle'></div>
+        {/* <div className='diff-img-white'> */}
+          <img src="./Neutrosys/A.png" alt="" className='difference-image1 diff-img'/>
+          {/* </div> */}
+          <img src="./Neutrosys/B.png" alt="" className='difference-image2 diff-img'/>
+          <img src="./Neutrosys/C.png" alt="" className='difference-image3 diff-img'/>
+          <img src="./Neutrosys/D.png" alt="" className='difference-image4 diff-img'/>
           </div>
               <div className="part3">
                        <div className="part-content">

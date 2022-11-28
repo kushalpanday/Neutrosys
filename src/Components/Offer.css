@@ -4,6 +4,7 @@
   align-items: flex-start;
   width: 100%;
   background-color: #f5f6fa;
+  padding-bottom:1rem;
 }
 
 .left {
@@ -168,8 +169,9 @@
 }
 .accordion-item:first-of-type .accordion-button,
 .bg-color-contract {
-  background-color: #0f766e;
+  background-color: #3498db;
 }
+
 .details {
   background-color: white;
 }
@@ -179,17 +181,17 @@ div .accordion-button:focus {
   /* color: black; */
 }
 div .accordion-button{
-  color:white;
-  font-size: 1.1rem;
-  font-weight: 600;
+  /* color:white; */
+  /* font-size: 1.1rem; */
+  font-weight: 500;
 }
 .accordion-item:nth-child(2) .accordion-button,
 .bg-color-hire {
-  background-color:#0f766e;
+  background-color:#5daee4;
 }
 .accordion-item:nth-child(3) .accordion-button,
 .bg-color-cont2hire {
-  background-color: #0d9488;
+  background-color: #7dbee9;
 }
 /* div .accordion-button{
     background-color: #22c55e;
