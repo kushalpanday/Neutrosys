@@ -15,9 +15,9 @@ export default function Workwithus() {
         <>
             <div className='workwithus-maindiv'>
                 <h2>Why work with us?</h2>
-                <Container>
+                <Container className="work-with-us-container">
                     <Row className='box-row mt-3'>
-                        <Col sm={4} className='box-col'>
+                        <Col md={6} lg={4}className='box-col'>
                         <div className='parabox-text'>
                             <div className='icon1'><RiTeamFill/></div>
                             <h5 className='icon1-h5'>Team</h5>
@@ -27,7 +27,7 @@ export default function Workwithus() {
                            
                         </Col>
 
-                        <Col sm={4} className='box-col'>
+                        <Col md={6} lg={4} className='box-col'>
                         <div className='parabox-text'>
                             <div className='icon2'><GiSatelliteCommunication/></div>
                             <h5 className='icon1-h5'>Communication</h5>
@@ -36,7 +36,7 @@ export default function Workwithus() {
                         </div>
                         </Col>
 
-                        <Col sm={4} className='box-col'>
+                        <Col md={6} lg={4} className='box-col'>
                         <div className='parabox-text'>
                             <div className='icon3'><MdOutlineComputer/></div>
                             <h5 className='icon1-h5'>Technology</h5>
@@ -44,9 +44,8 @@ export default function Workwithus() {
                             of the box marketing magic we're really good at what we do.</p>
                         </div>
                         </Col>
-                    </Row>
-                    <Row className='box-row2'>
-                        <Col sm={4} className='box-col2'>
+                    {/* <Row className='box-row2'> */}
+                        <Col md={6} lg={4}className='box-col2'>
                         <div className='parabox-text'>
                             <div className='icon4'><MdGames/></div>
                             <h5 className='icon1-h5'>Game Changers</h5>
@@ -55,7 +54,7 @@ export default function Workwithus() {
                         </div>
                         </Col>
 
-                        <Col sm={4} className='box-col3'>
+                        <Col md={6} lg={4} className='box-col3'>
                         <div className='parabox-text'>
                             <div className='icon5'><BsFillSunFill/></div>
                             <h5 className='icon5-h5'>Environment Friendly</h5>
@@ -63,9 +62,9 @@ export default function Workwithus() {
                             of the box marketing magic we're really good at what we do.</p>
                         </div>
                         </Col>
+                        </Row>
 
-                        
-                    </Row>
+                    {/* </Row> */}
                 </Container>
             </div>
         </>

@@ -14,8 +14,8 @@
 .work-for-us-progress-bar-container {
   position: relative;
   margin: auto;
-  height: 10rem;
-  margin-top: 6rem;
+  height: 8rem;
+  margin-top: 4rem;
   width: 85%;
 }
 
@@ -84,7 +84,7 @@ li.active .step-box, .step-box:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 10rem;
+  /* height: 10rem; */
 }
 .work-for-us-progress-bar-container .work-for-us-line {
   margin: auto;
@@ -112,10 +112,11 @@ li.active .step-box, .step-box:hover {
 .textrow {
   justify-content: center;
   text-align: center;
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
 }
 .textcol {
   text-align: center;
+  width:80%;
   /* height: 200px; */
   padding:2rem;
   margin-bottom:2rem;
@@ -137,6 +138,17 @@ li.active .step-box, .step-box:hover {
   padding-right: 20px;
 }
 
+@media only screen and (max-width: 900px){
+  .work-for-us-progress-bar-container ul{
+    /* flex-direction: column; */
+  }
+  .work-for-us-line-container{
+/* transform: rotate(90deg); */
+/* position: relative; */
+/* top: 95px; */
+/* right: 16.3rem; */
+  }
+} 
 /* .top-row {
   padding-top: 1rem;
   justify-content: center;

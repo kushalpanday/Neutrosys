@@ -47,7 +47,6 @@ const Contractjob = () => {
                   onClick={(e) => {
                     setNumber(i);
                    setCurrentTab(e.target.getAttribute("id"));
-                   console.log(e.target.getAttribute("name"))
                   }}
                 >
                   <div
@@ -66,10 +65,14 @@ const Contractjob = () => {
 
           <div className="work-for-us-line-container">
             <div className="work-for-us-line">
+          
               <div
                 className="work-for-us-line-process"
                 style={{ width: widths[number] }}
-              ></div>
+              >
+            
+
+              </div>
             </div>
           </div>
        

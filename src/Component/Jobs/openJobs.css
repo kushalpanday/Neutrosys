@@ -110,7 +110,7 @@
     /* border: 1px solid red; */
     justify-content: space-between;
     /* border-bottom: 2px dotted gray; */
-    
+    width:100%;
     
 }
 
@@ -118,6 +118,7 @@
 {
     /* border: 1px solid red; */
     background-color: rgba(128, 128, 128, 0.068);
+    width:100%;
 }
 /* .inner-col
 {

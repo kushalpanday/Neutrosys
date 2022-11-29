@@ -10,7 +10,7 @@ function OpenJobs() {
         {" "}
         <h2>Our open Positions</h2>
         <div className="select-opt">
-          <label for="num">No. of jobs per page:&nbsp;&nbsp;</label>
+          <label htmlFor="num">No. of jobs per page:&nbsp;&nbsp;</label>
           <select name="jobs" id="num">
             <option value="number">12</option>
             {/* <option value="saab">13</option>
@@ -33,15 +33,15 @@ function OpenJobs() {
                   <Dropdown.Menu className="super-colors locationeg">
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="office"></input>
-                      <label for="horns">Afghanistan</label>
+                      <label htmlFor="horns">Afghanistan</label>
                     </div>
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="human"></input>
-                      <label for="human">Albania</label>
+                      <label htmlFor="human">Albania</label>
                     </div>
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="sales"></input>
-                      <label for="sales">Brazil</label>
+                      <label htmlFor="sales">Brazil</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -49,7 +49,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">Canada</label>
+                      <label htmlFor="technology">Canada</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -57,7 +57,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">Finland</label>
+                      <label htmlFor="technology">Finland</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -65,7 +65,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">India</label>
+                      <label htmlFor="technology">India</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -73,7 +73,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">Singapore</label>
+                      <label htmlFor="technology">Singapore</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -81,7 +81,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">Texas</label>
+                      <label htmlFor="technology">Texas</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -89,7 +89,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">United Kingdom</label>
+                      <label htmlFor="technology">United Kingdom</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -97,7 +97,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">Vietnam</label>
+                      <label htmlFor="technology">Vietnam</label>
                     </div>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -108,15 +108,15 @@ function OpenJobs() {
                   <Dropdown.Menu className="super-colors2">
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="office"></input>
-                      <label for="office">Office Administrator</label>
+                      <label htmlFor="office">Office Administrator</label>
                     </div>
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="human"></input>
-                      <label for="human">Human Resource</label>
+                      <label htmlFor="human">Human Resource</label>
                     </div>
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="sales"></input>
-                      <label for="sales">Sales/Marketing</label>
+                      <label htmlFor="sales">Sales/Marketing</label>
                     </div>
                     <div className="jobitems">
                       <input
@@ -124,7 +124,7 @@ function OpenJobs() {
                         id="tech"
                         name="technology"
                       ></input>
-                      <label for="technology">Technology</label>
+                      <label htmlFor="technology">Technology</label>
                     </div>
                   </Dropdown.Menu>
                 </Dropdown>
@@ -135,15 +135,15 @@ function OpenJobs() {
                   <Dropdown.Menu className="super-colors3">
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="full"></input>
-                      <label for="full">Full Time</label>
+                      <label htmlFor="full">Full Time</label>
                     </div>
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="part"></input>
-                      <label for="part">Part Time</label>
+                      <label htmlFor="part">Part Time</label>
                     </div>
                     <div className="jobitems">
                       <input type="checkbox" id="tech" name="cantract"></input>
-                      <label for="contract">Contract</label>
+                      <label htmlFor="contract">Contract</label>
                     </div>
                   </Dropdown.Menu>
                 </Dropdown>

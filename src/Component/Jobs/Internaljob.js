@@ -62,7 +62,7 @@ const Internaljob = () => {
                 <div>
                 
                     <Row className='openposition-row'>
-                        <Col lg={3} className='openposition-col'>
+                        <Col lg={3} sm={12}className='openposition-col'>
                         <Row className='heading-rowbg'>
                                 <h6>Sales/Marketing</h6>
                                 <Col className='text-col'>
@@ -82,7 +82,7 @@ const Internaljob = () => {
                                 
                             
                         </Col>
-                        <Col lg={3} className='openposition-col'>
+                        <Col lg={3} sm={12} className='openposition-col'>
                         <Row className='heading-rowbg'>
                                 <h6>Sales/Marketing</h6>
                                 <Col className='text-col'>
