@@ -9,16 +9,21 @@
 {
     border: 1px solid blue;
 } */
-.bgjob
+.container.bgjob
 {
     /* border: 1px solid red; */
-    height: 50px;
-    
+    /* height: 50px; */
+    display: flex;
+    justify-content: space-between;    
     background-color: #CDE2B8;
+    padding: 0.5rem 1rem;
+}
+.div-right{
+
 }
 .alljob-div
 {
-    float: left;
+    /* float: left; */
 }
 .alljob-div h3
 {
@@ -31,9 +36,12 @@
 .div-right
 {
     /* border: 1px solid red; */
-    float: right;
+    /* float: right; */
     text-align: center;
-    margin: 6px 0 0 0px;
+    display: flex;
+    
+    gap:1rem;
+    /* margin: 6px 0 0 0px; */
 }
 
 #dropdown-custom-1
@@ -41,7 +49,7 @@
     background-color: #CDE2B8;
     color: black;
     border: none;
-    margin-right: 35px;
+    /* margin-right: 35px; */
    
 }
 
@@ -59,22 +67,27 @@
 {
     background-color: #CDE2B8;
     width: 180px;
+    margin:auto;
 }
+
 .super-colors2
 {
     background-color: #CDE2B8;
     width: 200px;
+    margin:auto;
 }
 .super-colors3
 {
     background-color: #CDE2B8;
-   
+   margin:auto;
+   width:200px;
 }
 .locationeg
 {
     height: 150px;
     overflow-y: scroll;
     overflow-x: hidden;
+
 }
 .jobitems
 {
@@ -186,4 +199,40 @@
 {
     padding-left: 1.2rem;
     font-size: 1rem;
+}
+@media only screen and (max-width: 1000px){
+    .outer-col{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .bgjob{
+        /* flex-direction: column; */
+        gap:.2rem;
+    }
+    .div-right{
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap:wrap;
+    }
+    button.filter-btn.my-2.btn.btn-primary {
+        width: 6rem;
+        margin: auto;
+    }
+    .show.dropdown.btn-group {
+        flex-direction: column;
+    }
+    .navbar-nav .dropdown-menu{
+            position:absolute;
+    }
+}
+@media only screen and (max-width: 480px){
+    .div-right{
+        /* flex-direction: column; */
+
+    }
+    .filter-btn{
+        width:20%;
+        margin:auto;
+    }
 }

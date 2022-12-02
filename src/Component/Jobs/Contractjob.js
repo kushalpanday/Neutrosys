@@ -78,7 +78,7 @@ const Contractjob = () => {
        
         </div>
       </div>
-      <div style={{ textAlign: "center" }}>
+      <div style={{ textAlign: "center" }} className="work-for-us-content">
             {currentTab === "1" ? (
               <Textcoldescribe />
             ) : currentTab === "2" ? (
@@ -93,6 +93,51 @@ const Contractjob = () => {
               <Textcoldescribe6 />
             )}
           </div>
+{/* responsiveness */}
+<div className="work-for-us-progress-bar-responsive-container">
+          <ul>
+            {titles.map((title, i) => {
+              return (
+                <li
+                  name={title.name}
+                  key={i}
+                  id={title.id}
+                  className={`work-for-us-step ${i <= number && "active"}`}
+                  onClick={(e) => {
+                    setNumber(i);
+                   setCurrentTab(e.target.getAttribute("id"));
+                  }}
+                >
+                  <div
+                    className="step-box"
+                    name={title.name}
+                    id={title.id}
+                  ></div>{" "}
+                  <div className="step-inner" id={title.id}>
+                    {title.name}
+                  </div>
+           
+                </li>
+              );
+            })}
+          </ul>
+          <br />
+
+          <div className="work-for-us-line-responsive-container">
+            <div className="work-for-us-line">
+          
+              <div
+                className="work-for-us-line-process"
+                style={{ width: widths[number] }}
+              >
+            
+
+              </div>
+            </div>
+          </div>
+       
+        </div>
+        
       {/* open position */}
       <OpenJobs />
     </>

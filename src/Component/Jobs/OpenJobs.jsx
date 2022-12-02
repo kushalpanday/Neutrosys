@@ -1,6 +1,6 @@
 import Dropdown from "react-bootstrap/Dropdown";
 import React from "react";
-import { Button, ButtonGroup, Col, Container, Row } from "react-bootstrap";
+import { Button, ButtonGroup, Col, Container, Nav, Navbar, NavDropdown, Row } from "react-bootstrap";
 import "./openJobs.css";
 
 function OpenJobs() {
@@ -20,12 +20,12 @@ function OpenJobs() {
         </div>
         <Row className="outer-row">
           <Col sm={10} className="outer-col">
-            <div className="bgjob">
-              <div className="alljob-div">
+            {/* <div className="bgjob"> */}
+              {/* <div className="alljob-div">
                 <h3>All jobs</h3>
-              </div>
+              </div> */}
 
-              <div className="div-right">
+              {/* <div className="div-right">
                 <Dropdown as={ButtonGroup}>
                   <Dropdown.Toggle id="dropdown-custom-1">
                     Location
@@ -147,11 +147,148 @@ function OpenJobs() {
                     </div>
                   </Dropdown.Menu>
                 </Dropdown>
-                <Button variant="primary" className="filter-btn">
+                <Button variant="primary" className="filter-btn my-2">
+                  Filter
+                </Button>
+              </div> */}
+              
+              <Navbar collapseOnSelect expand="md" >
+      <Container className="bgjob">
+        <Navbar.Brand href="#home">All jobs</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto">
+            <div className="div-right">
+                <Dropdown as={ButtonGroup}>
+                  <Dropdown.Toggle id="dropdown-custom-1">
+                    Location
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu className="super-colors locationeg">
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="office"></input>
+                      <label htmlFor="horns">Afghanistan</label>
+                    </div>
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="human"></input>
+                      <label htmlFor="human">Albania</label>
+                    </div>
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="sales"></input>
+                      <label htmlFor="sales">Brazil</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">Canada</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">Finland</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">India</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">Singapore</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">Texas</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">United Kingdom</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">Vietnam</label>
+                    </div>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown as={ButtonGroup}>
+                  <Dropdown.Toggle id="dropdown-custom-1">
+                    Categories
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu className="super-colors2">
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="office"></input>
+                      <label htmlFor="office">Office Administrator</label>
+                    </div>
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="human"></input>
+                      <label htmlFor="human">Human Resource</label>
+                    </div>
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="sales"></input>
+                      <label htmlFor="sales">Sales/Marketing</label>
+                    </div>
+                    <div className="jobitems">
+                      <input
+                        type="checkbox"
+                        id="tech"
+                        name="technology"
+                      ></input>
+                      <label htmlFor="technology">Technology</label>
+                    </div>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Dropdown as={ButtonGroup}>
+                  <Dropdown.Toggle id="dropdown-custom-1">
+                    Job Types
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu className="super-colors3">
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="full"></input>
+                      <label htmlFor="full">Full Time</label>
+                    </div>
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="part"></input>
+                      <label htmlFor="part">Part Time</label>
+                    </div>
+                    <div className="jobitems">
+                      <input type="checkbox" id="tech" name="cantract"></input>
+                      <label htmlFor="contract">Contract</label>
+                    </div>
+                  </Dropdown.Menu>
+                </Dropdown>
+                <Button variant="primary" className="filter-btn my-2">
                   Filter
                 </Button>
               </div>
-            </div>
+       </Nav>
+       </Navbar.Collapse>
+      </Container>
+    </Navbar>
+            {/* </div> */}
 
             <div className="div-bggrey">
               <Row className="inner-row">
