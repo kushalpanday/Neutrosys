@@ -14,7 +14,7 @@ const softwaredata=[
     {
         id:3,
         image:"../images/computer3.jpeg",
-        headings:"Enterprise Software Development",
+        headings:"Software Development",
         discrip:"An innovative coders and a structured experts for the maximum benefit to your business."
     },
     {

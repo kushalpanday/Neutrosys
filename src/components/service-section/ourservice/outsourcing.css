@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: -10px;
+    margin-top: -5px;
 }
 .hrcontent hr{
     width: 20%;
@@ -62,33 +62,64 @@
     margin-top: 5rem;
 }
 .box11 p{
-   width: 85%;
-   justify-content: center;
-    text-align: justify;
-    margin-top: -5px;
+   width: 90%;
+   text-align: justify;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    word-spacing: -0.05em;
+   
 }
-@media only screen and (max-width: 550px){
+@media only screen and (max-width: 890px){
+    .outbox2 img{
+        margin-top: 4.5rem;
+    }
+}
+@media only screen and (max-width: 750px){
+    .outbox2 img{
+        margin-top: 6.5rem;
+    }
+}
+@media only screen and (max-width: 660px){
+    .outbox2 img{
+        margin-top: 8.5rem;
+    }
+}
+@media only screen and (max-width: 625px){
     .outsourcingbox{
         display: flex;
         flex-direction: column;
+    
     }
     .box11{
-        margin-top: 5%;
+        margin-top: 1%;
     }
     .outbox2 img{
-        
+        margin-top: 0;
         width:50%;
-        margin-top:5%;
+        /* margin-top:5%; */
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
+    .outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
+        margin-top: 1rem;
+    }
+    .outbox2{
+        margin: 1rem 0;
+    }
+    .box11 p{
+        width: 80%;
+        /* justify-content: center;
+         text-align: justify; */
+         text-align: justify;
+         margin-top: -5px;
+     }
     
   }
 
   @media screen and (max-width: 700px) and (min-width: 550px){
     .outbox2 img{
-         margin-top:80%;
+         /* margin-top:80%; */
         
     }
 }

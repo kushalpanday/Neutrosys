@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState ,useEffect} from "react";
 import "./ourservice.css";
 import data from "./data";
 import { servicedata } from "./ServiceData";
@@ -12,9 +12,11 @@ import ServiceData from "./ServiceData";
 import Softwarequality from "./Softwarequality";
 import CloseIcon from '@mui/icons-material/Close';
 
-const Ourservice = () => {
+const Ourservice = ({closeme}) => {
   const [state, setstate] = useState(false);
   const [nextstate, setNextstate] = useState();
+ 
+
   const callMe = (item) => {
     if (item.id == 1) {
       setstate(!state);
@@ -37,9 +39,9 @@ const Ourservice = () => {
   };
 
   return (
-    <div className="Servicemainbody">
-    <h3>We are currently providing IT services</h3>
-    <p style={{color: "blue"}}>We provide services from USA, Nepal, India, and Finland.</p>
+    <div className="Servicemainbody ">
+    <h2>We are currently providing IT services</h2>
+    <p>We provide services from USA, Nepal, India, and Finland.</p>
       <div className="mainbox">
         {data.map((item) => {
           return (
@@ -47,7 +49,8 @@ const Ourservice = () => {
               className="mainData"
               key={item.id}
               onClick={() => callMe(item)}
-            >  <div className="serviceimage">
+            > 
+            <div className="serviceimage">
             <img src={item.image} alt="" />
             </div>
               
@@ -57,9 +60,9 @@ const Ourservice = () => {
           );
         })}
       </div>
-      <Modal dialogClassName="modalmain" style={{paddingLeft:"0px"}}  show={state} className="dbyaModal">
-        <Modal.Header className="modalheader" className="border-0" >
-        <CloseIcon onClick={closeButton}  className="closeicon" />
+      <Modal   dialogClassName="modalmain" style={{paddingLeft:"0px"}}  show={state} onHide={closeButton} className="dbyaModal" >
+        <Modal.Header onClick={closeButton}  className="modalheader" className="border-0" >
+        <div className="micon bg-danger"><CloseIcon   className="closeicon" /></div> 
         </Modal.Header>
         <Modal.Body className="modalbody">{nextstate}</Modal.Body>
       </Modal>

@@ -1,14 +1,14 @@
 // import Letschat from "../letschat/Letschat"
 const data=[
 { id:1,
-    image:"https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/Flying_drone_re_ti5k.svg",
+    image:"https://miro.medium.com/max/1194/1*u6wsaofSWkZG4_-7vGto2g.png",
 heading:"Talent Solution",
 disc:" Firebase provides tools to grow your app and business, for startups & global enterprises.  "
 },
 {id:2,
     image:" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-eYPl1o6UaZGnv07HoFeVMQ3fmoux-Gj9tRA6TxNP42uA7xhmFqiMZegsQLMC7bkQUk&usqp=CAU",
 heading:"Software Development",
-disc:"using client-side and server-side programming to develop an application."
+disc:"Conceiving, Specifying, Designing, Programming, Documenting, Testing, and bug fixing"
 },
 {id:3,
     image:"https://miro.medium.com/max/1400/1*mDuAvJM9_B_IDlfYiQ2P8Q.png",

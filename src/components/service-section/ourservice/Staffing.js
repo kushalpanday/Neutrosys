@@ -10,7 +10,7 @@ const Staffing = () => {
     
     <div className="mainStaffBox bg-gradient">
     <div className="mainStaffBox1">
-    <div className="mainStaffBox11">
+    <div className="mainStaffBox11 box111">
     <RadioButtonCheckedIcon fontSize="small" className='staffBoxHeadicon' />
     <div className="staffBoxHead">
     <h5>Direct Hire</h5>
