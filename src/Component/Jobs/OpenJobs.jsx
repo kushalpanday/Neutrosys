@@ -2,8 +2,12 @@ import Dropdown from "react-bootstrap/Dropdown";
 import React from "react";
 import { Button, ButtonGroup, Col, Container, Row } from "react-bootstrap";
 import "./openJobs.css";
-
+import { BrowserRouter, Routes, Route,useNavigate } from "react-router-dom";
 function OpenJobs() {
+  const navi =useNavigate ();
+  const imcalled =()=>{
+    navi('/Details/sales');
+  }
   return (
     <div>
       <Container>
@@ -157,7 +161,7 @@ function OpenJobs() {
               <Row className="inner-row">
                 <Col sm={9} className="inner-col">
                   <h5>
-                    <a href="/#">Sales Intern -On-site</a>
+                    <a href="/#"   >Sales Intern -On-site</a>
                   </h5>
                   <h6>Irving, Texas, United States | Technology | Full Time</h6>
                   <p>
@@ -184,7 +188,7 @@ function OpenJobs() {
             <Row className="inner-row">
               <Col sm={9} className="inner-col">
                 <h5>
-                  <a href="/#">Sales Intern</a>
+                  <a onClick={imcalled}>Sales Intern</a>
                 </h5>
                 <h6>Irving, Texas, United States | Technology | Full Time</h6>
                 <p>
