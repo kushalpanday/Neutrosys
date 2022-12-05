@@ -146,15 +146,6 @@
 
 @media only screen and (max-width: 991px){
 
-.box-col{
-  /* margin:5rem 0 0 2rem; */
-}
-.box-col2{
-  /* margin:0 1rem 1rem 7rem; */
-}
-.box-col3{
-  /* margin-left:9rem; */
-}
 .box-col,.box-col2,.box-col3{
   height: 180px;
   width: 180px;
@@ -166,6 +157,7 @@
   margin-right:2rem;
   margin:0;
   font-size:.9rem;
+  width:92%;
 }
 .box1-text{
   margin:0;
@@ -174,7 +166,7 @@
 .box-row{
   column-gap:5.5rem;
 }
-.icon1-h5,.icon1,.icon2,.icon3,.icon4,.icon5{
+.icon1-h5,.icon1,.icon2,.icon3,.icon4{
   margin-right:0;
 }
 }

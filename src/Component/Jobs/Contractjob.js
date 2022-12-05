@@ -16,12 +16,13 @@ const Contractjob = () => {
     {
       id: "1",
       name: "Know your need",
+      desc:"Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",
     },
-    { id: 2, name: "Match skill with opportunities" },
-    { id: 3, name: "Prepare for interview" },
-    { id: 4, name: "Smooth Onboarding" },
-    { id: 5, name: "Continuous Follow Up" },
-    { id: 6, name: "New Opportunities" },
+    { id: 2, name: "Match skill with opportunities" , desc:"Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field."},
+    { id: 3, name: "Prepare for interview", desc:"Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.", },
+    { id: 4, name: "Smooth Onboarding", desc:"Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",},
+    { id: 5, name: "Continuous Follow Up",desc:"Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.", },
+    { id: 6, name: "New Opportunities", desc:"Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",},
   ];
   const [currentTab, setCurrentTab] = useState("1");
 
@@ -96,6 +97,19 @@ const Contractjob = () => {
 {/* responsiveness */}
 <div className="work-for-us-progress-bar-responsive-container">
           <ul>
+          <div className="work-for-us-line-responsive-container">
+            <div className="work-for-us-line">
+          
+              <div
+                className="work-for-us-line-process"
+                style={{ width: widths[number] }}
+              >
+            
+
+              </div>
+            </div>
+          </div>
+       
             {titles.map((title, i) => {
               return (
                 <li
@@ -114,7 +128,8 @@ const Contractjob = () => {
                     id={title.id}
                   ></div>{" "}
                   <div className="step-inner" id={title.id}>
-                    {title.name}
+                    <h5>{title.name}</h5>
+                     <p> {title.desc}</p>
                   </div>
            
                 </li>

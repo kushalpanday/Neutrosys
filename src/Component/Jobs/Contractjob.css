@@ -147,15 +147,21 @@ li.active .step-box, .step-box:hover {
   }
   .work-for-us-progress-bar-responsive-container,.work-for-us-line-responsive-container{
     display: block;
-    height:45rem;
+  /* position:static; */
+  }
+  .work-for-us-progress-bar-responsive-container{
+    height:100%;
+    width:100%;
   }
   .work-for-us-line{
     transform: rotate(90deg);
   }
   .work-for-us-progress-bar-container ul, .work-for-us-progress-bar-responsive-container ul{
   flex-direction: column;
-  right:4.5rem;
+  /* right:4.5rem; */
   width:100%;
+  margin:auto;
+  position: static;
 
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-line{
@@ -167,10 +173,13 @@ li.active .step-box, .step-box:hover {
   .work-for-us-progress-bar-responsive-container li{
     display: flex;
     height:7.4rem;
+    /* width:80%; */
+    width:500px;
+    height:100%;
   }
 
   .work-for-us-progress-bar-responsive-container li .step-inner{
-    /* width:100%; */
+    width:80%;
     margin:0;
     text-align:left;
   }

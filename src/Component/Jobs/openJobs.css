@@ -236,3 +236,9 @@
         margin:auto;
     }
 }
+@media only screen and (max-width: 405px){
+    .div-right{
+        width:70%;
+        margin: auto;
+    }
+}

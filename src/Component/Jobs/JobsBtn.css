@@ -47,6 +47,11 @@
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
 }
+.job-btn{
+  height: 100%;
+  display: block;
+  margin:1% auto;
+}
 @media only screen and (max-width: 576px){
   .contract-btn{
     width: 40%;
