@@ -1,4 +1,4 @@
-import React from 'react';
+import React ,{useRef} from 'react';
 import "./Detail.css";
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
@@ -6,9 +6,14 @@ import Col from 'react-bootstrap/Col';
 import { MdEmail } from 'react-icons/md'; 
 import { HiPrinter } from 'react-icons/hi'; 
 import { MdFileCopy } from 'react-icons/md'; 
-
+import ReactToPrint from 'react-to-print';
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import swal from 'sweetalert';
 
 const Detail = () => {
+    
+    const Componentref =useRef();
+    
   return (
       <div className="main-divbg">
       <Container className='details-container'>
@@ -69,9 +74,21 @@ const Detail = () => {
                         </Col>
                         <Col sm={6} className='share-col2'>
                             <div className='vertical-div'>
-                                <p><a href='#'><MdEmail/>&nbsp;&nbsp;<span>Email this job</span></a></p>
-                                <p><a href='#'><HiPrinter/>&nbsp;&nbsp;<span>print</span></a></p>
-                                <p><a href='#'><MdFileCopy/>&nbsp;&nbsp;<span>Copy job link</span></a></p>
+                                <p><a href='#'><MdEmail/>&nbsp;&nbsp;<span onClick={(e) => {window.location.href ='mailto:neutroline@gmail.com'}}>Email this job</span></a></p>
+                                <p><a><HiPrinter/><ReactToPrint trigger={()=> <span>print me</span>} 
+                                content={()=>Componentref.current}
+                               /></a></p>
+                                <p><a href='#'><MdFileCopy/>&nbsp;&nbsp;<span><CopyToClipboard
+                                text="http://localhost:3000/Details/sales#"
+                                onCopy={() =>  
+                                    swal({
+                                        title: "Good job!",
+                                        text: "Job link has been copied!",
+                                        icon: "success",
+                                        button: "ok",
+                                      })}>
+                                  <span>Copy</span>
+                                </CopyToClipboard></span></a></p>
                             </div>
                         </Col>
                     </Row>
@@ -80,7 +97,7 @@ const Detail = () => {
             </Row>
         </Col>
         
-        <Col sm={8} className='right-col'>
+        <Col sm={8} className='right-col'  ref={Componentref}  >
             <h3>Job Description</h3>
              <p>Neutrosys Inc is looking for a few recent graduate individuals to join a growing office in the staffing 
             business. This is a great opportunity to get your foot into the door with a staffing firm to start a career
