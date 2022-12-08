@@ -80,7 +80,8 @@ li.active .step-box, .step-box:hover {
   transform: translateX(-50%);
   transition: all ease 0.2s;
 }
-.work-for-us-line-container, .work-for-us-line-responsive-container {
+.work-for-us-line-container{
+  /* , .work-for-us-line-responsive-container  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +98,7 @@ li.active .step-box, .step-box:hover {
   border-radius: 5rem;
   transition: all 0.9s ease;
 }
-.work-for-us-progress-bar-container .work-for-us-line-process, .work-for-us-progress-bar-responsive-container .work-for-us-line-process {
+.work-for-us-progress-bar-container .work-for-us-line-process {
   content: "";
   /* width: 0%; */
   height: 100%;
@@ -151,33 +152,91 @@ li.active .step-box, .step-box:hover {
   }
   .work-for-us-progress-bar-responsive-container{
     height:100%;
-    width:100%;
+    width:86%;
+    margin:auto;
+    background: transparent;
+    color: #333;
   }
-  .work-for-us-line{
+
+  .work-for-us-progress-bar-responsive-container .work-for-us-step{
+    padding:30px 30px 10px 50px;
+  }
+  .work-for-us-progress-bar-responsive-container .work-for-us-step {
+    text-align:left;
+  }
+
+  .work-for-us-progress-bar-responsive-container .work-for-us-step h2{
+    position: relative;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+  }
+  .work-for-us-progress-bar-responsive-container .work-for-us-step h2:before{
+    content: '';
+    display: block;
+    height: 2rem;
+    width: 2rem;
+    z-index:2;
+    border-radius: 50%;
+    background: linear-gradient(to right, #c8f3c6 0%, #3573d6ee 100%);
+    position: absolute;
+    top: 0;
+    left: -2.7rem;
+  }
+  .work-for-us-progress-bar-responsive-container .work-for-us-line-process{
+    content: "";
+    height: 20%;
+    width: .8rem;
+    background: #045ce9;
+    background: linear-gradient(to right, #c8f3c6 0%, #3573d6ee 100%);
+    position: absolute;
+    z-index: 2;
+    border-radius: 5rem;
+    transition: all ease 0.9s;
+  }
+  /* div .work-for-us-progress-bar-responsive-container .work-for-us-line:before{
+    content: '';
+    display: block;
+    height: 85rem;
+    width: 1rem;
+    background-color: #d8d8d8;
+    position: absolute;
+    top: 8rem;
+    left: 3rem;
+  } */
+  /* .work-for-us-line{
     transform: rotate(90deg);
-  }
-  .work-for-us-progress-bar-container ul, .work-for-us-progress-bar-responsive-container ul{
+  } */
+  /* .work-for-us-progress-bar-container ul, .work-for-us-progress-bar-responsive-container ul{
   flex-direction: column;
-  /* right:4.5rem; */
   width:100%;
   margin:auto;
   position: static;
 
-  }
+  } */
   .work-for-us-progress-bar-responsive-container .work-for-us-line{
-    right:18.5rem;
-    top:18rem;
-    width:100%;
+    left:1rem;
+    /* background-color: red; */
+    top:3rem;
+    z-index:-1;
+    height: 83%;
+    width:.8rem;
+    /* width:850px; */
+    /* width:clamp() */
+    /* max:850px  min:*/
+    /* 626px, 522px,426,384, */
 
   }
   .work-for-us-progress-bar-responsive-container li{
     display: flex;
     height:7.4rem;
     /* width:80%; */
-    width:500px;
+    width:95%;
     height:100%;
   }
-
+  .work-for-us-progress-bar-responsive-container li p{
+    text-transform: lowercase;
+  }
   .work-for-us-progress-bar-responsive-container li .step-inner{
     width:80%;
     margin:0;
@@ -187,3 +246,7 @@ li.active .step-box, .step-box:hover {
     background-color:#d0cccc; 
   }
 } 
+@media only screen and (max-width: 500px){
+.work-for-us-progress-bar-responsive-container{
+  width:100%;
+}}

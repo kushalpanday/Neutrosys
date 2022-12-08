@@ -6,7 +6,7 @@ import "./openJobs.css";
 function OpenJobs() {
   return (
     <div>
-      <Container>
+      <Container className="openjob-container">
         {" "}
         <h2>Our open Positions</h2>
         <div className="select-opt">

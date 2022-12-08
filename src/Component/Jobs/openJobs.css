@@ -17,6 +17,7 @@
     justify-content: space-between;    
     background-color: #CDE2B8;
     padding: 0.5rem 1rem;
+    width:100%;
 }
 .div-right{
 
@@ -217,7 +218,7 @@
     }
     button.filter-btn.my-2.btn.btn-primary {
         width: 6rem;
-        margin: auto;
+        /* margin: auto; */
     }
     .show.dropdown.btn-group {
         flex-direction: column;
@@ -227,18 +228,45 @@
     }
 }
 @media only screen and (max-width: 480px){
-    .div-right{
-        /* flex-direction: column; */
-
-    }
+ 
     .filter-btn{
         width:20%;
         margin:auto;
     }
 }
-@media only screen and (max-width: 405px){
+@media only screen and (max-width: 520px){
     .div-right{
-        width:70%;
-        margin: auto;
+        gap:.4rem;
     }
+    button.filter-btn.my-2.btn.btn-primary{
+        width:4rem;
+        margin:0;
+    }
+}
+@media only screen and (max-width: 410px){
+.div-right{
+    gap:0;
+    /* justify-content: space-between; */
+}
+.div-right button{
+    /* padding:10px; */
+    font-size: .9rem;
+}
+}
+@media only screen and (max-width: 370px){
+.container.bgjob{
+    padding:0.4rem;
+}
+}
+@media only screen and (max-width: 665px){
+    .outer-col{
+        padding:0;
+    }
+    .openjob-container{
+        width:95%;
+    }
+    .bgjob{
+        width:100%;
+    }
+
 }
