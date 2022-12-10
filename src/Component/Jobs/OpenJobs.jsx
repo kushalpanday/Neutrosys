@@ -160,7 +160,7 @@ function OpenJobs() {
           <Nav className="ms-auto">
             <div className="div-right">
                 <Dropdown as={ButtonGroup}>
-                  <Dropdown.Toggle id="dropdown-custom-1">
+                  <Dropdown.Toggle id="dropdown-custom-1" className="openpos-btn">
                     Location
                   </Dropdown.Toggle>
                   <Dropdown.Menu className="super-colors locationeg">
@@ -235,7 +235,7 @@ function OpenJobs() {
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown as={ButtonGroup}>
-                  <Dropdown.Toggle id="dropdown-custom-1">
+                  <Dropdown.Toggle id="dropdown-custom-1" className="openpos-btn">
                     Categories
                   </Dropdown.Toggle>
                   <Dropdown.Menu className="super-colors2">
@@ -262,7 +262,7 @@ function OpenJobs() {
                   </Dropdown.Menu>
                 </Dropdown>
                 <Dropdown as={ButtonGroup}>
-                  <Dropdown.Toggle id="dropdown-custom-1">
+                  <Dropdown.Toggle id="dropdown-custom-1" className="openpos-btn">
                     Job Types
                   </Dropdown.Toggle>
                   <Dropdown.Menu className="super-colors3">

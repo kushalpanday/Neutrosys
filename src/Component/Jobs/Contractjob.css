@@ -159,7 +159,7 @@ li.active .step-box, .step-box:hover {
   }
 
   .work-for-us-progress-bar-responsive-container .work-for-us-step{
-    padding:30px 30px 10px 50px;
+    padding:30px 30px 10px 60px;
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-step {
     text-align:left;
@@ -169,7 +169,7 @@ li.active .step-box, .step-box:hover {
     position: relative;
     font-size: 1.5rem;
     text-transform: uppercase;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-step h2:before{
     content: '';
@@ -178,15 +178,15 @@ li.active .step-box, .step-box:hover {
     width: 2rem;
     z-index:2;
     border-radius: 50%;
-    background: linear-gradient(to right, #c8f3c6 0%, #3573d6ee 100%);
+    background: linear-gradient(to right, #045ce9 0%, #fff 100%);
     position: absolute;
     top: 0;
-    left: -2.7rem;
+    left: -3.3rem;
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-line-process{
     content: "";
     height: 20%;
-    width: .8rem;
+    width: .7rem;
     background: #045ce9;
     background: linear-gradient(to right, #c8f3c6 0%, #3573d6ee 100%);
     position: absolute;
@@ -215,12 +215,12 @@ li.active .step-box, .step-box:hover {
 
   } */
   .work-for-us-progress-bar-responsive-container .work-for-us-line{
-    left:1rem;
+    left:1.1rem;
     /* background-color: red; */
     top:3rem;
     z-index:-1;
-    height: 83%;
-    width:.8rem;
+    height: 82%;
+    width:.7rem;
     /* width:850px; */
     /* width:clamp() */
     /* max:850px  min:*/
