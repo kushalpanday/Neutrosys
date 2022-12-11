@@ -21,9 +21,12 @@ function Body() {
             </p>
             </div>
             <div className='textgrid'>
-            <h4 className='title12'>Job title</h4><p>react</p>
-            <h4 className='title12'>Job id at neutrosys </h4><p>12345</p>
-            <h4 className='title12'>Job Location</h4><p>react</p>
+            <h4 className='title12'>Subject</h4><p>Internship for java</p>
+            <h4 className='title12'>Full name :</h4><p>12345</p>
+            <h4 className='title12'>email : </h4><p> <a href='abc@gmail.com'>abc@gmail.com</a></p>
+            <h4 className='title12'>phone number : </h4><p>4342859348539</p>
+            <h4 className='title12'>location: </h4><p>kathmandu</p>
+            <h4 className='title12'>messaage :</h4><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, iusto.</p>
 
 
             </div>

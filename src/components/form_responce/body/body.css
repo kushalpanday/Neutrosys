@@ -12,8 +12,8 @@
 .textgrid{
   margin-top: 20px;
   display: grid;
-  grid-template-columns: 20% 15%;
-  gap:0px;
+  grid-template-columns: 20% 30%;
+  gap:1rem;
   margin-left: 48px;
   
 
@@ -33,7 +33,9 @@ h4.regards {
   margin-left: 48px;
 
 }
-  
+p{
+  margin:0;
+}  
   @media only screen and (max-width: 600px) {
         .bodymain {
           width: 80%;
