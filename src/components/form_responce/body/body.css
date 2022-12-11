@@ -1,0 +1,53 @@
+    .bodymain {
+      
+      width: 70%;
+      margin: auto;
+      border-left: 30px solid #eaeaea63;
+      border-right: 30px solid #eaeaea63;
+  }
+  .Nameofsencer {
+    margin: 0px;
+    padding: 20px;
+}
+.textgrid{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 20% 15%;
+  gap:0px;
+  margin-left: 48px;
+  
+
+}
+.LetterText {
+  width: 90%;
+  margin: auto;
+  padding-bottom: 10px;
+}
+h4.title12 {
+  margin: 0px;
+}
+h4.regards {
+  margin: 0px;
+}
+.regards{
+  margin-left: 48px;
+
+}
+  
+  @media only screen and (max-width: 600px) {
+        .bodymain {
+          width: 80%;
+      margin: auto;
+      
+  }
+  .textgrid{
+    
+    margin-left: 20px;
+  
+    
+  }
+  .regards{
+    margin-left: 20px;
+  
+  }
+}

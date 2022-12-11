@@ -1,0 +1,35 @@
+p.foottext {
+    margin: 0px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+  .footer_Div {
+    height: 90px;
+    background: #eaeaea63;
+  }
+  h5.headingText {
+    display: block;
+    text-align: center;
+    color: #3d5a80;
+    margin: 0px;
+    padding-bottom: 15px;
+    }
+    .footMain {
+      /* padding-top: 25px; */
+      width: 70%;
+      margin: auto;
+      /* border-top: 25px solid #eaeaea63; */
+      border-left: 30px solid #eaeaea63;
+      border-right: 30px solid #eaeaea63;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .footer_Div {
+      width: 100%;
+      height: auto;
+    }
+    
+  }
+  
