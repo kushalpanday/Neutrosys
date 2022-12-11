@@ -1,11 +1,12 @@
 import React from "react";
 import { TextField, Button } from "@mui/material";
 import "./Form.css";
-import { useForm } from "react-hook-form";
+import {Controller, useForm } from "react-hook-form";
 const FormEl = () => {
   const {
     register,
     handleSubmit,
+    control,
     reset,
     resetField,
     formState: { errors },
@@ -232,34 +233,34 @@ const FormEl = () => {
             {...register("message")}
           /> */}
 
-<TextField
-                fullWidth
-                multiline
-                rows={3}
-                label="Message"
-                margin="dense"
-                name="message"
-                variant="filled"
-                placeholder="Your Message"
-                className="txtfield_country_code"
-                // value={myForm.values.message}
-                // onChange={myForm.handleChange}
-                // error={!!myForm.errors.companyName}
-                // helperText={myForm.errors.message}
-                autoComplete="off"
-                sx={{
-                  "& .MuiFilledInput-underline:before": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:after": {
-                    borderBottom: "none",
-                  },
-                  "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
-                    borderBottom: "none",
-                  },
-                }}
-                {...register("message")}
-              />
+          <TextField
+            fullWidth
+            multiline
+            rows={3}
+            label="Message"
+            margin="dense"
+            name="message"
+            variant="filled"
+            placeholder="Your Message"
+            className="txtfield_country_code"
+            // value={myForm.values.message}
+            // onChange={myForm.handleChange}
+            // error={!!myForm.errors.companyName}
+            // helperText={myForm.errors.message}
+            autoComplete="off"
+            sx={{
+              "& .MuiFilledInput-underline:before": {
+                borderBottom: "none",
+              },
+              "& .MuiFilledInput-underline:after": {
+                borderBottom: "none",
+              },
+              "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before": {
+                borderBottom: "none",
+              },
+            }}
+            {...register("message")}
+          />
           <div className="form-file">
             <label htmlFor="upload_file">
               <input
@@ -287,6 +288,38 @@ const FormEl = () => {
             </label>
           </div>
 
+          <Controller
+        type="file"
+        name="photo"
+        control={control} 
+        // render={({ field }) => (
+        //   <input
+        //     type="file"
+        //     onChange={(e) => {
+        //       field.onChange(e.target.files);
+        //     }}
+        //     // multiple
+        //   />
+        // )}
+        render={({ field }) => (
+          <TextField
+            // {...field}
+            // inputRef={ref}
+            fullWidth
+            label="photo"
+            margin="dense"
+            accept="image/*"
+            type="file"
+            onChange={(e) => {
+              field.onChange(e.target.files);
+            }}
+            // error={errors.photo ? true : false}
+            InputLabelProps={{
+              shrink: true
+            }}
+          />
+        )}
+      />
           <div className="button">
             <Button
               className="btn btn-primary mt-4"
