@@ -24,14 +24,15 @@
   color: white;
   position: relative;
   top: -14rem;
-  left: 1rem;
+  left: 3rem;
   text-align: left;
   padding: 0;
+  width:80%;
 }
 .heading-career {
   margin: 0;
 }
 .text p {
   margin-top: 5px;
-  width:70%;
+  width:clamp(200px, 70%,400px )
 }

@@ -2,8 +2,6 @@ import React from 'react'
 import "./header.css"
 import imageheader from "../Aboutimage/header1.jpeg"
 
-
-
 function Header() {
   return (
     <div className='header-container'>
@@ -13,7 +11,7 @@ function Header() {
           src={imageheader} alt=""
           />
 
-        <div className="text ">  
+        <div className="about-text ">  
             <h2>About Us</h2>
             <p>
             Neutrosys is an IT staffing and software development company.

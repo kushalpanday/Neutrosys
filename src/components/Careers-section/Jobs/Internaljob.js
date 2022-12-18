@@ -51,8 +51,8 @@ const Internaljob = () => {
                 </Row>
             </div>
             </div>
-            
-                <h2 className='openposition-heading'>Our open positions</h2>
+               
+            <h2 className='openposition-heading'>Our open positions</h2>
                     <div className='select-opt'>
                         <label for="num">No. of jobs per page:&nbsp;&nbsp;</label>
                             <select name="jobs" id="num">
@@ -66,14 +66,14 @@ const Internaljob = () => {
                 <div>
                 
                     <Row className='openposition-row'>
-                        <Col lg={3} sm={12}className='openposition-col'>
+                        <Col lg={3}   className='openposition-col'>
                         <Row className='heading-rowbg'>
                                 <h6>Sales/Marketing</h6>
                                 <Col className='text-col'>
                                     <h4>US Technical Recruiter-Noida, India(Remote)</h4>
                                     <Row className='footer-row'>
                                         <Col sm={9} className='loc-text'>
-                                        <p>Noida, Uttar Pradesh,<br></br>India</p>
+                                        <p>Noida, Uttar Pradesh India</p>
                                         </Col>
                                         <Col sm={2} className='icon-text'>
                                         <p><BsArrowRightCircle/></p>
@@ -86,14 +86,14 @@ const Internaljob = () => {
                                 
                             
                         </Col>
-                        <Col lg={3} sm={12} className='openposition-col'>
+                        <Col lg={3} className='openposition-col'>
                         <Row className='heading-rowbg'>
                                 <h6>Sales/Marketing</h6>
                                 <Col className='text-col'>
                                     <h4>US Technical Recruiter-Noida, India(Remote)</h4>
                                     <Row className='footer-row'>
                                         <Col sm={9} className='loc-text'>
-                                        <p>Noida, Uttar Pradesh,<br></br>India</p>
+                                        <p>Noida, Uttar Pradesh India</p>
                                         </Col>
                                         <Col sm={2} className='icon-text'>
                                         <p><BsArrowRightCircle/></p>
@@ -107,10 +107,10 @@ const Internaljob = () => {
                         <Row className='heading-rowbg'>
                                 <h6>Technology</h6>
                                 <Col className='text-col'>
-                                    <h4>IT/Technical<br></br>Recruiter</h4>
+                                    <h4>IT/Technical Recruiter</h4>
                                     <Row className='footer-row'>
                                         <Col sm={9} className='loc-text'>
-                                        <p>Irving, Texas, United <br></br>States</p>
+                                        <p>Irving, Texas, United States</p>
                                         </Col>
                                         <Col sm={2} className='icon-text'>
                                         <p><BsArrowRightCircle/></p>
@@ -126,7 +126,7 @@ const Internaljob = () => {
                                     <h4>US Technical Recruiter-Noida, India(Remote)</h4>
                                     <Row className='footer-row'>
                                         <Col sm={9} className='loc-text'>
-                                        <p>Noida, Uttar Pradesh,<br></br>India</p>
+                                        <p>Noida, Uttar Pradesh India</p>
                                         </Col>
                                         <Col sm={2} className='icon-text'>
                                         <p><BsArrowRightCircle/></p>

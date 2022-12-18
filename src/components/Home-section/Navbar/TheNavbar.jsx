@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 function TheNavbar() {
   return (
-    <Navbar collapseOnSelect expand="lg" bg="light" variant="light" className="navbar">
+    <Navbar collapseOnSelect expand="md" bg="light" variant="light" className="navbar">
       <LinkContainer to="/" >
         <Navbar.Brand href="#home" className="navbar_img">
           <img src="/images/neutrosys.png" alt="" />

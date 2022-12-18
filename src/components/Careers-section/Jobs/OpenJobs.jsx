@@ -163,7 +163,7 @@ function OpenJobs() {
               <Row className="inner-row">
                 <Col sm={9} className="inner-col">
                   <h5>
-                    <a href="/#">Sales Intern -On-site</a>
+                    <a href="../JobSection/Detail.js">Sales Intern -On-site</a>
                   </h5>
                   <h6>Irving, Texas, United States | Technology | Full Time</h6>
                   <p>

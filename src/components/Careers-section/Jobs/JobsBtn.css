@@ -18,7 +18,7 @@
 .contract-btn:focus {
   box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
     rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   width: 200px;
   background-color: blue;
   /* background-color:rgba(35, 171, 229, 0.534); */
@@ -37,7 +37,7 @@
 
 .primary-btn:focus {
   /* box-shadow: 3px 4.9px 16px rgba(27,139,249,0.6); */
-  letter-spacing: 2px;
+  /* letter-spacing: 2px; */
   width: 200px;
   background-color: blue;
   /* background-color:rgba(35, 171, 229, 0.534); */

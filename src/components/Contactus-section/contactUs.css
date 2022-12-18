@@ -197,7 +197,7 @@
   padding:0;
   justify-content: center;
 }
-.form-col {
+.contactus-form-col {
   background-color: rgba(35,171,229,.699);
 }
 /* form using mui */
@@ -441,14 +441,18 @@ div .form-button:hover{
   font-weight: 450;
   padding-top: 10px;
 }
+.my-modal {
+  max-width: 70%;
+  margin:auto;
+}
 @media only screen and (max-width: 915px) {
-  .form_container .form-row .form-col{
+  .form_container .form-row .contactus-form-col{
     padding:1rem;
     width:100%;
   }
 }
 @media only screen and (max-width: 575px){
-  .form_container .form-row .form-col{
+  .form_container .form-row .contactus-form-col{
     max-width:95%;
     width: 100%;
     margin:0 1rem;
@@ -487,10 +491,7 @@ div .form-button:hover{
   .field-col1 {
     margin-bottom: 5px;
   }
-  .my-modal {
-    max-width: 85%;
-    margin:auto;
-  }
+ 
   .close-btn {
     font-size: 10px;
     /* margin-right: 20px; */

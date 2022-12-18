@@ -8,18 +8,37 @@ export default function Header() {
     return(
         <>
 
-            <Row className='header-row '>
-                <Col sm={5} className="col-p">
+            {/* <Row className='header-row '>
+                <Col className="col-p">
                     <h2 className='heading-h'>Contact Us</h2>
                     <p className='para-p'>Neutrosys is an IT staffing and software development company.<br></br>
                     We are currently providing IT services mainly in the US and <br></br>Nepal. We provide 
                     services from USA, Nepal, India and Finland.</p>
                 </Col>
 
-                <Col sm={7} className="col-image">
+                <Col sm={12} className="col-image">
                     <img src='./images/contact-us/headerimg1.jpg' alt="icons"></img>
                 </Col>
-            </Row>
+            </Row> */}
+
+<div className='header-container'>
+        <div className="header-photo">
+          <img 
+          className='header-photo'
+          src="./images/contact-us/headerimg1.jpg" alt=""
+          />
+
+        <div className="about-text ">  
+            <h2>Contact Us</h2>
+            <p>
+            Neutrosys is an IT staffing and software development company.   
+            We are currently providing IT services mainly in the US and Nepal.
+             We provide services from USA, Nepal, India, and Finland.
+            </p>
+           
+        </div>
+        </div>
+    </div>
         </>
     
         )

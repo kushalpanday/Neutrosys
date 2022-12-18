@@ -265,6 +265,7 @@ const Formservice = () => {
                 }}
                 {...register("message")}
               />
+              <div style={{display:'flex'}}>
               <label htmlFor="upload_file">
                 <input
                   style={{ display: "none" }}
@@ -311,7 +312,7 @@ const Formservice = () => {
                   render={({ message }) => <p className="errorm">{message}</p>}
                 />
               </label>
-
+              </div>
               <div style={{ marginTop: 10, marginBottom: 8 }}>
                 <ReCAPTCHA
                   sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"

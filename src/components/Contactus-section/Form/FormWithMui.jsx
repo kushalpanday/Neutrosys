@@ -53,30 +53,13 @@ export default function FormWithMui() {
     <>
       <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
         <Row className="form-row mb-4">
-          <Col sm={9} className="form-col ">
+          <Col sm={9} className="contactus-form-col ">
             <h4 className="heading-form">Contact Us</h4>
             <p className="heading-para">I'm interested in..</p>
             
-            <Multiselect
-                className="textfields"
-                name="interestField"
-                isObject={false}
-                onRemove={(event) => {
-                  console.log(event);
-                }}
-                onSelect={(event) => {
-                  console.log(event);
-                }}
-                options={options}
-                {...register("interestField")}
-
-                // showCheckbox
-              />
-
             <Container className="mt-2 mb-1 formContainer">
               <TextField
                 // required
-              
                 fullWidth
                 label="Name"
                 margin="dense"

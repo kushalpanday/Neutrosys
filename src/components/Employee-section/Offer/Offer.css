@@ -110,7 +110,7 @@
     margin: 5px 0px;
     padding: 8px;
     border-radius: 10px;
-    cursor: pointer;
+    /* cursor: pointer; */
   }
   
   .process-content {

@@ -7,6 +7,8 @@
     /* background-color:#bfdbfe; */
     background: rgb(228 231 232 / 52%);
     /* margin-bottom: 2rem; */
+    width:80%;
+    margin:auto;
   }
   .textfields{
     width: 10%;
@@ -36,7 +38,16 @@
     margin: 0;
     background-color: rgba(13, 73, 147, 0.74);
   }
-  
+  div .form-col{
+    background-color: #3b82f6;
+  }
+  div .heading-para{
+    color:white;
+    font-weight:600;
+  }
+  .buttonsubmit {
+    margin-bottom: 1rem;
+}
    /* .css-1d3z3hw-MuiOutlinedInput-notchedOutline{
     border-color:white;
   } */
@@ -126,31 +137,11 @@
     border-radius: 10px;
   }
   
-  
-  
-  div .form-button > .Mui-checked {
-    /* background-color: aquamarine; */
-      
-      
-  }
-  
-  
-  div .checkbox{
-    /* display:none; */
-     
-  }
+
   .checkbox:checked + .form-button{
     background-color: aqua;
   }
-  /* .field-row1{
-   padding-left:22.5px;
-  } */
-  /* /* div .checkbox:checked{
-    background-color:green;
-  
-  div.form-button:visited{
-    background-color: blue;
-  } */
+
   div .form-button{
     padding:.7rem 1rem;
     background-color: #fff;
@@ -198,17 +189,19 @@
     border-radius: 8px;
   }
   .heading-form {
-    padding-top: 20px;
-    padding-left: 15px;
+    /* padding-top: 20px; */
+    /* padding-left: 15px; */
     color: white;
     margin-bottom: 5px;
     font-size: 33px;
   }
+
   .heading-para {
     display: flex;
     justify-content: flex-start;
-    padding-left: 4px;
-    font-size: 25px;
+    padding:.5rem 0;
+    font-size: 2rem;
+    font-weight: normal;
     
     /* padding-left: 15px;
     color: white;

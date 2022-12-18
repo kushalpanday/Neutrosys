@@ -12,6 +12,7 @@
 }
 .whoweare_container p {
   width: 90%;
+
   margin: 1rem auto;
 }
 .whoweare_image {
@@ -24,6 +25,9 @@
 .whoweare_desc {
   height: 90%;
   margin: auto;
+}
+.whoweare_desc p{
+  text-align: justify;
 }
 
 @media only screen and (max-width: 600px){
