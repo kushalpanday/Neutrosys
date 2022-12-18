@@ -199,6 +199,7 @@
 }
 .contactus-form-col {
   background-color: rgba(35,171,229,.699);
+  padding:2rem;
 }
 /* form using mui */
 .container{
@@ -264,7 +265,7 @@ div .form-button:hover{
 
 }
 .heading-form {
-  padding-top: 20px;
+  /* padding-top: 20px; */
   padding-left: 5px;
   /* color: white; */
   text-align:left;
@@ -443,7 +444,8 @@ div .form-button:hover{
 }
 .my-modal {
   max-width: 70%;
-  margin:auto;
+  height:100%;
+  /* margin:auto; */
 }
 @media only screen and (max-width: 915px) {
   .form_container .form-row .contactus-form-col{
@@ -529,5 +531,12 @@ div .form-button:hover{
   }
   .close-btn {
     margin-right: 6px;
+  }
+}
+@media only screen and (max-width: 740px){
+  .my-modal {
+    max-width: 90%;
+    height:100%;
+    /* margin:auto; */
   }
 }

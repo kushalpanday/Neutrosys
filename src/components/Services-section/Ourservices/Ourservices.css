@@ -1,10 +1,6 @@
-.Servicemainbody{
-    /* height:400px; */
-    /* background-color: aquamarine; */
-    /* padding: 2rem 3rem 5rem 3rem; */
-    padding: .8rem;
-    margin: .6rem 0 1rem 0;
-   
+
+.service-title{
+    margin-top:1.1rem 0 0 0;
 }
 .Servicemainbody h2,.service-paragraph{
     display: flex;

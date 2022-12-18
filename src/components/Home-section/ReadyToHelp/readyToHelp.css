@@ -1,11 +1,11 @@
 .readytohelp_container{
     background-color:rgba(135, 207, 235, 0.627);
-    padding:2rem;
+    padding:1rem;
     text-align: center;
 }   
 .readytohelp_container p{
     width:55%;
-    padding:1rem 0;
+    /* padding:1rem 0; */
     margin:auto;
     padding-bottom:1rem;
 }

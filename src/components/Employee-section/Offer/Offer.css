@@ -195,6 +195,9 @@
   /* div .accordion-button{
       background-color: #22c55e;
   } */
+  .accordion-button{
+    border-radius:8px !important;
+  }
   .accordion-button:not(.collapsed) {
     color: #ffffff;
     background-color: #29008a;

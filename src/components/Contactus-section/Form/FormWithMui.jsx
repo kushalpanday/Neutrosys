@@ -54,9 +54,7 @@ export default function FormWithMui() {
       <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
         <Row className="form-row mb-4">
           <Col sm={9} className="contactus-form-col ">
-            <h4 className="heading-form">Contact Us</h4>
-            <p className="heading-para">I'm interested in..</p>
-            
+            <h4 className="heading-form">Contact Us</h4>            
             <Container className="mt-2 mb-1 formContainer">
               <TextField
                 // required

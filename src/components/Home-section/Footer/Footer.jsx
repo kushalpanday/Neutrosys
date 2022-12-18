@@ -16,17 +16,11 @@ function Footer() {
       <div className="footer_links">
         <h6>Some Links</h6>
         <p>
-          <a href="/">Company</a>
-        </p>
-        <p>
           {" "}
           <a href="/">About Us</a>
         </p>
         <p>
           <a href="/">Services</a>
-        </p>
-        <p>
-          <a href="/">Our Clients</a>
         </p>
         <p>
           <a href="/">Careers</a>

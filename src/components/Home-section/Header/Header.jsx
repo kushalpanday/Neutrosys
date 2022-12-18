@@ -145,8 +145,8 @@ console.log(container);
           business growth, simplify process and increase revenue.
         </p>
         <div className="header_btn_container">
-          <button className="header_btn blue_background">View all jobs</button>
-          <button className="header_btn blue_border">request resources</button>
+          <button className="header_btn blue_background"><a href="./careers" target="_blank" rel="noopener noreferrer">View all jobs</a> </button>
+          <button className="header_btn blue_border"> <a href="./employers" target="_blank" rel="noopener noreferrer">request resources</a> </button>
         </div>
       </div>
 

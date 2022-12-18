@@ -46,14 +46,31 @@
   /* width: 27.5%; */
   width:21rem;
 }
-.header_btn.blue_background {
-  background-color: #23abe5;
+.header_btn.blue_background{
+  /* background-color: #23abe5; */
+  background-color: transparent;
   border: 1.5px solid #23abe5;
 }
 .header_btn.blue_border {
   border: 1.5px solid #23abe5;
   background-color: transparent;
 }
+.header_btn.blue_background:hover{
+  /* background-color: transparent; */
+  background-color: #23abe5;
+
+}
+.header_btn.blue_border:hover{
+  background-color: #23abe5;
+}
+.header_btn a{
+  color:white;
+  text-decoration: none;
+}
+.header_btn a:hover{
+  color:white;
+}
+
 @media only screen and (max-width: 700px) {
   .header_center {
     width: 100%;

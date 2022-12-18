@@ -10,6 +10,10 @@
     width:80%;
     margin:auto;
   }
+  .services-form-container{
+    background: rgb(228 231 232 / 52%);
+    width:100%;
+  }
   .textfields{
     width: 10%;
     background-color:white;
@@ -40,6 +44,8 @@
   }
   div .form-col{
     background-color: #3b82f6;
+    padding:2rem;
+    margin-bottom:1rem;
   }
   div .heading-para{
     color:white;
@@ -87,11 +93,14 @@
   .container{
    
   }
-  .form_container{
-    width:80%;
+  div .form_container{
+    width:100%;
     /* padding:1rem; */
-     margin: auto;
-    background-color: white;
+
+     margin: 0 auto;
+    background: rgba(228, 231, 232, 0);
+
+    /* background-color: white; */
   }
   .textfield{
     background-color:white;

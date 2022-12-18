@@ -40,7 +40,7 @@ const Ourservice = ({closeme}) => {
 
   return (
     <div className="Servicemainbody ">
-    <h2>We are currently providing IT services</h2>
+    <h2 className="service-title">We are currently providing IT services</h2>
     <p className="service-paragraph">We provide services from USA, Nepal, India, and Finland.</p>
       <div className="mainbox">
         {data.map((item) => {

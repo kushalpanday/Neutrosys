@@ -24,9 +24,17 @@
 }
 p.missleft {
   margin-right: 20px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05em;
 }
 p.missright {
   margin-left: 20px;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  word-spacing: -0.05em;
 }
 
 .box {
