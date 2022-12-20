@@ -1,0 +1,32 @@
+.readytohelp_container{
+    background-color:rgba(135, 207, 235, 0.627);
+    padding:2rem;
+    text-align: center;
+}   
+.readytohelp_container h2{
+    margin-top: 0;
+}
+.readytohelp_container p{
+    width:55%;
+    /* padding:1rem 0; */
+    margin:auto;
+    padding-bottom:1rem;
+}
+.readytohelp_btn{
+    padding:.5rem 1rem;
+    border-radius: 2rem;
+    border:none;
+    background-color: #23ABE5;
+    cursor:pointer;
+    color:white;
+}
+@media only screen and (max-width: 700px){
+    .readytohelp_container p{
+        width:70%;
+    }
+}
+@media only screen and (max-width: 500px){
+    .readytohelp_container p{
+        width:95%;
+    }
+}

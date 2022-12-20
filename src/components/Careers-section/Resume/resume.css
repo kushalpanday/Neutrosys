@@ -1,0 +1,138 @@
+.resume-maindiv {
+  background: rgba(35, 171, 229, 0.15);
+}
+.resume-row {
+  /* border: 2px solid red; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+  justify-content:center;
+  align-items: center;
+  width: 95%;
+  /* justify-content: center; */
+  margin: 0rem auto;
+  text-align: center;
+  padding:2rem 0;
+}
+
+.resume-col1 img {
+  /* height: 290px; */
+  width: 75%;
+  /* object-fit: cover; */
+  border-radius: 15px 50px;
+  /* text-align: end; */
+}
+
+.resume-col2 h2 {
+  margin-top: 10px;
+  text-align: left;
+}
+.resume-col2 p {
+  font-size: 18px;
+  width: 80%;
+  padding-top: 5px;
+  /* padding-left: 12px;
+    padding-right: 11px; */
+  text-align: left;
+}
+.btn-3div {
+  /* border: 1px solid; */
+  align-items: flex-start;
+  text-align: left;
+}
+.rbtn {
+  background-color: #ffffff;
+  color: black;
+  border: 1px solid #159a9c;
+  margin-right: 9px;
+  margin-top: 10px;
+}
+.rbtn:hover {
+  background-color: #159a9c;
+  border: none;
+}
+
+@media only screen and (max-width: 940px) {
+  .resume-row {
+    width: 100%;
+  }
+
+}
+@media only screen and (max-width: 880px) {
+  .resume-row {
+grid-template-columns: 45% 55%;
+    width: 100%;
+  }
+
+  .resume-col2 p {
+    width: 100%;
+    font-size: 1.1rem;
+  }
+  .resume-col2 h2 {
+    font-size: 1.5rem;
+  }
+  .rbtn {
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 745px) {
+.resume-row{
+    width:100%;
+}
+}   
+@media only screen and (max-width: 694px) {
+  .resume-col1 {
+    text-align: left;
+  }
+  .resume-col1 img {
+    width: 80%;
+  }
+  .resume-col2 {
+    width: 100%;
+    margin-left: -4rem;
+    margin-top: 5rem;
+  }
+  .resume-col2 h2 {
+    font-size: 1.2rem;
+  }
+
+}
+@media only screen and (max-width: 690px) {
+  .resume-row {
+    grid-template-columns: 100%;
+  }
+  .resume-col2 {
+    margin-top: 1rem;
+    margin-bottom: 0.7rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .resume-col2 p {
+    width: 70%;
+    text-align: center;
+  }
+  .resume-col1 {
+  }
+  .resume-col1 img {
+    margin-left: 0rem;
+    width: 60%;
+    margin: 0rem auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .resume-col1 {
+    margin-left: 0rem;
+  }
+}
+@media only screen and (max-width: 450px) {
+    .resume-col1 img {
+        width:80%;
+    }
+  .resume-col2 p {
+    width: 85%;
+  }
+}
