@@ -67,7 +67,7 @@
     /* height: 3rem; */
     width: 8rem;
     position: absolute;
-    z-index: 999999;
+    z-index: 10;
     background-color: white;
   }
   
