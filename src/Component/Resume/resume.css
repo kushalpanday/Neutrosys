@@ -1,0 +1,222 @@
+.resume-maindiv
+{
+    /* background: linear-gradient(180deg, rgba(7, 16, 229, 0.1) 0%, rgba(35, 171, 230, 0.3) 100%); */
+    background-color: rgba(35, 171, 229, 0.15);
+}
+.resume-row
+{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 80%;
+    /* justify-content: center; */
+    margin: 0rem  auto;
+    text-align: center;
+    
+    
+}
+.resume-col1
+{
+    /* border: 2px solid blue;  */
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: auto;
+  
+   
+}
+.resume-col1 img
+{
+    height: 290px;
+    width: 90%;
+    object-fit: cover; 
+    border-radius: 15px 50px;
+    /* text-align: end; */
+    
+    
+}
+.resume-col2
+{
+    /* border: 2px solid blue;  */
+    margin-top: 4rem;
+   
+    
+}
+.resume-col2 h2
+{
+    margin-top: 10px;
+    text-align: left;
+}
+.resume-col2 p
+{
+    font-size: 18px;
+    width: 80%;
+    padding-top: 5px;
+    /* padding-left: 12px;
+    padding-right: 11px; */
+    text-align: left;
+}
+.btn-3div
+{
+    /* border: 1px solid; */
+    align-items: flex-start;
+    text-align: left;
+}
+.rbtn1
+{
+    /* background-color: #1a8bedd3;  */
+    background-color: white;
+    color: black;
+    margin-right: 9px;
+    margin-top: 10px;
+    padding: 10px 20px 12px 20px;
+    /* clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%); */
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    border: 2px solid#008BCC;
+}
+.rbtn2
+{
+    /* background-color: #1a8bedd3;  */
+    background-color: #008BCC;
+    color: white;
+    margin-right: 9px;
+    margin-top: 10px;
+    padding: 10px 20px 12px 20px;
+    /* clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%); */
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    border: 2px solid#008BCC;
+}
+.rbtn3
+{
+    /* background-color: #1a8bedd3;  */
+    background-color: white;
+    color: black;
+    margin-right: 9px;
+    margin-top: 10px;
+    padding: 10px 20px 12px 20px;
+    /* clip-path: polygon(5% 0, 95% 0, 100% 20%, 100% 80%, 95% 100%, 5% 100%, 0% 80%, 0% 20%); */
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; 
+    border: 2px solid#008BCC;
+}
+ /* .rbtn:hover
+{
+    background-color: #008BCC;
+    border: none;
+}  */
+@media only screen and (max-width: 1150px){
+    .resume-row{
+        width: 90%;
+    }
+
+}
+@media only screen and (max-width: 940px){
+    .resume-row{
+        width: 100%;
+    }
+    .resume-col2{
+        margin-left: -2rem;
+    }
+
+}
+@media only screen and (max-width: 830px){
+    .resume-row{
+        width: 100%;
+    }
+    .resume-col2{
+        /* margin-left: -2rem; */
+    }
+    .resume-col1{
+        text-align: left;
+        margin-left: 2rem;
+    }
+    .resume-col2 p{
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .resume-col2 h2{
+        font-size: 1.5rem;
+    }
+    .rbtn{
+        margin-right: 5px;
+        font-size: 1rem;
+    }
+
+}
+@media only screen and (max-width: 694px){
+   
+    .resume-col1{
+        text-align:left;
+        
+    }
+    .resume-col1 img{
+        height: 300px;
+        width: 72%;
+        margin-left: -1rem;
+    }
+    .resume-col2{
+        width: 100%;
+        margin-left: -4rem;
+        margin-top: 5rem;
+       
+    }
+    .resume-col2 h2{
+        font-size: 1.2rem;
+    }
+    .resume-col2 p{
+        /* width: 80%;
+        text-align: center; */
+    }
+}
+@media only screen and (max-width: 690px){
+  .resume-row{
+    grid-template-columns: 100%;
+  }
+  .resume-col2{
+    margin-top: 1rem;
+    margin-bottom: .7rem;
+    margin-left: 0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+   
+}
+.resume-col2 p{
+    width: 70%;
+    text-align: center;
+}
+.resume-col1{
+    
+}
+.resume-col1 img{
+    margin-left: 0rem;
+    width: 60%;
+    margin: 0rem auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  
+}
+.resume-col1{
+   
+    margin-left: 0rem;
+}
+
+
+}
+@media only screen and (max-width: 450px){
+.resume-col1 img{
+    height: 250px;
+    margin-top: -1rem;
+}
+.resume-col2{
+    margin-top: -.8rem;
+}
+.resume-col2 p{
+    width: 85%;
+}
+
+}

@@ -1,0 +1,65 @@
+.buttonjobs-maindiv {
+  /* border: 1px solid; */
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 2px solid rgba(128, 128, 128, 0.11);
+  /* background-color: rgba(187, 180, 180, 0.13); */
+}
+
+.contract-btn {
+  border-radius: 30px;
+  width: 200px;
+  font-weight: 600;
+
+  text-align: center;
+  padding-top: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.contract-btn:focus {
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  letter-spacing: 2px;
+  width: 250px;
+  background-color: blue;
+  /* background-color:rgba(35, 171, 229, 0.534); */
+  color: white;
+  border: none;
+}
+
+.primary-btn {
+  border-radius: 30px;
+  width: 200px;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 5px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+}
+
+.primary-btn:focus {
+  /* box-shadow: 3px 4.9px 16px rgba(27,139,249,0.6); */
+  letter-spacing: 2px;
+  width: 250px;
+  background-color: blue;
+  /* background-color:rgba(35, 171, 229, 0.534); */
+  color: white;
+  border: none;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+.job-btn{
+  height: 100%;
+  display: block;
+  margin:1% auto;
+}
+@media only screen and (max-width: 576px){
+  .contract-btn{
+    width: 40%;
+  }
+  .primary-btn{
+    width:45%;
+  }
+  .primary-btn:focus,.contract-btn:focus{
+    width:48%;
+  }
+}
