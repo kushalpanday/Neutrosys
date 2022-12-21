@@ -8,6 +8,7 @@ import OurClients from "../components/Home-section/OurClients/OurClients"
 import ReadyToHelp from "../components/Home-section/ReadyToHelp/ReadyToHelp"
 import Footer from "../components/Home-section/Footer/Footer"
 import OurPartnersCarousel from '../components/Home-section/OurPartners/OurPartnersCarousel';
+import GoToTop from '../components/Home-section/GotoTop/GoToTop';
 
 function Home() {
   return (
@@ -21,6 +22,7 @@ function Home() {
         <OurPartnersCarousel />
         <OurClients />
         <ReadyToHelp />
+        <GoToTop />
         <Footer />
     </>
   )

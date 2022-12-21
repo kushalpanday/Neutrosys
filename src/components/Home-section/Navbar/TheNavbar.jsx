@@ -12,7 +12,7 @@ function TheNavbar() {
     <Navbar collapseOnSelect expand="md" bg="light" variant="light" className="navbar">
       <LinkContainer to="/" >
         <Navbar.Brand href="#home" className="navbar_img">
-          <img src="/images/neutrosys.png" alt="" />
+          <img src="/neutrosys-logo-cropped.png" alt="" />
         </Navbar.Brand>
       </LinkContainer>
 

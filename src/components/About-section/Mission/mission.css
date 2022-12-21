@@ -44,7 +44,7 @@ p.missright {
   position: relative;
   width: 7rem;
   height: 7rem;
-  left: 3rem;
+  left: 2.5rem;
   bottom: 1rem;
 }
 .box:nth-child(odd) {
@@ -134,7 +134,7 @@ p.missright {
   .box {
     height: 6rem;
     width: 6rem;
-    left: 0.5rem;
+    left: 0.2rem;
     bottom: -1rem;
   }
   .box:nth-child(3),
@@ -150,13 +150,19 @@ p.missright {
 @media only screen and (max-width: 815px) {
   .box:nth-child(2),
   .box:nth-child(3) {
-    bottom: -2.5rem;
+    bottom: -1rem;
   }
+}
+@media only screen and (max-width: 780px) {
+  .box:nth-child(2), .box:nth-child(3) {
+    bottom: -2.5rem;
+}
+
 }
 @media only screen and (max-width: 683px) {
   .box:nth-child(2),
   .box:nth-child(3) {
-    bottom: -4rem;
+    bottom: -2.5rem;
   }
 }
 

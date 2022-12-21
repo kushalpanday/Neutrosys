@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import "./header.css";
@@ -14,7 +14,9 @@ function Header() {
 const particlesLoaded=(container)=>{
 console.log(container);
 }
-  return (
+
+
+return (
     <section className="header_container">
       <div className="header_center">
 
@@ -144,6 +146,7 @@ console.log(container);
           We build custom IT solutions and products that accelerates customer’s
           business growth, simplify process and increase revenue.
         </p>
+
         <div className="header_btn_container">
           <button className="header_btn blue_background"><a href="./careers" target="_blank" rel="noopener noreferrer">View all jobs</a> </button>
           <button className="header_btn blue_border"> <a href="./employers" target="_blank" rel="noopener noreferrer">request resources</a> </button>

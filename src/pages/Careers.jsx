@@ -5,6 +5,7 @@ import WorkWithUs from "../components/Careers-section/WorkWithUs/WorkWithUs";
 import Jobs from "../components/Careers-section/Jobs/JobsBtn";
 import Resume from "../components/Careers-section/Resume/Resume";
 import Footer from "../components/Home-section/Footer/Footer";
+import GoToTop from "../components/Home-section/GotoTop/GoToTop";
 
 function Careers() {
   return (
@@ -14,6 +15,7 @@ function Careers() {
       <WorkWithUs />
       <Jobs />
       <Resume />
+      <GoToTop />
       <Footer />
       {/* <Map /> */}
     </>

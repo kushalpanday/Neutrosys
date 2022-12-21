@@ -6,6 +6,7 @@ import CoreValues from '../components/About-section/Corevalues/Corevalues'
 import Mission from '../components/About-section/Mission/Mission'
 import Howwework from '../components/About-section/Howwework/Work'
 import Footer from "../components/Home-section/Footer/Footer"
+import GoToTop from '../components/Home-section/GotoTop/GoToTop'
 // import Map from './components/Aboutus/map/map'
 
 
@@ -18,6 +19,7 @@ function About() {
         <CoreValues />
         <Mission />
         <Howwework />
+        <GoToTop />
         <Footer />
         {/* <Map /> */}
       </>

@@ -1,7 +1,11 @@
-
 .navbar_img{
   margin:0 3rem;
   width:15%;
+}
+nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light{
+  position: sticky;
+  top:0;
+  z-index:99;
 }
 .navbar_img img{
   width:100%;

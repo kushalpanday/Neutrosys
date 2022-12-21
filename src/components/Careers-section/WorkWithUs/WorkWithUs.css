@@ -80,12 +80,13 @@
 }
 .parabox-text {
   /* border: 1px solid; */
-  /* position: absolute; */
-  /* right:.5rem; */
-  /* bottom:2rem; */
+  position: absolute; 
+  right:-.5rem;
+  bottom:3rem;
   transform: rotate(-45deg);
   text-align: center;
   margin: 0.5rem 1rem 0 0.5rem;
+  width:90%
 }
 .icon1 {
   width:100%;

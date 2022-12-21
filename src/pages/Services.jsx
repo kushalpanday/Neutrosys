@@ -6,6 +6,7 @@ import Letschat from '../components/Services-section/Letschat/Letschat'
 // import Map from './components/service-section/Map/Map';
 import Formservice from '../components/Services-section/Formservice/Formservice'
 import Footer from "../components/Home-section/Footer/Footer"
+import GoToTop from '../components/Home-section/GotoTop/GoToTop';
 
 
 function Services() {
@@ -20,6 +21,7 @@ function Services() {
         <Ourservices closeme={closeme}/>
         <Letschat/>
         <Formservice />
+        <GoToTop />
         <Footer/>
         {/* <Map /> */}
       </>
