@@ -5,6 +5,7 @@ import Neutrosysdiff from "../components/Employee-section/Neutrosysdiff/Neutrosy
 import Form from "../components/Employee-section/Form/Form"
 import Footer from "../components/Home-section/Footer/Footer"
 import GoToTop from '../components/Home-section/GotoTop/GoToTop'
+import ScrollToTop from '../components/Home-section/GotoTop/ScrollToTop';
 
 
 
@@ -13,6 +14,8 @@ function Employers() {
       <>
   
         <TheNavbar />
+        <ScrollToTop />
+
          <Offer/> 
          <Neutrosysdiff/>
          <Form/>

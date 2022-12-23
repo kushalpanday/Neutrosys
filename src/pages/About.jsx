@@ -8,12 +8,14 @@ import Howwework from '../components/About-section/Howwework/Work'
 import Footer from "../components/Home-section/Footer/Footer"
 import GoToTop from '../components/Home-section/GotoTop/GoToTop'
 // import Map from './components/Aboutus/map/map'
+import ScrollToTop from '../components/Home-section/GotoTop/ScrollToTop';
 
 
 function About() {
     return (
       <>
         <TheNavbar/>
+        <ScrollToTop />
         <Header /> 
         <Difference />
         <CoreValues />

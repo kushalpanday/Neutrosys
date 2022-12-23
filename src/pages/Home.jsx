@@ -9,12 +9,14 @@ import ReadyToHelp from "../components/Home-section/ReadyToHelp/ReadyToHelp"
 import Footer from "../components/Home-section/Footer/Footer"
 import OurPartnersCarousel from '../components/Home-section/OurPartners/OurPartnersCarousel';
 import GoToTop from '../components/Home-section/GotoTop/GoToTop';
+import ScrollToTop from '../components/Home-section/GotoTop/ScrollToTop';
 
 function Home() {
   return (
     <>
 
       <TheNavbar />
+      <ScrollToTop />
         <Header />
         <WhoWeAre />
         <Services />

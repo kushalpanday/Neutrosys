@@ -6,11 +6,15 @@ import GetAquote from "../components/Contactus-section/GetAQuote/GetAquote"
 import TheNavbar from '../components/Home-section/Navbar/TheNavbar'
 import Footer from "../components/Home-section/Footer/Footer"
 import GoToTop from '../components/Home-section/GotoTop/GoToTop'
+import ScrollToTop from '../components/Home-section/GotoTop/ScrollToTop';
+
 
 function ContactUs() {
   return (
    <>
    <TheNavbar />
+   <ScrollToTop />
+
     <Header/>
       <LocationDetail/>
       <GetinTouch/>

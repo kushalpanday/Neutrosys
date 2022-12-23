@@ -7,6 +7,7 @@ import Letschat from '../components/Services-section/Letschat/Letschat'
 import Formservice from '../components/Services-section/Formservice/Formservice'
 import Footer from "../components/Home-section/Footer/Footer"
 import GoToTop from '../components/Home-section/GotoTop/GoToTop';
+import ScrollToTop from '../components/Home-section/GotoTop/ScrollToTop';
 
 
 function Services() {
@@ -17,6 +18,7 @@ function Services() {
     return (
       <>
         <TheNavbar/>
+        <ScrollToTop />
         <Header/>
         <Ourservices closeme={closeme}/>
         <Letschat/>

@@ -42,7 +42,7 @@
     border: none;
     border-radius: 5vw;
     background-color: #fff;
-    z-index: 99!important;
+    z-index: 10!important;
     box-shadow: 0 0 20px 5px rgb(35 35 35 / 15%);
     /* change 50% to 15% for lower dark box shadow */
     top: 40%;

@@ -6,11 +6,14 @@ import Jobs from "../components/Careers-section/Jobs/JobsBtn";
 import Resume from "../components/Careers-section/Resume/Resume";
 import Footer from "../components/Home-section/Footer/Footer";
 import GoToTop from "../components/Home-section/GotoTop/GoToTop";
+import ScrollToTop from '../components/Home-section/GotoTop/ScrollToTop';
+
 
 function Careers() {
   return (
     <>
       <TheNavbar />
+      <ScrollToTop />
       <Header />
       <WorkWithUs />
       <Jobs />

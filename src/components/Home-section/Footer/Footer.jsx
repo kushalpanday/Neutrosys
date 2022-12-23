@@ -4,7 +4,7 @@ function Footer() {
   return (
     <section className="footer">
       <div className="footer_logo">
-        <img src="/images/neutrosys.png" alt="" />
+        <img src="/neutrosys-logo-cropped.png" alt="" />
       </div>
       <div className="footer_getintouch">
         <h6>Get in touch</h6>
