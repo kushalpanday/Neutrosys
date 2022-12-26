@@ -1,0 +1,283 @@
+.outer-row
+{
+    /* border: 1px solid; */
+    margin-top: 2rem;
+    justify-content: center;
+    text-align: center;
+}
+/* .outer-col
+{
+    border: 1px solid blue;
+} */
+.container.bgjob
+{
+    /* border: 1px solid red; */
+    /* height: 50px; */
+    display: flex;
+    justify-content: space-between;    
+    background-color: #CDE2B8;
+    padding: 0.5rem 1rem;
+    width:100%;
+}
+.div-right{
+
+}
+.alljob-div
+{
+    /* float: left; */
+}
+.alljob-div h3
+{
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 10px;
+    font-size: 22px;
+    font-weight: 450;
+}
+.div-right
+{
+    /* border: 1px solid red; */
+    /* float: right; */
+    text-align: center;
+    display: flex;
+    
+    gap:1rem;
+    /* margin: 6px 0 0 0px; */
+}
+
+#dropdown-custom-1
+{
+    background-color: #CDE2B8;
+    color: black;
+    border: none;
+    /* margin-right: 35px; */
+   
+}
+
+.filter-btn
+{
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+    margin-right: 28px;
+   
+}
+.super-colors
+{
+    background-color: #CDE2B8;
+    width: 180px;
+    margin:auto;
+}
+
+.super-colors2
+{
+    background-color: #CDE2B8;
+    width: 200px;
+    margin:auto;
+}
+.super-colors3
+{
+    background-color: #CDE2B8;
+   margin:auto;
+   width:200px;
+}
+.locationeg
+{
+    height: 150px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+
+}
+.jobitems
+{
+    padding-left: 1rem;
+    padding-bottom: 3px;
+    text-align: left;
+}
+.locationeg {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(136, 136, 136, 0.644); 
+    border-radius: 10px;
+  }
+#tech
+{
+    height: 12px;
+    width: 12px;
+    margin-right: 8px;
+    cursor: pointer;
+}
+.inner-row
+{
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    /* border-bottom: 2px dotted gray; */
+    width:100%;
+    
+}
+
+.div-bggrey
+{
+    /* border: 1px solid red; */
+    background-color: rgba(128, 128, 128, 0.068);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+
+    width:100%;
+}
+.white-box-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 8px;
+
+}
+/* .inner-col
+{
+    border: 1px solid; 
+    
+} 
+.inner-col2
+{
+    border: 1px solid; 
+    
+}  */
+.inner-col h5
+{
+    text-align: left;
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-left: 1.2rem;
+}
+.inner-col h5 a:hover
+{
+    text-decoration: underline;
+   
+}
+.inner-col h5 a
+{
+    text-decoration: none;
+}
+.inner-col h6
+{
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 1.3rem;
+}
+.inner-col p
+{
+    text-align: left;
+    font-size: 15px;
+    padding-left: 1.3rem;
+    
+}
+/* .inner-col2
+{
+    border: 1px solid;
+} */
+.inner-col2 h5
+{
+    text-align: right;
+    font-size: 1.2rem;
+    padding-left: 1rem;
+    padding-top: 3rem;
+    padding-right: 20px;
+    font-weight: 400;
+    color: blue;
+
+}
+.inner-col2 h5 a:hover
+{
+    text-decoration: underline;
+}
+.inner-col2 h5 a
+{
+    text-decoration: none;
+}
+.num-p
+{
+    padding-left: 1.2rem;
+    font-size: 1rem;
+}   
+@media only screen and (max-width: 1000px){
+    .outer-col{
+        width:100%;
+    }
+}
+@media only screen and (max-width: 767px){
+    .bgjob{
+        /* flex-direction: column; */
+        gap:.2rem;
+    }
+    .div-right{
+        /* flex-direction: column; */
+        justify-content: center;
+        flex-wrap:wrap;
+        gap:.5rem;
+    }
+    button.filter-btn.my-2.btn.btn-primary {
+        width: 6rem;
+        /* margin: auto; */
+    }
+    .show.dropdown.btn-group {
+        flex-direction: column;
+    }
+    .navbar-nav .dropdown-menu{
+            position:absolute;
+    }
+}
+@media only screen and (max-width: 480px){
+ 
+    .filter-btn{
+        width:20%;
+        margin:auto;
+    }
+    #dropdown-custom-1.openpos-btn{
+        padding:.4rem;
+        font-size:14px;
+    }
+}
+@media only screen and (max-width: 540px){
+    .div-right{
+        gap:.4rem;
+    }
+    button.filter-btn.my-2.btn.btn-primary{
+        width:4rem;
+        margin:0;
+    }
+}
+@media only screen and (max-width: 410px){
+.div-right{
+    gap:0;
+    /* justify-content: space-between; */
+}
+.div-right button{
+    /* padding:10px; */
+    font-size: .9rem;
+}
+}
+@media only screen and (max-width: 370px){
+.container.bgjob{
+    padding:0.4rem;
+}
+}
+@media only screen and (max-width: 665px){
+    .outer-col{
+        padding:0;
+    }
+    .openjob-container{
+        width:95%;
+    }
+    .bgjob{
+        width:100%;
+    }
+
+}
