@@ -6,7 +6,6 @@ import TheNavbarProps from "./TheNavbarProps";
 import { Link } from "react-router-dom";
 
 
-
 function TheNavbar() {
   return (
     <Navbar collapseOnSelect expand="md" bg="light" variant="light" className="navbar">

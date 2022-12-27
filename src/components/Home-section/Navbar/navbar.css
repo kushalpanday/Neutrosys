@@ -34,6 +34,14 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light{
 .navbar_button:hover {
   background-color: #1f68ae;
 }
+.active.nav-link {
+  background-color: #dddee696; 
+  border-radius: 10px;
+}
+.nav-link:hover{
+  border-radius: 10px;
+  background-color: #dddee696; 
+}
 
  nav.navbar.navbar.navbar-expand-lg.navbar-light.bg-light{
   z-index:2;

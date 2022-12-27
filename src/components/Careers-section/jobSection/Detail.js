@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import "./Detail.css";
+import { useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -14,6 +15,15 @@ import Button from "react-bootstrap/Button";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { Modal } from "react-bootstrap";
+import { ImLocation } from "react-icons/im";
+import { FaSuitcase } from "react-icons/fa";
+import { FaRegClock } from "react-icons/fa";
+import { ImFacebook2 } from "react-icons/im";
+import { ImLinkedin } from "react-icons/im";
+import { FaTwitterSquare } from "react-icons/fa";
+import ReactToPrint from "react-to-print";
+import { CopyToClipboard } from "react-copy-to-clipboard";
+import swal from "sweetalert";
 
 const Detail = () => {
   const [mobile, setMobile] = useState("+977");
@@ -21,11 +31,14 @@ const Detail = () => {
   const countries = Country.getAllCountries();
   const [show, setShow] = useState(false);
 
+  const Componentref = useRef();
   // const setCou=countries.map(item=>item.isoCode)
 
   const states = State.getAllStates().filter(
     (item) => item.countryCode === "IN"
   );
+
+  const navigate = useNavigate();
 
   console.log(states);
   // console.log()
@@ -43,6 +56,15 @@ const Detail = () => {
   return (
     <div className="main-divbg">
       <Container className="details-container">
+        <Row className="back-row">
+          <Col className="back-col">
+            <button className="back-btn" onClick={() => navigate(-1)}>
+              Back
+            </button>
+            {/* <button className='iconborder-btn'><BsFillArrowLeftCircleFill/>&nbsp;&nbsp;Back</button> */}
+          </Col>
+        </Row>
+
         <Row className="top-row">
           <Col sm={9} className="jobs-top-col">
             <h2>Sales Intern - On-site</h2>
@@ -64,10 +86,12 @@ const Detail = () => {
 
         <Modal show={show} onHide={handleClose} size="lg">
           <Modal.Header closeButton className="jobs-modal-header">
-            <Modal.Title className="top-form">ENTER YOUR INFORMATION</Modal.Title>
+            <Modal.Title className="top-form">
+              ENTER YOUR INFORMATION
+            </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-          {/* <Form> */}
+            {/* <Form> */}
             {/* <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <Form.Label>Email address</Form.Label>
               <Form.Control
@@ -85,284 +109,280 @@ const Detail = () => {
             </Form.Group> */}
 
             <form className="form">
-                  <Container>
-                    <Row className="job-form-row">
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingInput"
-                          label="First Name"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            type="text"
-                            placeholder="name@example.com"
-                          />
-                        </FloatingLabel>
-                      </Col>
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          lg={3}
-                          controlId="floatingPassword"
-                          label="Middle Name (If applicable)"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            type="text"
-                            placeholder="Middle Name (If applicable)"
-                          />
-                        </FloatingLabel>
-                      </Col>
-                    </Row>
-                    <Row>
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingInput"
-                          label="Last Name"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            type="text"
-                            placeholder="name@example.com"
-                          />
-                        </FloatingLabel>
-                      </Col>
+              <Container>
+                <Row className="mt-2">
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      controlId="floatingInput"
+                      label="First Name"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        type="text"
+                        placeholder="name@example.com"
+                      />
+                    </FloatingLabel>
+                  </Col>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      // lg={3}
+                      controlId="floatingPassword"
+                      label="Middle Name (If applicable)"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        type="text"
+                        placeholder="Middle Name (If applicable)"
+                      />
+                    </FloatingLabel>
+                  </Col>
+                </Row>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      controlId="floatingInput"
+                      label="Last Name"
+                      className="input-field p-0"
+                    >
+                      <Form.Control
+                        type="text"
+                        placeholder="name@example.com"
+                      />
+                    </FloatingLabel>
+                  </Col>
 
-                      <Col lg={6} md={12} sm={12}>
-                        <Form.Select
-                          aria-label="Default select example"
-                          className="mt-2 p-3 input-field"
-                        >
-                          <option>Gender</option>
-                          <option value="1">Male</option>
-                          <option value="2">Female</option>
-                          <option value="3">Unspecified</option>
-                          <option value="4">Undisclosed</option>
-                          <option value="5">Other</option>
-                        </Form.Select>
-                      </Col>
-                    </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <Form.Select
+                      aria-label="Default select example"
+                      className="p-3 input-field"
+                    >
+                      <option>Gender</option>
+                      <option value="1">Male</option>
+                      <option value="2">Female</option>
+                      <option value="3">Unspecified</option>
+                      <option value="4">Undisclosed</option>
+                      <option value="5">Other</option>
+                    </Form.Select>
+                  </Col>
+                </Row>
 
-                    <Row>
-                      <Col lg={6} md={12} sm={12}>
-                        <PhoneInput
-                          country={"nep"}
-                          value={mobile}
-                          inputProps={{}}
-                          onChange={(phone) => setMobile(phone)}
-                          className="mt-2 input-field"
-                        />
-                      </Col>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <PhoneInput
+                      country={"nep"}
+                      value={mobile}
+                      inputProps={{}}
+                      onChange={(phone) => setMobile(phone)}
+                      className="input-field"
+                    />
+                  </Col>
 
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingPassword"
-                          label="Phone"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control type="number" placeholder="phone" />
-                        </FloatingLabel>
-                      </Col>
-                    </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1 mt-0">
+                    <FloatingLabel
+                      controlId="floatingPassword"
+                      label="Phone"
+                      className="input-field"
+                    >
+                      <Form.Control type="number" placeholder="phone" />
+                    </FloatingLabel>
+                  </Col>
+                </Row>
 
-                    <Row>
-                      <Col lg={6} md={12} sm={12}>
-                        <Form.Select
-                          aria-label="Default select example"
-                          className="mb-3 input-field select"
-                        >
-                          {countries.map((country) => (
-                            <option
-                              key={country.id}
-                              value={country.countryCode}
-                            >
-                              {country.name}
-                            </option>
-                          ))}
-                        </Form.Select>
-                      </Col>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                    <Form.Select
+                      aria-label="Default select example"
+                      className="input-field select"
+                    >
+                      {countries.map((country) => (
+                        <option key={country.id} value={country.countryCode}>
+                          {country.name}
+                        </option>
+                      ))}
+                    </Form.Select>
+                  </Col>
 
-                      <Col lg={6} md={12} sm={12}>
-                        <Form.Select
-                          aria-label="Default select example"
-                          className="mb-3 input-field select"
-                        >
-                          {states.map((state) => (
-                            <option key={state.id}>{state.name}</option>
-                          ))}
-                        </Form.Select>
-                      </Col>
-                    </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                    <Form.Select
+                      aria-label="Default select example"
+                      className="input-field select"
+                    >
+                      {states.map((state) => (
+                        <option key={state.id}>{state.name}</option>
+                      ))}
+                    </Form.Select>
+                  </Col>
+                </Row>
 
-                    <Row>
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingInput"
-                          label="City"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            type="text"
-                            placeholder="name@example.com"
-                          />
-                        </FloatingLabel>
-                      </Col>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      controlId="floatingInput"
+                      label="City"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        type="text"
+                        placeholder="name@example.com"
+                      />
+                    </FloatingLabel>
+                  </Col>
 
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingPassword"
-                          label="Current Address"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            type="text"
-                            placeholder="Middle Name (If applicable)"
-                          />
-                        </FloatingLabel>
-                      </Col>
-                    </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      controlId="floatingPassword"
+                      label="Current Address"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        type="text"
+                        placeholder="Middle Name (If applicable)"
+                      />
+                    </FloatingLabel>
+                  </Col>
+                </Row>
 
-                    <Row>
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingInput"
-                          label="Email"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            type="email"
-                            placeholder="name@example.com"
-                          />
-                        </FloatingLabel>
-                      </Col>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      controlId="floatingInput"
+                      label="Email"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        type="email"
+                        placeholder="name@example.com"
+                      />
+                    </FloatingLabel>
+                  </Col>
 
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingPassword"
-                          label="Expected Salary/Salary Range(Optional)"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            type="number"
-                            placeholder="Middle Name (If applicable)"
-                          />
-                        </FloatingLabel>
-                      </Col>
-                    </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      controlId="floatingPassword"
+                      label="Expected Salary/Salary Range(Optional)"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        type="number"
+                        placeholder="Middle Name (If applicable)"
+                      />
+                    </FloatingLabel>
+                  </Col>
+                </Row>
 
-                    <Row>
-                      <Col lg={6} md={12} sm={12}>
-                        <Form.Select
-                          aria-label="Default select example"
-                          className="mb-3 input-field"
-                        >
-                          <option>Applying for Seniority Level of</option>
-                          <option value="1">Not Applicable</option>
-                          <option value="2">Internship</option>
-                          <option value="3">Entry Level</option>
-                          <option value="4">Associate(Junior)</option>
-                          <option value="5">Mid Level</option>
-                          <option value="6">Senior</option>
-                          <option value="7">Director</option>
-                          <option value="5">Executive</option>
-                        </Form.Select>
-                      </Col>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <Form.Select
+                      aria-label="Default select example"
+                      className="mb-3 input-field"
+                    >
+                      <option>Applying for Seniority Level of</option>
+                      <option value="1">Not Applicable</option>
+                      <option value="2">Internship</option>
+                      <option value="3">Entry Level</option>
+                      <option value="4">Associate(Junior)</option>
+                      <option value="5">Mid Level</option>
+                      <option value="6">Senior</option>
+                      <option value="7">Director</option>
+                      <option value="5">Executive</option>
+                    </Form.Select>
+                  </Col>
 
-                      <Col lg={6} md={12} sm={12}>
-                        <div className="dashed-border input-field mb-3 ">
-                          <small
-                            style={{
-                              display: "block",
-                              color: "gray",
-                              textAlign: "left",
-                            }}
-                          >
-                            Upload cv/resume
-                          </small>
-                          <input
-                            style={{ display: "none" }}
-                            id="upload_file"
-                            name="file"
-                            type="file"
-                            accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                          />
-                          <Button
-                            variant="contained"
-                            component="span"
-                            className="file_button"
-                          >
-                            Upload files
-                          </Button>
-                        </div>
-                      </Col>
-                    </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <div className="dashed-border input-field mb-3 ">
+                      <small
+                        style={{
+                          display: "block",
+                          color: "gray",
+                          textAlign: "left",
+                        }}
+                      >
+                        Upload cv/resume
+                      </small>
+                      <input
+                        style={{ display: "none" }}
+                        id="upload_file"
+                        name="file"
+                        type="file"
+                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
+                      />
+                      <Button
+                        variant="contained"
+                        component="span"
+                        className="file_button"
+                      >
+                        Upload files
+                      </Button>
+                    </div>
+                  </Col>
+                </Row>
 
-                    <Row>
-                      <Col lg={6} md={12} sm={12}>
-                        <FloatingLabel
-                          controlId="floatingTextarea2"
-                          label="Message(Optional)"
-                          className="mb-3 input-field"
-                        >
-                          <Form.Control
-                            as="textarea"
-                            placeholder="Leave a comment here"
-                            style={{ height: "100px" }}
-                          />
-                        </FloatingLabel>
-                      </Col>
+                <Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <FloatingLabel
+                      controlId="floatingTextarea2"
+                      label="Message(Optional)"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        as="textarea"
+                        placeholder="Leave a comment here"
+                        style={{ height: "100px" }}
+                      />
+                    </FloatingLabel>
+                  </Col>
 
-                      <Col lg={6} md={12} sm={12}>
-                        <div className="dashed-border input-field mb-3 ">
-                          <small
-                            style={{
-                              display: "block",
-                              color: "gray",
-                              textAlign: "left",
-                            }}
-                          >
-                            Upload cv/resume
-                          </small>
-                          <input
-                            style={{ display: "none" }}
-                            id="upload_file"
-                            name="file"
-                            type="file"
-                            accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                          />
-                          <Button
-                            variant="contained"
-                            component="span"
-                            className="file_button"
-                          >
-                            Upload files
-                          </Button>
-                        </div>
-                      </Col>
-                    </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1">
+                    <div className="dashed-border input-field mb-3 ">
+                      <small
+                        style={{
+                          display: "block",
+                          color: "gray",
+                          textAlign: "left",
+                        }}
+                      >
+                        Upload cv/resume
+                      </small>
+                      <input
+                        style={{ display: "none" }}
+                        id="upload_file"
+                        name="file"
+                        type="file"
+                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
+                      />
+                      <Button
+                        variant="contained"
+                        component="span"
+                        className="file_button"
+                      >
+                        Upload files
+                      </Button>
+                    </div>
+                  </Col>
+                </Row>
 
-                    <Row>
-                      <Col lg={8} md={8} sm={12}>
-                        <div className="check-container">
-                          {" "}
-                          <input type="checkbox" name="check" id="" />
-                          <p className="check">
-                            By checking this box, I certify that the information
-                            submitted in this application is true and correct to
-                            the best of my knowledge.
-                          </p>
-                        </div>
-                      </Col>
+                <Row>
+                  <Col lg={8} md={8} sm={12}>
+                    <div className="check-container">
+                      {" "}
+                      <input type="checkbox" name="check" id="" />
+                      <p className="check">
+                        By checking this box, I certify that the information
+                        submitted in this application is true and correct to the
+                        best of my knowledge.
+                      </p>
+                    </div>
+                  </Col>
 
-                      <Col lg={4} md={4} sm={12}>
-                        <Button variant="success" id="submit-btn">
-                          Submit
-                        </Button>{" "}
-                      </Col>
-                    </Row>
-                  </Container>
-                </form>
-          {/* </Form> */}
-
+                  <Col lg={4} md={4} sm={12}>
+                    <Button variant="success" id="submit-btn">
+                      Submit
+                    </Button>{" "}
+                  </Col>
+                </Row>
+              </Container>
+            </form>
+            {/* </Form> */}
           </Modal.Body>
           {/* <Modal.Footer>
             <Button variant="secondary" onClick={handleClose}>
@@ -373,7 +393,7 @@ const Detail = () => {
             </Button>
           </Modal.Footer> */}
         </Modal>
-      
+
         <Row className="jobs-outer-row">
           <Col sm={4} className="outer-col">
             <Row className="second-row">
@@ -384,7 +404,9 @@ const Detail = () => {
                 </p>
 
                 <div className="section section-first">
-                  <i class="./location-icon.png"></i>
+                  <i className="fa-solid">
+                    <ImLocation />
+                  </i>
                   <div className="inner-section inner-loc">
                     <h1>Location:</h1>
                     <span>Irving, Texas, United States</span>
@@ -392,7 +414,9 @@ const Detail = () => {
                 </div>
 
                 <div className="section">
-                  <i class="fa fa-suitcase"></i>
+                  <i className="fa-solid">
+                    <FaSuitcase />
+                  </i>
                   <div className="inner-section">
                     <h1>Job Category:</h1>
                     <span>Technology</span>
@@ -400,7 +424,9 @@ const Detail = () => {
                 </div>
 
                 <div className="section">
-                  <i class="fa fa-clock-o"></i>
+                  <i className="fa-solid">
+                    <FaRegClock />
+                  </i>
                   <div className="inner-section">
                     <h1>Date Posted:</h1>
                     <span>2021-11-09 16:30:20</span>
@@ -415,33 +441,69 @@ const Detail = () => {
                 <Row className="share-row">
                   <Col sm={6} className="share-col ">
                     <div className="socials">
-                    <a href="/#"><i className="fa fa-facebook" alt="facebook logo"> </i></a>
+                      <a href="/#">
+                        <i class="fa-brands">
+                          <ImFacebook2 />
+                        </i>
+                      </a>
 
-                    <a href="/#" ><i className="fa fa-linkedin" alt="linkedin to be "> </i></a>
+                      <a href="/#">
+                        <i class="fa-brands">
+                          <ImLinkedin />
+                        </i>
+                      </a>
 
-                    <a href="/#" ><i className="fa fa-twitter" alt="twitter logo"> </i></a>
-
+                      <a href="/#">
+                        <i class="fa-brands twitticon">
+                          <FaTwitterSquare />
+                        </i>
+                      </a>
                     </div>
                   </Col>
                   <Col sm={6} className="share-col2">
                     <div className="vertical-div">
                       <p>
-                        <a href="/#">
-                          <MdEmail />
-                          &nbsp;&nbsp;<span>Email this job</span>
-                        </a>
+                        <MdEmail />
+                        &nbsp;&nbsp;
+                        <span
+                          onClick={(e) => {
+                            window.location.href =
+                              "mailto:neutroline@gmail.com";
+                          }}
+                        >
+                          Email this job
+                        </span>
                       </p>
                       <p>
-                        <a href="/#">
-                          <HiPrinter />
-                          &nbsp;&nbsp;<span>print</span>
-                        </a>
+                        <HiPrinter />
+
+                        <ReactToPrint
+                          trigger={() => (
+                            <span style={{ marginLeft: ".7rem" }}>
+                              Print me
+                            </span>
+                          )}
+                          content={() => Componentref.current}
+                        />
                       </p>
                       <p>
-                        <a href="/#">
-                          <MdFileCopy />
-                          &nbsp;&nbsp;<span>Copy job link</span>
-                        </a>
+                        <MdFileCopy />
+                        &nbsp;&nbsp;
+                        <span>
+                          <CopyToClipboard
+                            text="http://localhost:3000/Details/sales#"
+                            onCopy={() =>
+                              swal({
+                                title: "Good job!",
+                                text: "Job link has been copied!",
+                                icon: "success",
+                                button: "ok",
+                              })
+                            }
+                          >
+                            <span>Copy</span>
+                          </CopyToClipboard>
+                        </span>
                       </p>
                     </div>
                   </Col>
@@ -450,7 +512,7 @@ const Detail = () => {
             </Row>
           </Col>
 
-          <Col sm={8} className="right-col">
+          <Col sm={8} className="right-col" ref={Componentref}>
             <h3>Job Description</h3>
             <p>
               Neutrosys Inc is looking for a few recent graduate individuals to
@@ -506,9 +568,20 @@ const Detail = () => {
               Neutrosys Inc is an EEO Employer providing IT solutions in United
               States, Asia, and Europe.
             </p>
-            <button className="apply-btn">
+            <button
+              className="apply-btn"
+              variant="primary"
+              onClick={handleShow}
+            >
               <a href="/#">Apply Now</a>
             </button>
+            {/* <Button
+              variant="primary"
+              onClick={handleShow}
+              className="jobs-top-btn"
+            >
+              Apply Now
+            </Button> */}
           </Col>
         </Row>
       </Container>

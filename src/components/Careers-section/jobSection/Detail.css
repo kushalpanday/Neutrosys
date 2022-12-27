@@ -10,9 +10,43 @@
   border-top: 3px solid #0089ca;
   height: 100px;
   /* text-align: center; */
+  /* margin-top: 3rem; */
+}
+.back-row{
   margin-top: 3rem;
+  text-align: left;
+}
+.back-btn{
+  border: none;
+  color: white;
+  font-size: 18px;
+  /* background: #0089ca; */
+  background: #0089ca;
+  padding-left: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 25px;
+  clip-path: polygon(100% 0, 94% 49%, 100% 100%, 8% 100%, 0% 50%, 8% 0);
+  /* clip-path: polygon(100% 0%, 86% 50%, 100% 100%, 13% 99%, 0% 50%, 13% 0); */
+  margin-bottom: 2px;
+  /* border-radius: 10%;  */
+  
+}
+.back-btn:hover{
+  background: #168dc4d5;
 }
 
+/* .iconborder-btn{
+  margin-left: 2rem;
+  padding-left: 20px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  padding-right: 20px;
+  color: white;
+  background: #0089ca;
+  border-radius: 10px;
+  border: none;
+} */
 .jobs-top-col h2 {
   text-align: left;
   color: #0089ca;
@@ -113,9 +147,6 @@
   gap: 25px;
   margin:1rem;
 }
-.section:hover {
-  background-color: rgba(128, 128, 128, 0.205);
-}
 .fa-solid {
   font-size: 22px;
   padding-left: 15px;
@@ -164,37 +195,33 @@
   padding-left: 20px;
   padding-top: 0.5rem;
 }
-.socials {
-  border-right: 1px solid grey;
-  height: 50px;
-  padding-top: 8px;
-  display:flex;
-  justify-content: center;
-  gap:1rem;
-  /* float: left; */
-}
-
-.socials .fa {
-  margin-right: 22px;
-  font-size: 2rem;
-}
-
-.fa-square-facebook {
-  color: #1a91da;
-}
-
-.fa-linkedin {
-  color: #1a91da;
-}
-
-.fa-square-twitter {
-  color: #1a91da;
-}
-/* .vertical-div
+.share-col
 {
-    border: 1px solid;
     
-}  */
+    padding-left: 25px;
+    padding-top: 0.5rem;
+}
+ .socials
+{
+    border-right: 1px solid grey;
+    height: 55px;
+    padding-top: 0;
+    
+} 
+
+.socials .fa-brands{
+    margin-right: 18px;
+    font-size: 1.9rem;
+   margin-top: 0;
+}
+.socials .twitticon{
+    font-size: 2.2rem;
+}
+.vertical-div
+{
+    /* border: 1px solid; */
+    padding-left: 15px;
+}  
 .vertical-div p {
   font-size: 23px;
   color: #1a91da;
@@ -344,9 +371,7 @@ div .react-tel-input .form-control {
 }
 .form-control{
   margin-left:0;
-}
-.job-form-row{
-  row-gap:.2rem;
+  margin-top:0;
 }
 .jobs-modal-header{
   padding:0;
@@ -382,6 +407,10 @@ input[type="checkbox"]{
   color: #636e72;
 }
 
+.vertical-div p span {
+  cursor:pointer;
+}
+
 .select {
   padding: 15px;
 }
@@ -402,11 +431,6 @@ select.mb-3.input-field.form-select {
 }
 select.mb-3.input-field.form-select option{
   width:40%;
-}
-@media screen and (min-width: 390px) and (max-width: 844px) {
-  .text {
-    top: 15%;
-  }
 }
 
 @media screen and (min-width: 360px) and (max-width: 740px) {
@@ -462,9 +486,9 @@ select.mb-3.input-field.form-select option{
 }
 
 @media screen and (min-width: 820px) and (max-width: 1180px) {
-  .text {
+  /* .text {
     top: 15%;
-  }
+  } */
   .apply-btn {
     margin: 0;
   }
@@ -502,9 +526,9 @@ select.mb-3.input-field.form-select option{
     justify-content: flex-end;
   }
 
-  .text {
+  /* .text {
     top: 5%;
-  }
+  } */
   .jobs-top-col {
     width: 70%;
   }
@@ -593,7 +617,7 @@ select.mb-3.input-field.form-select option{
     padding-top: 7px;
   }
   .text {
-    top: 15%;
+   
     left: 7%;
     width: 85%;
   }
@@ -629,9 +653,9 @@ select.mb-3.input-field.form-select option{
   }
 }
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-  .text {
+  /* .text {
     top: 12%;
-  }
+  } */
   .socials {
     border: none;
   }
@@ -733,13 +757,31 @@ select.mb-3.input-field.form-select option{
     width: 100%;
   }
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   .text {
     top: 10%;
   }
-}
+} */
+
 @media screen and (max-width: 1180px) {
   .socials {
     border: none;
+    text-align: left;
+    padding-left: 15px;
+  }
+  .vertical-div{
+    padding-left: 30px;
+  }
+}
+@media screen and (max-width: 1000px){
+  .right-col {
+    width: 100%;
+  }
+  .socials{
+    text-align: left;
+    padding-left: 15px;
+  }
+  .vertical-div{
+    padding-left: 30px;
   }
 }

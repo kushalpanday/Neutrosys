@@ -21,16 +21,11 @@ export default function Resume() {
               opportunity that matches your experience.
             </p>
 
-            <div className="btn-3div">
-              <Button size="lg" className="rbtn">
-                Consulting
+            <div className="btn-submitdiv">
+              <Button size="lg" variant='info' className="rbtn">
+                Submit resume
               </Button>
-              <Button size="lg" className="rbtn">
-                Internal job
-              </Button>
-              <Button size="lg" className="rbtn">
-                Internship
-              </Button>
+              
             </div>
           </Col>
         </Row>

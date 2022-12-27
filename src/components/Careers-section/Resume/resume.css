@@ -34,22 +34,26 @@
     padding-right: 11px; */
   text-align: left;
 }
-.btn-3div {
-  /* border: 1px solid; */
-  align-items: flex-start;
-  text-align: left;
+.btn-submitdiv {
+  /* border: 1px solid;  */
+  /* align-items: flex-start; */
+  text-align: center;
+  width: 70%;
+
 }
 .rbtn {
-  background-color: #ffffff;
+  /* background-color: white; */
   color: black;
-  border: 1px solid #159a9c;
+  font-size: 18px;
   margin-right: 9px;
   margin-top: 10px;
+  text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.575);
+  box-shadow: 0px 10px 14px -7px rgba(0, 0, 255, 0.425);
 }
-.rbtn:hover {
+/* .rbtn:hover {
   background-color: #159a9c;
   border: none;
-}
+} */
 
 @media only screen and (max-width: 940px) {
   .resume-row {
