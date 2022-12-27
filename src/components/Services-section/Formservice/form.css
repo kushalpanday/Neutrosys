@@ -42,6 +42,21 @@
     margin: 0;
     background-color: rgba(13, 73, 147, 0.74);
   }
+  /* .swal-height {
+    height: 1rem;
+  } */
+  .swal-button-container{
+    text-align:center;
+  }
+  .swal-text:first-child {
+    margin-top:1rem;
+}
+.swal-footer{
+  padding:0;
+}
+.swal-modal{
+  width:30%;
+}
   div .form-col{
     background-color: #3b82f6;
     padding:2rem;

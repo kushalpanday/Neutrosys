@@ -41,11 +41,11 @@ const Formservice = () => {
   } = useForm();
   const onSubmit = (data, e) => {
     console.log(data);
-    reset();
-    resetField();
+    // reset();
+    // resetField();
     const token = captchaRef.current.getValue();
     captchaRef.current.reset();
-    swal("Thank you!", "You Form has been Submitted", "success");
+    swal("Form has been Submitted");
   };
 
   return (
@@ -159,7 +159,8 @@ const Formservice = () => {
                         },
                     }}
                     className="txtfield_country_code"
-                    {...register("country_code")}
+                    {...register("country_code", { required: "Required" })}
+                    error={!!errors?.country_code}
                   />
                   <TextField
                     // inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
@@ -184,7 +185,8 @@ const Formservice = () => {
                           borderBottom: "none",
                         },
                     }}
-                    {...register("phone")}
+                    {...register("phone", { required: "Required" })}
+                    error={!!errors?.phone}
                   />
                 </div>
                 <TextField
@@ -208,7 +210,8 @@ const Formservice = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("location")}
+                  {...register("location", { required: "Required" })}
+                  error={!!errors?.location}
                 />
                 <TextField
                   fullWidth
@@ -236,7 +239,8 @@ const Formservice = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("subject")}
+                  {...register("subject", { required: "Required" })}
+                  error={!!errors?.subject}
                 />
                 <TextField
                   fullWidth
@@ -265,7 +269,8 @@ const Formservice = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("message")}
+                  {...register("message", { required: "Required" })}
+                  error={!!errors?.message}
                 />
                 <div style={{ display: "flex" }}>
                   <label htmlFor="upload_file">
@@ -281,7 +286,7 @@ const Formservice = () => {
                       {...register("file", {
                         validate: {
                           lessThan10MB: (files) =>
-                            files[0]?.size < 100000 || "Max 10 KB",
+                            files[0]?.size < 100000000 || "Max 10 MB",
                           // Morethan0kb: files=>files[0]?.size > 0 || 'Min 0 kb',
 
                           acceptedFormats: (files) =>
