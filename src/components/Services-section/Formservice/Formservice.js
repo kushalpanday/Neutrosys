@@ -41,8 +41,8 @@ const Formservice = () => {
   } = useForm();
   const onSubmit = (data, e) => {
     console.log(data);
-    // reset();
-    // resetField();
+    reset();
+    resetField();
     const token = captchaRef.current.getValue();
     captchaRef.current.reset();
     swal("Form has been Submitted");
