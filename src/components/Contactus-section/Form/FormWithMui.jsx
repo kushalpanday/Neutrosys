@@ -83,7 +83,7 @@ export default function FormWithMui() {
                 }}
                 {...register("name", { required: "Required", minLength: 3 })}
                 error={!!errors?.name}
-                helperText={errors?.name ? errors.name.message : null}
+               
               />
 
               <TextField
@@ -116,7 +116,7 @@ export default function FormWithMui() {
                   },
                 })}
                 error={!!errors?.email}
-                helperText={errors?.email ? errors.email.message : null}
+               
               />
               <div className="tel">
                 <TextField
@@ -140,7 +140,8 @@ export default function FormWithMui() {
                     },
                   }}
                   className="txtfield_country_code"
-                  {...register("country_code")}
+                  {...register("country_code", { required: "Required" })}
+                  error={!!errors?.country_code}
                 />
                 <TextField
                   // inputProps={{ inputMode: 'numeric', pattern: '[0-9]*' }}
@@ -165,7 +166,8 @@ export default function FormWithMui() {
                       borderBottom: "none",
                     },
                   }}
-                  {...register("phone")}
+                  {...register("phone", { required: "Required" })}
+                  error={!!errors?.phone}
                 />
               </div>
               <TextField
@@ -188,7 +190,8 @@ export default function FormWithMui() {
                     borderBottom: "none",
                   },
                 }}
-                {...register("location")}
+                {...register("location", { required: "Required" })}
+                error={!!errors?.location}
               />
               <TextField
                 fullWidth
@@ -215,7 +218,8 @@ export default function FormWithMui() {
                     borderBottom: "none",
                   },
                 }}
-                {...register("subject")}
+                {...register("subject", { required: "Required" })}
+                error={!!errors?.subject}
               />
               <TextField
                 fullWidth
@@ -243,7 +247,8 @@ export default function FormWithMui() {
                     borderBottom: "none",
                   },
                 }}
-                {...register("message")}
+                {...register("message", { required: "Required" })}
+                error={!!errors?.message}
               />
               <div style={{display:"flex"}}>
               <label htmlFor="upload_file">

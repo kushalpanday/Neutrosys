@@ -1,15 +1,16 @@
-import React, { useState } from 'react';
+import React, { useState,useRef } from 'react';
 import '../contactUs.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Modal from 'react-bootstrap/Modal';
 import { BsPrinterFill } from 'react-icons/bs';
 import { Button } from 'react-bootstrap';
-
+import ReactToPrint from "react-to-print";
 
 
 export default function LocationDetail() {
     const [show, setShow] = useState(false);
+    const Componentref = useRef();
     return(
         <>
             <Row className='location-row'>
@@ -45,14 +46,21 @@ export default function LocationDetail() {
                         </Modal.Title>
                         <Button className='map-btn'>
                             <p><BsPrinterFill/></p>
-                            <span className='tooltiptext'>Print Map</span>
+                            <span className='tooltiptext'> <ReactToPrint
+                            trigger={() => (
+                              <span style={{ marginLeft: ".7rem" }}>
+                                Print me
+                              </span>
+                            )}
+                            content={() => Componentref.current}
+                          /></span>
                         </Button>
                         </Modal.Header>
                         <Modal.Body>
-                        
+                        <div className="maod"  ref={Componentref}>
                        <iframe title="map" style={{height:'70vh',width:'100%'}} id="gmap_canvas"
                         src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-
+                        </div>
                         </Modal.Body>
                     </Modal>
                                     
