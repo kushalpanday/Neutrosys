@@ -102,7 +102,8 @@ const FormEl = () => {
                 borderBottom: "none",
               },
             }}
-            {...register("phoneNumber")}
+            {...register("phoneNumber",{ required: "Required"})}
+            error={!!errors?.phoneNumber}
           />
           <div className="wrap">
             <div className="first">
@@ -128,7 +129,8 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("CompanyName")}
+                  {...register("CompanyName",{ required: "Required"})}
+                  error={!!errors?.CompanyName}
                 />
 
                 <TextField
@@ -152,7 +154,8 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("Job")}
+                  {...register("Job",{ required: "Required"})}
+                  error={!!errors?.Job}
                 />
               </div>
             </div>
@@ -179,7 +182,8 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("Country")}
+                  {...register("Country",{ required: "Required"})}
+                  error={!!errors?.Country}
                 />
 
                 <TextField
@@ -203,7 +207,8 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("city")}
+                  {...register("city",{ required: "Required"})}
+                  error={!!errors?.city}
                 />
               </div>
             </div>
@@ -259,7 +264,8 @@ const FormEl = () => {
                 borderBottom: "none",
               },
             }}
-            {...register("message")}
+            {...register("message",{ required: "Required"})}
+            error={!!errors?.message}
           />
           <div className="form-file">
             <label htmlFor="upload_file">

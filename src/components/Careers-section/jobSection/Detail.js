@@ -24,6 +24,7 @@ import { FaTwitterSquare } from "react-icons/fa";
 import ReactToPrint from "react-to-print";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import swal from "sweetalert";
+import { useForm } from "react-hook-form";
 
 const Detail = () => {
   const [mobile, setMobile] = useState("+977");
@@ -52,6 +53,19 @@ const Detail = () => {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    resetField,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+    resetField();
+  };
+
 
   return (
     <div className="main-divbg">
@@ -108,7 +122,7 @@ const Detail = () => {
               <Form.Control as="textarea" rows={3} />
             </Form.Group> */}
 
-            <form className="form">
+            <form className="form"  onSubmit={handleSubmit(onSubmit)}>
               <Container>
                 <Row className="mt-2">
                   <Col lg={6} md={12} sm={12} className="p-1">
@@ -116,10 +130,14 @@ const Detail = () => {
                       controlId="floatingInput"
                       label="First Name"
                       className="input-field"
+                      
                     >
                       <Form.Control
                         type="text"
                         placeholder="name@example.com"
+                        name="name"
+                        {...register("name", { required: "Required", minLength: 3 })}
+                        error={!!errors?.name}
                       />
                     </FloatingLabel>
                   </Col>
@@ -129,10 +147,12 @@ const Detail = () => {
                       controlId="floatingPassword"
                       label="Middle Name (If applicable)"
                       className="input-field"
+                      name="middlename"
                     >
                       <Form.Control
                         type="text"
                         placeholder="Middle Name (If applicable)"
+                        {...register("middlename")}
                       />
                     </FloatingLabel>
                   </Col>
@@ -143,10 +163,13 @@ const Detail = () => {
                       controlId="floatingInput"
                       label="Last Name"
                       className="input-field p-0"
+                      name="lastname"
                     >
                       <Form.Control
                         type="text"
                         placeholder="name@example.com"
+                        {...register("lastname", { required: "Required" })}
+                        error={!!errors?.lastname}
                       />
                     </FloatingLabel>
                   </Col>
@@ -155,13 +178,20 @@ const Detail = () => {
                     <Form.Select
                       aria-label="Default select example"
                       className="p-3 input-field"
+                      
+                       name="gender"
+                      
+                      {...register("gender", { required: "Required" })}
+                      error={!!errors?.gender}
+                                           
+                     
                     >
-                      <option>Gender</option>
-                      <option value="1">Male</option>
-                      <option value="2">Female</option>
-                      <option value="3">Unspecified</option>
-                      <option value="4">Undisclosed</option>
-                      <option value="5">Other</option>
+                      <option> Gender</option>
+                      <option value="male">Male</option>
+                      <option value="female">Female</option>
+                      <option value="unspecified">Unspecified</option>
+                      <option value="undisclosed">Undisclosed</option>
+                      <option value="other">Other</option>
                     </Form.Select>
                   </Col>
                 </Row>
@@ -261,10 +291,12 @@ const Detail = () => {
                       controlId="floatingPassword"
                       label="Expected Salary/Salary Range(Optional)"
                       className="input-field"
+                      
                     >
                       <Form.Control
                         type="number"
                         placeholder="Middle Name (If applicable)"
+                       
                       />
                     </FloatingLabel>
                   </Col>
@@ -275,6 +307,7 @@ const Detail = () => {
                     <Form.Select
                       aria-label="Default select example"
                       className="mb-3 input-field"
+                      
                     >
                       <option>Applying for Seniority Level of</option>
                       <option value="1">Not Applicable</option>
@@ -375,7 +408,7 @@ const Detail = () => {
                   </Col>
 
                   <Col lg={4} md={4} sm={12}>
-                    <Button variant="success" id="submit-btn">
+                    <Button variant="success" id="submit-btn" type="submit">
                       Submit
                     </Button>{" "}
                   </Col>
