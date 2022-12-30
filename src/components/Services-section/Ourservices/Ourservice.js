@@ -11,6 +11,7 @@ import Outsourcing from "./Outsourcing";
 import ServiceData from "./ServiceData";
 import Softwarequality from "./Softwarequality";
 import CloseIcon from '@mui/icons-material/Close';
+import { AiOutlineArrowRight } from "react-icons/ai";
 
 const Ourservice = ({closeme}) => {
   const [state, setstate] = useState(false);
@@ -56,6 +57,7 @@ const Ourservice = ({closeme}) => {
               
               <h4>{item.heading}</h4>
               <p>{item.disc}</p>
+              <span className="services-readmore">Read more <AiOutlineArrowRight/></span>
             </div>
           );
         })}

@@ -68,6 +68,13 @@
     text-align: center;
     padding-top: 1rem;
 }
+.scroll-jobdiv{
+    /* border: 1px solid red;   */
+    max-height: 700px;
+    overflow-y: auto;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
 .openposition-row
 {
     /* border: 1px solid red; */
@@ -85,7 +92,9 @@
     margin-right: 15px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
+.openposition-col2{
+    margin-top: 3rem;
+}
 .openposition-col:hover
 {
     background-color: rgba(128, 128, 128, 0.226);
@@ -96,6 +105,9 @@
     background-color:#8EA9DB;
     height: 60px;
     
+}
+.secondheading-row{
+    margin-top: 1rem;
 }
 .heading-rowbg h6
 {
@@ -229,15 +241,17 @@
         margin-top: 10px;
         width: 90%;
     }
-    .icon-text p
+    
+    /* .icon-text p
 {
     
     margin-top: -10px;
    
     
-}
+} */
 
 }
+
 @media only screen and (max-width: 525px){
     .loc-text p
     {

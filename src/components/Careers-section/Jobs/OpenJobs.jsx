@@ -375,7 +375,31 @@ function OpenJobs() {
                   </h5>
                 </Col>
               </Row>
-            </div>
+            </div> 
+
+            <div className="white-box-shadow">
+              <Row className="inner-row">
+                <Col sm={9} className="inner-col">
+                  <h5>
+                    <a href="/#">Health Care ETL Tester - Remote</a>
+                  </h5>
+                  <h6>TX, Texas, United States | Technology | Contract</h6>
+                  <p>
+                    We are looking for multiple Healthcare Facets Tester to fill
+                    the urgent requirement for one of our clients.
+                  </p>
+                  <p className="num-p">
+                    2021-05-21 20:50:39 -{" "}
+                    <span style={{ color: "red" }}>Position Closed</span>
+                  </p>
+                </Col>
+                <Col sm={2} className="inner-col2">
+                  <h5>
+                    <a href="/#">Apply</a>
+                  </h5>
+                </Col>
+              </Row>
+            </div>  
           </Col>
         </Row>
       </Container>
