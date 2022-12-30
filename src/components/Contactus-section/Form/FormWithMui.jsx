@@ -12,6 +12,8 @@ import checkboxClasses from "@mui/material/Checkbox";
 import { green } from "@mui/material/colors";
 import { style } from "@mui/system";
 import { pink } from '@mui/material/colors';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 // import Switch from '@mui/material/Switch';
 export default function FormWithMui() {
   const[tick,setTick]=useState(false)
@@ -47,10 +49,12 @@ export default function FormWithMui() {
     console.log(data);
     reset();
     resetField();
+    toast.success("your form has been submitted");
   };
 
   return (
     <>
+       <ToastContainer position="top-center" />
       <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
         <Row className="form-row mb-4">
           <Col sm={9} className="contactus-form-col ">
@@ -65,10 +69,6 @@ export default function FormWithMui() {
                 className="textfield"
                 variant="filled"
                 placeholder="Your Name"
-                // value={myForm.values.name}
-                // onChange={myForm.handleChange}
-                // error={!!myForm.errors.companyName}
-                // helperText={myForm.errors.name}
                 autoComplete="off"
                 sx={{
                   "& .MuiFilledInput-underline:before": {

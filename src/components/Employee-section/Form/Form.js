@@ -2,6 +2,8 @@ import React from "react";
 import { TextField, Button } from "@mui/material";
 import "./Form.css";
 import {Controller, useForm } from "react-hook-form";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const FormEl = () => {
   const {
     register,
@@ -15,6 +17,7 @@ const FormEl = () => {
     console.log(data);
     reset();
     resetField();
+    toast.success("your form has been submitted");
   };
   return (
     <div className="form-container">
@@ -23,7 +26,7 @@ const FormEl = () => {
         <p className="spanclass">
           Please fill out the form with your details. We will contact you soon.
         </p>
-
+        <ToastContainer position="top-center" />
         <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
           <TextField
             id="outlined-basic"

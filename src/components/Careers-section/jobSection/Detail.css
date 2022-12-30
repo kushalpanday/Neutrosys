@@ -273,7 +273,12 @@ div .react-tel-input .form-control {
   /* width:40%; */
   justify-content: center;
   /* text-align: center; */
-  display: flex;
+  /* display: flex; */
+}
+.upload-files-jobs{
+    display: flex;
+    gap:1rem;
+    text-align:center;
 }
 .apply-btn {
   outline: none;
@@ -400,6 +405,9 @@ input[type="checkbox"]{
   border: none;
   border: 1px dashed grey;
   outline: none;
+}
+.file_button{
+  margin:0;
 }
 
 .flex .input-field {

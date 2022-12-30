@@ -34,15 +34,23 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light{
 .navbar_button:hover {
   background-color: #1f68ae;
 }
+
 .active.nav-link {
   background-color: #dddee696; 
   border-radius: 10px;
 }
+
+/* .navbar-nav{
+  border-radius: 10px;
+  background-color: #dddee696; 
+} */
 .nav-link:hover{
   border-radius: 10px;
   background-color: #dddee696; 
 }
-
+.nav-margin{
+  margin:auto 5rem auto auto;
+}
  nav.navbar.navbar.navbar-expand-lg.navbar-light.bg-light{
   z-index:2;
  }
@@ -56,5 +64,10 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light{
 @media only screen and (max-width: 767px){
   .navbar_button{
     margin:0;
+  }
+}
+@media only screen and (max-width: 950px){
+  .nav-margin{
+    margin:auto;
   }
 }

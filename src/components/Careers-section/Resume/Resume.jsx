@@ -1,11 +1,69 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./resume.css";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Button from "react-bootstrap/Button";
+import { Container, FloatingLabel, Form, Modal } from "react-bootstrap";
+import { Country, State, City } from "country-state-city";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import swal from "sweetalert";
+import { useForm } from "react-hook-form";
 // import ReactToPrint from 'react-to-print';
 
-export default function Resume() {
+export default function Resume(props) {
+  const wrapperRef = useRef(null);
+  const [fileList, setFileList] = useState([]);
+  const [mobile, setMobile] = useState("+977");
+  const [state, setState] = useState(false);
+  const countries = Country.getAllCountries();
+  const [show, setShow] = useState(false);
+
+  const Componentref = useRef();
+  // const setCou=countries.map(item=>item.isoCode)
+
+  const states = State.getAllStates().filter(
+    (item) => item.countryCode === "IN"
+  );
+
+  // const navigate = useNavigate();
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+  const {
+    register,
+    handleSubmit,
+    reset,
+    resetField,
+    formState: { errors },
+  } = useForm();
+  const onSubmit = (data) => {
+    console.log(data);
+    reset();
+    resetField();
+    swal("Form has been Submitted");
+  };
+
+  const onDragEnter = () => wrapperRef.current.classList.add("dragover");
+
+  const onDragLeave = () => wrapperRef.current.classList.remove("dragover");
+
+  const onDrop = () => wrapperRef.current.classList.remove("dragover");
+
+  const onFileDrop = (e) => {
+    const newFile = e.target.files[0];
+    if (newFile) {
+      const updatedList = [...fileList, newFile];
+      setFileList(updatedList);
+      props.onFileChange(updatedList);
+    }
+  };
+  const fileRemove = (file) => {
+    const updatedList = [...fileList];
+    updatedList.splice(fileList.indexOf(file), 1);
+    setFileList(updatedList);
+    props.onFileChange(updatedList);
+  };
 
   return (
     <>
@@ -22,10 +80,343 @@ export default function Resume() {
             </p>
 
             <div className="btn-submitdiv">
-              <Button size="lg" variant='info' className="rbtn">
+              <Button
+                size="lg"
+                variant="info"
+                className="rbtn"
+                onClick={handleShow}
+              >
                 Submit resume
               </Button>
-              
+
+              <Modal show={show} onHide={handleClose} size="lg">
+                <Modal.Header closeButton className="jobs-modal-header">
+                  <Modal.Title className="top-form">
+                    ENTER YOUR INFORMATION
+                  </Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <form className="form" onSubmit={handleSubmit(onSubmit)}>
+                    <Container>
+                      <Row className="mt-2">
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            controlId="floatingInput"
+                            label="First Name"
+                            className="input-field"
+                          >
+                            <Form.Control
+                              type="text"
+                              placeholder="name@example.com"
+                              name="name"
+                              {...register("name", {
+                                required: "Required",
+                                minLength: 3,
+                              })}
+                              error={!!errors?.name}
+                            />
+                          </FloatingLabel>
+                        </Col>
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            // lg={3}
+                            controlId="floatingPassword"
+                            label="Middle Name (If applicable)"
+                            className="input-field"
+                            name="middlename"
+                          >
+                            <Form.Control
+                              type="text"
+                              placeholder="Middle Name (If applicable)"
+                              {...register("middlename")}
+                            />
+                          </FloatingLabel>
+                        </Col>
+                      </Row>
+                      <Row>
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            controlId="floatingInput"
+                            label="Last Name"
+                            className="input-field p-0"
+                            name="lastname"
+                          >
+                            <Form.Control
+                              type="text"
+                              placeholder="name@example.com"
+                              {...register("lastname", {
+                                required: "Required",
+                              })}
+                              error={!!errors?.lastname}
+                            />
+                          </FloatingLabel>
+                        </Col>
+
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <Form.Select
+                            aria-label="Default select example"
+                            className="p-3 input-field"
+                            name="gender"
+                            {...register("gender", { required: "Required" })}
+                            error={!!errors?.gender}
+                            label="gender"
+                          >
+                            {/* <option> Gender</option> */}
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="unspecified">Unspecified</option>
+                            <option value="undisclosed">Undisclosed</option>
+                            <option value="other">Other</option>
+                          </Form.Select>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <PhoneInput
+                            country={"nep"}
+                            value={mobile}
+                            // name="country_code"
+                            inputProps={{}}
+                            type="number"
+                            onChange={(phone) => setMobile(phone)}
+                            className="input-field"
+                            // {...register("country_code", {
+                            //   required: "Required",
+                            // })}
+                            // error={!!errors?.country_code}
+                          />
+                        </Col>
+
+                        <Col lg={6} md={12} sm={12} className="p-1 mt-0">
+                          <FloatingLabel
+                            controlId="floatingPassword"
+                            label="Phone"
+                            className="input-field"
+                          >
+                            <Form.Control
+                              type="number"
+                              name="phone"
+                              placeholder="phone"
+                              // {...register("phone", { required: "Required" })}
+                              // error={!!errors?.phone}
+                            />
+                          </FloatingLabel>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                          <Form.Select
+                            aria-label="Default select example"
+                            className="input-field select"
+                          >
+                            {countries.map((country) => (
+                              <option
+                                key={country.isoCode}
+                                value={country.countryCode}
+                              >
+                                {country.name}
+                              </option>
+                            ))}
+                          </Form.Select>
+                        </Col>
+
+                        <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                          <Form.Select
+                            aria-label="Default select example"
+                            className="input-field select"
+                          >
+                            {states.map((state) => (
+                              <option key={state.isoCode}>{state.name}</option>
+                            ))}
+                          </Form.Select>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            controlId="floatingInput"
+                            label="City"
+                            className="input-field"
+                          >
+                            <Form.Control
+                              type="text"
+                              placeholder="name@example.com"
+                            />
+                          </FloatingLabel>
+                        </Col>
+
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            controlId="floatingPassword"
+                            label="Current Address"
+                            className="input-field"
+                          >
+                            <Form.Control
+                              type="text"
+                              placeholder="Middle Name (If applicable)"
+                            />
+                          </FloatingLabel>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            controlId="floatingInput"
+                            label="Email"
+                            className="input-field"
+                          >
+                            <Form.Control
+                              type="email"
+                              placeholder="name@example.com"
+                              {...register("email", {
+                                required: "Required field",
+                                pattern: {
+                                  value: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i,
+                                  message: "Invalid email address",
+                                },
+                              })}
+                              error={!!errors?.email}
+                            />
+                          </FloatingLabel>
+                        </Col>
+
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            controlId="floatingPassword"
+                            label="Expected Salary/Salary Range(Optional)"
+                            className="input-field"
+                          >
+                            <Form.Control
+                              type="number"
+                              placeholder="Expected Salary/Salary Range(Optional)"
+                            />
+                          </FloatingLabel>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <Form.Select
+                            aria-label="Default select example"
+                            className="mb-3 input-field"
+                          >
+                            <option>Applying for Seniority Level of</option>
+                            <option value="1">Not Applicable</option>
+                            <option value="2">Internship</option>
+                            <option value="3">Entry Level</option>
+                            <option value="4">Associate(Junior)</option>
+                            <option value="5">Mid Level</option>
+                            <option value="6">Senior</option>
+                            <option value="7">Director</option>
+                            <option value="5">Executive</option>
+                          </Form.Select>
+                        </Col>
+
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <div className="dashed-border input-field mb-3 ">
+                            <small
+                              style={{
+                                display: "block",
+                                color: "gray",
+                                textAlign: "left",
+                              }}
+                            >
+                              Upload cv/resume
+                            </small>
+                            <input
+                              style={{ display: "none" }}
+                              id="upload_file"
+                              name="file"
+                              type="file"
+                              accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
+                            />
+                            <Button
+                              variant="contained"
+                              component="span"
+                              className="file_button"
+                            >
+                              Upload files
+                            </Button>
+                          </div>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <FloatingLabel
+                            controlId="floatingTextarea2"
+                            label="Message(Optional)"
+                            className="input-field"
+                          >
+                            <Form.Control
+                              as="textarea"
+                              placeholder="Leave a comment here"
+                              style={{ height: "100px" }}
+                            />
+                          </FloatingLabel>
+                        </Col>
+
+                        <Col lg={6} md={12} sm={12} className="p-1">
+                          <div className="dashed-border input-field mb-3 ">
+                            <small
+                              style={{
+                                display: "block",
+                                color: "gray",
+                                textAlign: "left",
+                              }}
+                            >
+                              Upload cv/resume
+                            </small>
+                            <input
+                              style={{ display: "none" }}
+                              id="upload_file"
+                              name="file"
+                              type="file"
+                              accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
+                            />
+                            <Button
+                              variant="contained"
+                              component="span"
+                              className="file_button"
+                            >
+                              Upload files
+                            </Button>
+                          </div>
+                        </Col>
+                      </Row>
+
+                      <Row>
+                        <Col lg={8} md={8} sm={12}>
+                          <div className="check-container">
+                            {" "}
+                            <input type="checkbox" name="check" id="" />
+                            <p className="check">
+                              By checking this box, I certify that the
+                              information submitted in this application is true
+                              and correct to the best of my knowledge.
+                            </p>
+                          </div>
+                        </Col>
+
+                        <Col lg={4} md={4} sm={12}>
+                          <Button
+                            variant="success"
+                            id="submit-btn"
+                            type="submit"
+                          >
+                            Submit
+                          </Button>{" "}
+                        </Col>
+                      </Row>
+                    </Container>
+                  </form>
+                  {/* </Form> */}
+                </Modal.Body>
+              </Modal>
             </div>
           </Col>
         </Row>

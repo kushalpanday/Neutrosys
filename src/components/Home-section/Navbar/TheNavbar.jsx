@@ -17,7 +17,8 @@ function TheNavbar() {
 
       <Navbar.Toggle aria-controls="responsive-navbar-nav" />
       <Navbar.Collapse id="responsive-navbar-nav navbar_list">
-        <Nav className="m-auto">
+        <Nav className="nav-margin">
+          <TheNavbarProps link="/" name="Home" />
           <TheNavbarProps link="/aboutus"  name="About us" />
           <TheNavbarProps link="/services" name="Services" />
           <TheNavbarProps link="/employers" name="Employers" />

@@ -19,6 +19,9 @@ import { pink } from "@mui/material/colors";
 // import Switch from '@mui/material/Switch';
 import Submission from "./Submission";
 import swal from "sweetalert";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import Select from "react-select";
 
 const Formservice = () => {
   const [options, setOptions] = useState([
@@ -45,33 +48,60 @@ const Formservice = () => {
     resetField();
     const token = captchaRef.current.getValue();
     captchaRef.current.reset();
-    swal("Form has been Submitted");
+    // swal("Form has been Submitted");
+    toast.success("Success\n your form has been submitted");
   };
+  const onCaptchaComplete = (response) => {
+    console.log(response);
+  };
+  const optionSelect = [
+    { value: "Talent Solutions", label: "Talent Solutions" },
+    { value: "Out Sourcing", label: "Out Sourcing" },
+    { value: "Software Testing", label: "Software Testing" },
+    { value: "Software QA", label: "Software QA" },
+  ];
 
   return (
     <div className="services-form-container">
       {" "}
       <div className="mainForm">
+        <ToastContainer position="top-center" />
         <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
-          <Row className="form-row m-0" style={{height:"auto",width:"auto"}}>
+          <Row
+            className="form-row m-0"
+            style={{ height: "auto", width: "auto" }}
+          >
             <Col sm={12} lg={12} md={12} className="form-col ">
               <Container className=" formContainer">
                 <p className="heading-para">I'm interested in..</p>
 
-                <Multiselect
+                {/* <Multiselect
                   className="textfields"
                   name="interestField"
                   isObject={false}
+                  options={options}
+                  displayValue="key"
                   onRemove={(event) => {
+                    console.log(event);
+                  }}
+                  onSearch={(event) => {
                     console.log(event);
                   }}
                   onSelect={(event) => {
                     console.log(event);
                   }}
-                  options={options}
+                  closeMenuOnSelect={true}
                   {...register("interestField")}
+                /> */}
 
-                  // showCheckbox
+                <Select
+                  isMulti
+                  name="colors"
+                  options={optionSelect}
+                  className="basic-multi-select"
+                  classNamePrefix="select"
+                  menuPortalTarget={document.body} 
+                  styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
                 />
 
                 <TextField
@@ -172,6 +202,7 @@ const Formservice = () => {
                     autoComplete="off"
                     variant="filled"
                     placeholder=" Landline/Mobile Number"
+                    type="number"
                     className="txtfield_phone "
                     sx={{
                       "& .MuiFilledInput-underline:before": {
@@ -322,12 +353,14 @@ const Formservice = () => {
                     />
                   </label>
                 </div>
-                <div style={{ marginTop: 10, marginBottom: 8, padding:6 }}>
+                <div style={{ marginTop: 10, marginBottom: 8, padding: 6 }}>
                   <ReCAPTCHA
                     sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                     ref={captchaRef}
-                        style={{padding:6}}
-/>
+                    onChange={onCaptchaComplete}
+                    style={{ padding: 6 }}
+                    className="my-recaptcha"
+                  />
                 </div>
                 <div className="buttonsubmit">
                   <Button

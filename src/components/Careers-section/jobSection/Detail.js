@@ -10,6 +10,7 @@ import { MdFileCopy } from "react-icons/md";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import { Country, State, City } from "country-state-city";
+import { FileUploader } from "react-drag-drop-files";
 // import { ICountry } from "country-state-city";
 import Button from "react-bootstrap/Button";
 import PhoneInput from "react-phone-input-2";
@@ -26,8 +27,9 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import swal from "sweetalert";
 import { useForm } from "react-hook-form";
 
-const Detail = () => {
+const Detail = (props) => {
   const [mobile, setMobile] = useState("+977");
+
   const [state, setState] = useState(false);
   const countries = Country.getAllCountries();
   const [show, setShow] = useState(false);
@@ -36,20 +38,10 @@ const Detail = () => {
   // const setCou=countries.map(item=>item.isoCode)
 
   const states = State.getAllStates().filter(
-    (item) => item.countryCode === "IN"
+    (item) => item.countryCode === "NP"
   );
 
   const navigate = useNavigate();
-
-  console.log(states);
-  // console.log()
-
-  // const applyHandler = () => {
-  //   setState(true);
-  // };
-  // const crossHandler = () => {
-  //   setState(false);
-  // };
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -60,12 +52,18 @@ const Detail = () => {
     resetField,
     formState: { errors },
   } = useForm();
+
   const onSubmit = (data) => {
     console.log(data);
     reset();
     resetField();
+    swal("Form has been Submitted");
   };
-
+  const fileTypes = ["JPEG", "PNG", "GIF"];
+  const [file, setFile] = useState(null);
+  const handleChange = (file) => {
+    setFile(file);
+  };
 
   return (
     <div className="main-divbg">
@@ -75,7 +73,6 @@ const Detail = () => {
             <button className="back-btn" onClick={() => navigate(-1)}>
               Back
             </button>
-            {/* <button className='iconborder-btn'><BsFillArrowLeftCircleFill/>&nbsp;&nbsp;Back</button> */}
           </Col>
         </Row>
 
@@ -85,9 +82,6 @@ const Detail = () => {
           </Col>
 
           <Col sm={3} className="jobs-top-col2">
-            {/* <button className="jobs-top-btn" onClick={applyHandler}>
-              <a href="/#">Apply Now</a>
-            </button> */}
             <Button
               variant="primary"
               onClick={handleShow}
@@ -105,24 +99,7 @@ const Detail = () => {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            {/* <Form> */}
-            {/* <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-              <Form.Label>Email address</Form.Label>
-              <Form.Control
-                type="email"
-                placeholder="name@example.com"
-                autoFocus
-              />
-            </Form.Group>
-            <Form.Group
-              className="mb-3"
-              controlId="exampleForm.ControlTextarea1"
-            >
-              <Form.Label>Example textarea</Form.Label>
-              <Form.Control as="textarea" rows={3} />
-            </Form.Group> */}
-
-            <form className="form"  onSubmit={handleSubmit(onSubmit)}>
+            <form className="form" onSubmit={handleSubmit(onSubmit)}>
               <Container>
                 <Row className="mt-2">
                   <Col lg={6} md={12} sm={12} className="p-1">
@@ -130,13 +107,15 @@ const Detail = () => {
                       controlId="floatingInput"
                       label="First Name"
                       className="input-field"
-                      
                     >
                       <Form.Control
                         type="text"
                         placeholder="name@example.com"
                         name="name"
-                        {...register("name", { required: "Required", minLength: 3 })}
+                        {...register("name", {
+                          required: "Required",
+                          minLength: 3,
+                        })}
                         error={!!errors?.name}
                       />
                     </FloatingLabel>
@@ -178,15 +157,12 @@ const Detail = () => {
                     <Form.Select
                       aria-label="Default select example"
                       className="p-3 input-field"
-                      
-                       name="gender"
-                      
+                      name="gender"
                       {...register("gender", { required: "Required" })}
                       error={!!errors?.gender}
-                                           
-                     
+                      label="gender"
                     >
-                      <option> Gender</option>
+                      {/* <option> Gender</option> */}
                       <option value="male">Male</option>
                       <option value="female">Female</option>
                       <option value="unspecified">Unspecified</option>
@@ -201,9 +177,13 @@ const Detail = () => {
                     <PhoneInput
                       country={"nep"}
                       value={mobile}
+                      name="country_code"
                       inputProps={{}}
+                      type="number"
                       onChange={(phone) => setMobile(phone)}
                       className="input-field"
+                      // {...register("country_code", { required: "Required" })}
+                      // error={!!errors?.country_code}
                     />
                   </Col>
 
@@ -213,7 +193,13 @@ const Detail = () => {
                       label="Phone"
                       className="input-field"
                     >
-                      <Form.Control type="number" placeholder="phone" />
+                      <Form.Control
+                        type="number"
+                        name="phone"
+                        placeholder="phone"
+                        // {...register("phone", { required: "Required" })}
+                        // error={!!errors?.phone}
+                      />
                     </FloatingLabel>
                   </Col>
                 </Row>
@@ -282,6 +268,14 @@ const Detail = () => {
                       <Form.Control
                         type="email"
                         placeholder="name@example.com"
+                        {...register("email", {
+                          required: "Required field",
+                          pattern: {
+                            value: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i,
+                            message: "Invalid email address",
+                          },
+                        })}
+                        error={!!errors?.email}
                       />
                     </FloatingLabel>
                   </Col>
@@ -291,12 +285,10 @@ const Detail = () => {
                       controlId="floatingPassword"
                       label="Expected Salary/Salary Range(Optional)"
                       className="input-field"
-                      
                     >
                       <Form.Control
                         type="number"
                         placeholder="Middle Name (If applicable)"
-                       
                       />
                     </FloatingLabel>
                   </Col>
@@ -307,7 +299,6 @@ const Detail = () => {
                     <Form.Select
                       aria-label="Default select example"
                       className="mb-3 input-field"
-                      
                     >
                       <option>Applying for Seniority Level of</option>
                       <option value="1">Not Applicable</option>
@@ -323,29 +314,31 @@ const Detail = () => {
 
                   <Col lg={6} md={12} sm={12} className="p-1">
                     <div className="dashed-border input-field mb-3 ">
-                      <small
-                        style={{
-                          display: "block",
-                          color: "gray",
-                          textAlign: "left",
-                        }}
-                      >
-                        Upload cv/resume
-                      </small>
-                      <input
-                        style={{ display: "none" }}
-                        id="upload_file"
-                        name="file"
-                        type="file"
-                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                      />
-                      <Button
-                        variant="contained"
-                        component="span"
-                        className="file_button"
-                      >
-                        Upload files
-                      </Button>
+                      <div className="upload-files-jobs">
+                        <input
+                          style={{ display: "none" }}
+                          id="upload_file"
+                          name="file"
+                          type="file"
+                          accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
+                        />
+                        <Button
+                          variant="contained"
+                          component="span"
+                          className="file_button"
+                        >
+                          Upload Resume/CV
+                        </Button>
+                        <small
+                          style={{
+                            color: "gray",
+                            textAlign: "left",
+                            paddingTop: ".4rem",
+                          }}
+                        >
+                          or drop them
+                        </small>
+                      </div>
                     </div>
                   </Col>
                 </Row>
@@ -366,17 +359,20 @@ const Detail = () => {
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1">
-                    <div className="dashed-border input-field mb-3 ">
-                      <small
-                        style={{
-                          display: "block",
-                          color: "gray",
-                          textAlign: "left",
-                        }}
-                      >
-                        Upload cv/resume
-                      </small>
-                      <input
+                  
+                    {/* <div className="dashed-border input-field mb-3 "> */}
+                        <FileUploader
+                      multiple={true}
+                      handleChange={handleChange}
+                      name="file"
+                      types={fileTypes}
+                    />
+                    <p>
+                      {file
+                        ? `File name: ${file[0].name}`
+                        : "no files uploaded yet"}
+                    </p>
+                      {/* <input
                         style={{ display: "none" }}
                         id="upload_file"
                         name="file"
@@ -388,9 +384,17 @@ const Detail = () => {
                         component="span"
                         className="file_button"
                       >
-                        Upload files
+                        Upload Cover Letter(Optional)
                       </Button>
-                    </div>
+                      <small
+                        style={{
+                          color: "gray",
+                          textAlign: "left",
+                        }}
+                      >
+                        or drop them
+                      </small> */}
+                    {/* </div> */}
                   </Col>
                 </Row>
 
@@ -417,14 +421,6 @@ const Detail = () => {
             </form>
             {/* </Form> */}
           </Modal.Body>
-          {/* <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer> */}
         </Modal>
 
         <Row className="jobs-outer-row">
@@ -475,19 +471,19 @@ const Detail = () => {
                   <Col sm={6} className="share-col ">
                     <div className="socials">
                       <a href="/#">
-                        <i class="fa-brands">
+                        <i className="fa-brands">
                           <ImFacebook2 />
                         </i>
                       </a>
 
                       <a href="/#">
-                        <i class="fa-brands">
+                        <i className="fa-brands">
                           <ImLinkedin />
                         </i>
                       </a>
 
                       <a href="/#">
-                        <i class="fa-brands twitticon">
+                        <i className="fa-brands twitticon">
                           <FaTwitterSquare />
                         </i>
                       </a>
@@ -604,17 +600,11 @@ const Detail = () => {
             <button
               className="apply-btn"
               variant="primary"
+              // type="submit"
               onClick={handleShow}
             >
               <a href="/#">Apply Now</a>
             </button>
-            {/* <Button
-              variant="primary"
-              onClick={handleShow}
-              className="jobs-top-btn"
-            >
-              Apply Now
-            </Button> */}
           </Col>
         </Row>
       </Container>
