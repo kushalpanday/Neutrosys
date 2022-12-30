@@ -31,6 +31,40 @@ const Detail = () => {
   const [state, setState] = useState(false);
   const countries = Country.getAllCountries();
   const [show, setShow] = useState(false);
+  console.log(countries);
+  const data = {
+  countries: [
+    
+    { name: "USA", states: [
+      { name: "Texas" },
+      { name: "Alaska" },
+      { name: "Florida" },
+      { name: "Hawaii" },
+      { name: "Alabama" }
+  ] },
+    {
+      name: "Nepal",
+      states: [
+        { name: "Province1" },
+        { name: "Lumbini Province" },
+         { name: "Bagmati Province" },
+         { name: "Gandaki Province" },
+         { name: "Karnali Province" },
+         { name: "sudurpashchim Province" }
+      ]
+    },
+    
+  ]
+};
+
+  const [selectedCountry, setSelectedCountry] = React.useState();
+  const [selectedState, setSelectedState] = React.useState();
+  const [selectedCity, setSelectedCity] = React.useState();
+
+  const availableState = data.countries.find((c) => c.name === selectedCountry);
+  const availableCities = availableState?.states?.find(
+    (s) => s.name === selectedState
+  );
 
   const Componentref = useRef();
   // const setCou=countries.map(item=>item.isoCode)
@@ -223,12 +257,18 @@ const Detail = () => {
                     <Form.Select
                       aria-label="Default select example"
                       className="input-field select"
+                      placeholder="Country"
+          value={selectedCountry}
+          onChange={(e) => setSelectedCountry(e.target.value)}
                     >
-                      {countries.map((country) => (
-                        <option key={country.id} value={country.countryCode}>
-                          {country.name}
-                        </option>
-                      ))}
+                      <option>Country</option>
+          {data.countries.map((value, key) => {
+            return (
+              <option value={value.name} key={key}>
+                {value.name}
+              </option>
+            );
+          })}
                     </Form.Select>
                   </Col>
 
@@ -236,24 +276,32 @@ const Detail = () => {
                     <Form.Select
                       aria-label="Default select example"
                       className="input-field select"
+                      placeholder="State"
+          value={selectedState}
+          onChange={(e) => setSelectedState(e.target.value)}
                     >
-                      {states.map((state) => (
-                        <option key={state.id}>{state.name}</option>
-                      ))}
+                     <option> State</option>
+          {availableState?.states.map((e, key) => {
+            return (
+              <option value={e.name} key={key}>
+                {e.name}
+              </option>
+            );
+          })}
                     </Form.Select>
                   </Col>
                 </Row>
 
                 <Row>
                   <Col lg={6} md={12} sm={12} className="p-1">
-                    <FloatingLabel
-                      controlId="floatingInput"
-                      label="City"
+                      <FloatingLabel
+                      controlId="floatingPassword"
+                      label="Cities"
                       className="input-field"
                     >
                       <Form.Control
                         type="text"
-                        placeholder="name@example.com"
+                        placeholder="Middle Name (If applicable)"
                       />
                     </FloatingLabel>
                   </Col>

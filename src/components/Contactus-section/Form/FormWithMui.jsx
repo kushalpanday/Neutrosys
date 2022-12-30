@@ -13,6 +13,7 @@ import { green } from "@mui/material/colors";
 import { style } from "@mui/system";
 import { pink } from '@mui/material/colors';
 // import Switch from '@mui/material/Switch';
+
 export default function FormWithMui() {
   const[tick,setTick]=useState(false)
  const [state, setstate] = useState("white")
@@ -47,6 +48,7 @@ export default function FormWithMui() {
     console.log(data);
     reset();
     resetField();
+   
   };
 
   return (

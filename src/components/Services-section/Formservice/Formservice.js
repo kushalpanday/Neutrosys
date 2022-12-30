@@ -17,16 +17,18 @@ import { green } from "@mui/material/colors";
 import { style } from "@mui/system";
 import { pink } from "@mui/material/colors";
 // import Switch from '@mui/material/Switch';
+
 import Submission from "./Submission";
 import swal from "sweetalert";
 
 const Formservice = () => {
-  const [options, setOptions] = useState([
+  const [option, setOption] = useState([
     "Talent Solutions",
     "Out Sourcing",
     "Software Testing",
     "Software QA",
   ]);
+  
 
   const captchaRef = useRef(null);
 
@@ -34,6 +36,7 @@ const Formservice = () => {
     register,
     handleSubmit,
     reset,
+   
     resetField,
     control,
 
@@ -59,21 +62,16 @@ const Formservice = () => {
                 <p className="heading-para">I'm interested in..</p>
 
                 <Multiselect
-                  className="textfields"
-                  name="interestField"
+                className="textfields"
+                name="interestField"
                   isObject={false}
-                  onRemove={(event) => {
-                    console.log(event);
-                  }}
-                  onSelect={(event) => {
-                    console.log(event);
-                  }}
-                  options={options}
+                 
+                  options={option}
                   {...register("interestField")}
 
                   // showCheckbox
                 />
-
+                
                 <TextField
                   // required
 

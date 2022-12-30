@@ -8,6 +8,8 @@ import Careers from "./pages/Careers";
 import ContactUs from "./pages/ContactUs";
 import JobSection from "./pages/JobSection";
 
+
+
 function App() {
   return (
     <div>
@@ -28,6 +30,7 @@ function App() {
           }
         />
       </Routes>
+    
     </div>
   );
 }
