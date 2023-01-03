@@ -3,6 +3,8 @@
 }
 .workwithus-maindiv {
   /* border: 2px solid;  */
+  width:95%;
+  margin:auto;
   margin-bottom: 5rem;
 }
 .workwithus-maindiv h2 {

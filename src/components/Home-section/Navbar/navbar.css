@@ -37,6 +37,7 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light{
 .active.nav-link {
   background-color: #dddee696; 
   border-radius: 10px;
+  color:red;
 }
 
 /* .navbar-nav{
@@ -46,6 +47,10 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light{
 .nav-link:hover{
   border-radius: 10px;
   background-color: #dddee696; 
+}
+div .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
+  color: green;
+  font-weight: 500;
 }
 .nav-margin{
   margin:auto 5rem auto auto;
