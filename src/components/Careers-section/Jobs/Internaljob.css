@@ -202,7 +202,20 @@
     }
 
 }
-
+@media only screen and (max-width: 575px){
+    .loc-text p
+    {
+        
+        margin-bottom: 0px;
+       
+    }
+    .icon-text p{
+        margin-top: 0;
+    }
+    .text-col h4{
+        padding: 30px 0 112px 19px;
+    }
+}
 @media only screen and (max-width: 576px){
     .emp-row:nth-child(2){
         flex-direction: column-reverse;
@@ -266,7 +279,12 @@
      }
 
 }
-
+@media only screen and (max-width: 800px){
+    .scroll-jobdiv{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
 
 
 @media only screen and (max-width: 490px){

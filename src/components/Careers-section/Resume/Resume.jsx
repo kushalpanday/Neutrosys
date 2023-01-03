@@ -82,7 +82,7 @@ export default function Resume(props) {
             <div className="btn-submitdiv">
               <Button
                 size="lg"
-                variant="info"
+               
                 className="rbtn"
                 onClick={handleShow}
               >
