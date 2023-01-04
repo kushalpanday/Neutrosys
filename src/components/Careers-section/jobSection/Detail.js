@@ -37,13 +37,7 @@ const Detail = (props) => {
   const data = {
     countries: [
       
-      { name: "USA", states: [
-        { name: "Texas" },
-        { name: "Alaska" },
-        { name: "Florida" },
-        { name: "Hawaii" },
-        { name: "Alabama" }
-    ] },
+      { name: "USA"},
       {
         name: "Nepal",
         states: [
@@ -362,7 +356,7 @@ const Detail = (props) => {
 
                   <Col lg={6} md={12} sm={12} className="p-1">
                     <div className="dashed-border input-field mb-3 ">
-                      <div className="upload-files-jobs">
+                      {/* <div className="upload-files-jobs">
                         <input
                           style={{ display: "none" }}
                           id="upload_file"
@@ -386,7 +380,22 @@ const Detail = (props) => {
                         >
                           or drop them
                         </small>
-                      </div>
+                      </div> */}
+                          {/* <FileUploader
+                    multiple={true}
+                    handleChange={handleChange}
+                    name="file"
+                    types={fileTypes}
+
+                    label="Upload file"
+
+                    dropMessageStyle={{backgroundColor: 'red'}}
+                  />
+                  <p>
+                      {file
+                        ? `File name: ${file[0].name}`
+                        : ""}
+                    </p> */}
                     </div>
                   </Col>
                 </Row>
@@ -408,18 +417,23 @@ const Detail = (props) => {
 
                   <Col lg={6} md={12} sm={12} className="p-1">
                   
-                    {/* <div className="dashed-border input-field mb-3 "> */}
-                        <FileUploader
-                      multiple={true}
-                      handleChange={handleChange}
-                      name="file"
-                      types={fileTypes}
-                    />
-                    <p>
-                      {file
-                        ? `File name: ${file[0].name}`
-                        : "no files uploaded yet"}
-                    </p>
+                  {/* <div className="dashed-border input-field mb-3 neutroDetail ">
+                      <div className="uploadpart  ">
+                      <FileUploader
+                    multiple={true}
+                    handleChange={handleChange}
+                    name="file"
+                    types={fileTypes}
+
+                    label="Upload File"
+
+
+                  />
+                      </div>
+                      <div className="contentpart"> or Dropthem</div>
+                      </div> */}
+
+
                       {/* <input
                         style={{ display: "none" }}
                         id="upload_file"

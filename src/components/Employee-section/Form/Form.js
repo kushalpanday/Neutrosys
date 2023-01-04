@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { TextField, Button } from "@mui/material";
 import "./Form.css";
-import {Controller, useForm } from "react-hook-form";
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { Controller, useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import {
+  CountryDropdown,
+  RegionDropdown,
+  CountryRegionData,
+} from "react-country-region-selector";
+import "react-toastify/dist/ReactToastify.css";
 const FormEl = () => {
   const {
     register,
@@ -19,6 +24,13 @@ const FormEl = () => {
     resetField();
     toast.success("your form has been submitted");
   };
+  const [country, setCountry] = useState("");
+  const [region, setRegion] = useState("");
+  const selectCountry = (val) => setCountry(val);
+  const selectRegion = (val) => {
+    setRegion(val);
+  };
+
   return (
     <div className="form-container">
       <div className="form-left">
@@ -105,7 +117,7 @@ const FormEl = () => {
                 borderBottom: "none",
               },
             }}
-            {...register("phoneNumber",{ required: "Required"})}
+            {...register("phoneNumber", { required: "Required" })}
             error={!!errors?.phoneNumber}
           />
           <div className="wrap">
@@ -132,7 +144,7 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("CompanyName",{ required: "Required"})}
+                  {...register("CompanyName", { required: "Required" })}
                   error={!!errors?.CompanyName}
                 />
 
@@ -157,7 +169,7 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("Job",{ required: "Required"})}
+                  {...register("Job", { required: "Required" })}
                   error={!!errors?.Job}
                 />
               </div>
@@ -185,8 +197,12 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("Country",{ required: "Required"})}
+                  {...register("Country", { required: "Required" })}
                   error={!!errors?.Country}
+                />
+                <CountryDropdown
+                  value={country}
+                  onChange={(val) => selectCountry(val)}
                 />
 
                 <TextField
@@ -210,8 +226,14 @@ const FormEl = () => {
                         borderBottom: "none",
                       },
                   }}
-                  {...register("city",{ required: "Required"})}
+                  {...register("city", { required: "Required" })}
                   error={!!errors?.city}
+                />
+
+                <RegionDropdown
+                  country={country}
+                  value={region}
+                  onChange={(val) => selectRegion(val)}
                 />
               </div>
             </div>
@@ -267,7 +289,7 @@ const FormEl = () => {
                 borderBottom: "none",
               },
             }}
-            {...register("message",{ required: "Required"})}
+            {...register("message", { required: "Required" })}
             error={!!errors?.message}
           />
           <div className="form-file">
