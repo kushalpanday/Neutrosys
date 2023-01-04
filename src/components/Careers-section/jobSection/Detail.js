@@ -26,6 +26,11 @@ import ReactToPrint from "react-to-print";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import swal from "sweetalert";
 import { useForm } from "react-hook-form";
+import {
+  CountryDropdown,
+  RegionDropdown,
+  CountryRegionData,
+} from "react-country-region-selector";
 
 const Detail = (props) => {
   const [mobile, setMobile] = useState("+977");
@@ -36,32 +41,29 @@ const Detail = (props) => {
 
   const data = {
     countries: [
-      
-      { name: "USA"},
+      { name: "USA" },
       {
         name: "Nepal",
         states: [
           { name: "Province1" },
           { name: "Lumbini Province" },
-           { name: "Bagmati Province" },
-           { name: "Gandaki Province" },
-           { name: "Karnali Province" },
-           { name: "sudurpashchim Province" }
-        ]
+          { name: "Bagmati Province" },
+          { name: "Gandaki Province" },
+          { name: "Karnali Province" },
+          { name: "sudurpashchim Province" },
+        ],
       },
-      
-    ]
+    ],
   };
-  
-    const [selectedCountry, setSelectedCountry] = React.useState();
-    const [selectedState, setSelectedState] = React.useState();
-    const [selectedCity, setSelectedCity] = React.useState();
-  
-    const availableState = data.countries.find((c) => c.name === selectedCountry);
-    const availableCities = availableState?.states?.find(
-      (s) => s.name === selectedState
-    );
 
+  const [selectedCountry, setSelectedCountry] = React.useState();
+  const [selectedState, setSelectedState] = React.useState();
+  const [selectedCity, setSelectedCity] = React.useState();
+
+  const availableState = data.countries.find((c) => c.name === selectedCountry);
+  const availableCities = availableState?.states?.find(
+    (s) => s.name === selectedState
+  );
 
   const Componentref = useRef();
   // const setCou=countries.map(item=>item.isoCode)
@@ -93,6 +95,17 @@ const Detail = (props) => {
     setFile(file);
   };
 
+  const fileTypes2 = ["JPEG", "PNG", "GIF"];
+  const [file2, setFile2] = useState(null);
+  const handleChange2 = (file) => {
+    setFile2(file2);
+  };
+  const [country, setCountry] = useState("");
+  const [region, setRegion] = useState("");
+  const selectCountry = (val) => setCountry(val);
+  const selectRegion = (val) => {
+    setRegion(val);
+  };
   return (
     <div className="main-divbg">
       <Container className="details-container">
@@ -234,7 +247,7 @@ const Detail = (props) => {
 
                 <Row>
                   <Col lg={6} md={12} sm={12} className="p-1 mb-2">
-                  <Form.Select
+                    {/* <Form.Select
                       aria-label="Default select example"
                       className="input-field select"
                       placeholder="Country"
@@ -249,11 +262,17 @@ const Detail = (props) => {
               </option>
             );
           })}
-                    </Form.Select>
+                    </Form.Select> */}
+
+                    <CountryDropdown
+                      className="input-field select"
+                      value={country}
+                      onChange={(val) => selectCountry(val)}
+                    />
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1 mb-2">
-                  <Form.Select
+                    {/* <Form.Select
                       aria-label="Default select example"
                       className="input-field select"
                       placeholder="State"
@@ -268,7 +287,14 @@ const Detail = (props) => {
               </option>
             );
           })}
-                    </Form.Select>
+                    </Form.Select> */}
+
+                    <RegionDropdown
+                      className="input-field select"
+                      country={country}
+                      value={region}
+                      onChange={(val) => selectRegion(val)}
+                    />
                   </Col>
                 </Row>
 
@@ -381,21 +407,15 @@ const Detail = (props) => {
                           or drop them
                         </small>
                       </div> */}
-                          {/* <FileUploader
-                    multiple={true}
-                    handleChange={handleChange}
-                    name="file"
-                    types={fileTypes}
-
-                    label="Upload file"
-
-                    dropMessageStyle={{backgroundColor: 'red'}}
-                  />
-                  <p>
-                      {file
-                        ? `File name: ${file[0].name}`
-                        : ""}
-                    </p> */}
+                      <FileUploader
+                        multiple={true}
+                        handleChange={handleChange}
+                        name="file"
+                        types={fileTypes}
+                        label="Upload file"
+                        dropMessageStyle={{ backgroundColor: "red" }}
+                      />
+                      <p>{file ? `File name: ${file[0].name}` : ""}</p>
                     </div>
                   </Col>
                 </Row>
@@ -416,25 +436,21 @@ const Detail = (props) => {
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1">
-                  
-                  {/* <div className="dashed-border input-field mb-3 neutroDetail ">
+                    <div className="dashed-border input-field mb-3 neutroDetail ">
                       <div className="uploadpart  ">
-                      <FileUploader
-                    multiple={true}
-                    handleChange={handleChange}
-                    name="file"
-                    types={fileTypes}
-
-                    label="Upload File"
-
-
-                  />
+                        <FileUploader
+                          className="file-upload-jobs"
+                          multiple={true}
+                          handleChange={handleChange2}
+                          name="file2"
+                          types={fileTypes2}
+                          label="Upload File"
+                        />
+                        <p>{file2 ? `File name: ${file2[0].name}` : ""}</p>
                       </div>
-                      <div className="contentpart"> or Dropthem</div>
-                      </div> */}
+                    </div>
 
-
-                      {/* <input
+                    {/* <input
                         style={{ display: "none" }}
                         id="upload_file"
                         name="file"

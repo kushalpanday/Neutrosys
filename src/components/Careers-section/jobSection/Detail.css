@@ -12,10 +12,14 @@
   /* text-align: center; */
   /* margin-top: 3rem; */
 }
-/* img, svg {
+.uploadpart img,.uploadpart svg {
   vertical-align: middle;
   display: none;
-} */
+}
+
+div .select {
+  width:100%;
+}
 .dmajdp .file-types {
   overflow: hidden;
   white-space: nowrap;
@@ -42,7 +46,7 @@
 }
 
 .dmajdp > span {
-  font-size: 17px;
+  font-size: 0;
   color: #666;
   text-decoration: none;
 }

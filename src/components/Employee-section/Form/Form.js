@@ -3,11 +3,11 @@ import { TextField, Button } from "@mui/material";
 import "./Form.css";
 import { Controller, useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
-import {
-  CountryDropdown,
-  RegionDropdown,
-  CountryRegionData,
-} from "react-country-region-selector";
+// import {
+//   CountryDropdown,
+//   RegionDropdown,
+//   CountryRegionData,
+// } from "react-country-region-selector";
 import "react-toastify/dist/ReactToastify.css";
 const FormEl = () => {
   const {
@@ -200,10 +200,10 @@ const FormEl = () => {
                   {...register("Country", { required: "Required" })}
                   error={!!errors?.Country}
                 />
-                <CountryDropdown
+                {/* <CountryDropdown
                   value={country}
                   onChange={(val) => selectCountry(val)}
-                />
+                /> */}
 
                 <TextField
                   id="outlined-basic"
@@ -229,12 +229,12 @@ const FormEl = () => {
                   {...register("city", { required: "Required" })}
                   error={!!errors?.city}
                 />
-
+{/* 
                 <RegionDropdown
                   country={country}
                   value={region}
                   onChange={(val) => selectRegion(val)}
-                />
+                /> */}
               </div>
             </div>
           </div>
