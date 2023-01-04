@@ -10,6 +10,7 @@ import { MdFileCopy } from "react-icons/md";
 import FloatingLabel from "react-bootstrap/FloatingLabel";
 import Form from "react-bootstrap/Form";
 import { Country, State, City } from "country-state-city";
+import { FileUploader } from "react-drag-drop-files";
 // import { ICountry } from "country-state-city";
 import Button from "react-bootstrap/Button";
 import PhoneInput from "react-phone-input-2";
@@ -35,13 +36,7 @@ const Detail = () => {
   const data = {
   countries: [
     
-    { name: "USA", states: [
-      { name: "Texas" },
-      { name: "Alaska" },
-      { name: "Florida" },
-      { name: "Hawaii" },
-      { name: "Alabama" }
-  ] },
+    { name: "USA"},
     {
       name: "Nepal",
       states: [
@@ -98,6 +93,11 @@ const Detail = () => {
     console.log(data);
     reset();
     resetField();
+  };
+  const fileTypes = ["JPEG", "PNG", "GIF"];
+  const [file, setFile] = useState(null);
+  const handleChange = (file) => {
+    setFile(file);
   };
 
 
@@ -371,29 +371,22 @@ const Detail = () => {
 
                   <Col lg={6} md={12} sm={12} className="p-1">
                     <div className="dashed-border input-field mb-3 ">
-                      <small
-                        style={{
-                          display: "block",
-                          color: "gray",
-                          textAlign: "left",
-                        }}
-                      >
-                        Upload cv/resume
-                      </small>
-                      <input
-                        style={{ display: "none" }}
-                        id="upload_file"
-                        name="file"
-                        type="file"
-                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                      />
-                      <Button
-                        variant="contained"
-                        component="span"
-                        className="file_button"
-                      >
-                        Upload files
-                      </Button>
+                   
+                    <FileUploader
+                    multiple={true}
+                    handleChange={handleChange}
+                    name="file"
+                    types={fileTypes}
+                    
+                    label="Upload file"
+                     
+                    dropMessageStyle={{backgroundColor: 'red'}}
+                  />
+                  <p>
+                      {file
+                        ? `File name: ${file[0].name}`
+                        : ""}
+                    </p>
                     </div>
                   </Col>
                 </Row>
@@ -414,30 +407,20 @@ const Detail = () => {
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1">
-                    <div className="dashed-border input-field mb-3 ">
-                      <small
-                        style={{
-                          display: "block",
-                          color: "gray",
-                          textAlign: "left",
-                        }}
-                      >
-                        Upload cv/resume
-                      </small>
-                      <input
-                        style={{ display: "none" }}
-                        id="upload_file"
-                        name="file"
-                        type="file"
-                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                      />
-                      <Button
-                        variant="contained"
-                        component="span"
-                        className="file_button"
-                      >
-                        Upload files
-                      </Button>
+                    <div className="dashed-border input-field mb-3 neutroDetail ">
+                      <div className="uploadpart  ">
+                      <FileUploader
+                    multiple={true}
+                    handleChange={handleChange}
+                    name="file"
+                    types={fileTypes}
+                    
+                    label="Upload File"
+                     
+                   
+                  />
+                      </div>
+                      <div className="contentpart"> or Dropthem</div>
                     </div>
                   </Col>
                 </Row>

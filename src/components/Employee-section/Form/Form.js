@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 import { TextField, Button } from "@mui/material";
 import "./Form.css";
 import {Controller, useForm } from "react-hook-form";
+import { CountryDropdown, RegionDropdown, CountryRegionData } from 'react-country-region-selector';
 const FormEl = () => {
   const {
     register,
@@ -16,6 +17,18 @@ const FormEl = () => {
     reset();
     resetField();
   };
+  const [country, setCountry ] = useState("")
+  const [ region, setRegion ] = useState("")
+  const selectCountry= (val) =>(
+    setCountry(val)
+    
+    
+  )
+  const selectRegion= (val)=> {
+    setRegion(val );
+  }
+
+  
   return (
     <div className="form-container">
       <div className="form-left">
@@ -161,6 +174,7 @@ const FormEl = () => {
             </div>
             <div className="second">
               <div className="country">
+              
                 <TextField
                   id="outlined-basic"
                   label="Country"
@@ -185,6 +199,10 @@ const FormEl = () => {
                   {...register("Country",{ required: "Required"})}
                   error={!!errors?.Country}
                 />
+                <CountryDropdown
+                value={country}
+                onChange={(val) => selectCountry(val)} />
+                
 
                 <TextField
                   id="outlined-basic"
@@ -210,6 +228,10 @@ const FormEl = () => {
                   {...register("city",{ required: "Required"})}
                   error={!!errors?.city}
                 />
+                <RegionDropdown
+          country={country}
+          value={region}
+          onChange={(val) => selectRegion(val)} />
               </div>
             </div>
           </div>
