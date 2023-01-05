@@ -8,7 +8,7 @@ function TheNavbarProps({link,name}) {
   return (
     <>
     <LinkContainer to={link}>
-         <Nav.Link className='mx-2'>{name}</Nav.Link>
+         <Nav.Link>{name}</Nav.Link>
        </LinkContainer>{" "}
  </>
   )
