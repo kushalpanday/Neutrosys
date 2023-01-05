@@ -47,14 +47,15 @@
   font-size: 18px;
   margin-right: 9px;
   margin-top: 10px;
+  padding:.8rem 1rem;
   border: none;
   /* text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.575); */
   box-shadow: 0px 10px 14px -7px rgba(0, 0, 255, 0.425);
 }
-/* .rbtn:hover {
-  background-color: #159a9c;
+.rbtn:hover {
+  background-color: rgb(0, 0, 255);
   border: none;
-} */
+}
 
 @media only screen and (max-width: 940px) {
   .resume-row {

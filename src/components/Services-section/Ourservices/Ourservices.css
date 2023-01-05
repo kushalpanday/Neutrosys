@@ -130,6 +130,9 @@ div .modalmain .modalheader {
   position: relative;
   cursor: pointer;
 }
+/* div .modal-header{
+  padding:1rem;
+} */
 div .modalmain .closeicon {
   /* color: blue; */
   /* margin-top: -8px; */

@@ -9,6 +9,8 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import swal from "sweetalert";
 import { useForm } from "react-hook-form";
+import { CountryDropdown, RegionDropdown } from "react-country-region-selector";
+import UploadFiles from "../jobSection/UploadFiles";
 // import ReactToPrint from 'react-to-print';
 
 export default function Resume(props) {
@@ -65,6 +67,13 @@ export default function Resume(props) {
     props.onFileChange(updatedList);
   };
 
+  const [country, setCountry] = useState("");
+  const [region, setRegion] = useState("");
+  const selectCountry = (val) => setCountry(val);
+  const selectRegion = (val) => {
+    setRegion(val);
+  };
+
   return (
     <>
       <div className="resume-maindiv">
@@ -82,11 +91,10 @@ export default function Resume(props) {
             <div className="btn-submitdiv">
               <Button
                 size="lg"
-               
                 className="rbtn"
                 onClick={handleShow}
               >
-                Submit resume
+                Submit Resume
               </Button>
 
               <Modal show={show} onHide={handleClose} size="lg">
@@ -206,33 +214,28 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="p-1 mb-2">
-                          <Form.Select
-                            aria-label="Default select example"
-                            className="input-field select"
-                          >
-                            {countries.map((country) => (
-                              <option
-                                key={country.isoCode}
-                                value={country.countryCode}
-                              >
-                                {country.name}
-                              </option>
-                            ))}
-                          </Form.Select>
-                        </Col>
+                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                    <CountryDropdown
+                      className="input-field select"
+                      value={country}
+                      onChange={(val) => selectCountry(val)}
+                      // showDefaultOption={false}
+                    />
+                  </Col>
 
-                        <Col lg={6} md={12} sm={12} className="p-1 mb-2">
-                          <Form.Select
-                            aria-label="Default select example"
-                            className="input-field select"
-                          >
-                            {states.map((state) => (
-                              <option key={state.isoCode}>{state.name}</option>
-                            ))}
-                          </Form.Select>
-                        </Col>
-                      </Row>
+                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                    <RegionDropdown
+                      className="input-field select"
+                      label="region"
+                      // showDefaultOption={false}
+                      country={country}
+                      // showDefaultOption="true"
+                      blankOptionLabel="Choose State/province"
+                      value={region}
+                      onChange={(val) => selectRegion(val)}
+                    />
+                  </Col>
+                </Row>
 
                       <Row>
                         <Col lg={6} md={12} sm={12} className="p-1">
@@ -317,31 +320,9 @@ export default function Resume(props) {
                         </Col>
 
                         <Col lg={6} md={12} sm={12} className="p-1">
-                          <div className="dashed-border input-field mb-3 ">
-                            <small
-                              style={{
-                                display: "block",
-                                color: "gray",
-                                textAlign: "left",
-                              }}
-                            >
-                              Upload cv/resume
-                            </small>
-                            <input
-                              style={{ display: "none" }}
-                              id="upload_file"
-                              name="file"
-                              type="file"
-                              accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                            />
-                            <Button
-                              variant="contained"
-                              component="span"
-                              className="file_button"
-                            >
-                              Upload files
-                            </Button>
-                          </div>
+                          {/* <div className="dashed-border input-field mb-3 "> */}
+                          <UploadFiles accept={["application/pdf"]}/>
+                          {/* </div> */}
                         </Col>
                       </Row>
 
@@ -361,31 +342,8 @@ export default function Resume(props) {
                         </Col>
 
                         <Col lg={6} md={12} sm={12} className="p-1">
-                          <div className="dashed-border input-field mb-3 ">
-                            <small
-                              style={{
-                                display: "block",
-                                color: "gray",
-                                textAlign: "left",
-                              }}
-                            >
-                              Upload cv/resume
-                            </small>
-                            <input
-                              style={{ display: "none" }}
-                              id="upload_file"
-                              name="file"
-                              type="file"
-                              accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                            />
-                            <Button
-                              variant="contained"
-                              component="span"
-                              className="file_button"
-                            >
-                              Upload files
-                            </Button>
-                          </div>
+                        <UploadFiles accept={["application/pdf"]}/>
+
                         </Col>
                       </Row>
 

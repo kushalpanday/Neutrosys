@@ -155,11 +155,11 @@
 }
 @media (min-width: 993px) and (max-width: 1070px) {
   div .workwithus-maindiv {
-    width: 97%;
+    width: 95%;
     margin: 0;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 995px) {
   .box-col,
   .box-col2,
   .box-col3 {

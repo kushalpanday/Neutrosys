@@ -64,7 +64,6 @@ const Ourservice = ({closeme}) => {
       </div>
       <Modal   dialogClassName="modalmain" style={{paddingLeft:"0px"}}  show={state} onHide={closeButton} className="dbyaModal" >
         <Modal.Header closeButton  className="modalheader"> 
-               {/* <div className="micon bg-danger"><CloseIcon   className="closeicon" /></div>  */}
         </Modal.Header>
         <Modal.Body className="modalbody">{nextstate}</Modal.Body>
       </Modal>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useMemo, useRef, useState } from "react";
 import "./Detail.css";
 import { useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
@@ -26,11 +26,13 @@ import ReactToPrint from "react-to-print";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import swal from "sweetalert";
 import { useForm } from "react-hook-form";
+import { useDropzone } from "react-dropzone";
 import {
   CountryDropdown,
   RegionDropdown,
   CountryRegionData,
 } from "react-country-region-selector";
+import UploadFiles from "./UploadFiles";
 
 const Detail = (props) => {
   const [mobile, setMobile] = useState("+977");
@@ -89,17 +91,18 @@ const Detail = (props) => {
     resetField();
     swal("Form has been Submitted");
   };
-  const fileTypes = ["JPEG", "PNG", "GIF"];
-  const [file, setFile] = useState(null);
-  const handleChange = (file) => {
-    setFile(file);
-  };
 
-  const fileTypes2 = ["JPEG", "PNG", "GIF"];
-  const [file2, setFile2] = useState(null);
-  const handleChange2 = (file) => {
-    setFile2(file2);
-  };
+  // const fileTypes = ["JPEG", "PNG", "GIF"];
+  // const [file, setFile] = useState(null);
+  // const handleChange = (file) => {
+  //   setFile(file);
+  // };
+
+  // const fileTypes2 = ["JPEG", "PNG", "GIF"];
+  // const [file2, setFile2] = useState(null);
+  // const handleChange2 = (file) => {
+  //   setFile2(file2);
+  // };
   const [country, setCountry] = useState("");
   const [region, setRegion] = useState("");
   const selectCountry = (val) => setCountry(val);
@@ -247,51 +250,22 @@ const Detail = (props) => {
 
                 <Row>
                   <Col lg={6} md={12} sm={12} className="p-1 mb-2">
-                    {/* <Form.Select
-                      aria-label="Default select example"
-                      className="input-field select"
-                      placeholder="Country"
-          value={selectedCountry}
-          onChange={(e) => setSelectedCountry(e.target.value)}
-                    >
-                      <option>Country</option>
-          {data.countries.map((value, key) => {
-            return (
-              <option value={value.name} key={key}>
-                {value.name}
-              </option>
-            );
-          })}
-                    </Form.Select> */}
-
                     <CountryDropdown
                       className="input-field select"
                       value={country}
                       onChange={(val) => selectCountry(val)}
+                      // showDefaultOption={false}
                     />
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1 mb-2">
-                    {/* <Form.Select
-                      aria-label="Default select example"
-                      className="input-field select"
-                      placeholder="State"
-          value={selectedState}
-          onChange={(e) => setSelectedState(e.target.value)}
-                    >
-                     <option> State</option>
-          {availableState?.states.map((e, key) => {
-            return (
-              <option value={e.name} key={key}>
-                {e.name}
-              </option>
-            );
-          })}
-                    </Form.Select> */}
-
                     <RegionDropdown
                       className="input-field select"
+                      label="region"
+                      // showDefaultOption={false}
                       country={country}
+                      // showDefaultOption="true"
+                      blankOptionLabel="Choose State/province"
                       value={region}
                       onChange={(val) => selectRegion(val)}
                     />
@@ -381,8 +355,7 @@ const Detail = (props) => {
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1">
-                    <div className="dashed-border input-field mb-3 ">
-                     
+                    {/* <div className="dashed-border input-field mb-3 ">
                       <FileUploader
                         multiple={true}
                         handleChange={handleChange}
@@ -392,7 +365,9 @@ const Detail = (props) => {
                         dropMessageStyle={{ backgroundColor: "red" }}
                       />
                       <p>{file ? `File name: ${file[0].name}` : ""}</p>
-                    </div>
+                    </div> */}
+                    <UploadFiles accept={["application/pdf"]}/>
+                   
                   </Col>
                 </Row>
 
@@ -412,7 +387,7 @@ const Detail = (props) => {
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1">
-                    <div className="dashed-border input-field mb-3 neutroDetail ">
+                    {/* <div className="dashed-border input-field mb-3 neutroDetail ">
                       <div className="uploadpart  ">
                         <FileUploader
                           className="file-upload-jobs"
@@ -424,7 +399,8 @@ const Detail = (props) => {
                         />
                         <p>{file2 ? `File name: ${file2[0].name}` : ""}</p>
                       </div>
-                    </div>
+                    </div> */}
+                       <UploadFiles  accept={["image/*"]} />
 
                     {/* <input
                         style={{ display: "none" }}

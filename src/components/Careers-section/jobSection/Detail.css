@@ -47,6 +47,10 @@ div .select {
   background: linear-gradient(180deg, #A8B7DF 0%, #9AABD9 50%, #879ED7 100%);
 }
 
+.input-field.select{
+  border:1px solid rgba(128, 128, 128, 0.521);
+  
+}
 .dmajdp > span {
   font-size: 0;
   color: #666;
