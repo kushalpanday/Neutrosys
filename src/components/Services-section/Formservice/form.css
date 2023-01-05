@@ -14,6 +14,17 @@
     background: rgb(228 231 232 / 52%);
     width:100%;
   }
+  .country-region-services{
+    display: flex;
+    gap:1rem;
+  }
+  .country-region-services .input-field{
+    margin-top:.2rem;
+    border-radius:.6rem;
+  }
+  .country-region-services .input-field:first-child{
+    width:65%;
+  }
   .textfields{
     width: auto;
     background-color:white;

@@ -40,16 +40,12 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light{
   color:red;
 }
 
-/* .navbar-nav{
-  border-radius: 10px;
-  background-color: #dddee696; 
-} */
 .nav-link:hover{
   border-radius: 10px;
   background-color: #dddee696; 
 }
 div .navbar-nav .nav-link.active, .navbar-nav .show>.nav-link {
-  color: green;
+  color: #1f68ae;
   font-weight: 500;
 }
 .nav-margin{

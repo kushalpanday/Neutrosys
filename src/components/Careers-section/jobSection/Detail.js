@@ -382,31 +382,7 @@ const Detail = (props) => {
 
                   <Col lg={6} md={12} sm={12} className="p-1">
                     <div className="dashed-border input-field mb-3 ">
-                      {/* <div className="upload-files-jobs">
-                        <input
-                          style={{ display: "none" }}
-                          id="upload_file"
-                          name="file"
-                          type="file"
-                          accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                        />
-                        <Button
-                          variant="contained"
-                          component="span"
-                          className="file_button"
-                        >
-                          Upload Resume/CV
-                        </Button>
-                        <small
-                          style={{
-                            color: "gray",
-                            textAlign: "left",
-                            paddingTop: ".4rem",
-                          }}
-                        >
-                          or drop them
-                        </small>
-                      </div> */}
+                     
                       <FileUploader
                         multiple={true}
                         handleChange={handleChange}

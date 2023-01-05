@@ -19,6 +19,11 @@ import { pink } from "@mui/material/colors";
 // import Switch from '@mui/material/Switch';
 import Submission from "./Submission";
 import swal from "sweetalert";
+import {
+  CountryDropdown,
+  RegionDropdown,
+  CountryRegionData,
+} from "react-country-region-selector";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Select from "react-select";
@@ -60,6 +65,13 @@ const Formservice = () => {
     { value: "Software Testing", label: "Software Testing" },
     { value: "Software QA", label: "Software QA" },
   ];
+
+  const [country, setCountry] = useState("");
+  const [region, setRegion] = useState("");
+  const selectCountry = (val) => setCountry(val);
+  const selectRegion = (val) => {
+    setRegion(val);
+  };
 
   return (
     <div className="services-form-container">
@@ -220,6 +232,19 @@ const Formservice = () => {
                     error={!!errors?.phone}
                   />
                 </div>
+                <div className="country-region-services">
+                <CountryDropdown
+                      className="input-field select"
+                      value={country}
+                      onChange={(val) => selectCountry(val)}
+                    />
+                <RegionDropdown
+                      className="input-field select"
+                      country={country}
+                      value={region}
+                      onChange={(val) => selectRegion(val)}
+                    />
+                    </div>
                 <TextField
                   fullWidth
                   label="Location"
