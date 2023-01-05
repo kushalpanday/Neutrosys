@@ -98,6 +98,9 @@
   }
 }
 @media only screen and (max-width: 500px) {
+  .header_center{
+    padding:.8rem;
+  }
   .header_btn:nth-child(2) {
     margin-top: 0.5rem;
     margin-left:0;
@@ -108,7 +111,7 @@
     margin: auto;
   }
   .header_btn_container {
-    margin-left: .5rem;
-    width: 80%;
+    margin:.5rem auto .5rem .5rem;
+    width: 100%;
   }
 }

@@ -352,8 +352,6 @@ function OpenJobs() {
                 {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
               </Row>
             </div>
-
-            
           </Col>
         </Row>
       </Container>
