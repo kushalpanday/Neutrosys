@@ -1,0 +1,19 @@
+.uploadpart{
+    border: none;
+    /* font-size: 1.4rem; */
+    padding: .7rem 1rem;
+    /* width:5rem; */
+    /* display: inline-flex; */
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 3px 8px rgb(0 0 0 / 20%);
+    background: linear-gradient(180deg, #A8B7DF 0%, #9AABD9 50%, #879ED7 100%);
+  }
+  .upload-file-job{
+    width:60%;
+/* text-align: end; */
+margin:0 0 0 auto;
+}

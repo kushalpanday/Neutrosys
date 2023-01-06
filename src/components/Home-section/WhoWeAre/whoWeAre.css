@@ -1,0 +1,41 @@
+.whoweare_container {
+  /* background-color: #aadcfe; */
+  background-color: hsla(0,0%,85%,.281);
+  text-align: center;
+  padding: 3rem 0.5rem;
+  /* margin:2rem 0; */
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.whoweare_container h1 {
+  margin: 0;
+}
+.whoweare_container p {
+  width: 90%;
+
+  margin: 1rem auto;
+}
+.whoweare_image {
+  width: 80%;
+  margin: auto;
+}
+.whoweare_image img {
+  width: 100%;
+}
+.whoweare_desc {
+  height: 90%;
+  margin: auto;
+}
+.whoweare_desc p{
+  text-align: justify;
+}
+
+@media only screen and (max-width: 600px){
+.whoweare_container {
+grid-template-columns: 100%;
+
+}
+.whoweare_desc{
+  margin:1rem 0;
+}
+}
