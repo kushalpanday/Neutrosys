@@ -75,7 +75,9 @@
   color: orchid;
 }
 .my-modal {
-  max-width: 40vw;
+  max-width: 10%;
+  max-height: 70%;
+  width: 50%;
 }
 .map-btn {
   background-color: white;

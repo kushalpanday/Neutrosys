@@ -11,6 +11,8 @@ import ReactToPrint from "react-to-print";
 export default function LocationDetail() {
     const [show, setShow] = useState(false);
     const Componentref = useRef();
+    
+
     return(
         <>
             <Row className='location-row'>
@@ -35,6 +37,8 @@ export default function LocationDetail() {
                         <div style={{cursor:"pointer",color:"blue",textDecoration:"underline"}}onClick={() => setShow(true)}>View Location</div>
                     </div>
                     <Modal
+                      width="50%"
+                      height="50%"
                         
                         show={show}
                         onHide={() => setShow(false)}
@@ -45,7 +49,7 @@ export default function LocationDetail() {
                             Our Location 
                         </Modal.Title>
                         <Button className='map-btn'>
-                            <p><BsPrinterFill/></p>
+                            <p><BsPrinterFill  /></p>
                             <span className='tooltiptext'> <ReactToPrint
                             trigger={() => (
                               <span style={{ marginLeft: ".7rem" }}>
@@ -57,8 +61,8 @@ export default function LocationDetail() {
                         </Button>
                         </Modal.Header>
                         <Modal.Body>
-                        <div className="maod"  ref={Componentref}>
-                       <iframe title="map" style={{height:'70vh',width:'100%'}} id="gmap_canvas"
+                        <div className="maod"  >
+                       <iframe ref={Componentref} title="map" style={{height:'60vh',width:"100vh"}} id="gmap_canvas" 
                         src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                         </Modal.Body>

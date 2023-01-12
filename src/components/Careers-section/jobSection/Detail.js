@@ -225,10 +225,10 @@ const Detail = (props) => {
                       className="p-3 input-field"
                       name="gender"
                       {...register("gender", { required: "Required" })}
-                      error={!!errors?.gender}
-                      label="gender"
+                      error={!!errors?.gender} 
+                     
                     >
-                      {/* <option> Gender</option> */}
+                      <option value="" disabled selected hidden > Gender</option> 
                       <option value="male">Male</option>
                       <option value="female">Female</option>
                       <option value="unspecified">Unspecified</option>
@@ -276,6 +276,7 @@ const Detail = (props) => {
                       className="input-field select"
                       value={country}
                       onChange={(val) => selectCountry(val)}
+                      priorityOptions={["US", "NP", "IN","CA","GB","MX","FI"]}
                       // showDefaultOption={false}
                     />
                   </Col>
@@ -349,10 +350,13 @@ const Detail = (props) => {
                       controlId= "floatingPassword"
                       label= "Expected Salary/Salary Range(Optional)"
                       className="input-field number-arrow"
+                      name="salary"
                     >
                       <Form.Control
                         type="number"
                         placeholder="Middle Name (If applicable)"
+                        {...register("salary")}
+
                       />
                     </FloatingLabel>
                   </Col>
@@ -363,8 +367,12 @@ const Detail = (props) => {
                     <Form.Select
                       aria-label="Default select example"
                       className="mb-3 input-field"
+                      name="joblevel"
+                      {...register("joblevel", { required: "Required" })}
+                      error={!!errors?.joblevel}
                     >
-                      <option>Applying for Seniority Level of</option>
+                      <option value="" disabled selected hidden > Job Level </option>
+                      <option value="0" >Applying for Seniority Level of</option>
                       <option value="1">Not Applicable</option>
                       <option value="2">Internship</option>
                       <option value="3">Entry Level</option>
@@ -399,11 +407,13 @@ const Detail = (props) => {
                       controlId="floatingTextarea2"
                       label="Message(Optional)"
                       className="input-field"
+                      name="message"
                     >
                       <Form.Control
                         as="textarea"
                         placeholder="Leave a comment here"
                         style={{ height: "100px" }}
+                        {...register("message")}
                       />
                     </FloatingLabel>
                   </Col>

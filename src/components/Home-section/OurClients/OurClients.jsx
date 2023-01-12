@@ -55,6 +55,7 @@ function OurClients() {
           >
             <div className="clients_logo">
               <img src={item.image} alt="company-logo" />
+             
             </div>
             <p>{item.name}</p>
           </div>

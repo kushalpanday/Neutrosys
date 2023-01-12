@@ -1,8 +1,8 @@
 export const logo = [
   {
     id: 1,
-    name: "company1",
-    image: "./images//our-partners/client2.png",
+    name: "BlueCross BlueShield",
+    image: "https://www.bcbs.com/themes/custom/bcbs/img/full-logo.svg",
   },
   {
     id: 2,

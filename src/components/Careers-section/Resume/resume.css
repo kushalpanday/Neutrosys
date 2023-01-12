@@ -1,6 +1,9 @@
 .resume-maindiv {
   background: rgba(35, 171, 229, 0.15);
 }
+element{
+  box-shadow: 0 0 0 0.25rem red;
+}
 .resume-row {
   /* border: 2px solid red; */
   display: grid;

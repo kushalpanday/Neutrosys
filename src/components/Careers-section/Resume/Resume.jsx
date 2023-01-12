@@ -16,6 +16,7 @@ import Select from "react-select";
 
 
 export default function Resume(props) {
+  const ref=useRef();
   const wrapperRef = useRef(null);
   const [fileList, setFileList] = useState([]);
   const [mobile, setMobile] = useState("+977");
@@ -48,32 +49,19 @@ export default function Resume(props) {
     swal("Form has been Submitted");
   };
 
-  const onDragEnter = () => wrapperRef.current.classList.add("dragover");
-
-  const onDragLeave = () => wrapperRef.current.classList.remove("dragover");
-
-  const onDrop = () => wrapperRef.current.classList.remove("dragover");
-
-  const onFileDrop = (e) => {
-    const newFile = e.target.files[0];
-    if (newFile) {
-      const updatedList = [...fileList, newFile];
-      setFileList(updatedList);
-      props.onFileChange(updatedList);
-    }
-  };
-  const fileRemove = (file) => {
-    const updatedList = [...fileList];
-    updatedList.splice(fileList.indexOf(file), 1);
-    setFileList(updatedList);
-    props.onFileChange(updatedList);
-  };
+  
+  
 
   const [country, setCountry] = useState("");
   const [region, setRegion] = useState("");
-  const selectCountry = (val) => setCountry(val);
+  const selectCountry = (val) => 
+  {
+    setCountry(val);
+    
+  }
   const selectRegion = (val) => {
     setRegion(val);
+
   };
 
   const selectOption = [
@@ -158,7 +146,10 @@ export default function Resume(props) {
                             <Form.Control
                               type="text"
                               placeholder="Middle Name (If applicable)"
-                              {...register("middlename")}
+                            
+                              name="Mname"
+                              {...register("Mname")}
+                              error={!!errors?.Mname}
                             />
                           </FloatingLabel>
                         </Col>
@@ -189,9 +180,9 @@ export default function Resume(props) {
                             name="gender"
                             {...register("gender", { required: "Required" })}
                             error={!!errors?.gender}
-                            label="gender"
+                           
                           >
-                            {/* <option> Gender</option> */}
+                           <option value="" disabled selected hidden > Gender</option> 
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="unspecified">Unspecified</option>
@@ -203,18 +194,16 @@ export default function Resume(props) {
 
                       <Row>
                         <Col lg={6} md={12} sm={12} className="p-1">
-                          <PhoneInput
+                          <PhoneInput  
                             country={"nep"}
                             value={mobile}
-                            // name="country_code"
                             inputProps={{}}
                             type="number"
                             onChange={(phone) => setMobile(phone)}
                             className="input-field"
-                            // {...register("country_code", {
-                            //   required: "Required",
-                            // })}
-                            // error={!!errors?.country_code}
+                            name="status"
+                           {...register("status")}
+                           
                           />
                         </Col>
 
@@ -228,8 +217,12 @@ export default function Resume(props) {
                               type="number"
                               name="phone"
                               placeholder="phone"
-                              // {...register("phone", { required: "Required" })}
-                              // error={!!errors?.phone}
+                             
+                              {...register("phone", {
+                                required: "Required",
+                                
+                              })}
+                              error={!!errors?.phone}
                             />
                           </FloatingLabel>
                         </Col>
@@ -241,7 +234,12 @@ export default function Resume(props) {
                       className="input-field select"
                       value={country}
                       onChange={(val) => selectCountry(val)}
-                      // showDefaultOption={false}
+                      
+
+                      priorityOptions={["CA", "US", "GB","NP","IN","MX","FI"]}
+                     
+                    
+                            
                     />
                   </Col>
 
@@ -269,6 +267,12 @@ export default function Resume(props) {
                             <Form.Control
                               type="text"
                               placeholder="name@example.com"
+                              name="cityname"
+                              {...register("cityname", {
+                                required: "Required",
+                                
+                              })}
+                              error={!!errors?.cityname}
                             />
                           </FloatingLabel>
                         </Col>
@@ -278,10 +282,15 @@ export default function Resume(props) {
                             controlId="floatingPassword"
                             label="Current Address"
                             className="input-field"
+                            name="address"
                           >
                             <Form.Control
                               type="text"
                               placeholder="Middle Name (If applicable)"
+                              {...register("address", {
+                                required: "Required",
+                                
+                              })}
                             />
                           </FloatingLabel>
                         </Col>
@@ -318,6 +327,9 @@ export default function Resume(props) {
                             <Form.Control
                               type="number"
                               placeholder="Expected Salary/Salary Range(Optional)"
+                              name="salary"
+                              {...register("salary")}
+                              error={!!errors?.salary}
                             />
                           </FloatingLabel>
                         </Col>
@@ -328,8 +340,14 @@ export default function Resume(props) {
                           <Form.Select
                             aria-label="Default select example"
                             className="mb-3 input-field"
+                            name="joblevel"
+                            {...register("joblevel", { required: "Required" })}
+                            error={!!errors?.joblevel}
+                            label="gender"
+                           
                           >
-                            <option>Applying for Seniority Level of</option>
+                          <option value="" disabled selected hidden > Job Level </option>
+                            <option  value="0" >Applying for Seniority Level of</option>
                             <option value="1">Not Applicable</option>
                             <option value="2">Internship</option>
                             <option value="3">Entry Level</option>
@@ -354,11 +372,17 @@ export default function Resume(props) {
                             controlId="floatingTextarea2"
                             label="Message(Optional)"
                             className="input-field"
+                            name="message"
                           >
                             <Form.Control
                               as="textarea"
                               placeholder="Leave a comment here"
                               style={{ height: "100px" }}
+                              {...register("message", {
+                                required: "Required",
+                                
+                              })}
+
                             />
                           </FloatingLabel>
                         </Col>
