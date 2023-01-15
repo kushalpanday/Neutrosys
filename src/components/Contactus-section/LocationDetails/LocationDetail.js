@@ -58,7 +58,7 @@ export default function LocationDetail() {
                         </Modal.Header>
                         <Modal.Body>
                         <div className="maod"  ref={Componentref}>
-                       <iframe title="map" style={{height:'70vh',width:'100%'}} id="gmap_canvas"
+                       <iframe title="map" style={{height:'70vh',width:'150vh', maxWidth:"100%",}} id="gmap_canvas"
                         src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                         </Modal.Body>

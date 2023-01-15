@@ -6,7 +6,8 @@ import Textcoldescribe3 from "./Textcoldescribe3";
 import Textcoldescribe4 from "./Textcoldescribe4";
 import Textcoldescribe5 from "./Textcoldescribe5";
 import Textcoldescribe6 from "./Textcoldescribe6";
-import OpenJobs from "./OpenJobs";
+// import OpenJobs from "./OpenJobs";
+import Filter from "./Filter";
 
 const Contractjob = () => {
   // const [describe, setJob] = useState(<Textcoldescribe />);
@@ -162,7 +163,9 @@ const Contractjob = () => {
       </div>
 
       {/* open position */}
-      <OpenJobs />
+      {/* <OpenJobs /> */}
+
+      <Filter />
     </>
   );
 };

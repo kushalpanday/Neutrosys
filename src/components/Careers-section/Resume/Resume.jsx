@@ -46,27 +46,6 @@ export default function Resume(props) {
     swal("Form has been Submitted");
   };
 
-  const onDragEnter = () => wrapperRef.current.classList.add("dragover");
-
-  const onDragLeave = () => wrapperRef.current.classList.remove("dragover");
-
-  const onDrop = () => wrapperRef.current.classList.remove("dragover");
-
-  const onFileDrop = (e) => {
-    const newFile = e.target.files[0];
-    if (newFile) {
-      const updatedList = [...fileList, newFile];
-      setFileList(updatedList);
-      props.onFileChange(updatedList);
-    }
-  };
-  const fileRemove = (file) => {
-    const updatedList = [...fileList];
-    updatedList.splice(fileList.indexOf(file), 1);
-    setFileList(updatedList);
-    props.onFileChange(updatedList);
-  };
-
   const [country, setCountry] = useState("");
   const [region, setRegion] = useState("");
   const selectCountry = (val) => setCountry(val);

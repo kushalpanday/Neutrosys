@@ -26,7 +26,7 @@ import ReactToPrint from "react-to-print";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 import swal from "sweetalert";
 import { useForm } from "react-hook-form";
-import { useDropzone } from "react-dropzone";
+// import { useDropzone } from "react-dropzone";
 import {
   CountryDropdown,
   RegionDropdown,
@@ -105,10 +105,23 @@ const Detail = (props) => {
   // };
   const [country, setCountry] = useState("");
   const [region, setRegion] = useState("");
-  const selectCountry = (val) => setCountry(val);
+  const selectCountry = (val) => {
+    setCountry(val);
+    console.log(`selected Country: ${val}`);
+  };
   const selectRegion = (val) => {
     setRegion(val);
+    console.log(`selected Region: ${val}`);
   };
+
+  
+  // const [country, setCountry] = useState("");
+  // const [region, setRegion] = useState("");
+  // const selectCountry = (val) => setCountry(val);
+  // const selectRegion = (val) => {
+  //   setRegion(val);
+  // };
+
   return (
     <div className="main-divbg">
       <Container className="details-container">
@@ -150,6 +163,7 @@ const Detail = (props) => {
                     <FloatingLabel
                       controlId="floatingInput"
                       label="First Name"
+                      name="name"
                       className="input-field"
                     >
                       <Form.Control
@@ -160,7 +174,8 @@ const Detail = (props) => {
                           required: "Required",
                           minLength: 3,
                         })}
-                        error={!!errors?.name}
+                        error={(errors || {}).name}
+                        helperText={errors.name ? 'This field is required' : ''}
                       />
                     </FloatingLabel>
                   </Col>
@@ -252,8 +267,24 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="p-1 mb-2">
                     <CountryDropdown
                       className="input-field select"
+                      name="choose-country"
                       value={country}
                       onChange={(val) => selectCountry(val)}
+                      priorityOptions={[
+                        "CA",
+                        "US",
+                        "GB",
+                        "NP",
+                        "IN",
+                        "MX",
+                        "FI",
+                      ]}
+                      // {...register("choose-country", {
+                      //   required: "Required",
+                      //   // minLength: 3,
+                      // })}
+                      // error={!!errors.choose-country}
+                      // helperText={errors.choose-country ? 'This field is required' : ''}
                       // showDefaultOption={false}
                     />
                   </Col>
@@ -355,19 +386,7 @@ const Detail = (props) => {
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1">
-                    {/* <div className="dashed-border input-field mb-3 ">
-                      <FileUploader
-                        multiple={true}
-                        handleChange={handleChange}
-                        name="file"
-                        types={fileTypes}
-                        label="Upload file"
-                        dropMessageStyle={{ backgroundColor: "red" }}
-                      />
-                      <p>{file ? `File name: ${file[0].name}` : ""}</p>
-                    </div> */}
-                    <UploadFiles accept={["application/pdf"]}/>
-                   
+                    <UploadFiles accept={["application/pdf"]} />
                   </Col>
                 </Row>
 
@@ -387,44 +406,7 @@ const Detail = (props) => {
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="p-1">
-                    {/* <div className="dashed-border input-field mb-3 neutroDetail ">
-                      <div className="uploadpart  ">
-                        <FileUploader
-                          className="file-upload-jobs"
-                          multiple={true}
-                          handleChange={handleChange2}
-                          name="file2"
-                          types={fileTypes2}
-                          label="Upload File"
-                        />
-                        <p>{file2 ? `File name: ${file2[0].name}` : ""}</p>
-                      </div>
-                    </div> */}
-                       <UploadFiles  accept={["image/*"]} />
-
-                    {/* <input
-                        style={{ display: "none" }}
-                        id="upload_file"
-                        name="file"
-                        type="file"
-                        accept=".doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document,image/png, image/jpeg,.pdf"
-                      />
-                      <Button
-                        variant="contained"
-                        component="span"
-                        className="file_button"
-                      >
-                        Upload Cover Letter(Optional)
-                      </Button>
-                      <small
-                        style={{
-                          color: "gray",
-                          textAlign: "left",
-                        }}
-                      >
-                        or drop them
-                      </small> */}
-                    {/* </div> */}
+                    <UploadFiles accept={["image/*"]} />
                   </Col>
                 </Row>
 
