@@ -52,12 +52,14 @@ function OurClients() {
           <div
             className="company-logo d-flex flex-column justify-content-center align-items-center"
             key={item.id}
-          >
+          ><a href={item.url}> 
             <div className="clients_logo">
-              <img src={item.image} alt="company-logo" />
+            <img src={item.image} alt="company-logo" />
+             
              
             </div>
-            <p>{item.name}</p>
+            </a>
+            <h2>{item.name}</h2>
           </div>
         ))}
       </Slider>
