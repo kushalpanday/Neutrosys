@@ -1,5 +1,5 @@
 import React, { useMemo, useRef, useState } from "react";
-import "./Detail.css";
+import "./DetailSalesNoida.css";
 import { useNavigate } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -37,9 +37,9 @@ const Detail = (props) => {
   
 
   
-
+  
   const navigate = useNavigate();
-
+  
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
  
@@ -52,7 +52,7 @@ const Detail = (props) => {
       <Container className="details-container">
         <Row className="back-row">
           <Col className="back-col">
-            <button className="back-btn" onClick={() => navigate(-1)}>
+            <button className="back-btn-internaljob" onClick={() => navigate(-1)}>
               Back
             </button>
           </Col>

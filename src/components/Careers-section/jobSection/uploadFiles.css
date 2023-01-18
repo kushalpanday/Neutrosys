@@ -10,7 +10,7 @@
     color: #fff;
     border-radius: 0.5rem;
     box-shadow: 0 3px 8px rgb(0 0 0 / 20%);
-
+    border-color: none;
     background: linear-gradient(180deg,#7182af,#8696c2 50%,#7187bd);
   }
   .upload-file-job{

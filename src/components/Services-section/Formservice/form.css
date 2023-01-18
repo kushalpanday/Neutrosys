@@ -17,13 +17,14 @@
 .country-region-services{
   display: flex;
   gap:1rem;
+  margin-bottom: 0.2rem;
 }
 .country-region-services .input-field{
   margin-top:.2rem;
   border-radius:.6rem;
 }
 .country-region-services .input-field:first-child{
-  width:65%;
+  width:65.2%;
 }
 .textfields{
   width: auto;
@@ -63,13 +64,21 @@ div .multiSelectContainer input {
 }
 .css-1jqq78o-placeholder {
   text-align:left;
+  margin-left: -4px;
 }
 .toast-green{
   background-color: green;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button { 
+	-webkit-appearance: none;
+}
 
 .select__control.css-13cymwt-control, .select__control--is-focused {
-padding:.4rem;
+
+height: 3.2rem;
+border-radius: 5px;
+
 }
 .header-row {
   height: auto;
@@ -301,7 +310,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
 }
 .basic-multi-select{
   border: 2px solid pink; 
-  border-radius: 5px;
+  border-radius: 8px;
+  height: 3.5rem;
+  margin-bottom: 0.2rem;
 }
 .form-control {
   height: 42px;

@@ -9,6 +9,7 @@ import employeeimg3 from "../Careersimages/emp3.jpg";
 import { Routes, Route, Link, Outlet } from "react-router-dom"; 
 
 const Internaljob = () => {
+  
   return (
     <>
       <div className="internal-maindiv">
@@ -83,7 +84,7 @@ const Internaljob = () => {
                     <p>Noida, Uttar Pradesh India</p>
                   </Col>
                   <Col sm={2} className="icon-text">
-                  <Link to="salesIntern"><p>
+                  <Link to="salesNoida"><p>
                       <BsArrowRightCircle />
                     </p></Link>
                     <Outlet />

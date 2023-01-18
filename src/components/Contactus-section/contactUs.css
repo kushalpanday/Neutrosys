@@ -253,6 +253,7 @@ div .form-button:hover{
 .tel{
   display: flex;
   gap:1rem;
+  margin-bottom: 0.2rem;
 }
 .txtfield_country_code{
   width:40%;

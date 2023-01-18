@@ -36,11 +36,13 @@ import UploadFiles from "./UploadFiles";
 import Select from "react-select";
 
 const Detail = (props) => {
+  
   const [mobile, setMobile] = useState("+977");
 
   const [state, setState] = useState(false);
   const countries = Country.getAllCountries();
   const [show, setShow] = useState(false);
+ 
 
   const data = {
     countries: [
@@ -262,6 +264,7 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="p-1 mb-2">
                     <CountryDropdown
                       className="input-field select"
+                      style={{background: "white"}}
                       value={country}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
@@ -277,7 +280,7 @@ const Detail = (props) => {
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
                       value={region}
-                      
+                      style={{background: "white"}}
                       onChange={(val) => selectRegion(val)}
                     />
                   </Col>

@@ -51,6 +51,7 @@ div .select {
   border:1px solid rgba(128, 128, 128, 0.521);
   border-radius: 5px;
 }
+
 .dmajdp > span {
   font-size: 0;
   color: #666;
@@ -164,19 +165,22 @@ div .bXgVCj span {
   text-decoration: underline;
   background: #03a63c;
 }
+.salesintern-modal{
+  margin-top: 4rem;
+}
 .closing-header{
   padding: 15px;
-  /* background-color: rgba(179, 174, 174, 0.329); */
+   background-color: rgba(179, 174, 174, 0.329); 
 }
 .closing-body{
   color: red;
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  /* background-color: rgba(179, 174, 174, 0.329); */
+  background-color: rgba(179, 174, 174, 0.329); 
 }
 .closing-body p{
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 .jobs-outer-row {
@@ -552,10 +556,10 @@ select.mb-3.input-field.form-select option{
   .right-col {
     border-top: 1px solid #0089ca;
   }
-  .text {
+  /* .text {
     width: 90%;
     left: 5%;
-  }
+  } */
   .top-row {
     margin-top: 0.5rem;
     height: auto;
@@ -889,5 +893,8 @@ select.mb-3.input-field.form-select option{
   }
   .vertical-div{
     padding-left: 30px;
+  }
+  .jobs-text{
+    top: 5%;
   }
 }

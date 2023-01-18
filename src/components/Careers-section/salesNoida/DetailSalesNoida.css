@@ -48,9 +48,17 @@ div .select {
 }
 
 .input-field.select{
+  padding-left: 8px;
   border:1px solid rgba(128, 128, 128, 0.521);
-  border-radius: 5px;
+  border-radius: 9px;
+   border-right: 12px solid transparent; 
+  /* background: #e3e7eb;  */
+  color: rgba(0, 0, 0, 0.6);
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  height: 3.5rem;
+  background: #eaedf1;
 }
+
 .dmajdp > span {
   font-size: 0;
   color: #666;
@@ -97,7 +105,7 @@ div .bXgVCj span {
   margin-top: 3rem;
   text-align: left;
 }
-.back-btn{
+.back-btn-internaljob{
   border: none;
   color: white;
   font-size: 18px;
@@ -113,7 +121,7 @@ div .bXgVCj span {
   /* border-radius: 10%;  */
   
 }
-.back-btn:hover{
+.back-btn-internaljob:hover{
   background: #168dc4d5;
 }
 
@@ -176,7 +184,7 @@ div .bXgVCj span {
   /* background-color: rgba(179, 174, 174, 0.329); */
 }
 .closing-body p{
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 .jobs-outer-row {
@@ -754,7 +762,7 @@ select.mb-3.input-field.form-select option{
 }
 @media screen and (min-width: 425px) and (max-width: 765px) {
   .top-row {
-    margin-top: 1rem;
+    /* margin-top: 1rem; */
     height: auto;
   }
 }
@@ -857,6 +865,9 @@ select.mb-3.input-field.form-select option{
   .share-col2 {
     width: 100%;
   }
+  .back-btn{
+    margin-left: 1rem;
+  }
 }
 @media screen and (max-width: 575px) {
   .right-col {
@@ -889,5 +900,43 @@ select.mb-3.input-field.form-select option{
   }
   .vertical-div{
     padding-left: 30px;
+  }
+  .jobs-text{
+    top: 10%;
+  }
+}
+@media screen and (max-width: 715px){
+  .jobs-text{
+    top: 8%;
+    width: 60%;
+    left: 20%;
+  }
+}
+@media screen and (max-width: 630px){
+  .jobs-text{
+    width: 60%;
+  }
+}
+@media screen and (max-width: 510px){
+    .jobs-text{
+      width: 65%;
+      left:20%;
+    }
+}
+@media screen and (max-width: 389px){
+  .jobs-text{
+    width: 70%;
+    left:15%;
+  }
+}
+@media screen and (max-width: 365px){
+  .jobs-text{
+    width: 80%;
+    left:10%;
+  }
+}
+@media screen and (max-width: 471px){
+  .jobs-text{
+    top: 6%;
   }
 }

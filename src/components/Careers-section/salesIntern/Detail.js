@@ -74,7 +74,7 @@ const Detail = (props) => {
           </Col>
         </Row>
 
-        <Modal show={show} onHide={handleClose} size="md">
+        <Modal show={show} onHide={handleClose} size="md" className="salesintern-modal">
           <Modal.Header closeButton className="closing-header">
 
           </Modal.Header>

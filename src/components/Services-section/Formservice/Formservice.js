@@ -329,7 +329,7 @@ const Formservice = () => {
                   {...register("message", { required: "Required" })}
                   error={!!errors?.message}
                 />
-                <div style={{ display: "flex" }}>
+                <div style={{ display: "flex"}}>
                   <label htmlFor="upload_file">
                     <input
                       style={{ display: "none" }}

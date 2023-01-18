@@ -19,11 +19,16 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light {
   color: black;
 }
 .navbar-nav {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   text-align: center;
+  
 }
+
 .navbar_button {
-  padding: 0.3rem 1rem;
+  padding-top: 5px;
+  padding-bottom: 8px;
+  padding-left: 1rem;
+  padding-right: 1rem;
   margin-right: 1rem;
   /* margin:.5rem 0; */
   background-color: #23abe5;
@@ -56,7 +61,7 @@ div .navbar-nav .nav-link:hover {
   font-weight: 500;
 }
 .nav-margin {
-  margin: auto 3rem auto auto;
+  margin: 0 3rem auto auto;
 }
 nav.navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
   z-index: 2;
@@ -84,6 +89,9 @@ nav.navbar.navbar.navbar-expand-lg.navbar-light.bg-light {
   }
   .navbar_img img {
     width: 7rem;
+  }
+  .navbar-nav{
+    margin-right: 0;
   }
 }
 @media only screen and (max-width: 950px) {

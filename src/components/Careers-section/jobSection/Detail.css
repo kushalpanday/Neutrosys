@@ -50,8 +50,9 @@ div .select {
 .input-field.select{
   border:1px solid rgba(128, 128, 128, 0.521);
   border-radius: 5px;
-  
+  /* border-right: 16px solid transparent; */
 }
+
 .dmajdp > span {
   font-size: 0;
   color: #666;
@@ -538,10 +539,10 @@ select.mb-3.input-field.form-select option{
   .right-col {
     border-top: 1px solid #0089ca;
   }
-  .text {
+  /* .text {
     width: 90%;
     left: 5%;
-  }
+  } */
   .top-row {
     margin-top: 0.5rem;
     height: auto;
@@ -708,11 +709,11 @@ select.mb-3.input-field.form-select option{
     padding-right: 1rem;
     padding-top: 7px;
   }
-  .text {
+  /* .text {
    
     left: 7%;
     width: 85%;
-  }
+  } */
   .apply-btn {
     margin: 0;
     margin-bottom: 1rem;
@@ -875,5 +876,8 @@ select.mb-3.input-field.form-select option{
   }
   .vertical-div{
     padding-left: 30px;
+  }
+  .jobs-text{
+    top: 5%;
   }
 }
