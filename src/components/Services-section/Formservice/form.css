@@ -3,6 +3,11 @@
     padding: 0px;
     box-sizing: border-box;
   }
+
+  .input-field.select{
+    border-right: 16px solid transparent;
+    
+  }
   .mainForm{
     /* background-color:#bfdbfe; */
     background: rgb(228 231 232 / 52%);

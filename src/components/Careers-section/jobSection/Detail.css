@@ -50,6 +50,7 @@ div .select {
 .input-field.select{
   border:1px solid rgba(128, 128, 128, 0.521);
   border-radius: 5px;
+border-right: 16px solid transparent;
 }
 .dmajdp > span {
   font-size: 0;

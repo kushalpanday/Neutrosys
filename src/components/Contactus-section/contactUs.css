@@ -3,6 +3,12 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
+.maod iframe{
+  width: 100%;
+}
+
+
 .header-row {
   height: 20rem;
   width: 100%;
@@ -343,7 +349,7 @@ div .form-button:hover{
     padding: 5px 8px;
     outline: none;
     white-space: nowrap;
-    -webkit-user-select: none;
+    /* -webkit-user-select: none; */
     cursor: pointer;
     text-shadow: 1px 1px #fff;
     font-weight: 500;
@@ -515,16 +521,49 @@ div .form-button:hover{
 @media only screen and (min-width: 280px) and (max-width: 653px) {
   #example-custom-modal-styling-title {
     font-size: 17px;
-    margin-right: 80px;
+    margin-right: 100px;
   }
-  .close-btn {
-    margin-right: 25px;
+ 
+ .map-btn{
+  margin-right: 8px;
+ }
+
+  
+  #dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .maod,.modal-content{
+    width: 300px;
+  }
+
+  .maod iframe{
+    width: 99%;
   }
 }
 
 @media only screen and (min-width: 412px) and (max-width: 914px) {
   #example-custom-modal-styling-title {
     margin-right: 160px;
+  }
+
+ 
+  @media screen and (min-width:741px) and (max-width:770px){
+    #dd{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .maod,.modal-content{
+      width: 600px;
+    }
+  
+    .maod iframe{
+      width: 99%;
+    }
   }
 }
 @media only screen and (min-width: 360px) and (max-width: 740px) {
@@ -533,6 +572,20 @@ div .form-button:hover{
   }
   .close-btn {
     margin-right: 6px;
+  }
+
+  #dd{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .maod,.modal-content{
+    width: 340px;
+  }
+
+  .maod iframe{
+    width: 99%;
   }
 }
 @media only screen and (max-width: 740px){

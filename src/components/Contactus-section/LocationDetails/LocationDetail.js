@@ -43,13 +43,13 @@ export default function LocationDetail() {
                         show={show}
                         onHide={() => setShow(false)}
                         dialogClassName="my-modal"
-                        aria-labelledby="example-custom-modal-styling-title">
+                        aria-labelledby="example-custom-modal-styling-title" id = "dd">
                         <Modal.Header closeButton className='close-btn'>
                         <Modal.Title id="example-custom-modal-styling-title">
                             Our Location 
                         </Modal.Title>
                         <Button className='map-btn'>
-                            <p><BsPrinterFill  /></p>
+                            <p className='print-btn'><BsPrinterFill className='print-btn' /></p>
                             <span className='tooltiptext'> <ReactToPrint
                             trigger={() => (
                               <span style={{ marginLeft: ".7rem" }}>
@@ -60,9 +60,9 @@ export default function LocationDetail() {
                           /></span>
                         </Button>
                         </Modal.Header>
-                        <Modal.Body>
-                        <div className="maod"  >
-                       <iframe ref={Componentref} title="map" style={{height:'60vh',width:"100vh"}} id="gmap_canvas" 
+                        <Modal.Body id = "dark">
+                        <div className="maod">
+                       <iframe ref={Componentref} title="map" style={{height:'60vh'}} id="gmap_canvas" 
                         src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                         </Modal.Body>
