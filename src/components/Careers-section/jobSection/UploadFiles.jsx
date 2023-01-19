@@ -70,13 +70,13 @@ export default function UploadFiles({ accept }) {
       <div {...getRootProps({ className: "dropzone", style })}>
         <input {...getInputProps()} />
         <button type="button" onClick={open} className="uploadpart">
-          Upload Files
+          Upload Resume/CV
         </button>
         {console.log({ files })}
         {files.length > 0 ? (
           <p className="upload-file-job"> {files}</p>
         ) : (
-          <p className="upload-file-job">Drag 'n' drop some files here</p>
+          <p className="upload-file-job">or drop them</p>
         )}
       </div>
     </div>

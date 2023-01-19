@@ -18,13 +18,18 @@
   display: flex;
   gap:1rem;
   margin-bottom: 0.2rem;
+  
 }
+/* .select.input-field{
+  border-right: 15px solid transparent;
+} */
 .country-region-services .input-field{
   margin-top:.2rem;
   border-radius:.6rem;
+ 
 }
 .country-region-services .input-field:first-child{
-  width:65.2%;
+  width:65.5%;
 }
 .textfields{
   width: auto;

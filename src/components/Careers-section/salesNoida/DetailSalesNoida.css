@@ -49,16 +49,19 @@ div .select {
 
 .input-field.select{
   padding-left: 8px;
-  border:1px solid rgba(128, 128, 128, 0.521);
+  border:1px solid rgba(128, 128, 128, 0.521); 
   border-radius: 9px;
-   border-right: 12px solid transparent; 
+   /* border-right: 15px solid transparent;          */
   /* background: #e3e7eb;  */
   color: rgba(0, 0, 0, 0.6);
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   height: 3.5rem;
   background: #eaedf1;
+  
 }
-
+.form-select{
+  border-radius: 9px;
+}
 .dmajdp > span {
   font-size: 0;
   color: #666;
@@ -427,11 +430,12 @@ div .react-tel-input .form-control {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 0 1rem ; */
+  padding-right: 1rem ; 
   width: 100%;
   text-align: justify;
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
   margin-top: 1rem;
+  color: #3b5998;
 }
 
 .check label {
@@ -442,14 +446,18 @@ div .react-tel-input .form-control {
 
 #submit-btn {
   background-color: #77b55a;
+  box-shadow: 0px 10px 14px -7px #3e7327a4;
+  background: linear-gradient(to bottom, #5eb572 5%, #1e7e34 100%);
   color: #fff;
-  padding: 9px 27px;
   cursor: pointer;
   outline: none;
-  border: 1px solid #77b55a;
+  border: 1px solid #4b8f29;
   font-size: 17px;
   font-weight: 500;
-  margin: 1rem 0;
+  margin-left: 1rem;
+  margin-top: 1.3rem;
+  margin-bottom: 2.5rem;
+  border-radius: 5px;
 }
 
 .top-form {
@@ -458,7 +466,7 @@ div .react-tel-input .form-control {
   align-items: center;
   background: linear-gradient(180deg, #a8b7df 0%, #9aabd9 50%, #879ed7 100%);
   color: #fff;
-  padding: 15px 30px;
+  padding: 20px 45px;
   width:100%;
 }
 
@@ -490,7 +498,9 @@ div .react-tel-input .form-control {
 }
 .jobs-modal-header .btn-close{
   position: absolute;
-  right:1rem;
+  padding-right: 2rem;
+  color: white;
+  /* right:1rem; */
 }
 .flex {
   display: flex;
@@ -498,6 +508,7 @@ div .react-tel-input .form-control {
 }
 input[type="checkbox"]{
   width:1rem;
+  margin-top: 0;
 }
 .file-input {
   margin-left: 10px;
@@ -531,7 +542,7 @@ input[type="checkbox"]{
 select.mb-3.input-field.form-select {
   width: 100%;
   padding: 14.6px 10px;
-    color: rgba(0, 0, 0, 0.6);
+    color: black;
     position: relative;
     z-index: 6;
     background-color: transparent;

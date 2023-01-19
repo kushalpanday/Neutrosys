@@ -112,7 +112,7 @@ export default function Resume(props) {
                     ENTER YOUR INFORMATION
                   </Modal.Title>
                 </Modal.Header>
-                <Modal.Body>
+                <Modal.Body className="resume-modal-body">
                   <form className="form" onSubmit={handleSubmit(onSubmit)}>
                     <Container>
                     <Row className="mt-2">
@@ -129,7 +129,7 @@ export default function Resume(props) {
                       </Col>
                     </Row>
                       <Row className="mt-2">
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingInput"
                             label="First Name"
@@ -147,7 +147,7 @@ export default function Resume(props) {
                             />
                           </FloatingLabel>
                         </Col>
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             // lg={3}
                             controlId="floatingPassword"
@@ -164,7 +164,7 @@ export default function Resume(props) {
                         </Col>
                       </Row>
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingInput"
                             label="Last Name"
@@ -182,7 +182,7 @@ export default function Resume(props) {
                           </FloatingLabel>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <Form.Select
                             aria-label="Default select example"
                             className="p-3 input-field"
@@ -202,7 +202,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <PhoneInput
                             country={"nep"}
                             value={mobile}
@@ -218,7 +218,7 @@ export default function Resume(props) {
                           />
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="p-1 mt-0">
+                        <Col lg={6} md={12} sm={12} className="p-2 mt-0">
                           <FloatingLabel
                             controlId="floatingPassword"
                             label="Phone"
@@ -236,16 +236,17 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                  <Col lg={6} md={12} sm={12} className="p-2 mb-2">
                     <CountryDropdown
                       className="input-field select"
                       value={country}
+                      style={{background: "white", color:"black" }}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
                     />
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                  <Col lg={6} md={12} sm={12} className="p-2 mb-2">
                     <RegionDropdown
                       className="input-field select"
                       label="region"
@@ -253,6 +254,7 @@ export default function Resume(props) {
                       country={country}
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
+                      style={{background: "white", color:"black" }}
                       value={region}
                       onChange={(val) => selectRegion(val)}
                     />
@@ -260,7 +262,7 @@ export default function Resume(props) {
                 </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingInput"
                             label="City"
@@ -273,7 +275,7 @@ export default function Resume(props) {
                           </FloatingLabel>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingPassword"
                             label="Current Address"
@@ -288,7 +290,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingInput"
                             label="Email"
@@ -309,7 +311,7 @@ export default function Resume(props) {
                           </FloatingLabel>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingPassword"
                             label="Expected Salary/Salary Range(Optional)"
@@ -324,7 +326,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <Form.Select
                             aria-label="Default select example"
                             className="mb-3 input-field"
@@ -341,7 +343,7 @@ export default function Resume(props) {
                           </Form.Select>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           {/* <div className="dashed-border input-field mb-3 "> */}
                           <UploadFiles accept={["application/pdf"]}/>
                           {/* </div> */}
@@ -349,7 +351,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingTextarea2"
                             label="Message(Optional)"
@@ -363,7 +365,7 @@ export default function Resume(props) {
                           </FloatingLabel>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="p-1">
+                        <Col lg={6} md={12} sm={12} className="p-2">
                         <UploadFiles accept={["application/pdf"]}/>
 
                         </Col>

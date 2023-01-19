@@ -13,7 +13,7 @@
       border-radius: 10%;
       position: fixed;
       bottom: 5rem;
-      right: 2.5rem;
+      right: 1.8rem;
       z-index: 999;
       display: flex;
       justify-content: center;
@@ -39,7 +39,7 @@
     padding-right: 2px;
     position: absolute;
     z-index: 1;
-    bottom: -70%;
+    bottom: -90%;
     left: 50%;
     margin-left: -35px;
   }

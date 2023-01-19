@@ -52,7 +52,11 @@ div .select {
   border-radius: 5px;
   /* border-right: 16px solid transparent; */
 }
-
+.jobdetails-body{
+  padding-top: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .dmajdp > span {
   font-size: 0;
   color: #666;
@@ -344,10 +348,13 @@ div .bXgVCj span {
 div .react-tel-input{
   z-index:10;
 }
-
+.react-tel-input .flag-dropdown{
+  border-radius: 9px 0 0 9px;
+}
 div .react-tel-input .form-control {
   height:58px;
   width:100%;
+  border-radius: 9px;
 }
 
 .dashed-border.input-field .file_button{

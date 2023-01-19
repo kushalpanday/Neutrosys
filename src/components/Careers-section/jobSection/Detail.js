@@ -153,12 +153,12 @@ const Detail = (props) => {
               ENTER YOUR INFORMATION
             </Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="jobdetails-body">
             <form className="form" onSubmit={handleSubmit(onSubmit)}>
               <Container>
               
                 <Row className="mt-2">
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       controlId="floatingInput"
                       label="First Name"
@@ -176,7 +176,7 @@ const Detail = (props) => {
                       />
                     </FloatingLabel>
                   </Col>
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       // lg={3}
                       controlId="floatingPassword"
@@ -193,7 +193,7 @@ const Detail = (props) => {
                   </Col>
                 </Row>
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       controlId="floatingInput"
                       label="Last Name"
@@ -209,7 +209,7 @@ const Detail = (props) => {
                     </FloatingLabel>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <Form.Select
                       aria-label="Default select example"
                       className="p-3 input-field"
@@ -229,7 +229,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <PhoneInput
                       country={"nep"}
                       value={mobile}
@@ -243,7 +243,7 @@ const Detail = (props) => {
                     />
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1 mt-0">
+                  <Col lg={6} md={12} sm={12} className="p-2 mt-0">
                     <FloatingLabel
                       controlId="floatingPassword"
                       label="Phone"
@@ -261,17 +261,17 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                  <Col lg={6} md={12} sm={12} className="p-2 mb-2">
                     <CountryDropdown
                       className="input-field select"
-                      style={{background: "white"}}
+                      style={{background: "white", color:"black" }}
                       value={country}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
                     />
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1 mb-2">
+                  <Col lg={6} md={12} sm={12} className="p-2 mb-2">
                     <RegionDropdown
                       className="input-field select"
                       label="region"
@@ -280,14 +280,14 @@ const Detail = (props) => {
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
                       value={region}
-                      style={{background: "white"}}
+                      style={{background: "white", color: "black" }}
                       onChange={(val) => selectRegion(val)}
                     />
                   </Col>
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       controlId="floatingInput"
                       label="City"
@@ -300,7 +300,7 @@ const Detail = (props) => {
                     </FloatingLabel>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       controlId="floatingPassword"
                       label="Current Address"
@@ -315,7 +315,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       controlId="floatingInput"
                       label="Email"
@@ -336,7 +336,7 @@ const Detail = (props) => {
                     </FloatingLabel>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       controlId= "floatingPassword"
                       label= "Expected Salary/Salary Range(Optional)"
@@ -351,7 +351,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <Form.Select
                       aria-label="Default select example"
                       className="mb-3 input-field"
@@ -368,7 +368,7 @@ const Detail = (props) => {
                     </Form.Select>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     {/* <div className="dashed-border input-field mb-3 ">
                       <FileUploader
                         multiple={true}
@@ -386,7 +386,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     <FloatingLabel
                       controlId="floatingTextarea2"
                       label="Message(Optional)"
@@ -400,7 +400,7 @@ const Detail = (props) => {
                     </FloatingLabel>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="p-1">
+                  <Col lg={6} md={12} sm={12} className="p-2">
                     {/* <div className="dashed-border input-field mb-3 neutroDetail ">
                       <div className="uploadpart  ">
                         <FileUploader
@@ -443,7 +443,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={8} md={8} sm={12}>
+                  <Col lg={9} md={9} sm={12}>
                     <div className="check-container">
                       {" "}
                       <input type="checkbox" name="check" id="" />
@@ -455,7 +455,7 @@ const Detail = (props) => {
                     </div>
                   </Col>
 
-                  <Col lg={4} md={4} sm={12}>
+                  <Col lg={3} md={3} sm={12}>
                     <Button  id="submit-btn" type="submit">
                       Submit
                     </Button>{" "}

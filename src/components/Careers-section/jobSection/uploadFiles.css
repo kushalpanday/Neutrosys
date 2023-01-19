@@ -1,8 +1,9 @@
 .uploadpart{
     border: none;
-    /* font-size: 1.4rem; */
-    padding: .7rem 1rem;
-    /* width:5rem; */
+    font-size: 1rem; 
+   padding: 0.5rem;
+    /* padding: .7rem 1rem; */
+     width: 13rem; 
     /* display: inline-flex; */
     align-items: center;
     justify-content: space-between;
