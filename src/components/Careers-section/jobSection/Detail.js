@@ -217,8 +217,9 @@ const Detail = (props) => {
                       {...register("gender", { required: "Required" })}
                       error={!!errors?.gender}
                       label="gender"
+                      
                     >
-                      {/* <option> Gender</option> */}
+                      <option disabled selected value> Gender</option> 
                       <option value="male">Male</option>
                       <option value="female">Female</option>
                       <option value="unspecified">Unspecified</option>
@@ -231,6 +232,7 @@ const Detail = (props) => {
                 <Row>
                   <Col lg={6} md={12} sm={12} className="p-2">
                     <PhoneInput
+                    
                       country={"nep"}
                       value={mobile}
                       name="country_code"
@@ -443,7 +445,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={9} md={9} sm={12}>
+                  <Col lg={9} md={9} sm={12} className="check-container-col">
                     <div className="check-container">
                       {" "}
                       <input type="checkbox" name="check" id="" />
@@ -455,7 +457,7 @@ const Detail = (props) => {
                     </div>
                   </Col>
 
-                  <Col lg={3} md={3} sm={12}>
+                  <Col lg={3} md={3} sm={12} className='submit-btn-col'>
                     <Button  id="submit-btn" type="submit">
                       Submit
                     </Button>{" "}

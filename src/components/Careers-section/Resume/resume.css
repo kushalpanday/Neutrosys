@@ -111,6 +111,20 @@ grid-template-columns: 45% 55%;
   }
 
 }
+
+@media screen and  (max-width: 991px){
+  .resume-modal-body{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .check-Rcontainer-col{
+    width: 100%;
+  }
+  .Rsubmit-btn-col{
+    width: 100%;
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 690px) {
   .resume-row {
     grid-template-columns: 100%;

@@ -57,8 +57,9 @@ div .select {
   font-family: "Roboto","Helvetica","Arial",sans-serif;
   height: 3.5rem;
   background: #eaedf1;
-  
+
 }
+
 .form-select{
   border-radius: 9px;
 }
@@ -456,7 +457,7 @@ div .react-tel-input .form-control {
   font-weight: 500;
   margin-left: 1rem;
   margin-top: 1.3rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
   border-radius: 5px;
 }
 
@@ -609,7 +610,58 @@ select.mb-3.input-field.form-select option{
     padding-top: 7px;
   }
 }
-
+@media screen  and (max-width: 991px){
+  .top-form{
+    padding: 20px 27px;
+  }
+}
+@media screen  and (max-width: 465px){
+  .top-form{
+    font-size: 1.2rem;
+  }
+  .jobs-modal-header .btn-close{
+    padding-right: 1rem;
+  }
+}
+@media screen  and (max-width: 415px){
+  .top-form{
+    font-size: 1.1rem;
+  }
+  .jobs-modal-header .btn-close{
+    padding-right: 10px;
+  }
+}
+@media screen  and (max-width: 375px){
+  .top-form{
+    font-size: 1rem;
+    padding: 20px 20px;
+  }
+  .jobs-modal-header .btn-close{
+    padding-right: 5px;
+    font-size: 10px;
+  }
+}
+@media screen  and (max-width: 315px){
+  .top-form{
+    font-size: 0.9rem;
+    padding: 20px 18px;
+  }
+  
+}
+@media screen  and (max-width: 290px){
+  .top-form{
+    font-size: 0.8rem;
+    padding: 20px 15px;
+  }
+  
+}
+@media screen  and (max-width: 260px){
+  .top-form{
+    font-size: 0.8rem;
+    padding: 20px 10px;
+  }
+  
+}
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   /* .text {
     top: 15%;

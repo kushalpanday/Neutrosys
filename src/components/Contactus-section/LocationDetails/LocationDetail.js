@@ -1,4 +1,4 @@
-import React, { useState,useRef } from 'react';
+import React, { useState, useRef } from 'react';
 import '../contactUs.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,6 +11,7 @@ import ReactToPrint from "react-to-print";
 export default function LocationDetail() {
     const [show, setShow] = useState(false);
     const Componentref = useRef();
+
     return(
         <>
             <Row className='location-row'>
@@ -36,6 +37,7 @@ export default function LocationDetail() {
                     </div>
                     <Modal
                         
+                        size="lg"
                         show={show}
                         onHide={() => setShow(false)}
                         dialogClassName="my-modal"
@@ -57,8 +59,8 @@ export default function LocationDetail() {
                         </Button>
                         </Modal.Header>
                         <Modal.Body>
-                        <div className="maod"  ref={Componentref}>
-                       <iframe title="map" style={{height:'70vh',width:'100%'}} id="gmap_canvas"
+                        <div className="maod">
+                       <iframe ref={Componentref} title="map" style={{height:'60vh',width:'100%'}} id="gmap_canvas"
                         src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                         </div>
                         </Modal.Body>

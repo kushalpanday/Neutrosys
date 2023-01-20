@@ -401,53 +401,12 @@ div .form-button:hover{
   opacity: 1;
   right: 0;
 }
-.faq {
-  text-align: center;
-  margin-top: 15px;
-  margin-bottom: 0px;
-}
-.faq-para {
-  text-align: center;
-  margin-bottom: 15px;
-}
-.faq-bgdiv {
-  background-color: rgba(35, 171, 229, 0.418);
-}
-.faq-row {
-  justify-content: center;
-}
-.faq-col1 {
-  margin-top: 15px;
-  background-color: white;
-  margin-right: 20px;
-  height: 50px;
-}
-.faq-col1:hover {
-  background-color: pink;
-}
-.faq-col1 p {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 450;
-  padding-top: 10px;
-}
-.faq-col2 {
-  margin-top: 15px;
-  background-color: white;
-  height: 50px;
-}
 
-.faq-col2 p {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 450;
-  padding-top: 10px;
-}
 .my-modal {
-  max-width: 70%;
-  height:100%;
-  /* margin:auto; */
-}
+  max-width: 50%;
+  /* height:100%; */
+  /* margin:auto;  */
+} 
 @media only screen and (max-width: 915px) {
   .form_container .form-row .contactus-form-col{
     padding:1rem;

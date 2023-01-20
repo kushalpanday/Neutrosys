@@ -35,82 +35,105 @@
     border: none;
     border-radius: .5rem;
     background: #23ABE6;
-   
-   
 }
+
+
+
+
+
 @media only screen and (max-width: 950px){
     .letschatcontent h2{
-        font-size: 1.6rem;
-       
+        font-size: 1.2rem;
+       padding: 0;
     }  
     .letschatcontent p{
-        font-size: .9rem;
-    }
-}
-@media only screen and (max-width: 950px){
-    .letschatcontent h2{
-        font-size: 1.3rem;
-       
-    }  
-    .letschatcontent p{
-        font-size: .9rem;
-    }
-}
-@media only screen and (max-width: 650px){
-    .letschatcontent h2{
         font-size: 1rem;
+    }
+}
+/* @media only screen and (max-width: 650px){
+    .letschatcontent h2{
+        font-size: 1.1rem;
        
     }  
     .letschatcontent p{
-        width: 80%;
+        width: 70%;
         margin: 2px auto;
-        font-size: .8rem;
+        font-size: .9rem;
     }
-}
+} */
+/* @media only screen and (max-width: 613px){
+    .letschatmain{
+        margin-top:3rem;
+    }
+    
+}  */
 @media only screen and (max-width: 613px){
     .letschatmain{
         margin-top:3rem;
     }
-}
-@media only screen and (max-width: 500px){
     .letschatcontent h2{
-        font-size:.8rem;
+        font-size:1rem;
+      
+    }  
+    .letschatcontent p{
+        font-size: 0.8rem;
+        width: 70%;
+    }
+    .letschatcontent{
+        padding-bottom: 1rem;
+    }
+}
+@media only screen and (max-width: 540px){
+    .letschatcontent h2{
+        font-size:0.8rem;
+        
+
+    }  
+}
+@media only screen and (max-width: 480px){
+    .letschatcontent h2{
+        font-size:0.8rem;
+      
+    }  
+    .letschatcontent p{
+        font-size: .7rem;
+    }
+}
+
+@media only screen and (max-width: 415px){
+    .letschatcontent h2{
+        font-size: .7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2px ; 
        
     }  
+    .letschatcontent p{
+        font-size: .7rem;
+    }
+}
+@media only screen and (max-width: 370px){
+    .letschatcontent h2{
+        font-size: 10px;
+    }
     .letschatcontent p{
         font-size: .6rem;
     }
 }
-@media only screen and (max-width: 415px){
+@media only screen and (max-width: 330px){
     .letschatcontent h2{
-        font-size: .78rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1px auto;
-       
-    }  
+        font-size: 9px;
+    }
     .letschatcontent p{
-        font-size: .7rem;
+        font-size: 8px
     }
 }
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 290px){
     .letschatcontent h2{
-        font-size: .77rem;
-        /* display: flex;
-        justify-content: center;
-        align-items: center; */
-        width: 100%;
-        margin: 1px auto;
-        text-align: center;
-       
-    }  
-    .letschatcontent p{
-        font-size: .7rem;
+        font-size: 8px;
     }
-    .letschatcontent button{
-        margin-top: 1rem;
-       
-       
+    .letschatcontent p{
+        font-size: 7px
     }
 }

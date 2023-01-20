@@ -115,8 +115,8 @@ export default function Resume(props) {
                 <Modal.Body className="resume-modal-body">
                   <form className="form" onSubmit={handleSubmit(onSubmit)}>
                     <Container>
-                    <Row className="mt-2">
-                      <Col sm={12} className="p-1">
+                    <Row className="mt-1">
+                      <Col sm={12} className="p-2">
                       <Select
                         isMulti
                         name="colors"
@@ -128,7 +128,7 @@ export default function Resume(props) {
                       />
                       </Col>
                     </Row>
-                      <Row className="mt-2">
+                      <Row className="mt-1">
                         <Col lg={6} md={12} sm={12} className="p-2">
                           <FloatingLabel
                             controlId="floatingInput"
@@ -191,7 +191,7 @@ export default function Resume(props) {
                             error={!!errors?.gender}
                             label="gender"
                           >
-                            {/* <option> Gender</option> */}
+                            <option disabled selected value> Gender</option>  
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="unspecified">Unspecified</option>
@@ -372,7 +372,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={8} md={8} sm={12}>
+                        <Col lg={9} md={9} sm={12} className="check-Rcontainer-col">
                           <div className="check-container">
                             {" "}
                             <input type="checkbox" name="check" id="" />
@@ -384,7 +384,7 @@ export default function Resume(props) {
                           </div>
                         </Col>
 
-                        <Col lg={4} md={4} sm={12}>
+                        <Col lg={3} md={3} sm={12} className='Rsubmit-btn-col'>
                           <Button
                             variant="success"
                             id="submit-btn"
