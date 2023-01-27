@@ -32,36 +32,27 @@
   margin: auto auto;
   /* padding: 2rem; */
   /* background-color: aqua; */
+
 }
 .mainData {
   padding: 1rem 0.5rem;
   /* height: 14rem; */
-  /* border: .5px solid gray; */
+  border: 1px solid rgba(156, 154, 154, 0.253); 
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  /* justify-content: center;
-    align-items: center; */
-  /* background-color: antiquewhite;
-    padding: 1rem; */
-
-  /* border: 1px solid #F5E9E9; */
-    /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 1rem; */ 
+  border-radius: 0.8rem;
+  
 }
 .serviceimage {
   height: 5rem;
-  /* margin-bottom: 1.5rem; */
-  /* background-color: aquamarine; */
+  
 }
 
 .mainData img {
   /* height:30%; */
   width: 40%;
-  /* padding: 0 0 1rem 0; */
-  /* margin: 0 0 1rem 0; */
   border-radius: 1rem;
-  /* background-color: blue; */
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -88,7 +79,7 @@
   text-align: center;
   padding-top: 10px;
   font-size: 14px;
-  
+  padding-bottom: 1rem;
 }
 .mainData:hover {
   /* height: 18rem; */
@@ -97,26 +88,13 @@
   border-radius: 0.8rem;
   /* padding: 1rem; */
 }
-.dbyaModal h5 {
-  /* display: flex;
-    justify-content: center;
-    align-items: center; */
-}
-/* .dbyaModal p{
-    width: 90%;
-    margin: 1rem auto;
-} */
+
 div .modalmain {
   margin-top: 0.5rem;
   max-width: 1100px;
   /* height: 800px !important; */
 }
-.modal-content {
-  /* height: 80%; */
-}
-/* div .modalmain .modalbody{
-    padding: 0;
-} */
+
 .modal-header {
   padding-top: 15px;
   padding-right: 20px;

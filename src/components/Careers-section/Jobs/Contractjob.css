@@ -4,7 +4,7 @@
     background-color: rgba(217, 217, 217, 0.233);
 } 
 .contract-div h2 {
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   
 }
 .work-for-us-content {
@@ -20,7 +20,7 @@
   margin: auto;
   height: 8rem;
   margin-top: 4rem;
-  width: 85%;
+  width: 80%;
   
 }
 
@@ -33,21 +33,22 @@
   position: absolute;
   margin: 0;
   padding: 0;
-  padding: 1.5rem;
+  padding: 2rem;
   margin-top: -3rem;
 }
 .work-for-us-progress-bar-container li, .work-for-us-progress-bar-responsive-container li {
   list-style: none;
   text-align: center;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   cursor: pointer;
   /* font-weight: 700; */
   vertical-align: middle;
   position: relative;
-  width: 100%;
-  height: 8rem;
+  width: 90%;
+  height: 7.3rem;
   transition: all ease 0.2s;
 }
+
 .step-box {
   border: solid 2px #9c9c9c;
   border-radius: 50%;
@@ -61,20 +62,26 @@ li.active .step-box, .step-box:hover {
   background: linear-gradient(to right, #045ce9 0%, #fff 100%);
   height: 1.2rem;
   width: 1.2rem;
+  
+}
+li.active .step-inner:hover{
+  color: #045ce9;
 }
 .work-for-us-progress-bar-container li .step-inner, .work-for-us-progress-bar-responsive-container li .step-inner {
-  width: 85%;
-  font-size: 0.95rem; 
+  width: 76%;
+  font-size: 1rem; 
   margin: auto;
 }
+
 .work-for-us-progress-bar-container li.active:after, .work-for-us-progress-bar-responsive-container li.active.after {
   background: #045ce9;
+  
 }
 .work-for-us-progress-bar-container li:after, .work-for-us-progress-bar-responsive-container li.after {
   content: "";
   display: block;
-  width: 2rem;
-  height: 2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   background: #9c9c9c;
   margin: auto;
   border: solid 0.7rem #f4fbff;
@@ -97,7 +104,7 @@ li.active .step-box, .step-box:hover {
   background: #eee;
   height: 7px;
   position: absolute;
-  top: 5.7rem;
+  top: 5.6rem;
   width: 80%;
   z-index: 1;
   border-radius: 5rem;
@@ -122,40 +129,44 @@ li.active .step-box, .step-box:hover {
 }
 .textcol {
   text-align: center;
-  width:80%;
+  width: 75%;
   /* height: 200px; */
   padding-left: 1rem;
+  border-radius: 20px;
   padding-right: 1rem;
   padding-bottom: 0.6rem;
   margin-bottom:2.5rem;
-  /* background: white; */
-  /* background: #6cb3ee6b; */
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 2px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-  /* background: linear-gradient(
-    90.87deg,
-    rgba(35, 171, 230, 0.29) 0.75%,
-    rgba(35, 171, 230, 0.1) 54.19%
-  ); */
-  margin-top: 1rem;
+  background: #6cb3ee2e; 
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 2px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px; */
+  
+ 
 }
 .textcol h4 {
-  padding-top: 10px; 
+  padding-top: 1.3rem; 
   font-size: 1.3rem;
-
+  color: #045ce9;
   padding-bottom: 3px;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   /* font-weight: 400; */
 }
 .textcol p {
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 1.1rem;
-  
+  padding-bottom: 1rem;
+  font-size: 16.3px;
+  text-align: center;
 }
 
 .work-for-us-progress-bar-responsive-container,.work-for-us-line-responsive-container{
   display: none;
  
+}
+@media only screen and (max-width: 1145px){
+  .work-for-us-progress-bar-container li .step-inner, .work-for-us-progress-bar-responsive-container li .step-inner {
+    width: 88%;
+    font-size: 0.9rem; 
+    
+  }
 }
 @media only screen and (max-width: 850px){
 

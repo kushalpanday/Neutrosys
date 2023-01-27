@@ -15,7 +15,7 @@ const SlickArrowRight = ({ currentSlide, slideCount, ...props }) => (
 function OurClients() {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     slidesToShow: 3,
     slidesToScroll: 3,
     accessibility: true,
@@ -44,8 +44,8 @@ function OurClients() {
   };
 
   return (
-    <div className="ourClients_container py-4">
-      <h2 className="text-center py-1">Our Clients</h2>
+    <div className="ourClients_container">
+      <h2 className="text-center">Our Clients</h2>
       <Slider {...settings} className="d-flex flex-column">
         {" "}
         {logo.map((item) => (
@@ -59,7 +59,7 @@ function OurClients() {
              
             </div>
             </a>
-            <h2>{item.name}</h2>
+            <h2 className="logo-name">{item.name}</h2>
           </div>
         ))}
       </Slider>

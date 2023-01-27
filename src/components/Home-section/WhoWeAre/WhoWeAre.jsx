@@ -13,6 +13,9 @@ function WhoWeAre() {
         providing IT consulting and software development service in many
         countries including United States, Finland, India and Nepal.
       </p>
+      <div className="know-more-btn-div">
+      <a href="./aboutus" target="_blank" rel="noopener noreferrer"><button className="know-btn">Know More</button></a>
+      </div>
       </div>
     </section>
   );

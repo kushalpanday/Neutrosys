@@ -148,8 +148,8 @@ return (
         </p>
 
         <div className="header_btn_container">
-          <button className="header_btn blue_background"><a href="./careers" target="_blank" rel="noopener noreferrer">View all jobs</a> </button>
-          <button className="header_btn blue_border"> <a href="./employers" target="_blank" rel="noopener noreferrer">request resources</a> </button>
+        <a href="./careers" target="_blank" rel="noopener noreferrer"><button className="header_btn blue_background">View all jobs</button></a>
+        <a href="./employers" target="_blank" rel="noopener noreferrer"><button className="header_btn blue_border">request resources</button></a>
         </div>
       </div>
 

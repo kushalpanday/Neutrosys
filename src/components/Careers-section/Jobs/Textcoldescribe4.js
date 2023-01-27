@@ -12,10 +12,8 @@ const Textcoldescribe4 = () => {
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
                         <h4>Smooth Onboarding</h4>
-                        <p>Our team will assess your experience and education to suggest the right path
-                         for your career growth. With proper training from our experts, we are 
-                         confident that we will steer you to right direction to succeed in your
-                          desired profession field.</p>
+                        <p>We will make your transition to and from client projects a smooth, fun, and
+                         hassle-free experience. Our onboarding process is seamless and easy to navigate.</p>
                     </Col>
                 </Row>
             </Container>

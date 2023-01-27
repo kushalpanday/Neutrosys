@@ -45,86 +45,416 @@ function OpenJobs() {
                           Location
                         </Dropdown.Toggle>
                         <Dropdown.Menu className="super-colors locationeg">
+                        <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                              className="dropdown-check"
+                            ></input>
+                            <label htmlFor="office" value="AL">Alabama</label>
+                          </div> 
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
                               name="office"
                             ></input>
-                            <label htmlFor="horns">Afghanistan</label>
+                            <label htmlFor="office" value="AK">Alaska</label>
+                          </div> 
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="AZ">Arizona</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="human"
+                              name="office"
                             ></input>
-                            <label htmlFor="human">Albania</label>
+                            <label htmlFor="office" value="AR">Arkansas</label>
+                          </div> 
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="CA">California</label>
+                          </div>  
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="CO">Colorado</label>
+                          </div>  
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="CT">Connecticut</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="sales"
+                              name="office"
                             ></input>
-                            <label htmlFor="sales">Brazil</label>
+                            <label htmlFor="office" value="DE">Delaware</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="technology"
+                              name="office"
                             ></input>
-                            <label htmlFor="technology">Canada</label>
+                            <label htmlFor="office" value="DC">District Of Columbia</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="technology"
+                              name="office"
                             ></input>
-                            <label htmlFor="technology">Finland</label>
+                            <label htmlFor="office" value="FL">Florida</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="technology"
+                              name="office"
                             ></input>
-                            <label htmlFor="technology">India</label>
+                            <label htmlFor="office" value="GA">Georgia</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="technology"
+                              name="office"
                             ></input>
-                            <label htmlFor="technology">Singapore</label>
+                            <label htmlFor="office" value="HI">Hawaii</label>
+                          </div> 
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="ID">Idaho</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="technology"
+                              name="office"
                             ></input>
-                            <label htmlFor="technology">Texas</label>
+                            <label htmlFor="office" value="IL">Illinois</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="technology"
+                              name="office"
                             ></input>
-                            <label htmlFor="technology">United Kingdom</label>
+                            <label htmlFor="office" value="IN">Indiana</label>
                           </div>
                           <div className="jobitems">
                             <input
                               type="checkbox"
                               id="tech"
-                              name="technology"
+                              name="office"
                             ></input>
-                            <label htmlFor="technology">Vietnam</label>
+                            <label htmlFor="office" value="IA">Iowa</label>
                           </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="KS">Kansas</label>
+                          </div> 
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="KY">Kentucky</label>
+                          </div>  
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="LA">Louisiana</label>
+                          </div> 
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office"  value="ME">Maine</label>
+                          </div> 
+                            <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office"  value="MD">Maryland</label>
+                          </div> 
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="MA">Massachusetts</label>
+                          </div>  
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="MI">Michigan</label>
+                          </div>   
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="MN">Minnesota</label>
+                          </div>  
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="MS">Mississippi</label>
+                          </div>   
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="MO">Missouri</label>
+                          </div>  
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="MT">Montana</label>
+                          </div>  
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="NE">Nebraska</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="NV">Nevada</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office"value="NH">New Hampshire</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="NJ">New Jersey</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="NM">New Mexico</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="NY">New York</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="NC">North Carolina</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="ND">North Dakota</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="OH">Ohio</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="OK">Oklahoma</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="OR">Oregon</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="PA">Pennsylvania</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="RI">Rhode Island</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="SC">South Carolina</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="SD">South Dakota</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="TN">Tennessee</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="TX">Texas</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="UT">Utah</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="VT">Vermont</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="VA">Virginia</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="WA">Washington</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="WV">West Virginia</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="WI">Wisconsin</label>
+                          </div>
+                          <div className="jobitems">
+                            <input
+                              type="checkbox"
+                              id="tech"
+                              name="office"
+                            ></input>
+                            <label htmlFor="office" value="WY">Wyoming</label>
+                          </div>
+                            
                         </Dropdown.Menu>
                       </Dropdown>
                       <Dropdown as={ButtonGroup}>
@@ -237,7 +567,8 @@ function OpenJobs() {
                 </Col>
                 <Col sm={2} className="inner-col2">
                   <h5>
-                    <a href="/#">Apply</a>
+                  <Link to="jobSection"><a>Apply</a></Link>
+                    <Outlet />
                   </h5>
                 </Col>
                 {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}

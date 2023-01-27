@@ -12,10 +12,9 @@ const Textcoldescribe5 = () => {
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
                         <h4>Continuous Follow Up</h4>
-                        <p>Our team will assess your experience and education to suggest the right path
-                         for your career growth. With proper training from our experts, we are 
-                         confident that we will steer you to right direction to succeed in your
-                          desired profession field.</p>
+                        <p>You will always be a part of the Neutrosys’ family and we will be in constant
+                         communication with you even after you get hired to your dream job. Our commitment
+                          towards our consultants has helped us retain them for multiple projects.</p>
                     </Col>
                 </Row>
             </Container>

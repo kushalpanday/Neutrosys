@@ -49,36 +49,6 @@
     width: 100%;
   }
   
-  /* .box {
-    padding: 14px 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #130f40;
-    margin: 7px 0;
-    color: #fff;
-    border-top-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    cursor: pointer;
-    font-size: 17px;
-    z-index: -1;
-  }
-   */
-  /* .box:hover {
-    opacity: 0.7;
-  }
-  
-  #box1 {
-    background-color: #2ecc71;
-  }
-  
-  #box2 {
-    background-color: #3498db;
-  }
-  
-  #box3 {
-    background-color: #2c3e50;
-  } */
   
   .right {
     display: flex;
@@ -118,12 +88,9 @@
     text-align: left;
   }
   
-  .process:hover {
-    /* box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.1), 0 5px 20px 0 rgba(0, 0, 0, 0.19); */
-    /* background-color: #ecf0f1; */
-    /* background-color: #dff9fb; */
-    background-color: #e2e8f0;
-    /* box-shadow: 4px 3px 12px 0px rgba(0, 0, 0, 0.75); */
+  .process:hover 
+  {
+    background-color: #e2e8f0; 
   }
   
   .process:hover .circle {
@@ -165,12 +132,15 @@
   }
   .parent.accordion-item {
     border-radius: 10px;
+    margin-bottom: 10px;
   }
   .accordion-item:first-of-type .accordion-button,
   .bg-color-contract {
     background-color: #3498db;
   }
-  
+  .accordion-header{
+    margin: 0;
+  }
   .details {
     background-color: white;
   }
@@ -207,10 +177,7 @@
     background-image:var(--bs-accordion-btn-icon);
   }
   @media screen and (max-width: 770px) {
-    /* .offer{
-      width: 100%;
-      flex-direction: column;
-     }  */
+    
   
     .left {
       width: 95%;

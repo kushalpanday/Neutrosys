@@ -45,13 +45,17 @@
   width: 55%;
   margin:1rem 0;
 }
+.services_item h4{
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
 .services_item h2 {
   width: 50%;
   margin: auto;
 }
 .services_design {
   width: 100%;
-  background-color: #d3eefa;
+  /* background-color: #d3eefa; */
   height: 100px;
   position: absolute;
   bottom: 40%;
@@ -60,11 +64,24 @@
 .services_learnmore {
   margin: 1rem;
 }
-
-.services_learnmore a {
+.learn-more-btn-div{
+  text-align: center;
+  margin-top: 2rem;
+}
+.learn-btn{
+  background: #390ca3b9;
+  padding: 10px 18px;
+  border: none;
+  color: white;
+  z-index: 5;
+  font-weight: 470;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* .services_learnmore a {
   text-decoration: none;
   color: blue;
-}
+} */
 
 @media only screen and (max-width: 800px) {
   .services_items {

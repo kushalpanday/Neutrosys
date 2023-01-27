@@ -22,7 +22,8 @@
     /* height: 50px; */
     display: flex;
     justify-content: space-between;    
-    background-color: #CDE2B8;
+    /* background-color: #CDE2B8; */
+    background: #91BBF2;
     padding: 0.5rem 1rem;
     width:100%;
 }
@@ -40,6 +41,7 @@
     padding-top: 10px;
     font-size: 22px;
     font-weight: 450;
+    
 }
 .div-right
 {
@@ -54,7 +56,7 @@
 
 #dropdown-custom-1
 {
-    background-color: #CDE2B8;
+    background: #91BBF2;
     color: black;
     border: none;
     /* margin-right: 35px; */
@@ -69,38 +71,42 @@
     padding-top: 2px;
     padding-bottom: 3px;
     margin-right: 0px;
+   background:#035AA6;
    
 }
-.super-color
+.super-colors
 {
-    background-color: #CDE2B8;
-    width: 180px;
+    /* background: #91BBF2; */
+    width: 210px;
     margin:auto;
+    
 }
 
 .super-colors2
 {
-    background-color: #CDE2B8;
+    /* background: #91BBF2; */
     width: 200px;
     margin:auto;
+    
 }
 .super-colors3
 {
-    background-color: #CDE2B8;
+    /* background: #91BBF2; */
    margin:auto;
    width:200px;
+   
 }
 .locationeg
 {
-    height: 150px;
+    height: 180px;
     overflow-y: scroll;
     overflow-x: hidden;
 
 }
 .jobitems
 {
+    
     padding-left: 1rem;
-    padding-bottom: 3px;
     text-align: left;
 }
 .locationeg {
@@ -123,8 +129,10 @@
 {
     height: 12px;
     width: 12px;
-    margin-right: 8px;
+    margin-right: 8px; 
+    margin-top: 0;
     cursor: pointer;
+    /* border: 1px solid; */
 }
 .inner-row
 {

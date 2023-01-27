@@ -98,13 +98,33 @@ border-radius: 5px;
   text-align:center;
 }
 .swal-text:first-child {
-  margin-top:1rem;
+  margin-top: 1rem;
+}
+.swal-icon:first-child {
+  margin-top: 20px;
+}
+.swal-icon{
+  height: 73px;
+  margin: 5px auto;
+}
+.swal-title {
+  font-size: 23px;
 }
 .swal-footer{
 padding:0;
 }
 .swal-modal{
-width:30%;
+width:25%;
+}
+.swal-title:not(:last-child){
+  margin-bottom: 5px;
+}
+.swal-button{
+  background-color: gainsboro;
+  color: black;
+  padding: 5px 12px;
+  margin-right: 5px;
+  margin-bottom: 5px;
 }
 div .form-col{
   background-color: #3b82f6;

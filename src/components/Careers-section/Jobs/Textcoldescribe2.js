@@ -11,11 +11,10 @@ const Textcoldescribe2 = () => {
         <Container>
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
-                        <h4>Match Skill With Opportunities</h4>
-                        <p>Our team will assess your experience and education to suggest the right path
-                         for your career growth. With proper training from our experts, we are 
-                         confident that we will steer you to right direction to succeed in your
-                          desired profession field.</p>
+                        <h4>Match skill with Opportunities</h4>
+                        <p>Whether you have years of experience under your belt, or you are recently starting out, 
+                        our excellent matching program which we have developed through years of expertise in the
+                         field will match you to the right job ensuring your career growth and stability.</p>
                     </Col>
                 </Row>
             </Container>

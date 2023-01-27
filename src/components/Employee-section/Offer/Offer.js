@@ -21,7 +21,7 @@ const Offer = () => {
           necessitatibus accusantium hic, pariatur exercitationem ullam!
         </p>
         
-<Accordion  style={{width:"100%"}} flush={true}>
+<Accordion  style={{width:"100%", marginTop:"0.4rem"}} flush={true}>
 {/* defaultActiveKey="0" */}
 <Accordion.Item eventKey="0" className="parent bg-color-contract">
         <Accordion.Header className="offer-btn">Contract</Accordion.Header>

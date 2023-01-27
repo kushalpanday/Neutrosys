@@ -12,10 +12,9 @@ const Textcoldescribe6 = () => {
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
                         <h4>New Opportunities</h4>
-                        <p>Our team will assess your experience and education to suggest the right path
-                         for your career growth. With proper training from our experts, we are 
-                         confident that we will steer you to right direction to succeed in your
-                          desired profession field.</p>
+                        <p>Our association with industry leading clients and fortune 500 companies in different 
+                        areas such as Healthcare, Banking, Finance, and many more all over the country gives 
+                        you ample opportunities to land your dream job.</p>
                     </Col>
                 </Row>
             </Container>

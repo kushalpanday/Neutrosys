@@ -16,33 +16,33 @@ const Contractjob = () => {
   const titles = [
     {
       id: "1",
-      name: "Know your need",
-      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",
+      name: "Know your Need",
+      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you in the right direction to succeed in your desired profession field.",
     },
     {
       id: 2,
-      name: "Match skill with opportunities",
-      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",
+      name: "Match skill with Opportunities",
+      desc: "Whether you have years of experience under your belt, or you are recently starting out, our excellent matching program which we have developed through years of expertise in the field will match you to the right job ensuring your career growth and stability.",
     },
     {
       id: 3,
-      name: "Prepare for interview",
-      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",
+      name: "Prepare for Interview",
+      desc: "We provide training and guidance through resume and cover letter screenings along with multiple stages of mock interviews. We have an excellent team of technical recruiting experts who will help you prepare and crack interviews using their proven expertise.",
     },
     {
       id: 4,
       name: "Smooth Onboarding",
-      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",
+      desc: "We will make your transition to and from client projects a smooth, fun, and hassle-free experience. Our onboarding process is seamless and easy to navigate.",
     },
     {
       id: 5,
       name: "Continuous Follow Up",
-      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",
+      desc: "You will always be a part of the Neutrosys’ family and we will be in constant communication with you even after you get hired to your dream job. Our commitment towards our consultants has helped us retain them for multiple projects.",
     },
     {
       id: 6,
       name: "New Opportunities",
-      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you to right direction to succeed in your desired profession field.",
+      desc: "Our association with industry leading clients and fortune 500 companies in different areas such as Healthcare, Banking, Finance, and many more all over the country gives you ample opportunities to land your dream job.",
     },
   ];
   const [currentTab, setCurrentTab] = useState("1");
