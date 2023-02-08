@@ -48,6 +48,7 @@
   margin: 0;
 }
 .location-col {
+  /* border: 1px solid; */
   justify-content: center;
   text-align: center;
   margin-right: 40px;
@@ -149,6 +150,8 @@
 .location-col p {
   font-size: 16px;
   padding-top: 12px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .getintouch {
@@ -267,7 +270,7 @@ div .form-button:hover{
 }
 .heading-form {
   /* padding-top: 20px; */
-  padding-left: 5px;
+  padding-left: 15px;
   /* color: white; */
   text-align:left;
   margin-bottom: 5px;
@@ -372,8 +375,9 @@ div .form-button:hover{
   font-weight: 400;
   position: fixed;
   bottom: 10rem;
-  right: -40px;
+  right: -43px;
   transform: rotate(90deg);
+  margin-bottom: 1.5rem;
 }
 
 .button span {
@@ -407,15 +411,20 @@ div .form-button:hover{
   /* height:100%; */
   /* margin:auto;  */
 } 
+
+
+
+
+
 @media only screen and (max-width: 915px) {
   .form_container .form-row .contactus-form-col{
-    padding:1rem;
+    /* padding:1rem; */
     width:100%;
   }
 }
 @media only screen and (max-width: 575px){
   .form_container .form-row .contactus-form-col{
-    max-width:95%;
+    max-width:100%;
     width: 100%;
     margin:0 1rem;
   }
@@ -449,6 +458,7 @@ div .form-button:hover{
   .location-col {
     margin: auto;
     justify-content: center;
+    
   }
   .field-col1 {
     margin-bottom: 5px;
@@ -500,3 +510,43 @@ div .form-button:hover{
     /* margin:auto; */
   }
 }
+@media only screen and (max-width: 480px){
+  .txtfield_country_code{
+    width: 100%;
+  }
+  .txtfield_phone{
+    width: 100%;;
+  }
+
+}
+
+@media only screen and (max-width: 812px) {
+  .location-col p{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+}
+@media only screen and (max-width: 732px) {
+  .location-col p{
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+} 
+@media only screen and (max-width: 543px) {
+  .viewlocation-div{
+    padding-top: 0;
+  }
+} 
+@media only screen and (max-width: 575px) {
+  .location-col p{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+} 
+@media only screen and (max-width: 400px) {
+  .location-col p{
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+} 

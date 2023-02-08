@@ -236,14 +236,14 @@ const Formservice = () => {
                 <CountryDropdown
                       className="input-field select"
                       value={country}
-                      style={{borderRight:"12px solid transparent"}}
+                      style={{backgroundColor:"#e9ecef", borderRadius: "9px"}}
                       onChange={(val) => selectCountry(val)}
                     />
                 <RegionDropdown
                       className="input-field select"
                       country={country}
                       value={region}
-                      style={{borderRight:"12px solid transparent"}}
+                    style={{backgroundColor:"#e9ecef", borderRadius: "9px"}}
                       blankOptionLabel="Select Region"
                       onChange={(val) => selectRegion(val)}
                     />

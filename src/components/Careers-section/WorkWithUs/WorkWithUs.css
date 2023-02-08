@@ -2,16 +2,17 @@
   margin: auto;
 }
 .workwithus-maindiv {
-  /* border: 2px solid;  */
-  width: 95%;
+  /* border: 2px solid;   */
+  width: 100%;
   margin: auto;
-  padding-bottom: 4.5rem;
   
+  padding-bottom: 4.5rem;
+  background-color: rgba(202, 199, 199, 0.171);
 }
 .workwithus-maindiv h2 {
   text-align: center;
   padding-bottom: 0.5rem;
-   padding-top: 0.5rem; 
+   padding-top: 1rem; 
 }
 .box-row {
   border: 1px blue;

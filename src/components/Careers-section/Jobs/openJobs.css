@@ -1,21 +1,63 @@
 .outer-row
 {
-    /* border: 1px solid red;  */
+    /* border: 1px solid orangered;       */
     /* margin-top: 2rem; */
     justify-content: center;
     text-align: center;
-    max-height: 60rem; 
-    overflow-y: auto;
-    /* overflow-y: hidden; */
+    max-height: 68rem; 
+    overflow: hidden;
+    transition: all .3s ease; 
+    overflow-y: auto;  
+   margin-bottom: 1.5rem;
 }
-/* .outer-row::-webkit-scrollbar {
-    display: none;
-} */
-.outer-col
-{
-    /* border: 1px solid blue; */
-    /* height: 62rem; */
+
+.scroll-bar-div{
+    /* border: 1px solid black; */
+     max-height: 58rem;
+    overflow: hidden;
+    overflow-y: auto; 
+    overflow-y: hidden;   
+    transition: all .3s ease; 
+    margin-bottom: 1rem; 
+    
+}   
+
+input:checked+.scroll-bar-div{
+    max-height: 100rem;
+    
 } 
+input[type="checkbox"]{
+    display: none;
+   
+}
+/* label{
+    color: blue;
+    text-decoration: underline;
+    margin-top: 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+}  */
+
+.contract-viewmore:after{
+    content: "more";
+    
+}
+input:checked~.contract-viewmore:after{
+    content: "less";
+} 
+.contract-viewmore{
+    font-size: 16px;
+    font-weight: 500;
+   color: white;
+   margin-bottom: 0.5rem;
+   cursor: pointer;
+   float: left;
+   background-color: #5d99e7;
+   padding: 10px;
+  
+  
+}
+
 .container.bgjob
 {
     /* border: 1px solid red; */
@@ -30,10 +72,7 @@
 .openjob-container{
     margin-top: 1.5rem;
 }
-.alljob-div
-{
-    /* float: left; */
-}
+
 .alljob-div h3
 {
     padding-left: 20px;
@@ -222,7 +261,32 @@
 {
     padding-left: 1.2rem;
     font-size: 1rem;
-}   
+}  
+.contract-morejob{
+    /* border: 1px solid; */
+    text-align: left;
+    margin-top: 1rem;
+} 
+.contract-morejob-btn{
+    /* background: rgb(236, 115, 70); */
+    background: rgb(0, 0, 255); 
+    /* background: #90e0ef; */
+    padding: 10px 20px;
+    margin-top: 0.5rem;
+    border: none;
+    z-index: 5;
+    color: white;
+    font-weight: 470;
+    cursor: pointer;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 2px 4px; */
+    border-radius: 20px; 
+  }
+  .contract-morejob-btn:hover{
+    background: rgba(0, 0, 255, 0.726); 
+  }
+
+
+
 @media only screen and (max-width: 1000px){
     .outer-col{
         width:100%;

@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from "../components/Home-section/Header/Header";
 import TheNavbar from "../components/Home-section/Navbar/TheNavbar"
+import GetAquote from "../components/Contactus-section/GetAQuote/GetAquote"
 import WhoWeAre from "../components/Home-section/WhoWeAre/WhoWeAre"
 import Services from "../components/Home-section/Services/Services"
 // import OurPartners from "../components/Home-section/OurPartners/OurPartners"
@@ -18,6 +19,7 @@ function Home() {
       <TheNavbar />
       <ScrollToTop />
         <Header />
+        <GetAquote/>
         <WhoWeAre />
         <Services />
         {/* <OurPartners/> */}

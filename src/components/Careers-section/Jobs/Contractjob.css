@@ -130,7 +130,7 @@ li.active .step-inner:hover{
 .textcol {
   text-align: center;
   width: 75%;
-  /* height: 200px; */
+  height: 185px; 
   padding-left: 1rem;
   border-radius: 20px;
   padding-right: 1rem;
@@ -204,21 +204,21 @@ li.active .step-inner:hover{
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-step h2{
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
     margin-bottom: 1rem;
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-step h2:before{
     content: '';
     display: block;
-    height: 2rem;
-    width: 2rem;
+    height: 1.4rem;
+    width: 1.4rem;
     z-index:2;
     border-radius: 50%;
     background: linear-gradient(to right, #045ce9 0%, #fff 100%);
     position: absolute;
     top: 0;
-    left: -3.3rem;
+    left: -3.1rem;
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-line-process{
     content: "";
@@ -234,10 +234,10 @@ li.active .step-inner:hover{
  
   .work-for-us-progress-bar-responsive-container .work-for-us-line{
     left:1.1rem;
-    top:3rem;
+    top:3.1rem;
     z-index:-1;
     height: 82%;
-    width:.7rem;
+    width:.4rem;
   }
   .work-for-us-progress-bar-responsive-container li{
     display: flex;
@@ -260,14 +260,53 @@ li.active .step-inner:hover{
 } 
 
 @media only screen and (max-width: 600px){
-  .work-for-us-progress-bar-responsive-container .work-for-us-line {
-    /* height:84%; */
+  .work-for-us-progress-bar-responsive-container .work-for-us-line{
+    top: 2.8rem;
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-step{
     padding-top:.5rem;
+  }
+  .work-for-us-progress-bar-responsive-container .work-for-us-step h2:before{
+    top: 3px;
+    height: 1.3rem;
+    width: 1.3rem;
+    left: -3.05rem;
+
+  }
+}
+@media only screen and (max-width: 441px){
+  .work-for-us-progress-bar-responsive-container .work-for-us-step h2{
+   font-size: 1.1rem; 
+  }
+  /* .work-for-us-progress-bar-responsive-container .work-for-us-line{
+    top: 2.8rem;
+  } */
+}
+@media only screen and (max-width: 430px){
+  .work-for-us-progress-bar-responsive-container .work-for-us-step h2{
+   font-size: 1rem; 
+  }
+  .work-for-us-progress-bar-responsive-container .work-for-us-step h2:before{
+    top: 3px;
+    height: 1.1rem;
+    width: 1.1rem;
+    left: -3rem;
+
+  }
+  .work-for-us-progress-bar-responsive-container .work-for-us-line{
+    top: 2.6rem;
+    width: 0.3rem;
+  }
+}
+@media only screen and (max-width: 340px){
+  .work-for-us-progress-bar-responsive-container .work-for-us-line{
+    top: 2.5rem;
+    height: 83%;
   }
 }
 @media only screen and (max-width: 500px){
 .work-for-us-progress-bar-responsive-container{
   width:93%;
 }}
+
+

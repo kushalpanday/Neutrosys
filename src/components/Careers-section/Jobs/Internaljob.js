@@ -63,18 +63,12 @@ const Internaljob = () => {
       </div>
 
       <h2 className="openposition-heading">Our open positions</h2>
-      {/* <div className="select-opt">
-        <label for="num">No. of jobs per page:&nbsp;&nbsp;</label>
-        <select name="jobs" id="num">
-          <option value="number">12</option>
-          <option value="saab">13</option>
-                                <option value="opel">14</option>
-                                <option value="audi">15</option> 
-        </select>
-      </div> */}
-
-      <div className="scroll-jobdiv">
+    <div className="scrollbar-outerdiv">
+      <input type="checkbox" id="readmore"></input>
+      <div className="scrollbar-internaljob">
+      
         <Row className="openposition-row">
+        
           <Col lg={3} className="openposition-col">
             <Row className="heading-rowbg">
               <h6>Sales/Marketing</h6>
@@ -149,9 +143,88 @@ const Internaljob = () => {
               </Col>
             </Row>
           </Col>
+        
+          <Col lg={3} className="openposition-col openposition-col2">
+            <Row className="heading-rowbg">
+              <h6>Sales/Marketing</h6>
+              <Col className="text-col">
+                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
+                <Row className="footer-row">
+                  <Col sm={9} className="loc-text">
+                    <p>Noida, Uttar Pradesh India</p>
+                  </Col>
+                  <Col sm={2} className="icon-text">
+                    <p>
+                      <BsArrowRightCircle />
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+          <Col lg={3} className="openposition-col openposition-col2">
+            <Row className="heading-rowbg">
+              <h6>Sales/Marketing</h6>
+              <Col className="text-col">
+                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
+                <Row className="footer-row">
+                  <Col sm={9} className="loc-text">
+                    <p>Noida, Uttar Pradesh India</p>
+                  </Col>
+                  <Col sm={2} className="icon-text">
+                    <p>
+                      <BsArrowRightCircle />
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+          <Col lg={3} className="openposition-col openposition-col2">
+            <Row className="heading-rowbg">
+              <h6>Sales/Marketing</h6>
+              <Col className="text-col">
+                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
+                <Row className="footer-row">
+                  <Col sm={9} className="loc-text">
+                    <p>Noida, Uttar Pradesh India</p>
+                  </Col>
+                  <Col sm={2} className="icon-text">
+                    <p>
+                      <BsArrowRightCircle />
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+          <Col lg={3} className="openposition-col openposition-col2">
+            <Row className="heading-rowbg">
+              <h6>Sales/Marketing</h6>
+              <Col className="text-col">
+                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
+                <Row className="footer-row">
+                  <Col sm={9} className="loc-text">
+                    <p>Noida, Uttar Pradesh India</p>
+                  </Col>
+                  <Col sm={2} className="icon-text">
+                    <p>
+                      <BsArrowRightCircle />
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
+          
+
+
         </Row>
+        
       </div>
+      <label for="readmore" className="internal-viewmore" >View </label> 
+    </div>
     </>
   );
 };
-export default Internaljob;
+export default Internaljob

@@ -30,10 +30,10 @@ export default function LocationDetail() {
                         <img src='./images/contact-us/iconlocation.png' height={35} width={35} alt="icons"></img>
                     </div>
                       <h6>Headquarters</h6>
-                        <p>1431 Greenway Drive, 8th floor,<br></br>
+                        <p>1431 Greenway Drive, 8th floor,
                         Irving, TX 75038, United States</p>
                     <div className='viewlocation-div'>
-                        <div style={{cursor:"pointer",color:"blue",textDecoration:"underline"}}onClick={() => setShow(true)}>View Location</div>
+                        <div style={{cursor:"pointer",color:"blue"}}onClick={() => setShow(true)}>View Location</div>
                     </div>
                     <Modal
                         

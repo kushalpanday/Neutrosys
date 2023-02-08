@@ -128,7 +128,7 @@ width:25%;
 }
 div .form-col{
   background-color: #3b82f6;
-  padding:1rem;
+  /* padding:1rem; */
   margin-bottom:1rem;
 }
 div .heading-para{
@@ -346,6 +346,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
   background-color: white;
   margin-top: 10px;
   border-radius: 5px;
+  
 }
 .messagetxt {
   height: 90px;
@@ -399,9 +400,10 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
   cursor: pointer;
   font-weight: 400;
   position: fixed;
-  bottom: 10rem;
-  right: -40px;
+  bottom: 6rem;
+  right: -43px;
   transform: rotate(90deg);
+  z-index: 6;
 }
 
 .button span {
@@ -434,6 +436,9 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
   display: none;
 }
 
+
+
+
 @media only screen and (max-width: 700px) {
   .heading-h {
     padding-top: 20px;
@@ -463,6 +468,7 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
   .location-col {
     margin: auto;
     justify-content: center;
+    width: 30%;
   }
   .field-col1 {
     margin-bottom: 5px;
@@ -561,3 +567,37 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
     transform: scale(0.6);
   }
 }
+@media only screen and (max-width:480px){
+  .country-region-services .input-field:first-child {
+    width: 100%;
+  }
+  
+}
+@media only screen and (max-width:400px){
+  .basic-multi-select{
+    font-size: 13px;
+  }
+  .MuiFormLabel-root.MuiInputLabel-root{
+    font-size: 13px;
+    top: 5px;
+  }
+  .input-field.select{
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  .location-col{
+    width: 70%;
+  }
+} 
+@media only screen and (max-width: 500px) {
+  .location-col{
+    width: 80%;
+  }
+} 
+@media only screen and (max-width: 400px) {
+  .location-col{
+    width: 90%;
+  }
+  
+} 

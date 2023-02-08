@@ -542,7 +542,9 @@ function OpenJobs() {
               </Container>
             </Navbar>
             {/* </div> */}
-
+            <input type="checkbox" id="readmore"></input>
+          <div className="scroll-bar-div">
+          
             <div className="div-bggrey">
               <Row className="inner-row">
                 <Col sm={9} className="inner-col">
@@ -660,6 +662,58 @@ function OpenJobs() {
                 {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
               </Row>
             </div>
+             <div className="div-bggrey">
+              <Row className="inner-row">
+                <Col sm={9} className="inner-col">
+                  <h5>
+                    <a href="/#">Facets Tester - Remote</a>
+                  </h5>
+                  <h6>MO, Missouri, United States | Technology | Contract</h6>
+                  <p>
+                    We are looking for multiple Healthcare Facets Tester to fill
+                    the urgent requirement for one of our clients.
+                  </p>
+                  <p className="num-p">
+                    2021-06-16 20:42:35 -{" "}
+                    <span style={{ color: "red" }}>Position Closed</span>
+                  </p>
+                </Col>
+                <Col sm={2} className="inner-col2">
+                  <h5>
+                    <a href="/#">Apply</a>
+                  </h5>
+                </Col>
+                
+              </Row>
+            </div> 
+
+            
+            <div className="white-box-shadow">
+              <Row className="inner-row">
+                <Col sm={9} className="inner-col">
+                  <h5>
+                    <Link to="salesIntern">Sales Intern</Link>
+                    <Outlet />
+                  </h5>
+                  <h6>Irving, Texas, United States | Technology | Full Time</h6>
+                  <p>
+                    Neutrosys Inc is looking for a few recent graduate
+                    individuals to join a growing office in the staffing
+                    business. This is a great opportunity to ...
+                  </p>
+                  <p className="num-p">
+                    2021-09-01 19:46:20 -{" "}
+                    <span style={{ color: "red" }}>Position Closed</span>
+                  </p>
+                </Col>
+                <Col sm={2} className="inner-col2">
+                  <h5>
+                    <a href="/#">Apply</a>
+                  </h5>
+                </Col>
+               
+              </Row>
+            </div> 
             <div className="div-bggrey">
               <Row className="inner-row">
                 <Col sm={9} className="inner-col">
@@ -681,9 +735,16 @@ function OpenJobs() {
                     <a href="/#">Apply</a>
                   </h5>
                 </Col>
-                {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
+              
               </Row>
-            </div>
+            </div>  
+            
+           
+            
+          </div>
+          <label for="readmore" className="contract-viewmore" >View </label>  
+         
+           
           </Col>
         </Row>
       </Container>

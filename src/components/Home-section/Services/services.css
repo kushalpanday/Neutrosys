@@ -78,6 +78,9 @@
   cursor: pointer;
   border-radius: 5px;
 }
+.learn-btn:hover{
+  background: #390ca3e7;
+}
 /* .services_learnmore a {
   text-decoration: none;
   color: blue;

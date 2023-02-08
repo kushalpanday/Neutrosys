@@ -24,6 +24,7 @@ function App() {
         <Route path="/careers/salesIntern" element={<SalesIntern />} />
         <Route path="/careers/salesNoida" element={<SalesNoida />} />
         <Route path="/contactus" element={<ContactUs />} />
+       
         <Route
           path="*"
           element={

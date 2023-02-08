@@ -203,7 +203,7 @@ export default function Resume(props) {
 
                       <Row>
                         <Col lg={6} md={12} sm={12} className="resume-form-col">
-                          <PhoneInput
+                          {/* <PhoneInput
                             country={"nep"}
                             value={mobile}
                             // name="country_code"
@@ -215,7 +215,20 @@ export default function Resume(props) {
                             //   required: "Required",
                             // })}
                             // error={!!errors?.country_code}
-                          />
+                          /> */}
+                          <FloatingLabel
+                      controlId="floatingPassword"
+                      label="Country Code"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        name="country_code"
+                        placeholder="Nepal +977"
+                        // {...register("phone", { required: "Required" })}
+                        // error={!!errors?.phone}
+                        
+                      />
+                    </FloatingLabel>
                         </Col>
 
                         <Col lg={6} md={12} sm={12} className="resume-form-col">
@@ -240,7 +253,7 @@ export default function Resume(props) {
                     <CountryDropdown
                       className="input-field select"
                       value={country}
-                      style={{background: "white", color:"black" }}
+                      style={{color:"black", fontSize:"15.3px" }}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
                     />
@@ -254,7 +267,7 @@ export default function Resume(props) {
                       country={country}
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
-                      style={{background: "white", color:"black" }}
+                      style={{color:"black", fontSize:"15.3px"}}
                       value={region}
                       onChange={(val) => selectRegion(val)}
                     />

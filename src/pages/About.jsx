@@ -1,6 +1,7 @@
 import React from 'react'
 import TheNavbar from '../components/Home-section/Navbar/TheNavbar'
 import Header from '../components/About-section/Header/Header'
+import GetAquote from "../components/Contactus-section/GetAQuote/GetAquote"
 import Difference from '../components/About-section/Difference/Difference'
 import CoreValues from '../components/About-section/Corevalues/Corevalues'
 import Mission from '../components/About-section/Mission/Mission'
@@ -17,6 +18,7 @@ function About() {
         <TheNavbar/>
         <ScrollToTop />
         <Header /> 
+        <GetAquote/>
         <Difference />
         <CoreValues />
         <Mission />

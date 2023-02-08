@@ -27,6 +27,7 @@ import { CopyToClipboard } from "react-copy-to-clipboard";
 import swal from "sweetalert";
 import { useForm } from "react-hook-form";
 import { useDropzone } from "react-dropzone";
+import { TextField } from "@mui/material";
 import {
   CountryDropdown,
   RegionDropdown,
@@ -231,7 +232,7 @@ const Detail = (props) => {
 
                 <Row>
                   <Col lg={6} md={12} sm={12} className="resume-form-col">
-                    <PhoneInput
+                     {/* <PhoneInput
                     
                       country={"nep"}
                       value={mobile}
@@ -242,7 +243,45 @@ const Detail = (props) => {
                       className="input-field country-padding"
                       // {...register("country_code", { required: "Required" })}
                       // error={!!errors?.country_code}
-                    />
+                    />  */}
+                    <FloatingLabel
+                      controlId="floatingPassword"
+                      label="Country Code"
+                      className="input-field"
+                    >
+                      <Form.Control
+                        name="country_code"
+                        placeholder="Nepal +977"
+                        // {...register("phone", { required: "Required" })}
+                        // error={!!errors?.phone}
+                        
+                      />
+                    </FloatingLabel>
+                    {/* <TextField
+                    // fullWidth
+                    placeholder="Nepal +977"
+                    label="Country Code"
+                    margin="dense"
+                    name="country_code"
+                    autoComplete="off"
+                    
+                    
+                    sx={{
+                      "& .MuiFilledInput-underline:before": {
+                        borderBottom: "none",
+                      },
+                      "& .MuiFilledInput-underline:after": {
+                        borderBottom: "none",
+                      },
+                      "& .MuiFilledInput-underline:hover:not(.Mui-disabled):before":
+                        {
+                          borderBottom: "none",
+                        },
+                    }}
+                    className="job_country_code m-0"
+                    {...register("country_code", { required: "Required" })}
+                    error={!!errors?.country_code}
+                  /> */}
                   </Col>
 
                   <Col lg={6} md={12} sm={12} className="resume-form-col">
@@ -266,7 +305,7 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="resume-form-col mb-2">
                     <CountryDropdown
                       className="input-field select"
-                      style={{background: "white", color:"black" }}
+                      style={{color: "black", fontSize:"15.4px"}}
                       value={country}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
@@ -282,7 +321,7 @@ const Detail = (props) => {
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
                       value={region}
-                      style={{background: "white", color: "black" }}
+                      style={{color: "black", fontSize:"15.4px" }}
                       onChange={(val) => selectRegion(val)}
                     />
                   </Col>

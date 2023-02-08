@@ -535,6 +535,17 @@ select.mb-3.input-field.form-select option{
 .resume-form-col{
   padding: 0.3rem;
 }
+.job_country_code{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
 
 
 @media screen and  (max-width: 991px){
