@@ -39,11 +39,13 @@ input[type="checkbox"]{
 }  */
 
 .contract-viewmore:after{
-    content: "more";
-    
+    content: "More jobs";
+  
 }
+
 input:checked~.contract-viewmore:after{
-    content: "less";
+    content: "Less jobs";
+    
 } 
 .contract-viewmore{
     font-size: 16px;
@@ -53,9 +55,8 @@ input:checked~.contract-viewmore:after{
    cursor: pointer;
    float: left;
    background-color: #5d99e7;
-   padding: 10px;
-  
-  
+   padding: 10px; 
+   
 }
 
 .container.bgjob

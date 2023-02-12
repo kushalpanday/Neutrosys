@@ -688,7 +688,7 @@ function OpenJobs() {
             </div> 
 
             
-            <div className="white-box-shadow">
+             <div className="white-box-shadow">
               <Row className="inner-row">
                 <Col sm={9} className="inner-col">
                   <h5>
@@ -737,12 +737,12 @@ function OpenJobs() {
                 </Col>
               
               </Row>
-            </div>  
-            
+            </div>   
+             
            
             
           </div>
-          <label for="readmore" className="contract-viewmore" >View </label>  
+          <label for="readmore" className="contract-viewmore" ></label>  
          
            
           </Col>
