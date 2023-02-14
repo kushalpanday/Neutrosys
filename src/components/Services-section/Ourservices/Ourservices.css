@@ -12,7 +12,8 @@
 .service-paragraph {
   display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
+  /* align-items: center; */
   /* color: #05A5FF; */
 }
 .Servicemainbody .service-paragraph {

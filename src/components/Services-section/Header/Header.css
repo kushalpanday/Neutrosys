@@ -108,11 +108,11 @@
     .gridcontainer{
         grid-template-columns: 100%;
     }
-    .contentheader{
+    /* .contentheader{
         width: 90%;
         margin: 40px auto;
         color: white;
-    }
+    } */
     .contentheader p{
         font-size: .7rem;
     }
@@ -122,8 +122,8 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
-        
-        
-        
+    }
+    .about-text{
+        top: 10%;
     }
   }

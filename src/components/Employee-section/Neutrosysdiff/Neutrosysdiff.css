@@ -90,9 +90,10 @@
   }
   
   .different-title {
-    font-weight: 500;
+    font-weight: 550;
     margin-bottom: 10px;
     font-size: 18px;
+    color: blue;
   }
   @media screen and (max-width: 950px) {
   .difference-image2{
@@ -137,6 +138,7 @@
   }
     .part-content {
       width: 80%;
+      text-align: center;
     }
     .different-title {
       margin-bottom: 0;
@@ -173,7 +175,7 @@
       align-items: center;
       justify-content: center;
       /* width: 250px; */
-      width: 90%;
+      width: 100%;
       font-size: 14px;
     }
   

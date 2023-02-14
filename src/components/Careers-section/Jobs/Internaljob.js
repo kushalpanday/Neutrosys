@@ -222,7 +222,9 @@ const Internaljob = () => {
         </Row>
         
       </div>
+      
       <label for="readmore" className="internal-viewmore" >View </label> 
+      
     </div>
     </>
   );

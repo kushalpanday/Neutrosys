@@ -22,21 +22,15 @@
     
 }   
 
-input:checked+.scroll-bar-div{
+input:checked+.scroll-bar-div+.contract-viewmore{
     max-height: 100rem;
-    
+   
 } 
 input[type="checkbox"]{
     display: none;
    
 }
-/* label{
-    color: blue;
-    text-decoration: underline;
-    margin-top: 0.5rem;
-    cursor: pointer;
-    display: inline-block;
-}  */
+
 
 .contract-viewmore:after{
     content: "More jobs";
@@ -111,7 +105,7 @@ input:checked~.contract-viewmore:after{
     padding-top: 2px;
     padding-bottom: 3px;
     margin-right: 0px;
-   background:#035AA6;
+    background:#035AA6;
    
 }
 .super-colors
@@ -324,6 +318,12 @@ input:checked~.contract-viewmore:after{
     #dropdown-custom-1.openpos-btn{
         padding:.4rem;
         font-size:14px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .inner-col2 h5{
+        padding-top: 0;
+        padding-bottom: 0.5rem;
     }
 }
 @media only screen and (max-width: 540px){
