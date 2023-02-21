@@ -138,14 +138,8 @@ grid-template-columns: 45% 55%;
   .country-padding{
     margin-bottom: 11px;
   }
-  .message-padding{
-    margin-top: 11px;
-    margin-bottom: 11px;
-  }
-  .reverse-col{
-    flex-direction: column-reverse;
-    margin-top: 11px;
-  }
+ 
+  
 }
 @media only screen and (max-width: 690px) {
   .resume-row {

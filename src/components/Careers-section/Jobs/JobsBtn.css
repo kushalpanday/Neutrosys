@@ -59,3 +59,8 @@
     width: 45%;
   }
 }
+@media only screen and (max-width: 500px){
+  .btns-div{
+    gap: 0.5rem;
+  }
+}

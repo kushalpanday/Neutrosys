@@ -12,7 +12,7 @@ const Contractjob = () => {
   // const [describe, setJob] = useState(<Textcoldescribe />);
   const [number, setNumber] = useState(0);
   const widths = ["0%", "20%", "40%", "60%", "80%", "100%"];
-  const heights = ["0%", "20%", "40%", "60%", "80%", "100%"];
+  const heights = ["0%", "22%", "42%", "62%", "80%", "100%"];
   const titles = [
     {
       id: "1",

@@ -93,7 +93,7 @@
     font-weight: 550;
     margin-bottom: 10px;
     font-size: 18px;
-    color: blue;
+    color: #3498db;
   }
   @media screen and (max-width: 950px) {
   .difference-image2{
@@ -119,6 +119,8 @@
   @media screen and (max-width: 800px) {
     .content {
       flex-direction: column;
+      text-align: center;
+      
     }
     .features {
       justify-content: center;
@@ -150,7 +152,7 @@
       left:1rem;
     }
     .difference-image2{
-  top:-2rem;
+      top:-2rem;
     }
     .difference-image3{ 
       right:1rem;
@@ -159,7 +161,15 @@
       bottom:-2rem;
     }
   }
-  
+  @media screen and (max-width: 613px){
+    .content {
+     
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+     
+    }
+  }
   @media screen and (max-width: 500px) {
     .features {
       display: flex;
@@ -174,6 +184,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      text-align: justify;
       /* width: 250px; */
       width: 100%;
       font-size: 14px;

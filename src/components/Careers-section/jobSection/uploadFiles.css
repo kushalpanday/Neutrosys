@@ -21,8 +21,24 @@
 margin:0 0 0 auto;
 }
 
-
-@media only screen and (max-width: 377px){
+@media only screen and (max-width: 991px){
+  .uploadpart{
+    font-size: 0.7rem;
+    width: 10rem;
+   
+  }
+  .upload-file-job{
+    font-size: 12px;
+    width:50%;
+  }
+}
+@media only screen and (max-width: 530px){
+  
+  .upload-file-job{
+    font-size: 10.5px;
+  }
+}
+/* @media only screen and (max-width: 377px){
   .uploadpart{
     font-size: 0.7rem;
     width: 10rem;
@@ -53,4 +69,4 @@ margin:0 0 0 auto;
     font-size: 0.5rem;
   }
   
-}
+} */

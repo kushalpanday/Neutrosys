@@ -155,11 +155,11 @@ const Detail = (props) => {
             </Modal.Title>
           </Modal.Header>
           <Modal.Body className="jobdetails-body">
-            <form className="form" onSubmit={handleSubmit(onSubmit)}>
-              <Container>
+            <form className="form details-form" onSubmit={handleSubmit(onSubmit)}>
+              
               
                 <Row className="mt-1">
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col fname-width">
                     <FloatingLabel
                       controlId="floatingInput"
                       label="First Name"
@@ -177,7 +177,7 @@ const Detail = (props) => {
                       />
                     </FloatingLabel>
                   </Col>
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col mname-width">
                     <FloatingLabel
                       // lg={3}
                       controlId="floatingPassword"
@@ -213,7 +213,7 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="resume-form-col">
                     <Form.Select
                       aria-label="Default select example"
-                      className="p-3 input-field gender-padding"
+                      className="input-field gender-padding"
                       name="gender"
                       {...register("gender", { required: "Required" })}
                       error={!!errors?.gender}
@@ -231,7 +231,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col cc-width-div">
                      {/* <PhoneInput
                     
                       country={"nep"}
@@ -284,7 +284,7 @@ const Detail = (props) => {
                   /> */}
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col p-width-div">
                     <FloatingLabel
                       controlId="floatingPassword"
                       label="Phone"
@@ -302,26 +302,26 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2 country-width">
                     <CountryDropdown
-                      className="input-field select"
-                      style={{color: "black", fontSize:"15.4px"}}
+                      className="input-field select input-resp"
+                      style={{color: "#000000d4" }}
                       value={country}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
                     />
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2 region-width">
                     <RegionDropdown
-                      className="input-field select"
+                      className="input-field select input-resp"
                       label="region"
                       // showDefaultOption={false}
                       country={country}
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
                       value={region}
-                      style={{color: "black", fontSize:"15.4px" }}
+                      style={{color: "#000000d4" }}
                       onChange={(val) => selectRegion(val)}
                     />
                   </Col>
@@ -356,7 +356,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col email-width">
                     <FloatingLabel
                       controlId="floatingInput"
                       label="Email"
@@ -377,10 +377,10 @@ const Detail = (props) => {
                     </FloatingLabel>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col salary-width">
                     <FloatingLabel
                       controlId= "floatingPassword"
-                      label= "Expected Salary/Salary Range(Optional)"
+                      label= "Expected Salary(Optional)"
                       className="input-field number-arrow"
                     >
                       <Form.Control
@@ -441,7 +441,7 @@ const Detail = (props) => {
                     </FloatingLabel>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col second-upload">
                     {/* <div className="dashed-border input-field mb-3 neutroDetail ">
                       <div className="uploadpart  ">
                         <FileUploader
@@ -502,7 +502,7 @@ const Detail = (props) => {
                     </Button>{" "}
                   </Col>
                 </Row>
-              </Container>
+              
             </form>
             {/* </Form> */}
           </Modal.Body>

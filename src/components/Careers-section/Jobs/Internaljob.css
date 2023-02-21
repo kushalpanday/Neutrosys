@@ -98,9 +98,9 @@ input:checked+.scrollbar-internaljob{
     max-height: 800rem;
     
 } 
-input[type="checkbox"]{
+/* input[type="checkbox"]{
     display: none;
-}
+} */
 /* label{
     color: blue;
     text-decoration: underline;
@@ -109,11 +109,11 @@ input[type="checkbox"]{
     display: inline-block;
 } */
 .internal-viewmore:after{
-    content: "more";
+    content: "More Jobs";
    
 }
 input:checked~.internal-viewmore:after{
-    content: "less";
+    content: "Less Jobs";
 } 
 .internal-viewmore{
     font-size: 16px;
@@ -272,6 +272,9 @@ input:checked~.internal-viewmore:after{
     .text-col h4{
         padding: 30px 0 112px 19px;
     }
+    .col-buttom{
+        margin-bottom: 0;
+    }
 }
 @media only screen and (max-width: 576px){
     .emp-row:nth-child(2){
@@ -285,7 +288,7 @@ input:checked~.internal-viewmore:after{
         padding:0;
     }
     .emp-col2 {
-        padding: 1rem 0;
+        padding: 1rem 1rem;
     }
     .openposition-row{
        display: grid;
@@ -398,8 +401,13 @@ input:checked~.internal-viewmore:after{
         font-size: 17px;
        
      }
+    
 }
-
+@media only screen and (max-width: 451px){
+    .emp-col2 p br{
+        display: none;
+    }
+}
 @media only screen and (max-width: 430px){
     .loc-text p{
         font-size: 1rem; 

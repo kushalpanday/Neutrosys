@@ -1,5 +1,5 @@
 import Dropdown from "react-bootstrap/Dropdown";
-import React from "react";
+import React, { useState }  from "react";
 import {
   Button,
   ButtonGroup,
@@ -12,8 +12,11 @@ import {
 } from "react-bootstrap";
 import "./openJobs.css";
 import { Routes, Route, Link, Outlet } from "react-router-dom";
+import Openjobitems from "./Openjobitems";
 
 function OpenJobs() {
+  const [showMore, setShowMore] = useState(false);
+
   return (
     <div>
       <Container className="openjob-container">
@@ -542,193 +545,27 @@ function OpenJobs() {
               </Container>
             </Navbar>
             {/* </div> */}
-            <input type="checkbox" id="readmore"></input>
-          <div className="scroll-bar-div">
+            {/* <input type="checkbox" id="readmore"></input> */}
+
+
           
-            <div className="div-bggrey">
+          {Openjobitems.slice(0, showMore ? Openjobitems.length : 3).map((jobitem) => {
+              return(
+            <div className="div-bggrey" key={jobitem.id} >
               <Row className="inner-row">
+             
                 <Col sm={9} className="inner-col">
-                  <h5>
-                    <Link to="jobSection">Sales Intern -On-site</Link>
-                    <Outlet />
-
-                    {/* <a href="/careers/jobSection">Sales Intern -On-site</a> */}
-                  </h5>
-                  <h6>Irving, Texas, United States | Technology | Full Time</h6>
-                  <p>
-                    Neutrosys Inc is looking for a few recent graduate
-                    individuals to join a growing office in the staffing
-                    business. This is a great opportunity to ...
-                  </p>
-                  <p className="num-p">
-                    2021-11-09 16:30:20 -{" "}
-                    <span style={{ color: "green" }}>
-                      Accepting Applications
-                    </span>
-                  </p>
-                </Col>
-                <Col sm={2} className="inner-col2">
-                  <h5>
-                  <Link to="jobSection"><a>Apply</a></Link>
-                    <Outlet />
-                  </h5>
-                </Col>
-                {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
-              </Row>
-            </div>
-
-            <div className="white-box-shadow">
-              <Row className="inner-row">
-                <Col sm={9} className="inner-col">
-                  <h5>
-                    <Link to="salesIntern">Sales Intern</Link>
-                    <Outlet />
-                  </h5>
-                  <h6>Irving, Texas, United States | Technology | Full Time</h6>
-                  <p>
-                    Neutrosys Inc is looking for a few recent graduate
-                    individuals to join a growing office in the staffing
-                    business. This is a great opportunity to ...
-                  </p>
-                  <p className="num-p">
-                    2021-09-01 19:46:20 -{" "}
-                    <span style={{ color: "red" }}>Position Closed</span>
-                  </p>
-                </Col>
-                <Col sm={2} className="inner-col2">
-                  <h5>
-                    <a href="/#">Apply</a>
-                  </h5>
-                </Col>
-                {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
-              </Row>
-            </div>
-            <div className="div-bggrey">
-              <Row className="inner-row">
-                <Col sm={9} className="inner-col">
-                  <h5>
-                    <a href="/#">Account Manager</a>
-                  </h5>
-                  <h6>Irving, Texas, United States | Technology | Full Time</h6>
-                  <p>
-                    Neutrosys Inc, a talent and business solutions provider, is
-                    seeking to hire an enthusiastic, persuasive, <br></br>
-                    enthusiastic, persuasive, organized and motivated IT
-                    Staffing sales professional.
-                    <br></br>If you believe in ...
-                  </p>
-                  <p className="num-p">
-                    2021-09-01 19:35:26 -{" "}
-                    <span style={{ color: "red" }}>Position Closed</span>
-                  </p>
-                </Col>
-                <Col sm={2} className="inner-col2">
-                  <h5>
-                    <a href="/#">Apply</a>
-                  </h5>
-                </Col>
-                {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
-              </Row>
-            </div>
-            <div className="white-box-shadow">
-              <Row className="inner-row ">
-                <Col sm={9} className="inner-col">
-                  <h5>
-                    <a href="/#">Linux Administrator - Chicago</a>
-                  </h5>
-                  <h6>
-                    Chicago, Illinois, United States | Technology | Contract
-                  </h6>
-                  <p>
-                    <span style={{ fontWeight: "500" }}>
-                      Responsibilities of the role:
-                    </span>
-                    <li>Design and Implement serverless software solutions.</li>
-                    <li>
-                      Play role in understanding business needs in context, from
-                      ...
-                    </li>
-                  </p>
-                  <p className="num-p">
-                    2021-07-01 23:50:09 -{" "}
-                    <span style={{ color: "red" }}>Position Closed</span>
-                  </p>
-                </Col>
-                <Col sm={2} className="inner-col2">
-                  <h5>
-                    <a href="/#">Apply</a>
-                  </h5>
-                </Col>
-                {/* <hr style={{border:'2px dotted grey', width:'93%', marginLeft:'2rem'}}></hr> */}
-              </Row>
-            </div>
-             <div className="div-bggrey">
-              <Row className="inner-row">
-                <Col sm={9} className="inner-col">
-                  <h5>
-                    <a href="/#">Facets Tester - Remote</a>
-                  </h5>
-                  <h6>MO, Missouri, United States | Technology | Contract</h6>
-                  <p>
-                    We are looking for multiple Healthcare Facets Tester to fill
-                    the urgent requirement for one of our clients.
-                  </p>
-                  <p className="num-p">
-                    2021-06-16 20:42:35 -{" "}
-                    <span style={{ color: "red" }}>Position Closed</span>
-                  </p>
-                </Col>
-                <Col sm={2} className="inner-col2">
-                  <h5>
-                    <a href="/#">Apply</a>
-                  </h5>
-                </Col>
                 
-              </Row>
-            </div> 
-
-            
-             <div className="white-box-shadow">
-              <Row className="inner-row">
-                <Col sm={9} className="inner-col">
-                  <h5>
-                    <Link to="salesIntern">Sales Intern</Link>
+                  
+                <h5>
+                    <Link to="jobSection">{jobitem.title}</Link>
                     <Outlet />
                   </h5>
-                  <h6>Irving, Texas, United States | Technology | Full Time</h6>
-                  <p>
-                    Neutrosys Inc is looking for a few recent graduate
-                    individuals to join a growing office in the staffing
-                    business. This is a great opportunity to ...
-                  </p>
-                  <p className="num-p">
-                    2021-09-01 19:46:20 -{" "}
-                    <span style={{ color: "red" }}>Position Closed</span>
-                  </p>
-                </Col>
-                <Col sm={2} className="inner-col2">
-                  <h5>
-                    <a href="/#">Apply</a>
-                  </h5>
-                </Col>
-               
-              </Row>
-            </div> 
-            <div className="div-bggrey">
-              <Row className="inner-row">
-                <Col sm={9} className="inner-col">
-                  <h5>
-                    <a href="/#">Facets Tester - Remote</a>
-                  </h5>
-                  <h6>MO, Missouri, United States | Technology | Contract</h6>
-                  <p>
-                    We are looking for multiple Healthcare Facets Tester to fill
-                    the urgent requirement for one of our clients.
-                  </p>
-                  <p className="num-p">
-                    2021-06-16 20:42:35 -{" "}
-                    <span style={{ color: "red" }}>Position Closed</span>
-                  </p>
+                  <h6>{jobitem.location}</h6>
+                  <p>{jobitem.disc}</p>
+                  <p style={{textAlign:"left", color:"green"}}>{jobitem.type}</p>
+                 
+              
                 </Col>
                 <Col sm={2} className="inner-col2">
                   <h5>
@@ -737,12 +574,17 @@ function OpenJobs() {
                 </Col>
               
               </Row>
-            </div>   
-             
-           
-            
-          </div>
-          <label for="readmore" className="contract-viewmore" ></label>  
+            </div>
+              )
+      })}
+      {Openjobitems.length > 3 && ( 
+        <button className="more-job-btn" onClick={() => setShowMore(!showMore)}>
+          {showMore ? "View Less Jobs" : "View More Jobs"}
+        </button>
+       )}   
+       
+          
+          {/* <label for="readmore" className="contract-viewmore" ></label>   */}
          
            
           </Col>

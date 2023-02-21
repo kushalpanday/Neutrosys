@@ -73,7 +73,10 @@ div .select {
 {
   outline: none!important;
 }
-
+/* .input-resp{
+  font-size: 15.4px;
+  color: black;
+} */
 /* .form-select{
   border-radius: 9px;
 } */
@@ -246,6 +249,7 @@ div .bXgVCj span {
   border: 1px solid rgb(240, 225, 225);
   border-top: 3px solid #0089ca;
   width: 65%;
+  padding: 0 0.5rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -630,6 +634,38 @@ select.mb-3.input-field.form-select option{
   .top-form{
     padding: 20px 27px;
   }
+  .details-form{
+    padding: 0 0.5rem;
+  }
+ #submit-btn{
+    margin: 0.5rem 0 1rem 0;
+  }
+   
+  .form-col-width{
+    width: 100%;
+  }
+  .input-resp{
+    font-size: 13.4px;
+    
+  }
+  .check{
+    font-size: 15px;
+  }
+}
+@media screen  and (max-width: 530px){
+  .input-resp{
+    font-size: 13px;
+    
+  }
+  .details-form{
+    padding: 0 0.1rem;
+  }
+  .check{
+    font-size: 14px;
+  }
+  /* .input-field.select{
+    font-size: 13px;
+  } */
 }
 @media screen  and (max-width: 465px){
   .top-form{
@@ -677,6 +713,11 @@ select.mb-3.input-field.form-select option{
     padding: 20px 10px;
   }
   
+}
+@media screen and (max-width: 540px){
+  .right-col{
+    padding: 0 1rem;
+  }
 }
 @media screen and (min-width: 820px) and (max-width: 1180px) {
   /* .text {

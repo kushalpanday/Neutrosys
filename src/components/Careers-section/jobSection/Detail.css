@@ -510,7 +510,10 @@ input[type="checkbox"]{
 .vertical-div p span {
   cursor:pointer;
 }
-
+/* .input-resp{
+  font-size: 15.4px;
+  color: black;
+} */
 .select {
   padding: 15px;
 }
@@ -538,7 +541,9 @@ select.mb-3.input-field.form-select option{
 .job_country_code{
   width: 100%;
 }
-
+.gender-padding{
+  height: calc(3.5rem + 2px);
+}
 
 
 
@@ -550,8 +555,8 @@ select.mb-3.input-field.form-select option{
 
 @media screen and  (max-width: 991px){
   .jobdetails-body{
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   
   .check-container-col{
@@ -562,23 +567,74 @@ select.mb-3.input-field.form-select option{
     text-align: center;
   }
   .resume-form-col{
-   
-    padding: 1px;
+    width: 50%;
+    padding: 0 3px;
   }
   .gender-padding{
     margin-bottom: 11px;
+    /* font-size: 13px;  */
+    height: calc(3.5rem + 2px);
   }
   .country-padding{
     margin-bottom: 11px;
   }
-  .message-padding{
-    margin-top: 11px;
-    margin-bottom: 11px;
+  .fname-width{
+    width: 45%;
   }
-  .reverse-col{
-    flex-direction: column-reverse;
-    margin-top: 11px;
+  .mname-width{
+    width: 55%;
   }
+  .cc-width-div{
+    width: 55%;
+  }
+  .p-width-div{
+    width: 45%;
+  }
+  .country-width{
+    width: 47%;
+  }
+  .region-width{
+    width: 53%;
+  }
+  .email-width{
+    width: 45%;
+  }
+  .salary-width{
+    width: 55%;
+  }
+  .second-upload{
+    margin: 11px 0 0 0;
+  }
+  #submit-btn{
+    margin: 0.5rem 0 1rem 0;
+  }
+  .form-floating>label{
+    font-size: 14px;
+  }
+  .gender-padding{
+    font-size: 14px;
+  }
+  select.mb-3.input-field.form-select{
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 530px){
+  .form-floating>label{
+    font-size: 13px;
+  }
+  .gender-padding{
+    font-size: 13px;
+  }
+  select.mb-3.input-field.form-select{
+    font-size: 13px;
+  }
+  .jobdetails-body{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+  /* .input-field.select{
+    font-size: 13px;
+  } */
 }
 @media screen and (min-width: 360px) and (max-width: 740px) {
   .top-row {
