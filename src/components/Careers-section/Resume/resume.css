@@ -118,8 +118,8 @@ grid-template-columns: 45% 55%;
 
 @media screen and  (max-width: 991px){
   .resume-modal-body{
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .check-Rcontainer-col{
     width: 100%;
@@ -138,8 +138,16 @@ grid-template-columns: 45% 55%;
   .country-padding{
     margin-bottom: 11px;
   }
- 
+ .selectjob-width{
+  width: 100%;
+ }
   
+}
+@media screen and (max-width: 530px){
+  .resume-modal-body{
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
 }
 @media only screen and (max-width: 690px) {
   .resume-row {

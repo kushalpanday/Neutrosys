@@ -113,10 +113,10 @@ export default function Resume(props) {
                   </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="resume-modal-body">
-                  <form className="form" onSubmit={handleSubmit(onSubmit)}>
-                    <Container>
+                  <form className="form details-form" onSubmit={handleSubmit(onSubmit)}>
+                   
                     <Row className="mt-1">
-                      <Col sm={12} className="resume-form-col">
+                      <Col sm={12} className="resume-form-col selectjob-width">
                       <Select
                         isMulti
                         name="colors"
@@ -129,7 +129,7 @@ export default function Resume(props) {
                       </Col>
                     </Row>
                       <Row className="mt-1">
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col fname-width">
                           <FloatingLabel
                             controlId="floatingInput"
                             label="First Name"
@@ -147,7 +147,7 @@ export default function Resume(props) {
                             />
                           </FloatingLabel>
                         </Col>
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col mname-width">
                           <FloatingLabel
                             // lg={3}
                             controlId="floatingPassword"
@@ -202,7 +202,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col cc-width-div">
                           {/* <PhoneInput
                             country={"nep"}
                             value={mobile}
@@ -231,7 +231,7 @@ export default function Resume(props) {
                     </FloatingLabel>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col p-width-div">
                           <FloatingLabel
                             controlId="floatingPassword"
                             label="Phone"
@@ -249,25 +249,25 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2 country-width">
                     <CountryDropdown
-                      className="input-field select"
+                      className="input-field select input-resp"
                       value={country}
-                      style={{color:"black", fontSize:"15.3px" }}
+                      style={{color: "#000000d4" }}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
                     />
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col mb-2 region-width">
                     <RegionDropdown
-                      className="input-field select"
+                      className="input-field select input-resp"
                       label="region"
                       // showDefaultOption={false}
                       country={country}
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
-                      style={{color:"black", fontSize:"15.3px"}}
+                      style={{color: "#000000d4" }}
                       value={region}
                       onChange={(val) => selectRegion(val)}
                     />
@@ -303,7 +303,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col email-width">
                           <FloatingLabel
                             controlId="floatingInput"
                             label="Email"
@@ -324,10 +324,10 @@ export default function Resume(props) {
                           </FloatingLabel>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col salary-width">
                           <FloatingLabel
                             controlId="floatingPassword"
-                            label="Expected Salary/Salary Range(Optional)"
+                            label="Expected Salary(Optional)"
                             className="input-field"
                           >
                             <Form.Control
@@ -339,7 +339,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row>
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col level-width">
                           <Form.Select
                             aria-label="Default select example"
                             className="mb-3 input-field"
@@ -356,7 +356,7 @@ export default function Resume(props) {
                           </Form.Select>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col upload-width">
                           {/* <div className="dashed-border input-field mb-3 "> */}
                           <UploadFiles accept={["application/pdf"]}/>
                           {/* </div> */}
@@ -364,7 +364,7 @@ export default function Resume(props) {
                       </Row>
 
                       <Row className="reverse-col">
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col msgtxt-width">
                           <FloatingLabel
                             controlId="floatingTextarea2"
                             label="Message(Optional)"
@@ -378,7 +378,7 @@ export default function Resume(props) {
                           </FloatingLabel>
                         </Col>
 
-                        <Col lg={6} md={12} sm={12} className="resume-form-col">
+                        <Col lg={6} md={12} sm={12} className="resume-form-col second-upload">
                         <UploadFiles accept={["application/pdf"]}/>
 
                         </Col>
@@ -407,7 +407,7 @@ export default function Resume(props) {
                           </Button>{" "}
                         </Col>
                       </Row>
-                    </Container>
+                   
                   </form>
                   {/* </Form> */}
                 </Modal.Body>

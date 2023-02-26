@@ -617,6 +617,26 @@ select.mb-3.input-field.form-select option{
   select.mb-3.input-field.form-select{
     font-size: 14px;
   }
+  .selectjob-width{
+    width: 100%;
+   }
+   .level-width{
+    width: 100%;
+  }
+  .upload-width{
+    width: 100%;
+    margin-top: 0;
+  }
+  .reverse-col{
+    flex-direction: column-reverse;
+  }
+  .second-upload{
+    width: 100%;
+    margin: 10px 0 10px 0;
+  }
+  .msgtxt-width{
+    width: 100%;
+  }
 }
 @media screen and (max-width: 530px){
   .form-floating>label{
@@ -635,6 +655,30 @@ select.mb-3.input-field.form-select option{
   /* .input-field.select{
     font-size: 13px;
   } */
+}
+@media screen and (max-width: 374px){
+  .form-floating>label{
+    font-size: 12px;
+  }
+  .gender-padding{
+    font-size: 12px;
+  }
+  select.mb-3.input-field.form-select{
+    font-size: 12px;
+  }
+  .fname-width{
+    width: 40%;
+  }
+  .mname-width{
+    width: 60%;
+  }
+  .country-width{
+    width: 43%;
+  }
+  .region-width{
+    width: 57%;
+  }
+  
 }
 @media screen and (min-width: 360px) and (max-width: 740px) {
   .top-row {

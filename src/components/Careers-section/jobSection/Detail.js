@@ -392,7 +392,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row>
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col level-width">
                     <Form.Select
                       aria-label="Default select example"
                       className="mb-3 input-field"
@@ -409,7 +409,7 @@ const Detail = (props) => {
                     </Form.Select>
                   </Col>
 
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col upload-width">
                     {/* <div className="dashed-border input-field mb-3 ">
                       <FileUploader
                         multiple={true}
@@ -427,7 +427,7 @@ const Detail = (props) => {
                 </Row>
 
                 <Row className="reverse-col">
-                  <Col lg={6} md={12} sm={12} className="resume-form-col">
+                  <Col lg={6} md={12} sm={12} className="resume-form-col msgtxt-width">
                     <FloatingLabel
                       controlId="floatingTextarea2"
                       label="Message(Optional)"
