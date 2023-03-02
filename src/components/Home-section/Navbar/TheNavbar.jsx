@@ -19,11 +19,11 @@ function TheNavbar() {
       <Navbar.Collapse id="responsive-navbar-nav navbar_list">
         <Nav className="nav-margin">
           <TheNavbarProps link="/" name="Home" />
-          <TheNavbarProps link="/aboutus"  name="About us" />
+          <TheNavbarProps link="/aboutus"  name="About Us" />
           <TheNavbarProps link="/services" name="Services" />
           <TheNavbarProps link="/employers" name="Employers" />
           <TheNavbarProps link="/careers" name="Careers" />
-          <TheNavbarProps link="/contactus" name="Contact us" />
+          <TheNavbarProps link="/contactus" name="Contact Us" />
         </Nav>
         <Nav>
           <Nav.Link href="#login">

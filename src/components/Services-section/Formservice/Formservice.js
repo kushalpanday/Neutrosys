@@ -60,10 +60,10 @@ const Formservice = () => {
     console.log(response);
   };
   const optionSelect = [
-    { value: "Talent Solutions", label: "Talent Solutions" },
-    { value: "Out Sourcing", label: "Out Sourcing" },
+    { value: "Talent Solution", label: "Talent Solution" },
+    { value: "Outsourcing", label: "Outsourcing" },
     { value: "Software Testing", label: "Software Testing" },
-    { value: "Software QA", label: "Software QA" },
+    { value: "Software Development", label: "Software Development" },
   ];
 
   const [country, setCountry] = useState("");
@@ -85,7 +85,7 @@ const Formservice = () => {
           >
             <Col sm={12} lg={12} md={12} className="form-col ">
               <Container className=" formContainer">
-                <p className="heading-para">I'm interested in..</p>
+                <p className="heading-para">Talk to us.</p>
 
                 {/* <Multiselect
                   className="textfields"
@@ -125,7 +125,7 @@ const Formservice = () => {
                   name="name"
                   className="textfield"
                   variant="filled"
-                  placeholder="Your Name"
+                  placeholder="Full Name"
                   // value={myForm.values.name}
                   // onChange={myForm.handleChange}
                   // error={!!myForm.errors.companyName}
@@ -156,7 +156,7 @@ const Formservice = () => {
                   name="email"
                   className="textfield"
                   variant="filled"
-                  placeholder="Your Email"
+                  placeholder="Email"
                   autoComplete="off"
                   sx={{
                     "& .MuiFilledInput-underline:before": {
@@ -368,7 +368,7 @@ const Formservice = () => {
                       className="file_button mt-3"
                     >
                       {/* <AiOutlineUpload className="uploadIcon" /> */}
-                      upload files
+                      Upload Files
                     </Button>
                     {/* <small style={{ color: "#b1a40d" }}>Upload file </small> */}
                     <ErrorMessage

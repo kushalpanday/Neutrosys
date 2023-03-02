@@ -15,10 +15,8 @@ const Corevalues = () => {
           <img className="core-icon1" src={imageabout1} alt="" />
           <p className="cvp">Customer Satisfaction</p>
           <p className="corep">
-          Text is text 1 this is text 2Lorem ipsum dolor sit amet consectetur
-            a Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            eius rerum repellendus, expedita numquam tenetur minus aliquid! Qui
-            obcaecati officia maiores placeadipisicing elit
+            We prioritize customer satisfaction as a core value, going above and beyond to provide expert solutions
+            and exceptional service. We put the needs of our clients first and are committed to their success.
           </p>
         </div>
 <div className="line">
@@ -34,13 +32,12 @@ const Corevalues = () => {
            transform: "rotate(90deg)",
         }}
       /> */}
-          <p className="cvp">Long Sightedness</p>
+          <p className="cvp">Far-sightedness</p>
 
           <p className="corep">
-          Text is text 2 this is text 2Lorem ipsum dolor sit amet consectetur
-            a Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            eius rerum repellendus, expedita numquam tenetur minus aliquid! Qui
-            obcaecati officia maiores placeadipisicing elit
+            We take a strategic and holistic approach to every project, committed to creating lasting value for our clients.
+            With transparency, open communication, and collaboration, we develop customized solutions that align with their 
+            unique needs and long-term business goals.
           </p>
         </div>
         <div className="line">
@@ -48,12 +45,11 @@ const Corevalues = () => {
         </div>
         <div className="valuetext3">
           <img className="core-icon3" src={imageabout3} alt="" />
-          <p className="cvp">Strong bond</p>
+          <p className="cvp">Integrity</p>
           <p className="corep"> 
-            Text is text 3 this is text 2Lorem ipsum dolor sit amet consectetur
-            a Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
-            eius rerum repellendus, expedita numquam tenetur minus aliquid! Qui
-            obcaecati officia maiores placeadipisicing elit
+           Integrity is a core value that guides everything we do, and we believe in doing the right thing, even when it's
+           hard. We hold ourselves to the highest standards of integrity, take responsibility for our actions, and strive to
+           learn and improve.
           </p>
         </div>
       </div>

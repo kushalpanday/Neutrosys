@@ -86,7 +86,7 @@
 } 
 .scrollbar-internaljob{
       /* border: 1px solid red;  */
-    max-height: 330px;
+    max-height: 360px;
     overflow: hidden;
     overflow-y: auto; 
     overflow-y: hidden;   
@@ -100,7 +100,7 @@ input:checked+.scrollbar-internaljob{
 } 
 /* input[type="checkbox"]{
     display: none;
-} */
+}   */
 /* label{
     color: blue;
     text-decoration: underline;
@@ -109,11 +109,11 @@ input:checked+.scrollbar-internaljob{
     display: inline-block;
 } */
 .internal-viewmore:after{
-    content: "More Jobs";
+    content: "More Jobs..";
    
 }
 input:checked~.internal-viewmore:after{
-    content: "Less Jobs";
+    content: "Less Jobs..";
 } 
 .internal-viewmore{
     font-size: 16px;
@@ -139,7 +139,7 @@ input:checked~.internal-viewmore:after{
 .openposition-col
 {
     /* border: 1px solid; */
-    height: 300px;
+    height: 330px;
     width: 20%;
     margin-left: 15px;
     margin-right: 15px;
@@ -181,9 +181,8 @@ input:checked~.internal-viewmore:after{
 }
 .footer-row.row
 {   
-    padding-top:1rem ;
-    /* border: 1px solid; */
-    /* padding-top: 1.3rem; */
+    padding-top:2.2rem ;
+   
 }
 .loc-text
 {
@@ -228,14 +227,12 @@ input:checked~.internal-viewmore:after{
     .icon-text p{
         margin-top: 15px;
     }
-
-}
-
-@media only screen and (max-width: 1000px){
     .internal-viewmore{
-        margin-left: 3.3rem;
+        margin-left: 4rem;
     }
 }
+
+
 @media only screen and (max-width: 950px){
     .openposition-row{
         display: grid;
@@ -252,12 +249,30 @@ input:checked~.internal-viewmore:after{
     }
 
 }
+@media only screen and (max-width: 850px){
+    .internal-viewmore{
+        margin-left: 3rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    .internal-viewmore{
+        margin-left: 2rem;
+    }
+}
 @media only screen and (max-width: 650px){
     .openposition-row{
         grid-template-columns: 50% 50%;
         width:80%;
     }
-
+    .scrollbar-outerdiv{
+        max-height: 50rem;
+    }
+    .scrollbar-internaljob{
+        max-height: 45rem;
+    }
+    .internal-viewmore{
+        margin-left: 3rem;
+    }
 }
 @media only screen and (max-width: 575px){
     .loc-text p
@@ -282,14 +297,13 @@ input:checked~.internal-viewmore:after{
     }
     .emp-col2{
         height: 100%;
+        padding: 1rem 0.6rem;
     }
     .emp-col2 h5,.emp-col2 p{
         text-align: center;
-        padding:0;
+        padding:0 0.5rem;
     }
-    .emp-col2 {
-        padding: 1rem 1rem;
-    }
+    
     .openposition-row{
        display: grid;
        grid-template-columns: 50% 50%;
@@ -305,12 +319,6 @@ input:checked~.internal-viewmore:after{
     .footer-row.row{
         padding:0;
     }
-
-}
-
-
-
-@media only screen and (max-width: 576px){
     .text-col h4{
         padding: 30px 0 125px 14px;
         font-size: 18px;
@@ -318,13 +326,14 @@ input:checked~.internal-viewmore:after{
     .loc-text p
     {
         font-size: 15px;
-        
         width: 80%;
     }
-    .internal-viewmore{
-        margin-left: 1.5rem;
-    }
+    
 }
+
+
+
+
 @media only screen and (max-width: 525px){
     .loc-text p
     {
@@ -337,18 +346,17 @@ input:checked~.internal-viewmore:after{
          gap: 1rem;
          margin: 1rem 1rem;
      }
-
+     .scrollbar-internaljob{
+        max-height: 44.2rem;
+    }
 }
+
 @media only screen and (max-width: 800px){
     .scroll-jobdiv{
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    /* .internal-viewmore{
-        margin-left: 2.5rem;
-    } */
 }
-
 
 @media only screen and (max-width: 490px){
     .openposition-row{
@@ -373,6 +381,7 @@ input:checked~.internal-viewmore:after{
         padding-left:13px;
      }
      .footer-row.row{
+        
         display: grid;
         grid-template-columns: 80% 15%;
      }
@@ -381,7 +390,7 @@ input:checked~.internal-viewmore:after{
         padding-left: 20px;
      }
      .openposition-col{
-        width: 90%;
+        width: 95%;
         margin: auto;
      }
 
@@ -392,8 +401,17 @@ input:checked~.internal-viewmore:after{
    
     
 }
+
+.scrollbar-outerdiv{
+    max-height: 95rem;
+}
+.scrollbar-internaljob{
+    max-height: 90rem;
+}
 .internal-viewmore{
-    margin-left: 4.7rem;
+    margin-left: 0rem;
+    float: none;
+    margin-top: 1rem;
 }
 }
 @media only screen and (max-width: 450px){
@@ -416,19 +434,28 @@ input:checked~.internal-viewmore:after{
         /* margin-top: -15px; */
      }
      .text-col h4{
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         /* padding-left: 10px; */
      }
-     /* .icon-text p
-     {
-         
-         margin-top: 12px;
-        
-         
-     } */
+     
 }
 @media only screen and (max-width: 400px){
-    .internal-viewmore{
-        margin-left: 3.7rem;
+    
+    .text-col h4{
+        font-size: 16px
     }
+    .loc-text p{
+        font-size: 13.5px;
+    }
+    .openposition-col{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 359px){
+    .emp-col2{
+        padding: 1rem 0.4rem;
+    }
+    .emp-col2 h5,.emp-col2 p{
+        padding:0 0.4rem;
+    } 
 }

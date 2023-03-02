@@ -64,7 +64,7 @@ const Internaljob = () => {
 
       <h2 className="openposition-heading">Our open positions</h2>
     <div className="scrollbar-outerdiv">
-      <input type="checkbox" id="readmore"></input>
+      <input type="checkbox" id="readmore" style={{display:"none"}}></input>
       <div className="scrollbar-internaljob">
       
         <Row className="openposition-row">
@@ -143,61 +143,25 @@ const Internaljob = () => {
               </Col>
             </Row>
           </Col>
+          <Col lg={3} className="openposition-col openposition-col2">
+            <Row className="heading-rowbg">
+              <h6>Sales/Marketing</h6>
+              <Col className="text-col">
+                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
+                <Row className="footer-row">
+                  <Col sm={9} className="loc-text">
+                    <p>Noida, Uttar Pradesh India</p>
+                  </Col>
+                  <Col sm={2} className="icon-text">
+                    <p>
+                      <BsArrowRightCircle />
+                    </p>
+                  </Col>
+                </Row>
+              </Col>
+            </Row>
+          </Col>
         
-          <Col lg={3} className="openposition-col openposition-col2">
-            <Row className="heading-rowbg">
-              <h6>Sales/Marketing</h6>
-              <Col className="text-col">
-                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
-                <Row className="footer-row">
-                  <Col sm={9} className="loc-text">
-                    <p>Noida, Uttar Pradesh India</p>
-                  </Col>
-                  <Col sm={2} className="icon-text">
-                    <p>
-                      <BsArrowRightCircle />
-                    </p>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
-          <Col lg={3} className="openposition-col openposition-col2">
-            <Row className="heading-rowbg">
-              <h6>Sales/Marketing</h6>
-              <Col className="text-col">
-                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
-                <Row className="footer-row">
-                  <Col sm={9} className="loc-text">
-                    <p>Noida, Uttar Pradesh India</p>
-                  </Col>
-                  <Col sm={2} className="icon-text">
-                    <p>
-                      <BsArrowRightCircle />
-                    </p>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
-          <Col lg={3} className="openposition-col openposition-col2">
-            <Row className="heading-rowbg">
-              <h6>Sales/Marketing</h6>
-              <Col className="text-col">
-                <h4>US Technical Recruiter-Noida, India(Remote)</h4>
-                <Row className="footer-row">
-                  <Col sm={9} className="loc-text">
-                    <p>Noida, Uttar Pradesh India</p>
-                  </Col>
-                  <Col sm={2} className="icon-text">
-                    <p>
-                      <BsArrowRightCircle />
-                    </p>
-                  </Col>
-                </Row>
-              </Col>
-            </Row>
-          </Col>
           <Col lg={3} className="openposition-col openposition-col2">
             <Row className="heading-rowbg">
               <h6>Sales/Marketing</h6>
@@ -217,13 +181,16 @@ const Internaljob = () => {
             </Row>
           </Col>
           
+          
+         
+          
 
 
         </Row>
         
       </div>
       
-      <label for="readmore" className="internal-viewmore" >View </label> 
+      <label for="readmore" className="internal-viewmore" ></label> 
       
     </div>
     </>

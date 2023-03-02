@@ -141,10 +141,10 @@ return (
           
         }}
       />
-        <h2 className="header-heading heading">Let us Transform your business idea into reality.</h2>
+        <h2 className="header-heading heading">Connecting top talent with leading companies.</h2>
         <p className="header-paragraph heading">
-          We build custom IT solutions and products that accelerates customer’s
-          business growth, simplify process and increase revenue.
+          "We provide IT staffing and software development services to businesses, helping them to achieve
+          their technology goals with the right people and solutions".
         </p>
 
         <div className="header_btn_container">
@@ -154,7 +154,7 @@ return (
       </div>
 
     
-      {/* <AboutAnimBackground /> */}
+    
     </section>
   );
 }

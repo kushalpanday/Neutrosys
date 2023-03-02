@@ -56,7 +56,7 @@ input:checked~.contract-viewmore:after{
     float: left;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 10px 20px;
+    padding: 10px 16px;
     border: none;
     background: #5d99e7;
     cursor: pointer;

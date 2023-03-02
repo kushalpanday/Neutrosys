@@ -56,9 +56,9 @@ img.mline3 {
   font-size:.7rem;
   color:#23ABE5;
 }
-.card1 h3,.card2 h3,.card3 h3,.card4 h3,.card5 h3{
-  text-transform: uppercase;
-  font-size:1.3rem;
+.card1 h3,.card2 h3,.card3 h3,.card4 h3,.card5 h3
+{
+  font-size:1.1rem;
 }
 
 .line1.col-sm-4,.line3.col-sm-4 {

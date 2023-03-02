@@ -12,8 +12,8 @@ const data=[
     },
     {id:3,
         image:"https://miro.medium.com/max/1400/1*mDuAvJM9_B_IDlfYiQ2P8Q.png",
-    heading:"OutSourcing",
-    disc:" provides certain functionality such as word processing, project management tools."
+    heading:"Outsourcing",
+    disc:" Provides certain functionality such as word processing, project management tools."
     },
     
     

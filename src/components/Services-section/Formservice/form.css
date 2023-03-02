@@ -212,6 +212,7 @@ div .css-sghohy-MuiButtonBase-root-MuiButton-root{
   /* background-color: #030f1c; */
   background-color: #fff;
   color: black;
+  text-transform: none;
 }
 
 .css-qfz70r-MuiFormGroup-root{

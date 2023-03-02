@@ -4,7 +4,7 @@ import RadioButtonCheckedIcon from "@mui/icons-material/RadioButtonChecked";
 const Outsourcing = () => {
   return (
     <div className="outsourcingmain">
-      <h4>OutSourcing</h4>
+      <h4>Outsourcing</h4>
       
       <div className="outsourcingbox">
         <div className="outbox1">
@@ -17,8 +17,8 @@ const Outsourcing = () => {
             <h5>Professional</h5></div>
           
             <p>
-              Involves being reliable, setting your own high standards, and
-              showing that you care about every aspect of your job.
+            Enhance your IT capabilities while saving on overhead costs by outsourcing to our team of
+            experienced IT professionals.
             </p>
           </div>
           <div className="box11">
@@ -28,10 +28,10 @@ const Outsourcing = () => {
            fontSize="small"
           className="staffBoxHeadicon"
           />
-            <h5>Call Center</h5></div>
+            <h5>Software testing</h5></div>
             <p>
-              Involves being reliable, setting your own high standards, and
-              showing that you care about every aspect of your job.
+            Ensure high-quality software free of bugs and issues by outsourcing your software testing needs
+            to our experienced team.
             </p>
           </div>
         </div>
@@ -46,10 +46,10 @@ const Outsourcing = () => {
            fontSize="small"
           className="staffBoxHeadicon"
           />
-            <h5>SoftwareTesting</h5></div>
+            <h5>Call center</h5></div>
             <p>
-              Involves being reliable, setting your own high standards, and
-              showing that you care about every aspect of your job.
+            Enhance your customer support capabilities with our cost-saving call center outsourcing
+            services, offering 24/7 support for your business needs.
             </p>
           </div>
           <div className="box11">
@@ -61,8 +61,8 @@ const Outsourcing = () => {
           />
             <h5>Project</h5></div>
             <p>
-              Involves being reliable, setting your own high standards, and
-              showing that you care about every aspect of your job.
+            Streamline project management and focus on your core business by outsourcing your projects to
+            our expert team.
             </p>
           </div>
         </div>

@@ -37,16 +37,19 @@
 }
 .service_item_img{
   height: 60%;
+  
 }
 .services_item p{
   margin:0 1rem 1rem 1rem;
+  text-align: center;
+  font-size: 15px;
 }
 .services_item img {
   width: 55%;
-  margin:1rem 0;
+  margin:0.5rem 0;
 }
 .services_item h4{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-bottom: 0;
 }
 .services_item h2 {

@@ -13,8 +13,8 @@ function Mission() {
         <div className="Mgrid">
           <div>
             <p className="missleft">
-              this is text 2Lorem ipsum dolor sit amet consectetur a Lorem ipsum
-              dolor sit amet adipisicing elit. Omnis eius rerum
+              Our mission is to provide top-notch IT talent to companies in need, while fostering a positive and collaborative
+              work environment for our employees and fostering long-term partnerships with our clients.
             </p>
           </div>
           <div className="box">
@@ -26,22 +26,22 @@ function Mission() {
 
           <div className="box">
             <div className="focus-icon">
-              <MdCenterFocusStrong className="i2" size={40} color="green" />
+              <AiOutlineEye className="i2" size={40} color="green" />
             </div>
-            <h4 className="box-heading mission-focus">Focus</h4>
+            <h4 className="box-heading mission-focus">Vision</h4>
           </div>
 
           <div>
             <p className="missright">
-              this is text 2Lorem ipsum dolor sit amet consectetur a Lorem ipsum
-              dolor sit amet adipisicing elit. Omnis eius rerum
+              Neutrosys aims to be the industry's top provider of IT staffing and software development services, trusted by
+              businesses of all sizes for our commitment to excellence, innovation, and customer satisfaction.
             </p>
           </div>
 
           <div>
             <p className="missleft">
-              this is text 2Lorem ipsum dolor sit amet consectetur a Lorem ipsum
-              dolor sit amet adipisicing elit. Omnis eius rerum
+             We pride ourselves in our ability to understand the unique needs of each client and provide them with customized
+             solutions that are tailored to meet those needs. 
             </p>
           </div>
           <div className="box">
@@ -52,14 +52,14 @@ function Mission() {
           </div>
           <div className="box">
             <div className="focus-icon">
-              <AiOutlineEye className="i4" size={40} color="green" />
+              <MdCenterFocusStrong className="i4" size={40} color="green" />
             </div>
-            <h4 className="box-heading mission-vision">Vision</h4>
+            <h4 className="box-heading mission-vision">Focus</h4>
           </div>
           <div>
             <p className="missright">
-              this is text 2Lorem ipsum dolor sit amet consectetur a Lorem ipsum
-              dolor sit amet adipisicing elit. Omnis eius rerum
+             We strive to stay up to date with the latest advancements in technology and continuously expand our expertise to provide
+             our clients with the best services possible.
             </p>
           </div>
         </div>

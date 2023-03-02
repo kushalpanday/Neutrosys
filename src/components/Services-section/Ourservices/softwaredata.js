@@ -3,25 +3,25 @@ const softwaredata=[
         id:1,
         image:"../Servicesimages/computer1.jpeg",
         headings:"Web Development",
-        discrip:"We professionally design, redesign and continuously support customer-facing and enterprise web apps to achieve high conversion."
+        discrip:"We help businesses establish their online presence and reach their target audience with functional websites, designed by our expert developers."
     },
     {
         id:2,
         image:"../Servicesimages/computer3.jpeg",
-        headings:"ios Development",
-        discrip:" Aimed at building iOS & Android applications that effectively complement or substitute web solutions."
+        headings:"Ios Development",
+        discrip:"Our iOS app development services deliver engaging mobile experiences with the latest technologies and best practices delivering high-quality iOS apps."
     },
     {
         id:3,
         image:"../Servicesimages/computer3.jpeg",
         headings:"Software Development",
-        discrip:"An innovative coders and a structured experts for the maximum benefit to your business."
+        discrip:"Our services streamline operations for businesses with use of agile methodologies and cutting-edge technologies to create custom software solutions."
     },
     {
         id:4,
         image:"../Servicesimages/computer1.jpeg",
         headings:"Android Development",
-        discrip:"Designing and developing advanced applications for the Android platform. Unit-testing code for robustness,usability, and general reliability."
+        discrip:"We create immersive mobile experiences with our expert developers employing cutting-edge technologies and best practices to deliver high-quality apps."
     }
     
 ]

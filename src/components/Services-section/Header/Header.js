@@ -23,9 +23,9 @@ const Header = () => {
       <div className="about-text ">
         <h2>Services</h2>
         <p>
-          Neutrosys is an IT staffing and software development company. We are
-          currently providing IT services mainly in the US and Nepal. We
-          provide services from USA, Nepal, India, and Finland.
+        Neutrosys has all the comprehensive solutions for your technology needs - Staffing,
+        Development, Outsourcing, Testing - All in One Place! Unlock Your Potential with Our
+        Exceptional Services.
         </p>
       </div>
     </div>

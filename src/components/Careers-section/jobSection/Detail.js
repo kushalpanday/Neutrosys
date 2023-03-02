@@ -487,7 +487,7 @@ const Detail = (props) => {
                   <Col lg={9} md={9} sm={12} className="check-container-col">
                     <div className="check-container">
                       {" "}
-                      <input type="checkbox" name="check" id="" />
+                      <input type="checkbox" name="check" id="applycheck" />
                       <p className="check">
                         By checking this box, I certify that the information
                         submitted in this application is true and correct to the

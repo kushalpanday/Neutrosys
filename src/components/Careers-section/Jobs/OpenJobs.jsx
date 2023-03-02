@@ -579,7 +579,7 @@ function OpenJobs() {
       })}
       {Openjobitems.length > 3 && ( 
         <button className="more-job-btn" onClick={() => setShowMore(!showMore)}>
-          {showMore ? "View Less Jobs" : "View More Jobs"}
+          {showMore ? "Less Jobs.." : "More Jobs.."}
         </button>
        )}   
        

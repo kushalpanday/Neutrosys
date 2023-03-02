@@ -6,26 +6,27 @@ import imagediff from "../Aboutimage/what.jpeg"
 function Difference() {
   return (
     <div>
-      <h2  className="text1">What Makes Neutrosys Different?</h2>
+      <h2  className="text1">Who We Are</h2>
       <div className="second">
-        {/* <div className="none"></div> */}
+       
         <div className="image">
           <img src={imagediff} alt="" />
-          {/* <img className="imagediff" src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="pic" /> */}
+         
         </div>
         <div className="textBox">
           <h3 >Neutrosys</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eius
-            rerum repellendus, expedita numquam tenetur minus aliquid! Qui
-            obcaecati officia maiores placeat ducimus expedita numquam tenetur
-            minus aliquid! Qui obcaecati officia maiores placeat ducimus
-            expedita numquam tenetur minus aliquid! Qui obcaecati officia
-            maiores placeat ducimus atque voluptatum voluptate tenetur numquam
-            tenetur minus aliquid! Qui obcaecati officia maiores placeat.
+          Neutrosys was founded in 2015 out of a desire to solve the problem of experienced professionals
+          struggling to find jobs. Despite having years of experience, many individuals face difficulty in
+          securing employment. In response to this challenge, we created a solution, Neutrosys, to help
+          bridge the gap between skilled professionals and companies in need of their expertise.<br></br>
+          &ensp;&ensp;At Neutrosys, we have started offering more than just staffing services. Our team is also
+          equipped to provide expert Software Development, Outsourcing, and Software Testing solutions
+          to help your business succeed. Whether you're looking for top talent to join your team, or need
+          custom software solutions to streamline your operations, we have the expertise to deliver.
           </p>
         </div>
-        {/* <div className="nonee"></div> */}
+       
       </div>
     </div>
   );
