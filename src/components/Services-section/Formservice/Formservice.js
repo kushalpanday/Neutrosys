@@ -33,7 +33,7 @@ const Formservice = () => {
     "Talent Solutions",
     "Out Sourcing",
     "Software Testing",
-    "Software QA",
+    "Software Testing",
   ]);
 
   const captchaRef = useRef(null);
@@ -61,9 +61,10 @@ const Formservice = () => {
   };
   const optionSelect = [
     { value: "Talent Solution", label: "Talent Solution" },
+    { value: "Software Development", label: "Software Development" },
     { value: "Outsourcing", label: "Outsourcing" },
     { value: "Software Testing", label: "Software Testing" },
-    { value: "Software Development", label: "Software Development" },
+    
   ];
 
   const [country, setCountry] = useState("");

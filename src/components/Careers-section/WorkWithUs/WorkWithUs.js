@@ -8,7 +8,7 @@ import { RiTeamFill } from 'react-icons/ri';
 import { GiSatelliteCommunication } from 'react-icons/gi';
 import { MdOutlineComputer } from 'react-icons/md';
 import { MdGames } from 'react-icons/md';
-import { BsFillSunFill } from 'react-icons/bs';
+import { BsBookmarkStarFill } from 'react-icons/bs';
 
 
 export default function Workwithus() {
@@ -31,8 +31,8 @@ export default function Workwithus() {
                         <Col md={6} lg={4} className='box-col'>
                         <div className='parabox-text'>
                             <div className='icon2'><GiSatelliteCommunication/></div>
-                            <h5 className='icon1-h5'>Opportunities</h5>
-                            <p className='box1-text'>We offer diverse opportunities for career advancement to our consultants and
+                            <h5 className='icon2-h5'>Opportunities</h5>
+                            <p className='box2-text'>We offer diverse opportunities for career advancement to our consultants and
                             employees through challenging projects and leadership roles.</p>
                         </div>
                         </Col>
@@ -40,8 +40,8 @@ export default function Workwithus() {
                         <Col md={6} lg={4} className='box-col'>
                         <div className='parabox-text'>
                             <div className='icon3'><MdOutlineComputer/></div>
-                            <h5 className='icon1-h5'>Training</h5>
-                            <p className='box1-text'>Employees can take advantage of training and development opportunities to acquire
+                            <h5 className='icon3-h5'>Training</h5>
+                            <p className='box3-text'>Employees can take advantage of training and development opportunities to acquire
                             new skills and advance their careers.</p>
                         </div>
                         </Col>
@@ -49,17 +49,17 @@ export default function Workwithus() {
                         <Col md={6} lg={4}className='box-col2'>
                         <div className='parabox-text'>
                             <div className='icon4'><MdGames/></div>
-                            <h5 className='icon1-h5'>Communication</h5>
-                            <p className='box1-text'>We keep open and transparent communication with our employees and
+                            <h5 className='icon4-h5'>Communication</h5>
+                            <p className='box4-text'>We keep open and transparent communication with our employees and
                             consultants to ensure that they are aware of all the opportunities available, and that their needs are met.</p>
                         </div>
                         </Col>
 
                         <Col md={6} lg={4} className='box-col3'>
                         <div className='parabox-text'>
-                            <div className='icon5'><BsFillSunFill/></div>
+                            <div className='icon5'><BsBookmarkStarFill/></div>
                             <h5 className='icon5-h5'>Reputation</h5>
-                            <p className='box1-text'>We are known for placing top consultants in various industries, maintaining long-
+                            <p className='box5-text'>We are known for placing top consultants in various industries, maintaining long-
                             term client relationships, and providing a network of future job opportunities for our employees.</p>
                         </div>
                         </Col>

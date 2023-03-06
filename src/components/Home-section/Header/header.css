@@ -40,12 +40,13 @@
   z-index: 2;
 }
 .header-heading {
-  width: 25rem;
+  width: 28rem;
 }
 .header-paragraph {
   /* width: 27.5%; */
-  width:30rem;
+  width:24rem;
   text-align: justify;
+  
 }
 .header_btn.blue_background{
   background-color: #23abe5;

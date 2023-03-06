@@ -13,6 +13,8 @@
 .contract-div p{
   text-align: center;
   font-size: 18px;
+  width: 70%;
+  margin: auto;
 }
 
 .work-for-us-progress-bar-container,.work-for-us-progress-bar-responsive-container {

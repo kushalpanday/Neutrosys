@@ -19,7 +19,7 @@ const Offer = () => {
         of IT staffing services to meet the unique needs of each client. Our services include:
         </p>
         
-<Accordion  style={{width:"100%", marginTop:"0.4rem"}} flush={true}>
+<Accordion  style={{width:"100%", marginTop:"1rem"}} flush={true}>
 {/* defaultActiveKey="0" */}
 <Accordion.Item eventKey="0" className="parent bg-color-contract">
         <Accordion.Header className="offer-btn">Contract Staffing</Accordion.Header>

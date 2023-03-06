@@ -181,7 +181,7 @@ const Detail = (props) => {
                     <FloatingLabel
                       // lg={3}
                       controlId="floatingPassword"
-                      label="Middle Name(If applicable)"
+                      label="Middle Name (If applicable)"
                       className="input-field"
                       name="middlename"
                     >
@@ -287,7 +287,7 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="resume-form-col p-width-div">
                     <FloatingLabel
                       controlId="floatingPassword"
-                      label="Phone"
+                      label="Phone Number"
                       className="input-field"
                     >
                       <Form.Control
@@ -380,7 +380,7 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="resume-form-col salary-width">
                     <FloatingLabel
                       controlId= "floatingPassword"
-                      label= "Expected Salary(Optional)"
+                      label= "Expected Salary (Optional)"
                       className="input-field number-arrow"
                     >
                       <Form.Control
@@ -421,7 +421,7 @@ const Detail = (props) => {
                       />
                       <p>{file ? `File name: ${file[0].name}` : ""}</p>
                     </div> */}
-                    <UploadFiles accept={["application/pdf"]}/>
+                    <UploadFiles accept={["application/pdf"]} name="Upload Cover Letter"/>
                    
                   </Col>
                 </Row>
@@ -430,7 +430,7 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="resume-form-col msgtxt-width">
                     <FloatingLabel
                       controlId="floatingTextarea2"
-                      label="Message(Optional)"
+                      label="Message (Optional)"
                       className="input-field message-padding"
                     >
                       <Form.Control
@@ -455,7 +455,7 @@ const Detail = (props) => {
                         <p>{file2 ? `File name: ${file2[0].name}` : ""}</p>
                       </div>
                     </div> */}
-                       <UploadFiles  accept={["image/*"]} />
+                       <UploadFiles  accept={["image/*"]} name="Upload Resume/CV" />
 
                     {/* <input
                         style={{ display: "none" }}

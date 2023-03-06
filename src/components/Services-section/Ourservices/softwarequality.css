@@ -20,11 +20,11 @@
    
 }
 .mainitem{
-    padding: .7rem 0;
+    padding: .3rem 0;
 }
 .mainitem  img{
     
-    width: 11%;
+    width: 10%;
     display: block;
     margin-right: auto;
     margin-left: auto;
@@ -41,12 +41,12 @@
 .mainitem p{
     width: 90%;
     margin: 0 auto;
-   
+   font-size: 14px;
     /* margin-bottom: .2rem; */
     text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;
-    word-spacing: -0.05em;
+    word-spacing: -0.03em;
 
    
     /* display: flex;

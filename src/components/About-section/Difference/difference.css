@@ -54,7 +54,7 @@
 } */
 .textBox p {
   display: flex;
-  padding: .5rem 2.5rem 2rem  7rem;
+  padding: 1rem 2.5rem 2rem  7rem;
   font-style: normal;
   /* font-family: "Calibri", "sanserif"; */
   text-align: justify;

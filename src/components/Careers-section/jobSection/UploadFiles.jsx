@@ -28,7 +28,7 @@ const acceptStyle = {
 const rejectStyle = {
   borderColor: "#ff1744"
 };
-export default function UploadFiles({ accept }) {
+export default function UploadFiles({ accept, name }) {
   // const [files, setFiles] = useState(null);
   // const onDrop = (acceptedFiles) => {
   //   setFiles(acceptedFiles[0]);
@@ -70,7 +70,7 @@ export default function UploadFiles({ accept }) {
       <div {...getRootProps({ className: "dropzone", style })}>
         <input {...getInputProps()} />
         <button type="button" onClick={open} className="uploadpart">
-          Upload Resume/CV
+         {name}
         </button>
         {console.log({ files })}
         {files.length > 0 ? (

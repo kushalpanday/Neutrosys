@@ -53,12 +53,12 @@ const Contractjob = () => {
     
     
       <div className="contract-div">
-        <h2>Work as an Consultant</h2>
+        <h2>Work as a Consultant</h2>
         <p>
         "Advance your career by joining our team and working with top clients in various industries,
         including healthcare, banking and finance, across the nation."
         </p> 
-      <p>We take the following steps to assist you in discovering your ideal position.</p>
+      <p style={{textAlign:"left", padding:"10px 0 0 2rem"}}>We take the following steps to assist you in discovering your ideal position.</p>
         <div className="work-for-us-progress-bar-container">
           <ul>
             {titles.map((title, i) => {

@@ -45,7 +45,7 @@ border-radius: 2rem;
     
 }
 .staffBoxHead h5{
-    font-size: 1.1rem;
+    font-size: 1rem;
 }
 .staffBoxHeadicon{
 
@@ -67,6 +67,7 @@ color: #05A5FF;
   margin-bottom: 1rem;
    /* margin: auto; */
    width: 93%;
+   font-size: 15px;
    text-align: justify;
    /* line-height: 1.4rem; */
 }

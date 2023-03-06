@@ -152,7 +152,7 @@ export default function Resume(props) {
                           <FloatingLabel
                             // lg={3}
                             controlId="floatingPassword"
-                            label="Middle Name(If applicable)"
+                            label="Middle Name (If applicable)"
                             className="input-field"
                             name="middlename"
                           >
@@ -328,7 +328,7 @@ export default function Resume(props) {
                         <Col lg={6} md={12} sm={12} className="resume-form-col salary-width">
                           <FloatingLabel
                             controlId="floatingPassword"
-                            label="Expected Salary(Optional)"
+                            label="Expected Salary (Optional)"
                             className="input-field"
                           >
                             <Form.Control
@@ -359,7 +359,7 @@ export default function Resume(props) {
 
                         <Col lg={6} md={12} sm={12} className="resume-form-col upload-width">
                           {/* <div className="dashed-border input-field mb-3 "> */}
-                          <UploadFiles accept={["application/pdf"]}/>
+                          <UploadFiles accept={["application/pdf"]}  name="Upload Cover Letter"/>
                           {/* </div> */}
                         </Col>
                       </Row>
@@ -368,7 +368,7 @@ export default function Resume(props) {
                         <Col lg={6} md={12} sm={12} className="resume-form-col msgtxt-width">
                           <FloatingLabel
                             controlId="floatingTextarea2"
-                            label="Message(Optional)"
+                            label="Message (Optional)"
                             className="input-field message-padding"
                           >
                             <Form.Control
@@ -380,7 +380,7 @@ export default function Resume(props) {
                         </Col>
 
                         <Col lg={6} md={12} sm={12} className="resume-form-col second-upload">
-                        <UploadFiles accept={["application/pdf"]}/>
+                        <UploadFiles accept={["application/pdf"]} name="Upload Resume/CV"/>
 
                         </Col>
                       </Row>

@@ -28,9 +28,11 @@
 }
 .outbox2{
     flex: 4;
+    text-align: center;
+    
 }
 .outbox2 img{
-    width:100%;
+    width:80%;
     margin-top: 2rem;
 }
 .outbox3{
@@ -51,7 +53,7 @@
     margin-bottom:.8rem;
     margin-top: -.9px;
     margin-left: 11px;
-    font-size: 1.1rem;
+    font-size: 1rem;
     
 }
 
@@ -59,15 +61,16 @@
     /* margin-top: 3rem; */
 }
 .outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
-    margin-top: 5rem;
+    margin-top: 3rem;
 }
 .box11 p{
    width: 90%;
    text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;
-    word-spacing: -0.05em;
-   
+    word-spacing: -0.03em;
+   font-size: 15px;
+
 }
 @media only screen and (max-width: 890px){
     .outbox2 img{

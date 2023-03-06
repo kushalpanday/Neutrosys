@@ -287,14 +287,15 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
   /* padding-left: 15px; */
   color: white;
   margin-bottom: 5px;
-  font-size: 33px;
+  font-size: 1.6rem;
+  margin-top: 0.2rem;
 }
 
 .heading-para {
   display: flex;
   justify-content: flex-start;
-  padding:.5rem 0;
-  font-size: 2rem;
+  padding:.3rem 0;
+  font-size: 1.6rem;
   font-weight: normal;
   
   /* padding-left: 15px;

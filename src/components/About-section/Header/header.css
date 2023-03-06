@@ -27,7 +27,7 @@
   color: white;
   position: absolute;
   width: 56%;
-  top: 25%;
+  top: 30%;
   left: 3rem;
   /* transform: translate(-50%, -50%); */
 }
@@ -35,6 +35,7 @@
   margin-block-end: 0em;
   width: 60%;
   color: white;
+  text-align: justify;
 }
 @media only screen and (max-width: 750px){
 .about-text{

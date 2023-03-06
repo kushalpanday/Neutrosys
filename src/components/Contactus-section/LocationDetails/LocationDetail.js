@@ -51,7 +51,7 @@ export default function LocationDetail() {
                             <span className='tooltiptext'> <ReactToPrint
                             trigger={() => (
                               <span style={{ marginLeft: ".7rem" }}>
-                                Print me
+                                Print 
                               </span>
                             )}
                             content={() => Componentref.current}
