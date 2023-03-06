@@ -22,15 +22,6 @@ const data=[
     heading:"Software QA",
     disc:"Be up to speed on the latest insights and trends in APAC. Ideas. Inspiration. "
     }
-    // {id:5,
-    //     image:"https://images.squarespace-cdn.com/content/v1/589615ee1e5b6cc3eb67d37b/1557949450694-T3UGDLWRCCK4H41Q1NJJ/unDraw+Colorful+Illustrations?format=1000w",
-    // heading:"UI/UX",
-    // disc:" UI design is all about creating intuitive, aesthetically-pleasing, interactive interfaces."
-    // },
-    // {id:6,
-    //     image:"https://miro.medium.com/max/1400/1*WpQrTh28ivAY7DLGdqGAYA.png",
-    // heading:"AndroidApp",
-    // disc:"Enjoy millions of the latest Android apps, games, music, movies, TV, books, magazines & more."
-    // }
+    
     ]
     export default data

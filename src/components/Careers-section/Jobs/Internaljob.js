@@ -22,23 +22,21 @@ const Internaljob = () => {
               <img src={employeeimg1} alt="employee1"></img>
             </Col>
             <Col sm={6} className="emp-col2">
-              <h5>Uncover Limitless Opportunities</h5>
+              <h5>Limitless opportunities</h5>
               <p>
-                We give you the platform to learn more than you already know,
-                <br></br>
-                experiment your skills and prove your mettle at<br></br> every
-                step of your journey.
+              Our diverse workplace culture values equity and offers ample opportunities
+              <br></br> for growth and career advancement, with a positive work-life balance
+              <br></br>and ongoing training.
               </p>
             </Col>
           </Row>
           <Row className="emp-row">
             <Col sm={6} className="emp-col2 col-text2">
-              <h5>Uncover Limitless Opportunities</h5>
+              <h5>Leadership roles</h5>
               <p>
-                We give you the platform to learn more than you already know,
-                <br></br>
-                experiment your skills and prove your mettle at<br></br> every
-                step of your journey.
+              We prioritize leadership development and empower our employees to excel <br></br>
+              in their roles, believing that it benefits their professional growth and<br></br>
+               contributes to our organization&#39;s success.
               </p>
             </Col>
             <Col sm={5} className="emp-col1">
@@ -50,12 +48,11 @@ const Internaljob = () => {
               <img src={employeeimg3} alt="employee3"></img>
             </Col>
             <Col sm={6} className="emp-col2">
-              <h5>Uncover Limitless Opportunities</h5>
+              <h5>Support above and beyond</h5>
               <p>
-                We give you the platform to learn more than you already know,
-                <br></br>
-                experiment your skills and prove your mettle at<br></br> every
-                step of your journey.
+              We support our employees through mentorship, training, wellness initiatives,<br></br>
+               and an inclusive culture, resulting in improved job performance and <br></br>
+               readiness for new responsibilities.
               </p>
             </Col>
           </Row>

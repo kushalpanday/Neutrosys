@@ -181,13 +181,13 @@ const Detail = (props) => {
                     <FloatingLabel
                       // lg={3}
                       controlId="floatingPassword"
-                      label="Middle Name (If applicable)"
+                      label="Middle Name(If applicable)"
                       className="input-field"
                       name="middlename"
                     >
                       <Form.Control
                         type="text"
-                        placeholder="Middle Name (If applicable)"
+                        placeholder="Middle Name(If applicable)"
                         {...register("middlename")}
                       />
                     </FloatingLabel>

@@ -8,13 +8,13 @@ import { BiUserCircle } from "react-icons/bi";
 function Mission() {
   return (
     <div className="mainmission">
-      <h2 className="titleM">Our mission</h2>
+      <h2 className="titleM">Our Mission</h2>
       <div>
         <div className="Mgrid">
           <div>
             <p className="missleft">
-              Our mission is to provide top-notch IT talent to companies in need, while fostering a positive and collaborative
-              work environment for our employees and fostering long-term partnerships with our clients.
+            “Our mission is to help businesses of all sizes achieve their goals by providing high-quality
+            services and solutions that are customized to meet their specific needs.”
             </p>
           </div>
           <div className="box">
@@ -33,15 +33,16 @@ function Mission() {
 
           <div>
             <p className="missright">
-              Neutrosys aims to be the industry's top provider of IT staffing and software development services, trusted by
-              businesses of all sizes for our commitment to excellence, innovation, and customer satisfaction.
+            Neutrosys aims to be the industry's top provider of IT staffing and software development
+            services, trusted by businesses of all sizes for our commitment to excellence, innovation, and
+            customer satisfaction.
             </p>
           </div>
 
           <div>
             <p className="missleft">
-             We pride ourselves in our ability to understand the unique needs of each client and provide them with customized
-             solutions that are tailored to meet those needs. 
+            We pride ourselves in our ability to understand the unique needs of each client and provide
+            them with customized solutions that are tailored to meet those needs. 
             </p>
           </div>
           <div className="box">
@@ -58,8 +59,8 @@ function Mission() {
           </div>
           <div>
             <p className="missright">
-             We strive to stay up to date with the latest advancements in technology and continuously expand our expertise to provide
-             our clients with the best services possible.
+            We strive to stay up to date with the latest advancements in technology and continuously
+            expand our expertise to provide our clients with the best services possible.
             </p>
           </div>
         </div>

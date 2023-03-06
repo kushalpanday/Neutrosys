@@ -85,7 +85,7 @@ const Formservice = () => {
           >
             <Col sm={12} lg={12} md={12} className="form-col ">
               <Container className=" formContainer">
-                <p className="heading-para">Talk to us.</p>
+                <p className="heading-para">Connect with Us</p>
 
                 {/* <Multiselect
                   className="textfields"
@@ -112,6 +112,7 @@ const Formservice = () => {
                   options={optionSelect}
                   className="basic-multi-select"
                   classNamePrefix="select"
+                  placeholder="Select Services"
                   menuPortalTarget={document.body} 
                   styles={{ menuPortal: base => ({ ...base, zIndex: 9999 }) }}
                 />
@@ -120,7 +121,7 @@ const Formservice = () => {
                   // required
 
                   fullWidth
-                  label="Name"
+                  label="Full Name"
                   margin="dense"
                   name="name"
                   className="textfield"
@@ -250,7 +251,7 @@ const Formservice = () => {
                     </div>
                 <TextField
                   fullWidth
-                  label="Location"
+                  label="City"
                   margin="dense"
                   name="location"
                   autoComplete="off"

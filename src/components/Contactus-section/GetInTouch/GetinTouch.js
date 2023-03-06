@@ -13,9 +13,8 @@ export default function LocationDetail() {
         <>
             <div className='Maingetintouch-div'>
             <Container>
-                <h3 className='getintouch'>Get in Touch!!</h3>
-                <p className='helpquote-p'>Let's connect and talk to find out how<br></br> our
-                company csn benefit you from our services.</p>
+                <h3 className='getintouch'>Get in Touch!</h3>
+                <p className='helpquote-p'>Let’s connect and talk to find out how our company can benefit you from our services.</p>
                     <Row className='getintouch-row'>
                         <Col sm={3} className='getintouch-col'>
                             <div className='locationicon'>
@@ -28,7 +27,7 @@ export default function LocationDetail() {
                         <div className='phoneicon'>
                                 <img src='./images/contact-us/phoneicon.png' alt="icons"></img>
                             </div>
-                            <p className='icon-para'>+1(214)382-6161</p>
+                            <p className='icon-para'>+1 (214) 382-6161</p>
                         </Col>
 
                         <Col sm={3} className='getintouch-col'>

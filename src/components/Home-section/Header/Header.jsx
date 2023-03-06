@@ -141,7 +141,7 @@ return (
           
         }}
       />
-        <h2 className="header-heading heading">Connecting top talent with leading companies.</h2>
+        <h2 className="header-heading heading">Connecting Top Talent with Leading Companies.</h2>
         <p className="header-paragraph heading">
           "We provide IT staffing and software development services to businesses, helping them to achieve
           their technology goals with the right people and solutions".

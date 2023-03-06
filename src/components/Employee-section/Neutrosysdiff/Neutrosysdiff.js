@@ -14,12 +14,16 @@ const Different = () => {
           <div className="content">
           <div className="part1">
               <div className="part-content">
-                  <div className="different-title">No Hiring Woes</div>
-                  <div className="content">We will manage hiring and resource retention, so you can focus on growing your business while we take care of the rest.</div>
+                  <div className="different-title">Reputation</div>
+                  <div className="content">Our years of experience in staffing, reputation for quality service, and passion for
+                    providing exceptional service make us a reliable choice. We have a strong track record of placing
+                    high-quality consultants in various industries.</div>
               </div>
                   <div className="part-content">
-                    <div className="different-title">Scalable Teams</div>
-                  <div className="content">We will manage hiring and resource retention, so you can focus on growing your business while we take care of the rest.</div>   
+                    <div className="different-title">Speed of service</div>
+                  <div className="content">We provide pre-screened candidates through an efficient recruitment process,
+                    staying up to date with market demand and prioritizing excellent customer service for fast
+                    staffing solutions.</div>   
               </div>
           </div>
         <div className="part2">
@@ -33,12 +37,14 @@ const Different = () => {
           </div>
               <div className="part3">
                        <div className="part-content">
-                  <div className="different-title">Painless Communication</div>
-                  <div className="content">Don’t worry, our engineers use project management tools to ensure complete transparency of work no matter where they are located.</div>
+                  <div className="different-title">Quality of candidates</div>
+                  <div className="content">We source top-tier talent from a vast network, carefully screen them and
+                    use advanced technology to streamline staffing, ensuring efficient and effective results.</div>
               </div>
                   <div className="part-content">
-                    <div className="different-title">No Hiring Woes</div>
-                  <div className="content">We will manage hiring and resource retention, so you can focus on growing your business while we take care of the rest.</div>   
+                    <div className="different-title">Long-term goal</div>
+                  <div className="content">We prioritize our clients&#39; success by building long-term relationships,
+                  anticipating staffing needs, and providing personalized and attentive service with ongoing support.</div>   
               </div>
         </div>
         

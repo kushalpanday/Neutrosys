@@ -31,9 +31,8 @@ export default function Header() {
         <div className="about-text ">  
             <h2>Contact Us</h2>
             <p>
-            Neutrosys is an IT staffing and software development company.   
-            We are currently providing IT services mainly in the US and Nepal.
-             We provide services from USA, Nepal, India, and Finland.
+            We would love to hear from you! Please don't hesitate to reach out if you have any
+            questions or concerns.
             </p>
            
         </div>

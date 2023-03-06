@@ -76,7 +76,7 @@ export default function UploadFiles({ accept }) {
         {files.length > 0 ? (
           <p className="upload-file-job"> {files}</p>
         ) : (
-          <p className="upload-file-job">or drop them</p>
+          <p className="upload-file-job">or Drop it</p>
         )}
       </div>
     </div>

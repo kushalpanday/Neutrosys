@@ -15,14 +15,14 @@ export default function LocationDetail() {
     return(
         <>
             <Row className='location-row'>
-                <h3 className='detail-heading'>Location With Details</h3>
+                <h3 className='detail-heading'>Connect With Us</h3>
                     <Col sm={3} className='location-col mb-5'>
                     <div className='timeicon-div'>
                         <img src='./images/contact-us/timer.png' height={33} width={33} alt="icons"></img>
                     </div>
-                        <h6>Working hours</h6>
-                        <p>Monday to Friday<br></br>
-                        8:30 AM to 5:00 PM</p>
+                        <h6>Working Hours</h6>
+                        <p>Monday - Friday<br></br>
+                        8:30 AM - 5:00 PM</p>
                             
                     </Col>
                     <Col sm={3} className='location-col mb-5'>
@@ -30,7 +30,7 @@ export default function LocationDetail() {
                         <img src='./images/contact-us/iconlocation.png' height={35} width={35} alt="icons"></img>
                     </div>
                       <h6>Headquarters</h6>
-                        <p>1431 Greenway Drive, 8th floor,
+                        <p>1431 Greenway Drive, 8th Floor
                         Irving, TX 75038, United States</p>
                     <div className='viewlocation-div'>
                         <div style={{cursor:"pointer",color:"blue"}}onClick={() => setShow(true)}>View Location</div>
@@ -72,10 +72,11 @@ export default function LocationDetail() {
                         <img src='./images/contact-us/social.png' height={35} width={35} alt="icons"></img>
                     </div>
                         <h6>Socials</h6>
-                        <p className='follow-para'>Follow us</p>
+                        <p className='follow-para'>Follow us!</p>
                         <div className='socialsicon-div'>
-                            <a href='/#'><img src='./images/contact-us/fbicon.png' className='image-class' height={40} width={40} alt="icons"></img></a>
                             <a href='/#'><img src='./images/contact-us/linkedinicon.png' height={41} width={41} alt="icons"></img></a>
+                            <a href='/#'><img src='./images/contact-us/fbicon.png' className='image-class' height={40} width={40} alt="icons"></img></a>
+
                         </div>
                     </Col>
             </Row>

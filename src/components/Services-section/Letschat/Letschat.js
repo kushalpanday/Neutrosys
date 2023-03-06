@@ -9,10 +9,10 @@ const Letschat = () => {
   return (
     <div className="letschatmain">
       <div className="letschatcontent">
-        <h2>Connect with Us!</h2>
+        <h2>Unlock Your Potential with Our Exceptional Services!</h2>
         <p>
-          If you're looking for exceptional services, we're here to help! Contact us today and let our team take your 
-          business to the next level with our expert solutions and suport.
+        Contact us today and let our team take your business to the next level with our expert solutions
+        and support.
         </p>
        
       </div>

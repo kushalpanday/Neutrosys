@@ -35,21 +35,22 @@
   width: 85%;
   margin-right: auto;
 }
-.service_item_img{
+/* .service_item_img{
   height: 60%;
   
-}
+} */
 .services_item p{
-  margin:0 1rem 1rem 1rem;
+  margin:0 0.5rem 1rem 0.5rem;
   text-align: center;
   font-size: 15px;
 }
 .services_item img {
-  width: 55%;
+  width: 60%;
+  height: 90px;
   margin:0.5rem 0;
 }
 .services_item h4{
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   margin-bottom: 0;
 }
 .services_item h2 {

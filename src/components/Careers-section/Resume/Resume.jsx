@@ -77,8 +77,8 @@ export default function Resume(props) {
   };
 
   const selectOption = [
-    { value: "Consulting", label: "Consulting" },
-    { value: "Internal job", label: "Internal job" },
+    { value: "Contract Jobs", label: "Contract Jobs" },
+    { value: "Internal Jobs", label: "Internal Jobs" },
     { value: "Internship", label: "Internship" },
     
   ];
@@ -91,10 +91,10 @@ export default function Resume(props) {
             <img src="./images/career/resume.jpg" alt="hello"></img>
           </Col>
           <Col className="resume-col2">
-            <h2>Looking for new Opportunities?</h2>
+            <h2>Not finding the suitable role for you?</h2>
             <p>
-              Submit your resume and we may get back to you when we have an
-              opportunity that matches your experience.
+            "Submit your resume and let us help you find your next career opportunity, including
+            internships, consulting, or internal positions that match your skills and qualifications.”
             </p>
 
             <div className="btn-submitdiv">
@@ -109,7 +109,7 @@ export default function Resume(props) {
               <Modal show={show} onHide={handleClose} size="lg">
                 <Modal.Header closeButton className="jobs-modal-header">
                   <Modal.Title className="top-form">
-                    ENTER YOUR INFORMATION
+                   Enter your Information
                   </Modal.Title>
                 </Modal.Header>
                 <Modal.Body className="resume-modal-body">
@@ -120,6 +120,7 @@ export default function Resume(props) {
                       <Select
                         isMulti
                         name="colors"
+                        placeholder="Select Job Type"
                         options={selectOption}
                         className="basic-multi-select select-bg"
                         classNamePrefix="select"
@@ -151,13 +152,13 @@ export default function Resume(props) {
                           <FloatingLabel
                             // lg={3}
                             controlId="floatingPassword"
-                            label="Middle Name (If applicable)"
+                            label="Middle Name(If applicable)"
                             className="input-field"
                             name="middlename"
                           >
                             <Form.Control
                               type="text"
-                              placeholder="Middle Name (If applicable)"
+                              placeholder="Middle Name(If applicable)"
                               {...register("middlename")}
                             />
                           </FloatingLabel>
@@ -234,7 +235,7 @@ export default function Resume(props) {
                         <Col lg={6} md={12} sm={12} className="resume-form-col p-width-div">
                           <FloatingLabel
                             controlId="floatingPassword"
-                            label="Phone"
+                            label="Phone Number"
                             className="input-field"
                           >
                             <Form.Control
@@ -390,9 +391,8 @@ export default function Resume(props) {
                             {" "}
                             <input type="checkbox" name="check" id="" />
                             <p className="check">
-                              By checking this box, I certify that the
-                              information submitted in this application is true
-                              and correct to the best of my knowledge.
+                            By checking this box, I certify that the information submitted in this application is true and
+                            correct to the best of my knowledge.
                             </p>
                           </div>
                         </Col>

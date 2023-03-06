@@ -59,7 +59,7 @@ function OurClients() {
              
             </div>
             </a>
-            <h2 className="logo-name">{item.name}</h2>
+            {/* <h2 className="logo-name">{item.name}</h2> */}
           </div>
         ))}
       </Slider>

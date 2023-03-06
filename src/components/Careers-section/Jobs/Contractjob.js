@@ -16,33 +16,33 @@ const Contractjob = () => {
   const titles = [
     {
       id: "1",
-      name: "Know your Need",
-      desc: "Our team will assess your experience and education to suggest the right path for your career growth. With proper training from our experts, we are confident that we will steer you in the right direction to succeed in your desired profession field.",
+      name: "Know your Needs",
+      desc: "Our team will evaluate your qualifications and work history to recommend the best path for your professional development. With training from our experts, we are confident that we can guide you to success in your desired field.",
     },
     {
       id: 2,
-      name: "Match skill with Opportunities",
-      desc: "Whether you have years of experience under your belt, or you are recently starting out, our excellent matching program which we have developed through years of expertise in the field will match you to the right job ensuring your career growth and stability.",
+      name: "Align Skills with Opportunities",
+      desc: "Our advanced matching program, developed through years of industry expertise, will match you to the right job, ensuring your career growth and stability, regardless of your level of experience.",
     },
     {
       id: 3,
-      name: "Prepare for Interview",
-      desc: "We provide training and guidance through resume and cover letter screenings along with multiple stages of mock interviews. We have an excellent team of technical recruiting experts who will help you prepare and crack interviews using their proven expertise.",
+      name: "Prepare for Interviews",
+      desc: "We provide training and support in resume and cover letter preparation, as well as multiple rounds of mock interviews. Our team of technical recruiting experts will help you prepare for and succeed in interviews.",
     },
     {
       id: 4,
       name: "Smooth Onboarding",
-      desc: "We will make your transition to and from client projects a smooth, fun, and hassle-free experience. Our onboarding process is seamless and easy to navigate.",
+      desc: "We will make your transition to and from client projects as smooth and easy as possible. Our onboarding process is streamlined and user-friendly.",
     },
     {
       id: 5,
-      name: "Continuous Follow Up",
-      desc: "You will always be a part of the Neutrosys’ family and we will be in constant communication with you even after you get hired to your dream job. Our commitment towards our consultants has helped us retain them for multiple projects.",
+      name: "Continuous Support",
+      desc: "You will always be a part of the Neutrosys family, and we will maintain constant communication with you even after you land your dream job. Our dedication to our consultants has led to high retention rates on multiple projects.",
     },
     {
       id: 6,
-      name: "New Opportunities",
-      desc: "Our association with industry leading clients and fortune 500 companies in different areas such as Healthcare, Banking, Finance, and many more all over the country gives you ample opportunities to land your dream job.",
+      name: "Access Top Opportunities",
+      desc: "Our partnerships with industry-leading clients and Fortune 500 companies across various sectors such as healthcare, banking, finance, and more, provide you with ample opportunities to secure your ideal role.",
     },
   ];
   const [currentTab, setCurrentTab] = useState("1");
@@ -55,10 +55,10 @@ const Contractjob = () => {
       <div className="contract-div">
         <h2>Work as an Consultant</h2>
         <p>
-          Opportunity to work with our top clients in different areas such as
-          Healthcare, banking finance, etc, all over the country.
+        "Advance your career by joining our team and working with top clients in various industries,
+        including healthcare, banking and finance, across the nation."
         </p> 
-      
+      <p>We take the following steps to assist you in discovering your ideal position.</p>
         <div className="work-for-us-progress-bar-container">
           <ul>
             {titles.map((title, i) => {

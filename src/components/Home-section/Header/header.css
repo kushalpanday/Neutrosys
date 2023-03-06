@@ -44,7 +44,8 @@
 }
 .header-paragraph {
   /* width: 27.5%; */
-  width:21rem;
+  width:30rem;
+  text-align: justify;
 }
 .header_btn.blue_background{
   background-color: #23abe5;

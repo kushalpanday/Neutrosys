@@ -11,10 +11,10 @@ const Textcoldescribe5 = () => {
         <Container>
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
-                        <h4>Continuous Follow Up</h4>
-                        <p>You will always be a part of the Neutrosys’ family and we will be in constant
-                         communication with you even after you get hired to your dream job. Our commitment
-                          towards our consultants has helped us retain them for multiple projects.</p>
+                        <h4>Continuous Support</h4>
+                        <p>You will always be a part of the Neutrosys family, and we will maintain constant communication
+                        with you even after you land your dream job. Our dedication to our consultants has led to high
+                        retention rates on multiple projects.</p>
                     </Col>
                 </Row>
             </Container>

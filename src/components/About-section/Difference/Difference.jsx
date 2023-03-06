@@ -14,7 +14,7 @@ function Difference() {
          
         </div>
         <div className="textBox">
-          <h3 >Neutrosys</h3>
+          <h5>About Neutrosys Inc.</h5>
           <p>
           Neutrosys was founded in 2015 out of a desire to solve the problem of experienced professionals
           struggling to find jobs. Despite having years of experience, many individuals face difficulty in

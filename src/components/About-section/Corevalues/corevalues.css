@@ -13,23 +13,25 @@
     gap: 1.5rem;   
     text-align: center;
     padding-bottom :1rem;
+    padding-top: 0.2rem;
     width: 82.5%;
     margin:auto;
     justify-content: space-between;
+    
   }
   .core-icon1{
-    height: 82px;
-    width: 73px;
+    height: 65px;
+    width: 65px;
     margin-left: -10px;
   }
   .core-icon2{
-    height: 40px;
-    width: 50px;
+    height: 35px;
+    width: 40px;
     margin-bottom: 10px
 
   }
   .core-icon3{
-    height: 50px;
+    height: 40px;
     width: auto;
     
   }
@@ -39,30 +41,35 @@
     /* padding:.1rem; */
     background-color:black;
     width:.1rem;
-    height:80%;
+    height:90%;
+    margin-left: 0.5rem;
     text-align: center;
   }
   .cvp{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 5px;
   }
-  
+ 
   .valuetext1{
-    margin-top: 5.5rem;
+    margin-top: 5rem;
     text-align: justify;
-    width: 80%;
+    width: 90%;
+    
     /* margin: auto; */
 
   }
   .valuetext2{
-    margin-top: 4rem;
+    margin-top: 3rem;
     text-align: justify;
-    width: 80%;
+    width: 90%;
     /* margin: auto; */
     
   }
   .valuetext3{
+    margin-top: 1rem;
     text-align: justify;
-    width: 80%;
+    width: 90%;
     /* margin: auto; */
   }
 

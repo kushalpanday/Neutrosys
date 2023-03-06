@@ -12,8 +12,8 @@ const Textcoldescribe4 = () => {
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
                         <h4>Smooth Onboarding</h4>
-                        <p>We will make your transition to and from client projects a smooth, fun, and
-                         hassle-free experience. Our onboarding process is seamless and easy to navigate.</p>
+                        <p>We will make your transition to and from client projects as smooth and easy as possible. Our
+                        onboarding process is streamlined and user-friendly.</p>
                     </Col>
                 </Row>
             </Container>

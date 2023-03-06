@@ -11,11 +11,10 @@ const Textcoldescribe3 = () => {
         <Container>
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
-                        <h4>Prepare for Interview</h4>
-                        <p>We provide training and guidance through resume and cover letter screenings along 
-                        with multiple stages of mock interviews. We have an excellent team of technical
-                         recruiting experts who will help you prepare and crack interviews using their proven
-                          expertise.</p>
+                        <h4>Prepare for Interviews</h4>
+                        <p>We provide training and support in resume and cover letter preparation, as well as multiple
+                            rounds of mock interviews. Our team of technical recruiting experts will help you prepare for
+                            and succeed in interviews.</p>
                     </Col>
                 </Row>
             </Container>

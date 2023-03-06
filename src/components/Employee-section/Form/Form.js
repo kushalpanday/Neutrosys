@@ -34,16 +34,16 @@ const FormEl = () => {
   return (
     <div className="form-container">
       <div className="form-left">
-        <h2 className="frompara">REQUEST TALENTS</h2>
-        <p className="spanclass">
+        <h2 className="frompara">Request Talent - Form</h2>
+        {/* <p className="spanclass">
           Please fill out the form with your details. We will contact you soon.
-        </p>
+        </p> */}
         <ToastContainer position="top-center" />
         <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
           <TextField
             id="outlined-basic"
             className="textfield"
-            label="Your Full Name"
+            label="Full Name"
             fullWidth
             variant="filled"
             size="small"
@@ -68,7 +68,7 @@ const FormEl = () => {
           <TextField
             id="outlined-basic"
             className="textfield"
-            label="Your Email"
+            label="Company Email"
             fullWidth
             variant="filled"
             size="small"
@@ -313,7 +313,7 @@ const FormEl = () => {
                 className="file_button mt-3"
               >
                 {/* <AiOutlineUpload className="uploadIcon" /> */}
-                upload files
+                Upload Files
               </Button>
 
               {/* <small style={{ color: "#b1a40d" }}>Upload file </small> */}
@@ -342,10 +342,8 @@ const FormEl = () => {
       <div className="form-right">
         <h2 className="connected">Let's get connected!</h2>
         <p className="info">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi
-          accusamus nulla repellat consectetur eveniet iure saepe aperiam nemo,
-          assumenda harum odio, ipsa recusandae error facere enim neque labore.
-          Architecto, alias?
+        We provide exceptional service, with a focus on building long-term relationships and proactively
+        addressing staffing needs.
         </p>
         <h5 className="contact-details">Contact Details</h5>
         <div className="contact-container">
@@ -353,14 +351,14 @@ const FormEl = () => {
             <div className="icon-container">
               <i className="fa fa-phone"></i>
             </div>
-            <div className="icon-text">+977-71-577820</div>
+            <div className="icon-text">+1-214-382-6161</div>
           </div>
 
           <div className="contact">
             <div className="icon-container">
               <i className="fa fa-envelope"></i>
             </div>
-            <div className="icon-text">info@neutroline.com</div>
+            <div className="icon-text">info@neutrosys.com</div>
           </div>
         </div>
       </div>

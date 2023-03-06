@@ -11,20 +11,20 @@ function Services() {
         <div className="services_design"></div>
         <ServiceItemProps
           image="images/services/mobile_app1.png"
-          desc="We offer comprehensive talent acquisition by sourcing and screening candidates based on clients'
-          preferences and requirements. "
+          desc="We offer comprehensive talent acquisition by sourcing and screening candidates based on
+          clients' preferences and requirements."
           name="Talent solution"
         />
         <ServiceItemProps
           image="images/services/mobile_app2.png"
-          desc="Our software development services tailored solutions using the latest platforms and frameworks to help
-          clients build innovative and quality products."
+          desc="Our software development services deliver tailored solutions using the latest platforms and
+          frameworks to help clients build innovative and quality products."
           name="Software development"
         />
         <ServiceItemProps
           image="images/services/mobile_app3.svg"
-          desc="We offer customized outsourcing services that are efficient, cost-effective, and deliver high-quality
-          results, allowing clients to focus on their core business."
+          desc="We offer customized outsourcing services that are efficient, cost-effective, and deliver high-
+          quality results, allowing clients to focus on their core business."
           name="Outsourcing"
         />
       </div>

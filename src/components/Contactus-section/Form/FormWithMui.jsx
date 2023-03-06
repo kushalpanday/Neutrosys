@@ -63,7 +63,7 @@ export default function FormWithMui() {
               <TextField
                 // required
                 fullWidth
-                label="Name"
+                label="Full Name"
                 margin="dense"
                 name="name"
                 className="textfield"
@@ -270,7 +270,7 @@ export default function FormWithMui() {
                   className="file_button mt-3"
                 >
                   {/* <AiOutlineUpload className="uploadIcon" /> */}
-                  upload files
+                  Upload Files
                 </Button>
                 {/* <small style={{ color: "#b1a40d" }}>Upload file </small> */}
               </label>

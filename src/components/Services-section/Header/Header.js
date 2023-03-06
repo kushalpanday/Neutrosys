@@ -23,9 +23,8 @@ const Header = () => {
       <div className="about-text ">
         <h2>Services</h2>
         <p>
-        Neutrosys has all the comprehensive solutions for your technology needs - Staffing,
-        Development, Outsourcing, Testing - All in One Place! Unlock Your Potential with Our
-        Exceptional Services.
+        Neutrosys has all the comprehensive solutions for your technology needs -
+        Staffing, Development, Outsourcing, Testing - All in One Place!
         </p>
       </div>
     </div>

@@ -21,13 +21,13 @@ const  qualitydata=[{
     id:4,
     images:"https://cdn-icons-png.flaticon.com/128/6742/6742562.png",
     heading:"Compatibility testing",
-    para:"Our experienced testers will identify compatibility issues and ensure your software is compatible with your target audience&#39;s devices and platforms."
+    para:"Our experienced testers will identify compatibility issues and ensure your software is compatible with your target audience's devices and platforms."
 },
 {
     id:5,
     images:"https://cdn-icons-png.flaticon.com/128/1779/1779374.png",
     heading:"Usability testing",
-    para:"We evaluate software applications&#39; user experience and identify usability issues, providing recommendations for improvement."
+    para:"We evaluate software applications' user experience and identify usability issues, providing recommendations for improvement."
 },
 {
     id:6,

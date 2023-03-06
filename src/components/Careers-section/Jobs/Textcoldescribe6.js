@@ -11,10 +11,10 @@ const Textcoldescribe6 = () => {
         <Container>
             <Row className='textrow'>
                     <Col sm={12} className='textcol'>
-                        <h4>New Opportunities</h4>
-                        <p>Our association with industry leading clients and fortune 500 companies in different 
-                        areas such as Healthcare, Banking, Finance, and many more all over the country gives 
-                        you ample opportunities to land your dream job.</p>
+                        <h4>Access Top Opportunities</h4>
+                        <p>Our partnerships with industry-leading clients and Fortune 500 companies across various
+                        sectors such as healthcare, banking, finance, and more, provide you with ample opportunities to
+                        secure your ideal role.</p>
                     </Col>
                 </Row>
             </Container>

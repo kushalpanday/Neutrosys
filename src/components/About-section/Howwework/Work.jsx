@@ -15,12 +15,12 @@ import linefourth from "../Aboutimage/l2.png"
 const work = () => {
   return (
     <div className='maindiv-work'>
-      <h2 className="howtitle">How We Work?/Our Staffing Process</h2>
+      <h2 className="howtitle">Our Staffing Process</h2>
 
       <div className="work container-fluid">
         <div className="row">
           <div className="card1 col-sm-4">
-            <h6>step 1</h6>
+            {/* <h6>step 1</h6> */}
             <h3>Identify job openings:</h3>
             <p>
              We firstly identify job openings within client companies that require IT talent.
@@ -37,7 +37,7 @@ const work = () => {
             <img className="mline1" src={linefirst} alt="" width="100%" />
           </div>
           <div className="card2 col-sm-4">
-            <h6>step 2</h6>
+            {/* <h6>step 2</h6> */}
             <h3>Source candidates:</h3>
             <p>
               We then source candidates through job boards, social media, database, and other channels.
@@ -57,7 +57,7 @@ const work = () => {
         </div>
         <div className="row">
           <div className="card3 col-sm-4">
-            <h6>step 3</h6>
+            {/* <h6>step 3</h6> */}
             <h3>Screen and evaluate candidates:</h3>
             <p>
               {" "}
@@ -75,7 +75,7 @@ const work = () => {
             <img className="mline3" src={linethird} alt="" width="100%" />
           </div>
           <div className="card4 col-sm-4">
-            <h6>step 4</h6>
+            {/* <h6>step 4</h6> */}
             <h3>Submit candidates to clients:</h3>
             <p>
               Once suitable candidates are identified, we submit their resume to the client for review and potential selection.
@@ -95,7 +95,7 @@ const work = () => {
         </div>
         <div className="row">
           <div className="card5 col-sm-4">
-            <h6>step 5</h6>
+            {/* <h6>step 5</h6> */}
             <h3>Facilitate hiring process</h3>
             <p>
               We facilitate the hiring process, which may include negotiating salaries and employment terms, conducting background

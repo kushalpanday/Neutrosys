@@ -45,7 +45,7 @@ export default function JobsBtn() {
               handleButton1Click();
             }}
           >
-            Contract jobs
+            Contract Jobs
           </Button>
 
           <Button
@@ -61,7 +61,7 @@ export default function JobsBtn() {
               handleButton2Click();
             }}
           >
-            Internal jobs
+            Internal Jobs
           </Button>
         </div>
       </div>
