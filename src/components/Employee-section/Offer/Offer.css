@@ -71,7 +71,9 @@
     font-size: 26px;
     font-weight: 500;
   }
-  
+  .subtitle-content{
+    text-align: justify;
+  }
   /* .processes {
     margin-top: 10px;
   } */
@@ -86,6 +88,7 @@
   .process-content {
     margin-left: 43px;
     text-align: left;
+    text-align: justify;
   }
   
   .process:hover 
@@ -143,6 +146,7 @@
   }
   .details {
     background-color: white;
+    text-align: justify;
   }
   div .accordion-button:focus {
     border: none;

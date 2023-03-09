@@ -59,5 +59,6 @@
   .social {
     width: 90px;
     margin: auto;
+    padding-left: 10px;
   }
 }

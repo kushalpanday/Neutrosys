@@ -52,7 +52,7 @@ const Offer = () => {
       <div className="right">
         <div className="right-title">How It Works?</div>
         <div className="subtitle">Our Process</div>
-        <p>At Neutrosys, we follow a structured process to ensure that we provide the best IT staffing
+        <p className="subtitle-content">At Neutrosys, we follow a structured process to ensure that we provide the best IT staffing
           services to our clients. The process we follow includes the following steps:</p>
         <div className="processes">
           <div className="process">

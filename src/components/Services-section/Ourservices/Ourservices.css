@@ -204,6 +204,11 @@ div .modalmain .closeicon :hover {
     /* height: 100% !important; */
   }
 }
+@media only screen and (max-width: 680px){
+  .services-readmore{
+    margin: 1rem auto;
+  }
+}
 @media screen and (max-width: 800px) and (min-width: 700px) {
   .modal-content:nth-child(1) {
     /* height: 100%; */
@@ -212,10 +217,18 @@ div .modalmain .closeicon :hover {
 
 @media only screen and (max-width: 613px) {
   .mainbox {
-    grid-template-columns: 100%;
+    grid-template-columns: 80%;
     grid-row-gap: 2%;
     padding: 0.1rem;
     /* background-color: aqua; */
+  }
+  .Servicemainbody{
+    padding-bottom: 2.5rem;
+  }
+  .mainData p{
+    text-align: center;
+    width: 100%;
+    padding: 0 1rem;
   }
   .modal-content {
     /* height: 115%; */
@@ -236,15 +249,18 @@ div .modalmain .closeicon :hover {
   .Servicemainbody p {
     font-size: 0.8rem;
   }
+  .mainbox {
+    grid-template-columns: 85%;
+   }
+   .services-readmore{
+    margin: 0.5rem auto;
+   }
 }
 @media only screen and (max-width: 365px) {
-  .Servicemainbody h3 {
-    font-size: 0.9rem;
-  }
-  .Servicemainbody p {
-    font-size: 0.6rem;
-  }
-}
+ .mainbox{
+  grid-template-columns: 100%;
+ }
+} 
 @media only screen and (max-width: 350px) {
   .Servicemainbody h2 {
     font-size: 1rem;

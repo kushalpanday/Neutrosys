@@ -197,7 +197,7 @@ div .file_button:hover {
   display: block;
   font-weight: bold;
   /* float: left; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 .textfield {
@@ -211,8 +211,8 @@ div .file_button:hover {
 .contact-container {
   /* width: 200px;
   margin: auto; */
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
 }
 div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root {
   background-color: #fff;
