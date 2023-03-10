@@ -41,8 +41,6 @@
   /* padding-left: 12px;
     padding-right: 11px; */
   text-align: left;
-  
-  
 }
 .btn-submitdiv {
   /* border: 1px solid;  */
@@ -168,8 +166,7 @@ grid-template-columns: 45% 55%;
     width: 70%;
     text-align: center;
   }
-  .resume-col1 {
-  }
+  
   .resume-col1 img {
     margin-left: 0rem;
     width: 60%;

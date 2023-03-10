@@ -40,9 +40,10 @@
   
 } */
 .services_item p{
-  margin:0 0.5rem 1rem 0.5rem;
-  text-align: center;
+  margin:0 0.6rem 1rem 0.6rem;
+  text-align: justify;
   font-size: 15px;
+  hyphens: auto;
 }
 .services_item img {
   width: 60%;

@@ -10,13 +10,17 @@
 .work-for-us-content {
   background-color: rgba(217, 217, 217, 0.233);
 }  
-.contract-div p{
+.contract-div-firstp{
   text-align: center;
   font-size: 18px;
   width: 70%;
   margin: auto;
 }
-
+.contract-div-secondp{
+  font-size: 15.5px;
+  padding: 15px 0 0 2rem;
+  
+}
 .work-for-us-progress-bar-container,.work-for-us-progress-bar-responsive-container {
   position: relative;
   margin: auto;
@@ -190,13 +194,18 @@ li.active .step-inner:hover{
   }
   .contract-job-responsive-bg{
     background-color: rgba(217, 217, 217, 0.233);
-    
+    padding-top: 1rem;
   }
-  .contract-div p{
+  .contract-div-firstp{
     margin-bottom: 0;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    width: 90%;
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
     padding-bottom: 1rem;
+  }
+  .contract-div-secondp{
+   padding: 0 0.3rem 0.3rem 0.3rem;
+   margin-bottom: 0;
   }
   .work-for-us-progress-bar-responsive-container .work-for-us-step{
     padding:10px 10px 10px 60px;
@@ -272,9 +281,9 @@ li.active .step-inner:hover{
   .work-for-us-progress-bar-responsive-container .work-for-us-line{
     height: 82%;
   }
-  .contract-div p{
+  /* .contract-div p{
     padding-bottom: 1.5rem;
-  }
+  } */
 }
 @media only screen and (max-width: 600px){
   .work-for-us-progress-bar-responsive-container .work-for-us-line{
@@ -348,10 +357,13 @@ li.active .step-inner:hover{
 .work-for-us-progress-bar-responsive-container{
   width:93%;
 }
-.contract-div p{
+.contract-div-firstp{
   font-size: 16px;
   margin-left: 1rem;
   margin-right: 1rem;
+}
+.contract-div-secondp{
+  font-size: 14px;
 }
 .work-for-us-progress-bar-responsive-container .work-for-us-line{
   height: 81%;

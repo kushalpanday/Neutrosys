@@ -16,7 +16,7 @@ function Difference() {
         <div className="textBox">
          
           <p>
-          &ensp;&ensp;&ensp;Neutrosys was founded in 2015 out of a desire to solve the problem of experienced professionals
+          <span style={{fontSize:"22px", fontWeight:"500"}}>N</span>eutrosys was founded in 2015 out of a desire to solve the problem of experienced professionals
           struggling to find jobs. Despite having years of experience, many individuals face difficulty in
           securing employment. In response to this challenge, we created a solution, Neutrosys, to help
           bridge the gap between skilled professionals and companies in need of their expertise.<br></br>

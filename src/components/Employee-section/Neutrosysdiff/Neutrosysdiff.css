@@ -12,11 +12,13 @@
   }
   
   .content {
-    width: 100%;
+    width: 97%;
+    margin: auto;
     display: flex;
     /* text-align: left; */
     text-align: justify;
     padding-bottom: 1rem;
+    hyphens: auto;
     justify-content: center;
   }
   

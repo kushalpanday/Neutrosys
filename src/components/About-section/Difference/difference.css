@@ -53,13 +53,13 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 } */
 .textBox p {
-  display: flex;
+  /* display: flex; */
   padding: 1rem 2.5rem 2rem  7rem;
   font-style: normal;
   /* font-family: "Calibri", "sanserif"; */
   text-align: justify;
   font-family: Arial, Helvetica, sans-serif;
-  letter-spacing: 0.03em;
+  /* letter-spacing: 0.03em; */
   font-size: 15.1px;
 }
 

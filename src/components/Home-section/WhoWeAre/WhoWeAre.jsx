@@ -7,7 +7,7 @@ function WhoWeAre() {
       <div className="whoweare_desc">
       <h2>Who We Are</h2>
       <p>
-      &ensp;&ensp;We are a leading IT staffing and software development company that was established in 2015.
+      <span style={{fontSize:"20px", fontWeight:"500"}}>W</span>e are a leading IT staffing and software development company that was established in 2015.
       Our company is committed to providing exceptional services that help businesses achieve their
       goals and succeed in a fast-paced and rapidly changing market.
       </p>

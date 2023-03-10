@@ -50,7 +50,11 @@
     font-weight: 600;
     margin-bottom: 5px;
   }
- 
+  .corep{
+    text-align: justify;
+    hyphens: auto;
+    
+  }
   .valuetext1{
     margin-top: 5rem;
     text-align: justify;

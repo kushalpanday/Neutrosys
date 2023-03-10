@@ -16,7 +16,7 @@
   margin: 1rem auto;
 }
 .whoweare_image {
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
 .whoweare_image img {
@@ -25,7 +25,7 @@
 .whoweare_desc {
   height: 90%;
   margin: auto;
-  
+  margin-right: 2rem;
 }
 .whoweare_desc p{
   text-align: justify;
