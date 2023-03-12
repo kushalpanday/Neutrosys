@@ -34,7 +34,7 @@ const FormEl = () => {
   return (
     <div className="form-container">
       <div className="form-left">
-        <h2 className="frompara">Request Talent</h2>
+        <p className="frompara">Request Talent</p>
         {/* <p className="spanclass">
           Please fill out the form with your details. We will contact you soon.
         </p> */}

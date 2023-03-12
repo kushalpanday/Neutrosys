@@ -1,6 +1,4 @@
-.softwarequality{
-    
-}
+
 .softwarequality h4{
     /* background-color: bisque; */
     text-align: center;
@@ -37,6 +35,8 @@
     align-items: center;
     font-size: 1rem;
     margin-bottom: .2rem;
+    margin-top: 0.4rem;
+    color: #0092ca;
 }
 .mainitem p{
     width: 90%;

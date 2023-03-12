@@ -10,7 +10,7 @@ import DifferentD from "../Employeeimages/D.png"
 const Different = () => {
   return (
       <div className="features">
-          <div className="section-title">What Makes Us Different?</div>
+          <h2 className="section-title">What Makes Us Different?</h2>
           <div className="content">
           <div className="part1">
               <div className="part-content">

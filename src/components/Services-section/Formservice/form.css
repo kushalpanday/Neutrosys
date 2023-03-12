@@ -70,6 +70,8 @@ div .multiSelectContainer input {
 .css-1jqq78o-placeholder {
   text-align:left;
   margin-left: -4px;
+  font-family: "Roboto","Helvetica","Arial",sans-serif;
+  font-size: 15px;
 }
 .toast-green{
   background-color: green;
@@ -133,7 +135,7 @@ div .form-col{
 }
 div .heading-para{
   color:white;
-  font-weight:600;
+  /* font-weight:600; */
 }
 .buttonsubmit {
   margin-bottom: 1rem;
@@ -174,9 +176,7 @@ div .heading-para{
   /* background-color: rgba(35,171,229,.699); */
 }
 /* form using mui */
-.container{
- 
-}
+
 div .form_container{
   width:100%;
   /* padding:1rem; */
@@ -219,11 +219,6 @@ div .css-sghohy-MuiButtonBase-root-MuiButton-root{
   /* background-color: aqua; */
   margin: 0;
   padding: 0%;
-}
-div .css-sghohy-MuiButtonBase-root-MuiButton-root:hover{
-  /* background-color: #a73b63;
-   */
-  
 }
 
 div .css-1p6y6ap-MuiInputBase-root-MuiFilledInput-root,div .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root,div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {

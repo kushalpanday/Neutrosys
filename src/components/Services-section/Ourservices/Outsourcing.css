@@ -1,6 +1,3 @@
-.outsourcingmain{
-    
-}
 .outsourcingmain h4{
     /* background-color: aqua; */
     display: flex;
@@ -54,12 +51,10 @@
     margin-top: -.9px;
     margin-left: 11px;
     font-size: 1rem;
-    
+    color: #0092ca;
 }
 
-.outbox1 .box11:nth-child(1) , .outbox3 .box11:nth-child(1){
-    /* margin-top: 3rem; */
-}
+
 .outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
     margin-top: 3rem;
 }
@@ -120,12 +115,7 @@
     
   }
 
-  @media screen and (max-width: 700px) and (min-width: 550px){
-    .outbox2 img{
-         /* margin-top:80%; */
-        
-    }
-}
+
 /* .iconbox .staffBoxHeadicon{
     display: flex;
     justify-content: center;

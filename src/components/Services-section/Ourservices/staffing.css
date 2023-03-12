@@ -5,11 +5,7 @@
     /* margin: 2rem 0; */
     
 }
-.staffheading{
-    /* padding: .4rem; */
-    /* color: #05A5FF; */
-    
-}
+
 .hrcontent hr{
     width: 20%;
     margin: 10px auto;
@@ -46,6 +42,7 @@ border-radius: 2rem;
 }
 .staffBoxHead h5{
     font-size: 1rem;
+    color: #0092ca;
 }
 .staffBoxHeadicon{
 

@@ -45,7 +45,13 @@ h2 {
   font-weight: 500;
   font-size: 18px;
 }
-
+.form-left p{
+  color: white;
+  font-size: 1.6rem;
+  padding: 0 0 0 5px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.4rem;
+}
 .left span {
   font-size: 15px;
 }
@@ -148,6 +154,7 @@ label .file_button {
   /* margin-top: 90px; */
   margin: 5rem 1rem 1rem 1rem;
 }
+
 .css-191j2fa .connected {
   /* font-size: 25px; */
   font-weight: bold;
@@ -196,6 +203,7 @@ div .file_button:hover {
 .contact-details {
   display: block;
   font-weight: bold;
+  font-size: 18px;
   /* float: left; */
   /* text-align: center; */
 }

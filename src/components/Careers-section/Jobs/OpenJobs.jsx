@@ -21,7 +21,7 @@ function OpenJobs() {
     <div>
       <Container className="openjob-container">
         {" "}
-        <h2>Our open Positions</h2>
+        <h2>Our open positions</h2>
         {/* <div className="select-opt">
           <label htmlFor="num">No. of jobs per page:&nbsp;&nbsp;</label>
           <select name="jobs" id="num">

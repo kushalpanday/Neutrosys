@@ -22,7 +22,7 @@ const work = () => {
           <div className="card1 col-sm-4">
             <h6>step 1</h6> 
             <h3>Identify job openings</h3>
-            <p>
+            <p className="workprocess-p">
              We firstly identify job openings within client companies that require IT talent.
             </p>
             <img 
@@ -39,7 +39,7 @@ const work = () => {
           <div className="card2 col-sm-4">
             <h6>step 2</h6> 
             <h3>Source candidates</h3>
-            <p>
+            <p className="workprocess-p">
               We then source candidates through job boards, social media, database, and other channels.
             </p>
             <img
@@ -59,7 +59,7 @@ const work = () => {
           <div className="card3 col-sm-4">
             <h6>step 3</h6> 
             <h3>Screen and evaluate candidates</h3>
-            <p>
+            <p className="workprocess-p">
               {" "}
               We screen and evaluate candidates to ensure they have the required skills and experience and are a good fit 
               for the job and client company's culture.
@@ -77,7 +77,7 @@ const work = () => {
           <div className="card4 col-sm-4">
             <h6>step 4</h6> 
             <h3>Submit candidates to clients</h3>
-            <p>
+            <p className="workprocess-p">
               Once suitable candidates are identified, we submit their resume to the client for review and potential selection.
             </p>
             <img
@@ -97,7 +97,7 @@ const work = () => {
           <div className="card5 col-sm-4">
             <h6>step 5</h6> 
             <h3>Facilitate hiring process</h3>
-            <p>
+            <p className="workprocess-p">
               We facilitate the hiring process, which may include negotiating salaries and employment terms, conducting background
               checks, and onboarding the candidate.
             </p>

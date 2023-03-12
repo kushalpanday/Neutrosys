@@ -7,8 +7,8 @@
   .section-title {
     text-align: center;
     margin: 25px 0;
-    font-size: 22px;
-    font-weight: bold;
+    /* font-size: 22px; */
+    /* font-weight: bold; */
   }
   
   .content {
@@ -94,9 +94,9 @@
   }
   
   .different-title {
-    font-weight: 550;
+    /* font-weight: 550; */
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 18.5px;
     color: #3498db;
   }
   @media screen and (max-width: 950px) {
