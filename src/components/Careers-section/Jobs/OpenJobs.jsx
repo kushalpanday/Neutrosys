@@ -1,5 +1,5 @@
 import Dropdown from "react-bootstrap/Dropdown";
-import React, { useState }  from "react";
+import React, { useState, }  from "react";
 import {
   Button,
   ButtonGroup,
@@ -14,9 +14,12 @@ import "./openJobs.css";
 import { Routes, Route, Link, Outlet } from "react-router-dom";
 import Openjobitems from "./Openjobitems";
 
+
+
 function OpenJobs() {
   const [showMore, setShowMore] = useState(false);
-
+ 
+  
   return (
     <div>
       <Container className="openjob-container">
@@ -558,7 +561,10 @@ function OpenJobs() {
                 
                   
                 <h5>
-                    <Link to="jobSection">{jobitem.title}</Link>
+                    <Link to="jobSection">
+                      {jobitem.title} 
+                  
+                    </Link>
                     <Outlet />
                   </h5>
                   <h6>{jobitem.location}</h6>

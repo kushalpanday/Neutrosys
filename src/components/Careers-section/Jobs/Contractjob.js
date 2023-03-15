@@ -58,7 +58,7 @@ const Contractjob = () => {
         "Advance your career by joining our team and working with top clients in various industries,
         including healthcare, banking and finance, across the nation."
         </p> 
-      <p className="contract-div-secondp">We take the following steps to assist you in discovering your ideal position:</p>
+      
         <div className="work-for-us-progress-bar-container">
           <ul>
             {titles.map((title, i) => {

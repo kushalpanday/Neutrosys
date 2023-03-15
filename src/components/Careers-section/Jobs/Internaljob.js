@@ -58,7 +58,7 @@ const Internaljob = () => {
           </Row>
         </div>
       </div>
-
+    
       <h2 className="openposition-heading">Our open positions</h2>
     <div className="scrollbar-outerdiv">
       <input type="checkbox" id="readmore" style={{display:"none"}}></input>
@@ -190,6 +190,7 @@ const Internaljob = () => {
       <label for="readmore" className="internal-viewmore" ></label> 
       
     </div>
+    
     </>
   );
 };

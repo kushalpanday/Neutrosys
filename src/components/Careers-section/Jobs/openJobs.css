@@ -4,54 +4,10 @@
     /* margin-top: 2rem; */
     justify-content: center;
     text-align: center;
-    /* max-height: 68rem; 
-    overflow: hidden;
-    transition: all .3s ease; 
-    overflow-y: auto;  
-   margin-bottom: 1.5rem; */
-}
-
-/* .scroll-bar-div{
-    border: 1px solid black;  
-     max-height: 58rem;
-    overflow: hidden;
-    overflow-y: auto; 
-    overflow-y: hidden;   
-    transition: all .3s ease; 
-    margin-bottom: 1rem; 
-    
-}    */
-
-/* input:checked+.scroll-bar-div+.contract-viewmore{
-    max-height: 100rem;
-   
-} 
-input[type="checkbox"]{
-    display: none;
    
 }
 
 
-.contract-viewmore:after{
-    content: "More jobs";
-  
-}
-
-input:checked~.contract-viewmore:after{
-    content: "Less jobs";
-    
-} 
-.contract-viewmore{
-    font-size: 16px;
-    font-weight: 500;
-   color: white;
-   margin-bottom: 0.5rem;
-   cursor: pointer;
-   float: left;
-   background-color: #5d99e7;
-   padding: 10px; 
-   
-} */
 .more-job-btn{
     float: left;
     margin-top: 1rem;
@@ -222,6 +178,9 @@ input:checked~.contract-viewmore:after{
     text-decoration: underline;
    
 }
+.focusableHeader:focus {
+    outline: 4px solid red;
+  }
 .inner-col h5 a
 {
     text-decoration: none;

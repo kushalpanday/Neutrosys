@@ -46,8 +46,8 @@ export default function LocationDetail() {
                         <Modal.Title id="example-custom-modal-styling-title">
                             Our Location 
                         </Modal.Title>
-                        <Button className='map-btn'>
-                            <p><BsPrinterFill/></p>
+                        <Button className='map-btn' style={{background:"none", border:"none"}}>
+                            <p style={{color:"blue"}}><BsPrinterFill/></p>
                             <span className='tooltiptext'> <ReactToPrint
                             trigger={() => (
                               <span style={{ marginLeft: ".7rem" }}>

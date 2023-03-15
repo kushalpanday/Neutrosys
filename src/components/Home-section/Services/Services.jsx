@@ -22,7 +22,7 @@ function Services() {
           name="Software development"
         />
         <ServiceItemProps
-          image="images/services/mobile_app3.svg"
+          image="images/services/mobile_app4.svg"
           desc="We offer customized outsourcing services that are efficient, cost-effective, and deliver high-
           quality results, allowing clients to focus on their core business."
           name="Outsourcing"

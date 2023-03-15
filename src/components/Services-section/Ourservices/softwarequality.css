@@ -41,7 +41,7 @@
 .mainitem p{
     width: 90%;
     margin: 0 auto;
-   font-size: 14px;
+   font-size: 13.5px;
     /* margin-bottom: .2rem; */
     text-align: justify;
     hyphens: auto;
@@ -60,14 +60,16 @@
 
 
 .qualityitem:nth-of-type(odd){
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
     /* background-color: blue; */
 }
 
-.qualityitem :nth-of-type(even){
-    background: rgba(217, 217, 217, 0.15);
-  
-}
+.qualityitem :nth-of-type(n+4){
+    /* background: rgba(217, 217, 217, 0.15); */
+    background: rgba(217, 217, 217, 0.24);
+} 
+
+
 @media only screen and (max-width: 750px){
     .qualityitem{
         grid-template-columns: 50% 50%;

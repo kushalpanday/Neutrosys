@@ -110,10 +110,26 @@
     width: 90%;
   }
 }
-@media screen and (max-width: 1920px) and (max-height: 1080px){
+@media screen and (min-width: 1500px) and (max-width: 1920px){
   .services_item img{
-    width: 55%;
+    width: 40%;
     
   }
-}
   
+} 
+@media screen and (min-width: 1920px) and (max-width: 2024px){
+  .services_item img{
+    width: 40%;
+    
+  }
+  .services_item{
+    height: 300px;
+     
+   }
+} 
+@media screen and (min-width: 1549px) and (max-width: 1920px){
+  .services_item{
+   height: 300px;
+    
+  }
+}  

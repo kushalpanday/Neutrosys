@@ -90,8 +90,8 @@
   color: blue;
 }
 .map-btn:hover {
-  background-color: white;
-  color: black;
+  background-color: blue;
+  color: white;
 }
 .map-btn .tooltiptext {
   visibility: hidden;
@@ -106,12 +106,13 @@
   position: absolute;
   z-index: 1;
   top: 3px;
-  right: 90%;
+  right: 60%;
   font-size: 13px;
 }
 
 .map-btn:hover .tooltiptext {
   visibility: visible;
+  
 }
 .close-btn {
   font-size: 10px;
@@ -181,16 +182,16 @@
   text-align: center;
 }
 .locationicon img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 .phoneicon img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 .emailicon img {
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
 }
 .icon-para {
   padding-top: 10px;

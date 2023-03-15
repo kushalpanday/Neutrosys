@@ -28,7 +28,7 @@ const Outsourcing = () => {
            fontSize="small"
           className="staffBoxHeadicon"
           />
-            <h5>Software testing</h5></div>
+            <h5>Software Testing</h5></div>
             <p>
             Ensure high-quality software free of bugs and issues by outsourcing your software testing needs
             to our experienced team.
@@ -46,7 +46,7 @@ const Outsourcing = () => {
            fontSize="small"
           className="staffBoxHeadicon"
           />
-            <h5>Call center</h5></div>
+            <h5>Call Center</h5></div>
             <p>
             Enhance your customer support capabilities with our cost-saving call center outsourcing
             services, offering 24/7 support for your business needs.

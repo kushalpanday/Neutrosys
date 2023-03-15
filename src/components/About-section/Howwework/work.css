@@ -61,7 +61,9 @@ img.mline3 {
 }
 .card1 h3,.card2 h3,.card3 h3,.card4 h3,.card5 h3
 {
-  font-size:1.1rem;
+  font-size:1rem;
+  text-transform: uppercase;
+  color: #6643b5;
 }
 
 .line1.col-sm-4,.line3.col-sm-4 {
