@@ -102,6 +102,17 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:focus-visible {
 .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root.Mui-focused {
   background-color: #ffffff;
 }
+/* div .css-10zro85-MuiInputBase-root-MuiFilledInput-root{
+  border-radius: 10px!important;
+  
+}
+
+div .css-15mnzpi-MuiInputBase-root-MuiFilledInput-root{
+  border-radius: 10px!important;
+}
+div .css-19d1kqp-MuiInputBase-root-MuiFilledInput-root{
+  border-radius: 10px!important;
+} */
 .form-file {
   width: 10rem;
 }

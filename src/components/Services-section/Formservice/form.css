@@ -240,7 +240,22 @@ div .form-button{
   margin-left: 11px;
  
 }
+div .css-l20vgq{
+  border-radius: 10px!important;
+  border-top-right-radius: 10px!important;
+  border-top-left-radius: 10px!important;
+} 
+/* div .css-10zro85-MuiInputBase-root-MuiFilledInput-root{
+  border-radius: 10px!important;
+  
+}
 
+div .css-15mnzpi-MuiInputBase-root-MuiFilledInput-root{
+  border-radius: 10px!important;
+}
+div .css-19d1kqp-MuiInputBase-root-MuiFilledInput-root{
+  border-radius: 10px!important;
+} */
 /* div .form-button:hover{
   background-color: pink;
 } */

@@ -431,6 +431,8 @@ div .react-tel-input .form-control {
 .apply-btn a {
   color: white;
   text-decoration: none;
+  text-transform: none;
+  font-size: 1.1rem;
 }
 .apply-btn:hover {
   text-decoration: underline;

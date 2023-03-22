@@ -121,7 +121,7 @@ input:checked~.internal-viewmore:after{
     font-size: 16px;
     font-weight: 500;
    color: white;
-   margin-bottom: 0.5rem;
+   margin-bottom: 1rem;
    cursor: pointer;
    float: left;
    background-color: #5d99e7;
@@ -249,7 +249,9 @@ input:checked~.internal-viewmore:after{
         width:100%;
         margin: 0;
     }
-
+    .scrollbar-internaljob{
+        max-height: 350px;
+    }
 }
 @media only screen and (max-width: 850px){
     .internal-viewmore{
@@ -270,7 +272,7 @@ input:checked~.internal-viewmore:after{
         max-height: 50rem;
     }
     .scrollbar-internaljob{
-        max-height: 45rem;
+        max-height: 43rem;
     }
     .internal-viewmore{
         margin-left: 3rem;
@@ -349,7 +351,7 @@ input:checked~.internal-viewmore:after{
          margin: 1rem 1rem;
      }
      .scrollbar-internaljob{
-        max-height: 44.2rem;
+        max-height: 41.5rem;
     }
 }
 
@@ -408,7 +410,7 @@ input:checked~.internal-viewmore:after{
     max-height: 95rem;
 }
 .scrollbar-internaljob{
-    max-height: 90rem;
+    max-height: 85rem;
 }
 .internal-viewmore{
     margin-left: 0rem;

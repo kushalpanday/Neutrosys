@@ -178,9 +178,7 @@
     text-decoration: underline;
    
 }
-.focusableHeader:focus {
-    outline: 4px solid red;
-  }
+
 .inner-col h5 a
 {
     text-decoration: none;

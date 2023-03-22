@@ -14,8 +14,8 @@ const  qualitydata=[{
 {
     id:3,
     images:"https://cdn-icons-png.flaticon.com/512/5517/5517107.png",
-    heading:"Client-Server Application",
-    para:"Our mobile app testers provide customizable testing services to identify bugs, issues, or vulnerabilities in your app, including performance, functional, and security testing."
+    heading:"Client Server Application",
+    para:"We offer client-server application development services, which includes design, development, testing, and maintenance to businesses of all sizes."
 },
 {
     id:4,

@@ -14,7 +14,7 @@
     /* display: flex; */
     /* justify-content: center;
     align-items: center; */
-    margin-bottom: .8rem;
+    margin-bottom: 1rem;
    
 }
 .mainitem{
@@ -60,15 +60,21 @@
 
 
 .qualityitem:nth-of-type(odd){
-    /* background: #FFFFFF; */
+    background: #FFFFFF; 
     /* background-color: blue; */
 }
 
-.qualityitem :nth-of-type(n+4){
-    /* background: rgba(217, 217, 217, 0.15); */
-    background: rgba(217, 217, 217, 0.24);
+.qualityitem :nth-of-type(even){
+    background: rgba(217, 217, 217, 0.15); 
+    /* background: rgba(217, 217, 217, 0.24); */
 } 
-
+.qualityitem :nth-of-type(n+4){
+    margin: 1rem 0 0 0;
+}
+.mainitem:nth-of-type(n+4){
+    padding: 0.3rem 1rem;
+    
+}
 
 @media only screen and (max-width: 750px){
     .qualityitem{

@@ -128,13 +128,13 @@
 }
 @media screen and (min-width: 1650px) and (max-width: 1832px){
   .textBox p{
-    padding-top: 2.7rem;
-    font-size: 16.5px;
+    padding-top: 2.5rem;
+    font-size: 16px;
   }
 }
 @media screen and (min-width: 1833px) and (max-width: 2024px){
   .textBox p{
-    padding-top: 2.7rem;
-    font-size: 18px;
+    padding-top: 2rem;
+    font-size: 17px;
   }
 }
