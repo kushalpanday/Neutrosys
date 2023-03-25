@@ -36,7 +36,7 @@ function Footer() {
       <div className="footer_socials">
         <h6>Socials</h6>
         <div className="social">
-        <div style={{width:"30px", height:"30px",  margin:"0 .2rem"}}>
+        <div style={{width:"30px", height:"30px",  margin:"0 .2rem 0 0"}}>
           <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="" />
           </div>
          

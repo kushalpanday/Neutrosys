@@ -89,7 +89,9 @@ textarea {
   width: 100%;
   padding: 0;
 }
-
+.btn:hover {
+  /* background-color: #0D4A93; */
+}
 div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover,
 div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:hover {
   /* background-color: rgba(0, 0, 0, 0.09); */
@@ -102,17 +104,6 @@ div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root:focus-visible {
 .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root.Mui-focused {
   background-color: #ffffff;
 }
-/* div .css-10zro85-MuiInputBase-root-MuiFilledInput-root{
-  border-radius: 10px!important;
-  
-}
-
-div .css-15mnzpi-MuiInputBase-root-MuiFilledInput-root{
-  border-radius: 10px!important;
-}
-div .css-19d1kqp-MuiInputBase-root-MuiFilledInput-root{
-  border-radius: 10px!important;
-} */
 .form-file {
   width: 10rem;
 }
@@ -144,8 +135,7 @@ label .file_button {
 
 .country input,
 .first input {
-  width: 100%;
-  /* width: 285px; */
+  width: 285px;
   /* margin-right: 25px; */
   /* color: #fff; */
 }
@@ -226,7 +216,12 @@ div .file_button:hover {
 .textfield:hover {
   outline: none;
 }
-
+.contact-container {
+  /* width: 200px;
+  margin: auto; */
+  /* display: flex;
+  justify-content: center; */
+}
 div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root {
   background-color: #fff;
   padding: 0px 0px;

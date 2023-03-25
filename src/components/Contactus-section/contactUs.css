@@ -228,6 +228,12 @@ div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root:before{
 div .css-1p6y6ap-MuiInputBase-root-MuiFilledInput-root,div .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root,div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root,div .css-1ra8cd2-MuiInputBase-root-MuiFilledInput-root {
   background-color: white;
 }
+div .css-vzggdy-MuiFormControl-root-MuiTextField-root{
+  border-radius: 10px!important;
+}
+div .css-wlv6cv-MuiFormControl-root-MuiTextField-root{
+  border-radius: 10px!important;
+}
 div .css-l20vgq{
   border-radius: 10px!important;
   border-top-right-radius: 10px!important;

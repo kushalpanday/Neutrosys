@@ -17,9 +17,13 @@
   .upload-file-job{
     width:60%;
     color: black;
-/* text-align: end; */
-margin:0 0 0 auto;
+    text-align: left; 
+    margin:0 0 0 10px;
 }
+.uploadpart:hover{
+  background: linear-gradient(180deg,#6d80b3,#7a8cbd 100%,#6d86c5);
+}
+
 
 @media only screen and (max-width: 991px){
   .uploadpart{

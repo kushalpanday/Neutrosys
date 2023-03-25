@@ -13,8 +13,8 @@ const Softwarequality = () => {
                 <img src={qitem.images} alt="" />
               </div>
 
-              <h5>{qitem.heading}</h5>
-              <p>{qitem.para}</p>
+              <h5 className="qitemtitle">{qitem.heading}</h5>
+              <p className="qitemp">{qitem.para}</p>
             </div>
           );
         })}

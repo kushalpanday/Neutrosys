@@ -20,6 +20,7 @@
     padding-bottom: 1rem;
     hyphens: auto;
     justify-content: center;
+    font-size: 15px;
   }
   
   .part1 {
@@ -28,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8rem;
+    gap: 6rem;
   }
   
   .part2 {
