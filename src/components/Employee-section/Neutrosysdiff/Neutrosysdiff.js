@@ -20,7 +20,7 @@ const Different = () => {
                     high-quality consultants in various industries.</div>
               </div>
                   <div className="part-content">
-                    <div className="different-title">Speed of service</div>
+                    <div className="different-title">Speed of Service</div>
                   <div className="content">We provide pre-screened candidates through an efficient recruitment process,
                     staying up to date with market demand and prioritizing excellent customer service for fast
                     staffing solutions.</div>   
@@ -37,12 +37,12 @@ const Different = () => {
           </div>
               <div className="part3">
                        <div className="part-content">
-                  <div className="different-title">Quality of candidates</div>
+                  <div className="different-title">Quality of Candidates</div>
                   <div className="content">We source top-tier talent from a vast network, carefully screen them and
                     use advanced technology to streamline staffing, ensuring efficient and effective results.</div>
               </div>
                   <div className="part-content">
-                    <div className="different-title">Long-term goal</div>
+                    <div className="different-title">Long-term Goal</div>
                   <div className="content">We prioritize our clients&#39; success by building long-term relationships,
                   anticipating staffing needs, and providing personalized and attentive service with ongoing support.</div>   
               </div>

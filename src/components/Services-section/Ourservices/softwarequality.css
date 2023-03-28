@@ -38,44 +38,18 @@
     margin-top: 0.4rem;
     color: #0092ca;
 }
-/* .mainitem h5{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    margin-bottom: .2rem;
-    margin-top: 0.4rem;
-    color: #0092ca;
-} */
+
 .qitemp{
     width: 90%;
     margin: 0 auto;
-   /* font-size: 13.5px; */
+   font-size: 14px; 
     /* margin-bottom: .2rem; */
     text-align: justify;
     hyphens: auto;
     -webkit-hyphens: auto;
     word-spacing: -0.03em;
 }
-.mainitem p{
-    /* width: 90%;
-    margin: 0 auto;
-   font-size: 13.5px; */
-    /* margin-bottom: .2rem; */
-    /* text-align: justify;
-    hyphens: auto;
-    -webkit-hyphens: auto;
-    word-spacing: -0.03em; */
 
-   
-    /* display: flex;
-    justify-content: center;
-    text-align: justify;
-    align-items: center; */
-    /* align-items: center;
-   text-align: center; */
-    
-}
 
 
 .qualityitem:nth-of-type(odd){
@@ -91,11 +65,16 @@
     margin: 1rem 0 0 0;
 }
 
-.mainitem:nth-child(n+4){
+
+.mainitem:nth-child(n+4) img{
+    width: 7%;
+}
+.mainitem:nth-child(n+4) .qitemtitle{
     font-size: 13.5px;
 }
-
-
+.mainitem:nth-child(n+4) .qitemp{
+    font-size: 13.2px;
+}
 
 
 @media only screen and (max-width: 750px){
