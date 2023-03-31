@@ -20,7 +20,7 @@ function OurClients() {
     slidesToScroll: 3,
     accessibility: true,
     initialSlide: 0,
-    autoplay: true,
+    autoplay: false,
     speed: 3000,
     autoplaySpeed: 8000,
     // cssEase: "linear",

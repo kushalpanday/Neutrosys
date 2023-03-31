@@ -229,25 +229,31 @@ div .css-1p6y6ap-MuiInputBase-root-MuiFilledInput-root,div .css-19mk8g1-MuiInput
   background-color: white;
 }
 div .css-vzggdy-MuiFormControl-root-MuiTextField-root{
-  border-radius: 11px!important;
+  border-radius: 10px!important;
 }
 div .css-wlv6cv-MuiFormControl-root-MuiTextField-root{
   border-radius: 10px!important;
+}
+div.css-191j2fa{
+  border-radius: 10px!important;
+  
 }
 div .css-l20vgq{
   border-radius: 10px!important;
   border-top-right-radius: 10px!important;
   border-top-left-radius: 10px!important;
+ 
 }
 div .css-17ieph9{
   border-radius: 10px!important;
   border-top-right-radius: 10px!important;
   border-top-left-radius: 10px!important;
-}
+}  
 div .css-1c7vsz1{
   border-radius: 10px!important;
   border-top-right-radius: 10px!important;
   border-top-left-radius: 10px!important;
+  
 }
 /* div .css-10zro85-MuiInputBase-root-MuiFilledInput-root{
   border-radius: 10px!important;

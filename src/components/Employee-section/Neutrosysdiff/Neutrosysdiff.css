@@ -21,6 +21,7 @@
     hyphens: auto;
     justify-content: center;
     font-size: 15px;
+    /* border: 1px solid; */
   }
   
   .part1 {
@@ -29,7 +30,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 6rem;
+    gap: 8rem;
   }
   
   .part2 {
@@ -99,6 +100,20 @@
     margin-bottom: 10px;
     font-size: 18.5px;
     color: #3498db;
+  }
+
+
+  @media screen and (max-width: 1280px){
+    .part3{
+      gap: 9.2rem;
+      margin: 0;
+    }
+  }
+  @media screen and (max-width: 1366px){
+    .part3{
+      gap: 9.5rem;
+      margin-top: 0;
+    }
   }
   @media screen and (max-width: 950px) {
   .difference-image2{

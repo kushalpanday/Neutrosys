@@ -59,7 +59,7 @@ const Internaljob = () => {
         </div>
       </div>
     
-      <h2 className="openposition-heading">Our open positions</h2>
+      <h2 className="openposition-heading">Our Open Positions</h2>
     <div className="scrollbar-outerdiv">
       <input type="checkbox" id="readmore" style={{display:"none"}}></input>
       <div className="scrollbar-internaljob">

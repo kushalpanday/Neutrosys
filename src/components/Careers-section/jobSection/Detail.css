@@ -472,14 +472,16 @@ div .react-tel-input .form-control {
 }
 div .css-10zro85-MuiInputBase-root-MuiFilledInput-root{
   border-radius: 10px;
-  
+  border: 1px solid rgba(0, 0, 0, 0.06)!important;
 }
 
 div .css-15mnzpi-MuiInputBase-root-MuiFilledInput-root{
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06)!important;
 }
 div .css-19d1kqp-MuiInputBase-root-MuiFilledInput-root{
   border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06)!important;
 }
 .jobs-modal-header{
   padding:0;

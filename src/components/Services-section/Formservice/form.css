@@ -283,14 +283,14 @@ label[data-shrink=false]+.MuiInputBase-formControl .css-11u53oe-MuiSelect-select
 .txtfield_country_code{
   width:40%;
  background-color: white;
- border-radius: 8px;
+ border-radius: 10px!important;
  /* border-color:white; */
 }
 
 .txtfield_phone{
   width:60%;
   background-color: white;
-  border-radius: 8px;
+  border-radius: 10px!important;
 }
 .heading-form {
   /* padding-top: 20px; */

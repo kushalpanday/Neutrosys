@@ -64,7 +64,7 @@ export default function OurPartnersCarousel() {
               </Row>
             </div>
           </Carousel.Item>
-          <Carousel.Item>
+          {/* <Carousel.Item>
             <div className="partners-bg ">
             <Row className="partner-row">
                 <Col md={9} lg={7} sm={10}  className="partner-col">
@@ -87,7 +87,7 @@ export default function OurPartnersCarousel() {
                 </Col>
               </Row>
             </div>
-          </Carousel.Item>
+          </Carousel.Item> */}
         </Carousel>
       </div>
     </>

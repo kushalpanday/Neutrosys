@@ -58,7 +58,7 @@ const Offer = () => {
           <div className="process">
             <div className="process-title">
               <div className="circle">01</div>
-              <div className="process-text">Initial consultation</div>
+              <div className="process-text">Initial Consultation</div>
             </div>
             <div className="process-content">
             We work closely with the client to understand their specific IT staffing needs, goals, and any
@@ -69,7 +69,7 @@ const Offer = () => {
           <div className="process">
             <div className="process-title">
               <div className="circle">02</div>
-              <div className="process-text">Talent sourcing</div>
+              <div className="process-text">Talent Sourcing</div>
             </div>
             <div className="process-content">
             We have a wide network of IT professionals, and we use a variety of recruiting methods to
@@ -102,7 +102,7 @@ const Offer = () => {
           <div className="process">
             <div className="process-title">
               <div className="circle">05</div>
-              <div className="process-text">Onboarding and support</div>
+              <div className="process-text">Onboarding and Support</div>
             </div>
             <div className="process-content">
             We assist with the onboarding process and provide ongoing support to both the client and

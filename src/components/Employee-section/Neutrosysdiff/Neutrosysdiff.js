@@ -36,11 +36,11 @@ const Different = () => {
           <img src={DifferentD} alt="" className='difference-image4 diff-img'/>
           </div>
               <div className="part3">
-                       <div className="part-content">
+                <div className="part-content">
                   <div className="different-title">Quality of Candidates</div>
                   <div className="content">We source top-tier talent from a vast network, carefully screen them and
                     use advanced technology to streamline staffing, ensuring efficient and effective results.</div>
-              </div>
+                </div>
                   <div className="part-content">
                     <div className="different-title">Long-term Goal</div>
                   <div className="content">We prioritize our clients&#39; success by building long-term relationships,

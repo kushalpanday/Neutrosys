@@ -75,7 +75,7 @@ p.missright {
 }
 
 .mission-vision {
-  transform: skew(33deg);
+  transform: skew(29deg);
   left:2rem;
 }
 
@@ -135,7 +135,7 @@ p.missright {
   }
   .box:nth-child(6),
   .box:nth-child(7) {
-    bottom: 1rem;
+    bottom: 0.5rem;
   }
 } 
 @media only screen and (max-width: 993px){
@@ -146,7 +146,7 @@ p.missright {
   }
   .box:nth-child(6),
   .box:nth-child(7) {
-    bottom: 1.8rem;
+    bottom: 1.5rem;
   }
 } 
 @media only screen and (max-width: 1000px) {
@@ -168,11 +168,11 @@ p.missright {
   .box:nth-child(3),
   .box:nth-child(2) {
     bottom: -1rem;
-    top: 1.8rem;
+    top: 1.5rem;
   }
   .box:nth-child(6),
   .box:nth-child(7) {
-    bottom: 1.8rem;
+    bottom: 1.5rem;
   }
   .Mgrid{
     gap: 0.5rem 1rem;
@@ -185,11 +185,11 @@ p.missright {
    .box:nth-child(3),
   .box:nth-child(2) {
     bottom: -1rem;
-    top: 1.5rem;
+    top: 1.2rem;
   }
   .box:nth-child(6),
   .box:nth-child(7) {
-    bottom: 1.5rem;
+    bottom: 1.2rem;
   }
 }
 @media only screen and (max-width: 790px){

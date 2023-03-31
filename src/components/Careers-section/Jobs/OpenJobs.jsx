@@ -16,15 +16,18 @@ import Openjobitems from "./Openjobitems";
 
 
 
+
 function OpenJobs() {
   const [showMore, setShowMore] = useState(false);
  
+  
+
   
   return (
     <div>
       <Container className="openjob-container">
         {" "}
-        <h2>Our open positions</h2>
+        <h2>Our Open Positions</h2>
         {/* <div className="select-opt">
           <label htmlFor="num">No. of jobs per page:&nbsp;&nbsp;</label>
           <select name="jobs" id="num">
@@ -554,7 +557,7 @@ function OpenJobs() {
           
           {Openjobitems.slice(0, showMore ? Openjobitems.length : 3).map((jobitem) => {
               return(
-            <div className="div-bggrey" key={jobitem.id} >
+            <div className="div-bggrey" key={jobitem.id}>
               <Row className="inner-row">
              
                 <Col sm={9} className="inner-col">
