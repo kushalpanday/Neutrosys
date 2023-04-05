@@ -161,6 +161,8 @@ li.active .step-inner:hover{
   padding-bottom: 1rem;
   font-size: 15px;
   text-align: center;
+  width: 90%; 
+  margin: auto;
 }
 
 .work-for-us-progress-bar-responsive-container,.work-for-us-line-responsive-container{

@@ -14,7 +14,7 @@
 .Mgrid {
   display: grid;
   grid-template-columns: 30% 12rem 12rem 30%;
-  gap: 0.5rem 0;
+  gap: 1rem 0;
   justify-content: center;
   /* text-align: center; */
   padding-bottom: 1.5rem;
@@ -47,7 +47,7 @@ p.missright {
   transform: rotate(300deg);
   position: relative;
   width: 7rem;
-  height: 7rem;
+  height: 6.5rem;
   left: 2.5rem;
   /* bottom: 1rem; */
 }
@@ -127,17 +127,17 @@ p.missright {
 }
 
 
-@media only screen and (max-width: 1280px){
+ @media only screen and (max-width: 1280px){
   .box:nth-child(3),
   .box:nth-child(2) {
     bottom: -1rem;
-    top: 0;
+    top: 0rem;
   }
   .box:nth-child(6),
   .box:nth-child(7) {
-    bottom: 0.5rem;
+    bottom: 0rem;
   }
-} 
+}  
 @media only screen and (max-width: 993px){
   .box:nth-child(3),
   .box:nth-child(2) {
@@ -146,7 +146,7 @@ p.missright {
   }
   .box:nth-child(6),
   .box:nth-child(7) {
-    bottom: 1.5rem;
+    bottom: 2rem;
   }
 } 
 @media only screen and (max-width: 1000px) {
@@ -172,7 +172,7 @@ p.missright {
   }
   .box:nth-child(6),
   .box:nth-child(7) {
-    bottom: 1.5rem;
+    bottom: 1rem;
   }
   .Mgrid{
     gap: 0.5rem 1rem;

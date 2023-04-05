@@ -75,7 +75,7 @@ const Internaljob = () => {
                   <Col sm={9} className="loc-text">
                     <p>Noida, Uttar Pradesh India</p>
                   </Col>
-                  <Col sm={2} className="icon-text">
+                  <Col sm={2} className="icon-text text-odd">
                   <Link to="salesNoida"><p>
                       <BsArrowRightCircle />
                     </p></Link>
@@ -95,7 +95,7 @@ const Internaljob = () => {
                   <Col sm={9} className="loc-text">
                     <p>Noida, Uttar Pradesh India</p>
                   </Col>
-                  <Col sm={2} className="icon-text">
+                  <Col sm={2} className="icon-text text-even">
                     <p>
                       <BsArrowRightCircle />
                     </p>
@@ -113,7 +113,7 @@ const Internaljob = () => {
                   <Col sm={9} className="loc-text">
                     <p>Irving, Texas, United States</p>
                   </Col>
-                  <Col sm={2} className="icon-text">
+                  <Col sm={2} className="icon-text text-even">
                     <p>
                       <BsArrowRightCircle />
                     </p>
@@ -131,7 +131,7 @@ const Internaljob = () => {
                   <Col sm={9} className="loc-text">
                     <p>Noida, Uttar Pradesh India</p>
                   </Col>
-                  <Col sm={2} className="icon-text">
+                  <Col sm={2} className="icon-text text-odd">
                     <p>
                       <BsArrowRightCircle />
                     </p>
@@ -149,7 +149,7 @@ const Internaljob = () => {
                   <Col sm={9} className="loc-text">
                     <p>Noida, Uttar Pradesh India</p>
                   </Col>
-                  <Col sm={2} className="icon-text">
+                  <Col sm={2} className="icon-text text-odd">
                     <p>
                       <BsArrowRightCircle />
                     </p>
@@ -168,7 +168,7 @@ const Internaljob = () => {
                   <Col sm={9} className="loc-text">
                     <p>Noida, Uttar Pradesh India</p>
                   </Col>
-                  <Col sm={2} className="icon-text">
+                  <Col sm={2} className="icon-text text-even">
                     <p>
                       <BsArrowRightCircle />
                     </p>

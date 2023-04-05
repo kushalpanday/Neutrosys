@@ -35,16 +35,15 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light {
   padding-right: 1rem;
   margin-right: 1rem;
   /* margin:.5rem 0; */
-  /* background-color: #23abe5; */
-  background-color: #1f68ae;
+  background-color: white;
   border-radius: 1.4rem;
-  color: white;
-  border: 1px solid #1f68ae;
+  color: #1f68ae;
+  border: 1px solid #3188da;
   cursor: pointer;
 }
 .navbar_button:hover {
-  background-color: white;
-  color: #1f68ae;
+  background-color: #2175c4;
+  color: white;
 
 }
 .nav-link {

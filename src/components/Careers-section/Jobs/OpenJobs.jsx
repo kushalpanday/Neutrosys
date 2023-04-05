@@ -564,8 +564,10 @@ function OpenJobs() {
                 
                   
                 <h5>
-                    <Link to="jobSection">
-                      {jobitem.title} 
+                     <Link to="jobSection"
+                    
+                     > 
+                      {jobitem.title}  
                   
                     </Link>
                     <Outlet />

@@ -12,18 +12,18 @@
     float: left;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    padding: 10px 16px;
+    padding: 7px 10px;
     border: none;
     background: #5d99e7;
     cursor: pointer;
     color: white;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 500;
 }
 .container.bgjob
 {
     /* border: 1px solid red; */
-    /* height: 50px; */
+    height: 40px; 
     display: flex;
     justify-content: space-between;    
     /* background-color: #CDE2B8; */
@@ -44,6 +44,10 @@
     font-weight: 450;
     
 }
+.navbar-brand{
+    font-size: 1.1rem;
+    color: white;
+}
 .div-right
 {
     /* border: 1px solid red; */
@@ -58,8 +62,11 @@
 #dropdown-custom-1
 {
     background: #91BBF2;
-    color: black;
+    color: white;
     border: none;
+    height: 35px;
+    margin: auto;
+    font-size: 13.5px;
     /* margin-right: 35px; */
    
 }
@@ -72,15 +79,16 @@
     padding-top: 2px;
     padding-bottom: 3px;
     margin-right: 0px;
-    background:#035AA6;
-   
+    /* background:#035AA6; */
+    background: #0077b6;
+    font-size: 13.3px;
 }
 .super-colors
 {
     /* background: #91BBF2; */
     width: 210px;
     margin:auto;
-    
+    font-size: 13px;
 }
 
 .super-colors2
@@ -88,21 +96,21 @@
     /* background: #91BBF2; */
     width: 200px;
     margin:auto;
-    
+    font-size: 13px;
 }
 .super-colors3
 {
     /* background: #91BBF2; */
    margin:auto;
    width:200px;
-   
+   font-size: 13px;
 }
 .locationeg
 {
     height: 180px;
     overflow-y: scroll;
     overflow-x: hidden;
-
+    /* font-size: 13px; */
 }
 .jobitems
 {
@@ -169,7 +177,7 @@
 .inner-col h5
 {
     text-align: left;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding-top: 1rem;
     padding-left: 1.2rem;
 }
@@ -204,7 +212,7 @@
 .inner-col2 h5
 {
     text-align: right;
-    font-size: 1.1rem;
+    font-size: 1rem;
     padding-left: 1rem;
     padding-top: 3rem;
     padding-right: 20px;
@@ -257,6 +265,9 @@
     }
 }
 @media only screen and (max-width: 767px){
+    .container.bgjob{
+        height: 100%;
+    }
     .bgjob{
         /* flex-direction: column; */
         gap:.2rem;
