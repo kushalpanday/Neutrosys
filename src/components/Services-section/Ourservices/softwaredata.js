@@ -8,7 +8,7 @@ const softwaredata=[
     {
         id:2,
         image:"../Servicesimages/computer3.jpeg",
-        headings:"Ios Development",
+        headings:"iOS Development",
         discrip:"Our iOS app development services deliver engaging mobile experiences with the latest technologies and best practices delivering high-quality iOS apps."
     },
     {

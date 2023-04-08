@@ -14,10 +14,16 @@
     padding:.5rem 1rem;
     border-radius: 2rem;
     border:none;
-    background-color: #23ABE5;
+    background-color: #0b9ddb;
     cursor:pointer;
     color:white;
 }
+.readytohelp_btn:hover{
+    background-color: #28afe9;
+}
+
+
+
 @media only screen and (max-width: 700px){
     .readytohelp_container p{
         width:70%;

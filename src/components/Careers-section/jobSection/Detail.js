@@ -594,7 +594,7 @@ const Detail = (props) => {
                         <ReactToPrint
                           trigger={() => (
                             <span style={{ marginLeft: ".7rem" }}>
-                              Print me
+                              Print 
                             </span>
                           )}
                           content={() => Componentref.current}

@@ -49,7 +49,7 @@
   
 }
 .header_btn.blue_background{
-  background-color: #23abe5;
+  background-color: #23abe5; 
   border: 1.5px solid #23abe5;
 }
 
@@ -60,10 +60,10 @@
 }
 
 .header_btn.blue_background:hover{
-  box-shadow: 0 4px 8px 0 rgba(10, 171, 230, 0.688), 0 6px 20px 0 rgba(16, 143, 234, 0.74);
+   box-shadow: 0 4px 4px 0 rgba(10, 171, 230, 0.582), 0 -1px 5px 0 rgba(16, 143, 234, 0.5); 
 }
 .header_btn.blue_border:hover{
-  box-shadow: 0 4px 8px 0 rgba(10, 171, 230, 0.688), 0 -1px 5px 0 rgba(16, 143, 234, 0.74);
+  box-shadow: 0 4px 8px 0 rgba(10, 171, 230, 0.688), 0 -1px 5px 0 rgba(16, 143, 234, 0.74); 
 }
 .header_btn a{
   color:white;

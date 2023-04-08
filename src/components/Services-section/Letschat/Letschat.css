@@ -10,13 +10,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: .5rem 0 2rem  0;
+    padding: .5rem 0 1rem  0;
     /* margin: 10px auto; */
 }
 .letschatcontent h2{
     /* color: white; */
    padding: 1rem 0 0 0;
-   
+   margin-bottom: 0.2rem;
  
   
 }

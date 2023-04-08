@@ -9,7 +9,7 @@
 .services_items {
   display: grid;
   grid-template-columns: repeat(3, 25%);
-  grid-column-gap: 2%;
+  /* grid-column-gap: 2%; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -17,7 +17,7 @@
 }
 
 .services_item {
-  width: 100%;
+  width: 90%;
   height: 100%;
   /* margin: auto; */
   background-color: white;
@@ -30,6 +30,7 @@
   padding: 1rem 0.5rem;
   text-align: center;
   z-index: 5;
+  margin: auto;
 }
 .services_item:nth-child(1) {
   width: 85%;
@@ -40,10 +41,11 @@
   
 } */
 .services_item p{
-  margin:0 0.6rem 1rem 0.6rem;
+  margin:0 1rem 1rem 1rem;
   text-align: justify;
-  font-size: 15px;
+  font-size: 14px;
   hyphens: auto;
+  padding-bottom: 1rem;
 }
 .services_item img {
   width: 60%;
@@ -52,7 +54,7 @@
 }
 .services_item h4{
   font-size: 1.15rem;
-  margin-bottom: 0;
+  margin-bottom: -0.5rem;
 }
 .services_item h2 {
   width: 50%;
@@ -69,7 +71,7 @@
 .services_learnmore {
   margin: 1rem;
 }
-.learn-more-btn-div{
+/* .learn-more-btn-div{
   text-align: center;
   margin-top: 2rem;
 }
@@ -85,11 +87,17 @@
 }
 .learn-btn:hover{
   background: #390ca3e7;
-}
-/* .services_learnmore a {
+} */
+.services_learnmore a {
   text-decoration: none;
   color: blue;
-} */
+} 
+.services_learnmore a:hover{
+  text-decoration: underline;
+}
+
+
+
 
 @media only screen and (max-width: 800px) {
   .services_items {

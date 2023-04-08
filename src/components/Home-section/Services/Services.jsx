@@ -28,13 +28,13 @@ function Services() {
           name="Outsourcing"
         />
       </div>
-      {/* <p className="services_learnmore">
+       <p className="services_learnmore">
         {" "}
-        <a href="/services" target="_blank">learn more <svg className="learnmore_svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style={{fill: "rgba(22, 65, 251, 1)",transform: "rotate(180deg)",msFilter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"}}><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg> </a>
-      </p> */}
-      <div className="learn-more-btn-div">
+        <a href="/services" target="_blank">Learn more <svg className="learnmore_svg" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" style={{fill: "rgba(22, 65, 251, 1)",transform: "rotate(180deg)",msFilter:"progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"}}><path d="M21 11H6.414l5.293-5.293-1.414-1.414L2.586 12l7.707 7.707 1.414-1.414L6.414 13H21z"></path></svg> </a>
+      </p> 
+      {/* <div className="learn-more-btn-div">
       <a href="./services" target="_blank" rel="noopener noreferrer"><button className="learn-btn">Learn more</button></a>
-      </div>
+      </div> */}
     </section>
   );
 }

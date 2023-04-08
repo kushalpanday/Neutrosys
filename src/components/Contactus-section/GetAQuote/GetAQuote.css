@@ -1,0 +1,22 @@
+.modalbox-size{
+    max-width: 50%!important;
+}
+.getaquote-form{
+    width: 100%!important;
+}
+.getaquote-form-col{
+    padding: 0.5rem!important;
+    margin-bottom: 0!important;
+}
+.quote-header{
+    background: #3b82f6;
+}
+.heading-quote{
+    color: white;
+    padding-left: 0.5rem;
+    margin-bottom: 0;
+    font-size: 1.3rem;
+}
+.quote-btn-submit{
+    margin-top: 1rem!important;
+}

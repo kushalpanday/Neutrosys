@@ -9,7 +9,7 @@ import ContactUs from "./pages/ContactUs";
 import JobSection from "./pages/JobSection";
 import SalesIntern from "./pages/SalesIntern";
 import SalesNoida from "./pages/SalesNoida";
-import ServicesForm from "./pages/ServicesForm";
+
 
 
 function App() {
@@ -17,9 +17,7 @@ function App() {
     <div>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/ServicesForm" element={<ServicesForm />} />
         <Route path="/aboutus" element={<About />} />
-        <Route path="/aboutus/ServicesForm" element={<ServicesForm />} />
         <Route path="/employers" element={<Employers />} />
         <Route path="/services" element={<Services />} />
         <Route path="/careers" element={<Careers />} />
@@ -27,7 +25,7 @@ function App() {
         <Route path="/careers/salesIntern" element={<SalesIntern />} />
         <Route path="/careers/salesNoida" element={<SalesNoida />} />
         <Route path="/contactus" element={<ContactUs />} />
-        <Route path="/contactus/ServicesForm" element={<ServicesForm />} />
+       
 
         <Route
           path="*"

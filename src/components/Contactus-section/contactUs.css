@@ -105,8 +105,8 @@
   /* Position the tooltip */
   position: absolute;
   z-index: 1;
-  top: 3px;
-  right: 60%;
+  top: 5px;
+  right: 40%;
   font-size: 13px;
 }
 
@@ -182,19 +182,19 @@
   text-align: center;
 }
 .locationicon img {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 .phoneicon img {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 .emailicon img {
-  height: 30px;
-  width: 30px;
+  height: 25px;
+  width: 25px;
 }
 .icon-para {
-  padding-top: 10px;
+  padding-top: 5px;
   font-weight: 500;
 }
 .form_container .form-row {

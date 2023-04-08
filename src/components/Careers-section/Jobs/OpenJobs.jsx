@@ -580,7 +580,10 @@ function OpenJobs() {
                 </Col>
                 <Col sm={2} className="inner-col2">
                   <h5>
-                    <a href="/#">Apply</a>
+                    <a> <Link to="jobSection">Apply
+                    </Link>
+                    <Outlet />
+                    </a>
                   </h5>
                 </Col>
               
