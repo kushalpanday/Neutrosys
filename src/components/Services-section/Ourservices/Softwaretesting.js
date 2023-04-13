@@ -1,6 +1,10 @@
 import React from 'react'
 import './softwaretesting.css'
 import softwaredata from './softwaredata'
+
+
+
+
 const Softwaretesting = () => {
   return (
     <div className="softwaretesting">
@@ -21,6 +25,10 @@ const Softwaretesting = () => {
        )
     })}
    </div>
+   <div className='free-quote-div'>
+    <button className='freequote-btn'>Get a FREE Quote </button> 
+   </div>
+  
     </div>
   )
 }

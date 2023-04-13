@@ -36,10 +36,11 @@ export default function GetAquote() {
   const [lgShow, setLgShow] = useState(false);
 
   const [options, setOptions] = useState([
-    "Talent Solutions",
-    "Out Sourcing",
-    "Software Testing",
-    "Software Testing",
+    "iOS App Development",
+    "Android App Development",
+    "Web Development",
+    "Enterprise Software Development",
+    "Others",
   ]);
 
   const captchaRef = useRef(null);
@@ -66,10 +67,12 @@ export default function GetAquote() {
     console.log(response);
   };
   const optionSelect = [
-    { value: "Talent Solution", label: "Talent Solution" },
-    { value: "Software Development", label: "Software Development" },
-    { value: "Outsourcing", label: "Outsourcing" },
-    { value: "Software Testing", label: "Software Testing" },
+    { value: "iOS App Development", label: "iOS App Development" },
+    { value: "Android App Development", label: "Andriod App Development" },
+    { value: "Web Development", label: "Web Development" },
+    { value: "Enterprise Software Development", label: "Enterprise Software Development" },
+    { value: "Others", label: "Others" },
+   
     
   ];
 
@@ -97,7 +100,7 @@ export default function GetAquote() {
         dialogClassName="modalbox-size"
       >
         <Modal.Header closeButton className="quote-header">
-        <p className="heading-quote">Connect with Us</p>
+        <p className="heading-quote">Get a free quote?</p>
          </Modal.Header>
         <Modal.Body>
         <div className="services-form-container">
@@ -332,7 +335,7 @@ export default function GetAquote() {
                   fullWidth
                   multiline
                   rows={3}
-                  label="Message"
+                  label="Please tell us what you are looking for?"
                   margin="dense"
                   name="message"
                   variant="filled"

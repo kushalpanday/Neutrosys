@@ -4,7 +4,7 @@ import qualitydata from "./qualitydata";
 const Softwarequality = () => {
   return (
     <div className="softwarequality">
-      <h4>Software Testing</h4>
+      <h4>Software Testing & Quality Assurance</h4>
       <div className="qualityitem">
         {qualitydata.map((qitem) => {
           return (

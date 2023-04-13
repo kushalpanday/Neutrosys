@@ -14,7 +14,7 @@ const Staffing = () => {
     <RadioButtonCheckedIcon fontSize="small" className='staffBoxHeadicon' />
     <div className="staffBoxHead">
     <h5>Contract Staffing</h5>
-    <p>We provide flexible contract staffing solutions for short-term projects with fully vetted and
+    <p>We provide flexible contract staffing solutions for short-term projects, with fully vetted and
     qualified professionals that deliver immediate value to your team.</p>
     </div> </div>
     <div className="mainStaffBox11">
@@ -32,7 +32,7 @@ const Staffing = () => {
     <div className="staffBoxHead">
     <h5>Direct Hire</h5>
     <p>Our direct hire services connect clients with top talent, ensuring a smooth and efficient hiring
-      process that's tailored to specific role requirements.</p>
+      process that is tailored to specific role requirements.</p>
     </div> </div>
     </div>
     <div className="mainStaffBox2">

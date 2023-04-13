@@ -31,8 +31,8 @@ import Select from "react-select";
 const Formservice = () => {
   const [options, setOptions] = useState([
     "Talent Solutions",
-    "Out Sourcing",
-    "Software Testing",
+    "Software Development",
+    "Outsourcing",
     "Software Testing",
   ]);
 

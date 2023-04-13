@@ -3,7 +3,7 @@ const data=[
     { id:1,
         image:"https://miro.medium.com/max/1194/1*u6wsaofSWkZG4_-7vGto2g.png",
     heading:"Talent Solution",
-    disc:" We provide Talent Solutions, including flexible Contract staffing, Contract-to-hire, and Direct hire services, for the best-fit professionals."
+    disc:"We provide Talent Solutions, including flexible Contract staffing, Contract-to-hire, and Direct hire services, for the best-fit professionals."
     },
     {id:2,
         image:" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-eYPl1o6UaZGnv07HoFeVMQ3fmoux-Gj9tRA6TxNP42uA7xhmFqiMZegsQLMC7bkQUk&usqp=CAU",

@@ -95,7 +95,10 @@
 @media only screen and (max-width: 750px){
     .qualityitem{
         grid-template-columns: 50% 50%;
-    } 
+    }
+    .mainitem:nth-child(3){
+       margin-top: 0.5rem;
+    }
 }
 @media only screen and (max-width: 550px){
     .qualityitem{
@@ -110,6 +113,9 @@
     .mainitem p{
         width: 80%;
     }
+    .mainitem:nth-child(1){
+        margin-bottom: 0.5rem;
+     }
 }
 @media only screen and (max-width: 415px){
     .qualityitem{

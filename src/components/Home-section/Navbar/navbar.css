@@ -29,8 +29,8 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light {
 }
 
 .navbar_button {
-  /* padding-top: 5px; */
-  padding-bottom: 4px;
+  padding-top: 2px; 
+  padding-bottom: 5px;
   padding-left: 0.7rem;
   padding-right: 0.7rem;
   margin-right: 1rem;
@@ -38,7 +38,7 @@ nav.navbar.navbar.navbar-expand-md.navbar-light.bg-light {
   background-color: white;
   border-radius: 7px;
   color: #1f68ae;
-  border: 1px solid #3188da;
+  border: 1px solid #3188da69;
   cursor: pointer;
 }
 .navbar_button:hover {
