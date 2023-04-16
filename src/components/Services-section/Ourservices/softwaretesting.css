@@ -80,15 +80,17 @@
     padding: 10px 18px;
     border-radius: 10px;
     /* background: #f28482; */
-    background: #2ec4b6;
+    /* background: #2ec4b6; */
+    background: #457b9d;
     border: none;
     color: white;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
 }
 .freequote-btn:hover{
     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background: #23cfbe;
+    background: #2e688b;
 }
 
 
