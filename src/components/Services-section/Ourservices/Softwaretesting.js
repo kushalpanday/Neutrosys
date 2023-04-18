@@ -126,7 +126,7 @@ const Softwaretesting = () => {
       {" "}
       <div className="mainForm getaquote-form">
         <ToastContainer position="top-center" />
-        <form className="form_container" onSubmit={handleSubmit(onSubmit)}>
+        <form className="form_container p-0" onSubmit={handleSubmit(onSubmit)}>
           <Row
             className="form-row m-0"
             style={{ height: "auto", width: "auto" }}

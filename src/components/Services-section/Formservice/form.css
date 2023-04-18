@@ -179,7 +179,7 @@ div .heading-para{
 
 div .form_container{
   width:100%;
-  /* padding:1rem; */
+  padding:1rem; 
 
    margin: 0 auto;
   background: rgba(228, 231, 232, 0);
@@ -516,7 +516,7 @@ div .css-9jq23d{
     /* background-color:#bfdbfe; */
     /* background-color: #9296c8; */
     background-color: #6acaffab;
-    padding: 2rem 0rem;
+    /* padding: 1rem 1rem; */
     /* background-color: rgba(35,171,229,.699); */
   }
 }
@@ -562,7 +562,7 @@ div .css-9jq23d{
     /* background-color:#bfdbfe; */
     /* background-color: #9296c8; */
     background-color: #6acaffab;
-    padding: 2rem 0rem;
+    padding: 1rem 1rem;
     /* background-color: rgba(35,171,229,.699); */
   }
 }

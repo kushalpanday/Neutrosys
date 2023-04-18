@@ -9,7 +9,7 @@
     width: 100%!important;
 }
 .getaquote-form-col{
-    padding: 0.5rem 1rem!important;
+    padding: 0.5rem 1.5rem!important;
     margin-bottom: 0!important;
     /* background: #6187c4!important; */
     background: #669bbc!important; 
@@ -24,7 +24,7 @@
 }
 .heading-quote{
     color: white;
-    padding-left: 0.8rem;
+    padding-left: 0.5rem;
     margin-bottom: 0;
     font-size: 1.4rem;
 }
@@ -39,7 +39,7 @@
        
     }
     .getaquote-form-col{
-        padding: 0.5rem 0.5rem!important;
+        padding: 0.5rem 1rem!important;
     } 
 }
 
@@ -58,7 +58,7 @@
 
 @media only screen and (max-width:425px){
     .getaquote-form-col{
-        padding: 0!important;
+        padding: 1rem!important;
     }
     
 } 
