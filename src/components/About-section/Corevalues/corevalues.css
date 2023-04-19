@@ -1,7 +1,8 @@
 .ctext{
-       text-align: center;
-       /* padding: .8rem 0 0 0; */
-       margin:1rem 0;
+  text-align: center;
+  margin:1rem 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
 }
 .coremain{
   background-color: aqua;

@@ -16,8 +16,9 @@
   margin: 1rem auto;
 }
 .whoweare_image {
-  width: 75%;
+  width: 80%;
   margin: auto;
+  padding-left: 3rem;
 }
 .whoweare_image img {
   width: 100%;
@@ -27,14 +28,22 @@
   margin: auto;
   margin-right: 2rem;
 }
+.whoweare_desc h2{
+  text-align: left;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
+  
+}
 .whoweare_desc p{
   text-align: justify;
   font-size: 15px;
+  margin: 0;
 }
 .know-more-btn-div{
   text-align: left;
+  margin-top: 1rem;
   /* border: 1px solid; */
-  padding: 0 2rem;
+  /* padding: 0 2rem; */
 }
 .know-btn{
   /* background: rgb(236, 115, 70); */
@@ -70,5 +79,15 @@ grid-template-columns: 100%;
 }
 .know-btn{
   margin-top: 0.5rem;
+}
+.whoweare_image{
+  padding-left: 0;
+}
+.whoweare_desc h2{
+  text-align: center;
+}
+.whoweare_desc p{
+  text-align: justify;
+  margin: auto;
 }
 }

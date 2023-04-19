@@ -1,6 +1,8 @@
 .text1 {
   text-align: center;
-  margin: 1.5rem 0 .5rem 0;
+  margin: 1.5rem 0 1rem 0;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
 }
 .second {
   display: grid;
@@ -71,46 +73,43 @@
   }
 
 }
-
+@media only screen and (max-width: 946px){
+  .second{
+    width: 95%;
+  }
+}
 @media only screen and (max-width: 760px) {
   .textBox p {
-    font-size: 0.9rem;
+    font-size: 0.75rem;
     padding: 0.5rem 2.5rem 2rem 5rem ;
   }
   .second {
     width: 95%;
   }
-  .textBox{
+  /* .textBox{
     padding: 1rem 0;
-  }
+  } */
 }
-@media only screen and (max-width: 540px) {
-  .image {
-    height: 75%;
-    margin-bottom: 2.8rem;
+@media only screen and (max-width: 650px){
+  .second{
+    grid-template-columns: 90%;
+    justify-content: center;
+    text-align: center;
+    grid-row-gap: 0;
   }
-  .textBox {
-    margin-top: 0;
-  }
-  .textBox h3 {
-    font-size: 1.3rem;
+  .textBox{
     margin: 0;
+    padding: 0
   }
-  .textBox p {
-    font-size: 0.7rem;
-    padding-right: 0rem;
+  .textBox p{
+    padding: 1.5rem;
+    font-size: 0.8rem;
+  }
+  .image{
+    height: 100%;
   }
 }
-@media only screen and (max-width: 540px) {
-  .textBox p {
-    font-size: 0.55rem;
-    padding: 0rem 1rem 0rem 5rem;
-    margin-bottom: 0px;
-  }
-  .image img {
-    margin-top: 18px;
-}
-}
+
 @media screen and (min-width: 1500px) and (max-width: 1920px){
   .know-more-btn-div{
     padding: 0 2.5rem;

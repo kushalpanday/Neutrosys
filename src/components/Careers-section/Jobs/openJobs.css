@@ -34,7 +34,10 @@
 .openjob-container{
     margin-top: 1.5rem;
 }
-
+.openjob-container h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+}
 .alljob-div h3
 {
     padding-left: 20px;

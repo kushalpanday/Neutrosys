@@ -4,6 +4,10 @@
     margin-top: 1.3rem;
     margin-bottom: 1rem;
 }
+.ourClients_container h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+}
 .clients_logo{
     display: flex;
     justify-content: center;

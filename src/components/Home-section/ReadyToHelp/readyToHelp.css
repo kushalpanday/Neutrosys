@@ -3,6 +3,10 @@
     padding:1rem;
     text-align: center;
 }   
+.readytohelp_container h2{
+    font-family: "Rubik", sans-serif;
+    font-size: 30px;
+}
 .readytohelp_container p{
     width:55%;
     /* padding:1rem 0; */

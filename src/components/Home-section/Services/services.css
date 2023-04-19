@@ -4,6 +4,8 @@
 }
 .services_container h2 {
   margin: 1rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
 }
 
 .services_items {

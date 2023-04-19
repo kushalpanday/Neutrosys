@@ -15,7 +15,7 @@ export default function LocationDetail() {
     return(
         <>
             <Row className='location-row'>
-                <h3 className='detail-heading'>Connect With Us</h3>
+                <h2 className='detail-heading'>Connect With Us</h2>
                     <Col sm={3} className='location-col mb-5'>
                     <div className='timeicon-div'>
                         <img src='./images/contact-us/timer.png' height={33} width={33} alt="icons"></img>

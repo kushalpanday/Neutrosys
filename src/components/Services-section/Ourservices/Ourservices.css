@@ -8,12 +8,15 @@
 .Servicemainbody h2 {
   margin-top: 0.5rem;
   padding-bottom: 0.5rem;
+  font-family: "Rubik", sans-serif;
+  font-size: 30px;
 }
 .Servicemainbody h2,
 .service-paragraph {
   display: flex;
   justify-content: center;
   text-align: center;
+
   /* align-items: center; */
   /* color: #05A5FF; */
 }

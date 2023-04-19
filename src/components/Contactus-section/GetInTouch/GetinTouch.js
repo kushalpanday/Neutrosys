@@ -13,7 +13,7 @@ export default function LocationDetail() {
         <>
             <div className='Maingetintouch-div'>
             <Container>
-                <h3 className='getintouch'>Get in Touch!</h3>
+                <h2 className='getintouch'>Get in Touch!</h2>
                 <p className='helpquote-p'>Let’s connect and talk to find out how our company can benefit you from our services.</p>
                     <Row className='getintouch-row'>
                         <Col sm={3} className='getintouch-col'>

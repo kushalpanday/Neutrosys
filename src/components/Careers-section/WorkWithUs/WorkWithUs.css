@@ -13,6 +13,8 @@
   text-align: center;
   padding-bottom: 0.5rem;
    padding-top: 1.5rem; 
+   font-family: "Rubik", sans-serif;
+   font-size: 30px;
 }
 .box-row {
   border: 1px blue;
