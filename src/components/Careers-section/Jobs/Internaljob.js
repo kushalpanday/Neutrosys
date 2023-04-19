@@ -75,7 +75,7 @@ const Internaljob = () => {
                   <Col sm={9} className="loc-text">
                     <p>Noida, Uttar Pradesh India</p>
                   </Col>
-                  <Col sm={2} className="icon-text text-odd">
+                  <Col sm={2} className="icon-text text-even">
                   <Link to="salesNoida"><p>
                       <BsArrowRightCircle />
                     </p></Link>

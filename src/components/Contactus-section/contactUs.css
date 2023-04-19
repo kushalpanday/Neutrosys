@@ -458,7 +458,49 @@ div .form-button:hover{
 
 
 
-
+@media only screen and (max-width: 500px){
+  /* div .css-vzggdy-MuiFormControl-root-MuiTextField-root{
+    height: 2.7rem!important;
+  } */
+  div .css-10zro85-MuiInputBase-root-MuiFilledInput-root{
+    height:  2.7rem!important;
+  }
+  .MuiFormLabel-root.MuiInputLabel-root{
+   top: -3px!important;
+  }
+  div .css-wlv6cv-MuiFormControl-root-MuiTextField-root{
+    height: 2.7rem!important;
+  }
+  div .css-15mnzpi-MuiInputBase-root-MuiFilledInput-root{
+    height: 2.7rem!important;
+  }
+   /* div.css-191j2fa {
+    height: 2.7rem!important;
+  } */
+  div .css-l20vgq{
+    height: 2.7rem!important;
+  }
+  .css-17ieph9{
+    height: 2.7rem!important;
+  }
+  /* div .css-4j0tuq {
+    height: 2.7rem!important;
+  }
+  div .css-17ieph9{
+    height: 2.7rem!important;
+  }
+  div .message_box{
+    height: 5rem!important;
+  
+  }  */ 
+  /* div .css-1c7vsz1{
+    height: 5rem!important;
+   
+  }
+  div .css-19d1kqp-MuiInputBase-root-MuiFilledInput-root{
+    height: 5rem!important;
+  } */
+}
 
 @media only screen and (max-width: 915px) {
   .form_container .form-row .contactus-form-col{

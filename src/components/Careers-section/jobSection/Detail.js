@@ -305,7 +305,7 @@ const Detail = (props) => {
                   <Col lg={6} md={12} sm={12} className="resume-form-col mb-2 country-width">
                     <CountryDropdown
                       className="input-field select input-resp"
-                      style={{color: "#000000d4" }}
+                      style={{color: "#000000d4", height:"3.7rem" }}
                       value={country}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
@@ -321,7 +321,7 @@ const Detail = (props) => {
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
                       value={region}
-                      style={{color: "#000000d4" }}
+                      style={{color: "#000000d4", height:"3.7rem" }}
                       onChange={(val) => selectRegion(val)}
                     />
                   </Col>

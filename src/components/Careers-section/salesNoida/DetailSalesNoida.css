@@ -659,6 +659,12 @@ select.mb-3.input-field.form-select option{
     font-size: 13.5px;
   }
 }
+@media screen  and (max-width: 500px){
+  .input-field.select{
+    height: 2.7rem;
+    padding-top: 12px;
+  }
+}
 @media screen  and (max-width: 530px){
  /* .input-resp{
     font-size: 13px;

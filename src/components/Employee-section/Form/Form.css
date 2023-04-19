@@ -264,6 +264,11 @@ div .txtfield_country_code {
   }
 }
 
+@media screen and (max-width: 500px) {
+  div .css-1mog9k0-MuiFormLabel-root-MuiInputLabel-root{
+    padding-top: 3px!important;
+  }
+}
 @media screen and (max-width: 700px) {
   .form-container {
     padding: 1rem;

@@ -552,7 +552,7 @@
       /* background-color: rgba(35,171,229,.699); */
     }
   }
-  
+ 
   @media only screen and (max-width:500px){
     .form_container {
       width: 95%;
@@ -562,6 +562,12 @@
   }
   .mainForm{
     width: 95%;
+  }
+  .basic-multi-select{
+    height: 3rem!important;
+  }
+  .select__control.css-13cymwt-control,.select__control--is-focused{
+    height: 2.7rem!important;
   }
   }
   @media only screen and (max-width:465px){

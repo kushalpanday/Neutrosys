@@ -254,7 +254,7 @@ export default function Resume(props) {
                     <CountryDropdown
                       className="input-field select input-resp"
                       value={country}
-                      style={{color: "#000000d4" }}
+                      style={{color: "#000000d4", height:"3.7rem"  }}
                       onChange={(val) => selectCountry(val)}
                       // showDefaultOption={false}
                     />
@@ -268,7 +268,7 @@ export default function Resume(props) {
                       country={country}
                       // showDefaultOption="true"
                       blankOptionLabel="Choose State/province"
-                      style={{color: "#000000d4" }}
+                      style={{color: "#000000d4", height:"3.7rem"  }}
                       value={region}
                       onChange={(val) => selectRegion(val)}
                     />
