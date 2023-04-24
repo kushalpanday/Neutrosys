@@ -88,7 +88,7 @@ export default function Resume(props) {
       <div className="resume-maindiv">
         <Row className="resume-row">
           <Col className="resume-col1">
-            <img src="./images/career/resume.jpg" alt="hello"></img>
+            <img src="./images/career/jobresume.jpg" alt="resume"></img>
           </Col>
           <Col className="resume-col2">
             <h2>Not finding the suitable role for you?</h2>

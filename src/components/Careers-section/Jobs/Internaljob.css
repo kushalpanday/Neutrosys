@@ -403,7 +403,7 @@ input:checked~.internal-viewmore:after{
      .openposition-col{
          width:100%;
          margin: 0;
-         
+         height: 300px;
      }
      .loc-text{
         width: 100%;
@@ -414,7 +414,7 @@ input:checked~.internal-viewmore:after{
         padding-left:13px;
      }
      .footer-row.row{
-        
+        padding-top: 0.5rem;
         display: grid;
         grid-template-columns: 80% 15%;
      }
@@ -439,7 +439,7 @@ input:checked~.internal-viewmore:after{
     max-height: 95rem;
 }
 .scrollbar-internaljob{
-    max-height: 79rem;
+    max-height: 83rem;
 }
 .internal-viewmore{
     margin-left: 0rem;

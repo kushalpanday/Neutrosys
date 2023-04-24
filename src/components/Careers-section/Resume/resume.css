@@ -1,6 +1,6 @@
-.resume-maindiv {
+/* .resume-maindiv {
   background: rgba(35, 171, 229, 0.15);
-}
+} */
 .resume-row {
   /* border: 2px solid red; */
   display: grid;
@@ -13,6 +13,7 @@
   text-align: center;
   padding:2rem 0;
 }
+
 .select-bg{
     border: 2px solid rgba(0,255,255,.5);
     border-radius: 5px;
@@ -33,6 +34,7 @@
 .resume-col2 h2 {
   margin-top: 10px;
   text-align: left;
+  color: #198754;
 }
 .resume-col2 p {
   font-size: 15px;
@@ -76,21 +78,25 @@
 
 }
 @media only screen and (max-width: 880px) {
-  .resume-row {
+  /* .resume-row {
 grid-template-columns: 45% 55%;
     width: 100%;
-  }
+  } */
 
   .resume-col2 p {
-    width: 100%;
+    width: 85%;
+    text-align: justify;
     font-size: 1.1rem;
   }
-  .resume-col2 h2 {
-    font-size: 1.5rem;
-  }
+  
   .rbtn {
     margin-right: 5px;
     font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 767px){
+  .resume-col1 img {
+    height: 230px;
   }
 }
 @media only screen and (max-width: 745px) {
@@ -99,19 +105,15 @@ grid-template-columns: 45% 55%;
 }
 }   
 @media only screen and (max-width: 694px) {
-  .resume-col1 {
-    text-align: left;
-  }
+  
   .resume-col1 img {
     width: 80%;
   }
   .resume-col2 {
     width: 100%;
-    margin-left: -4rem;
-    margin-top: 5rem;
   }
   .resume-col2 h2 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
   }
 
 }
@@ -148,12 +150,22 @@ grid-template-columns: 45% 55%;
     padding-left: 0.2rem;
     padding-right: 0.2rem;
   }
+  .resume-col2 h2{
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 500px){
+  .resume-col2 p{
+    width: 100%;
+    margin: 0 1rem;
+  }
 }
 @media only screen and (max-width: 690px) {
   .resume-row {
     grid-template-columns: 100%;
   }
   .resume-col2 {
+    padding: 0 1rem;
     margin-top: 1rem;
     margin-bottom: 0.7rem;
     margin-left: 0rem;
@@ -163,7 +175,7 @@ grid-template-columns: 45% 55%;
     align-items: center;
   }
   .resume-col2 p {
-    width: 70%;
+    width: 90%;
     text-align: center;
   }
   
@@ -179,11 +191,14 @@ grid-template-columns: 45% 55%;
     margin-left: 0rem;
   }
 }
+@media only screen and (max-width: 471px){
+  .resume-col2 h2{
+    text-align: center;
+  }
+}
 @media only screen and (max-width: 450px) {
     .resume-col1 img {
         width:80%;
     }
-  .resume-col2 p {
-    width: 85%;
-  }
+  
 }

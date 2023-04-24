@@ -99,9 +99,13 @@
     grid-template-columns: 100%;
     grid-row-gap: 1%;
     padding-bottom: 2rem;
+   
   }
   .dataitems{
-    margin: 1rem;
+    margin: 1rem 0;
+  }
+  .dataitems h5{
+    font-size: 1.2rem;
   }
   .dataitems p{
     width: 85%;

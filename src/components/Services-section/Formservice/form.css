@@ -565,6 +565,15 @@ div .css-9jq23d{
     padding: 1rem 1rem;
     /* background-color: rgba(35,171,229,.699); */
   }
+  div .css-wsp0cs-MultiValueGeneric{
+    padding-top: 6px!important;
+  }
+  div .css-1p3m7a8-multiValue{
+    height: 30px!important;
+  }
+  div .css-9jq23d{
+    padding: 6px 3px 3px 6px!important;
+  }
 }
 
 @media only screen and (max-width:500px){
@@ -582,6 +591,17 @@ div .css-9jq23d{
 @media only screen and (max-width:465px){
   .my-recaptcha{
     transform: scale(0.8);
+  }
+}
+@media only screen and (max-width:416px){
+    div .css-9jq23d{
+    padding: 6px 3px 3px 6px!important;
+  }
+  div .css-wsp0cs-MultiValueGeneric{
+    padding-top: 6px!important;
+  }
+   div .css-1p3m7a8-multiValue{
+    height: 28px!important;
   }
 }
 @media only screen and (max-width:375px){

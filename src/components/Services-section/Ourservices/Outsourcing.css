@@ -15,7 +15,7 @@
 }
 .outsourcingbox{
     display: flex;
-    padding: 2rem 1rem;
+    padding: 1.5rem 1rem;
     
     /* margin: 2rem 0 4rem 0; */
 }
@@ -46,6 +46,7 @@
 .box111{
     display: flex;
 }
+
 .box11 h5{
     margin-bottom:.8rem;
     margin-top: -.9px;
@@ -67,6 +68,11 @@
    font-size: 15px;
 
 }
+
+
+@media only screen and (max-width: 1047px){
+   
+}
 @media only screen and (max-width: 890px){
     .outbox2 img{
         margin-top: 4.5rem;
@@ -75,6 +81,11 @@
 @media only screen and (max-width: 750px){
     .outbox2 img{
         margin-top: 6.5rem;
+    }
+}
+@media only screen and (max-width: 700px){
+    .boxproject{
+        margin-top: 0;
     }
 }
 @media only screen and (max-width: 660px){
@@ -104,6 +115,9 @@
     }
     .outbox2{
         margin: 1rem 0;
+    }
+    .box11 h5{
+        font-size: 1.2rem;
     }
     .box11 p{
         width: 80%;

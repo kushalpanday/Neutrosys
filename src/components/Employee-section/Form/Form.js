@@ -340,7 +340,7 @@ const FormEl = () => {
       </div>
 
       <div className="form-right">
-        <h2 className="connected">Let's get connected!</h2>
+        <h2 className="connected">Let's get Connected!</h2>
         <p className="info">
         We provide exceptional service, with a focus on building long-term relationships and proactively
         addressing staffing needs.

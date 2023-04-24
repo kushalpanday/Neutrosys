@@ -52,7 +52,7 @@ const Outsourcing = () => {
             services, offering 24/7 support for your business needs.
             </p>
           </div>
-          <div className="box11">
+          <div className="box11 boxproject">
             
           <div className="box111">
           <RadioButtonCheckedIcon

@@ -98,7 +98,7 @@
   .different-title {
     /* font-weight: 550; */
     margin-bottom: 10px;
-    font-size: 18.5px;
+    font-size: 19px;
     color: #3498db;
   }
 
@@ -163,6 +163,7 @@
     }
     .different-title {
       margin-bottom: 0;
+      font-size: 1.4rem;
     }
   .diff-img{
     width:6rem;
@@ -230,11 +231,11 @@
     right:-1rem; 
   }
     .section-title {
-      font-size: 18px;
+      font-size: 1.5rem;
     }
   
     .different-title {
-      font-size: 16px;
+      font-size: 20px;
     }
   
     .part-content {

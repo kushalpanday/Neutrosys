@@ -333,11 +333,11 @@
     margin-top: 5.5rem;
   }
 }
-@media (min-width: 768px) and (max-width: 830px) {
+/* @media (min-width: 768px) and (max-width: 830px) {
   .workwithus-maindiv {
     margin: 0 0 5rem 0;
   }
-}
+} */
 @media only screen and (max-width: 600px) {
   .box-row {
     justify-content: left;

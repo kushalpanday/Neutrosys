@@ -4,7 +4,7 @@
     text-align: center;
     font-size: 1.4rem;
     margin-top: -5px;
-    margin-bottom: .1rem;
+    margin-bottom: 1rem;
 }
 .qualityitem{
     margin: .6rem 0.3rem 0 0.3rem ;
@@ -116,6 +116,12 @@
     .mainitem:nth-child(1){
         margin-bottom: 0.5rem;
      }
+     .qitemtitle{
+        font-size: 1.2rem;
+     }
+     .mainitem:nth-child(n+4) .qitemtitle{
+        font-size: 14px;
+    }
 }
 @media only screen and (max-width: 415px){
     .qualityitem{
