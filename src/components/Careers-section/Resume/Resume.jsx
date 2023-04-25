@@ -106,7 +106,7 @@ export default function Resume(props) {
                 Submit Resume
               </Button>
 
-              <Modal show={show} onHide={handleClose} size="lg">
+              <Modal show={show} onHide={handleClose} size="lg" className="resume-modal">
                 <Modal.Header closeButton className="jobs-modal-header">
                   <Modal.Title className="top-form">
                    Enter your Information

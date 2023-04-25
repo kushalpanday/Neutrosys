@@ -148,7 +148,7 @@ const Detail = (props) => {
           </Col>
         </Row>
 
-        <Modal show={show} onHide={handleClose} size="lg">
+        <Modal show={show} onHide={handleClose} size="lg"  className="jobdetails-modal">
           <Modal.Header closeButton className="jobs-modal-header">
             <Modal.Title className="top-form">
               ENTER YOUR INFORMATION
@@ -555,13 +555,13 @@ const Detail = (props) => {
                 <Row className="share-row">
                   <Col sm={6} className="share-col ">
                     <div className="socials">
-                      <a href="/#">
+                      <a href="https://www.facebook.com/Neutrosys">
                         <i className="fa-brands">
                           <ImFacebook2 />
                         </i>
                       </a>
 
-                      <a href="/#">
+                      <a href="https://www.linkedin.com/company/neutrosys/">
                         <i className="fa-brands">
                           <ImLinkedin />
                         </i>

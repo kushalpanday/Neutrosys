@@ -82,7 +82,7 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .select__control.css-13cymwt-control, .select__control--is-focused {
-
+font-size: 16px;
 height: 3.2rem;
 border-radius: 5px;
 
@@ -565,7 +565,7 @@ div .css-9jq23d{
     padding: 1rem 1rem;
     /* background-color: rgba(35,171,229,.699); */
   }
-  div .css-wsp0cs-MultiValueGeneric{
+  /* div .css-wsp0cs-MultiValueGeneric{
     padding-top: 6px!important;
   }
   div .css-1p3m7a8-multiValue{
@@ -573,7 +573,7 @@ div .css-9jq23d{
   }
   div .css-9jq23d{
     padding: 6px 3px 3px 6px!important;
-  }
+  } */
 }
 
 @media only screen and (max-width:500px){
@@ -593,17 +593,17 @@ div .css-9jq23d{
     transform: scale(0.8);
   }
 }
-@media only screen and (max-width:416px){
+/* @media only screen and (max-width:416px){
     div .css-9jq23d{
     padding: 6px 3px 3px 6px!important;
   }
   div .css-wsp0cs-MultiValueGeneric{
-    padding-top: 6px!important;
+    padding-top: 4px!important;
   }
    div .css-1p3m7a8-multiValue{
-    height: 28px!important;
+    height: 30px!important;
   }
-}
+} */
 @media only screen and (max-width:375px){
   .my-recaptcha{
     transform: scale(0.7);

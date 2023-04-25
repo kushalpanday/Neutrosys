@@ -33,22 +33,25 @@
 
 .resume-col2 h2 {
   margin-top: 10px;
-  text-align: left;
-  color: #198754;
+  text-align: center;
+  color: #219ebc;
 }
 .resume-col2 p {
   font-size: 15px;
-  width: 80%;
+  width: 90%;
   padding-top: 5px;
+  padding-bottom: 1rem;
   /* padding-left: 12px;
     padding-right: 11px; */
-  text-align: left;
+  text-align: center;
+  margin: auto;
 }
 .btn-submitdiv {
   /* border: 1px solid;  */
   /* align-items: flex-start; */
   text-align: center;
   width: 70%;
+  margin: auto;
 
 }
 .rbtn {
@@ -112,9 +115,7 @@ grid-template-columns: 45% 55%;
   .resume-col2 {
     width: 100%;
   }
-  .resume-col2 h2 {
-    font-size: 1.7rem;
-  }
+  
 
 }
 
@@ -144,6 +145,11 @@ grid-template-columns: 45% 55%;
   width: 100%;
  }
   
+}
+@media screen and (max-width: 575px){
+  .resume-modal{
+    margin-top: 1rem;
+  }
 }
 @media screen and (max-width: 530px){
   .resume-modal-body{
@@ -177,8 +183,11 @@ grid-template-columns: 45% 55%;
   .resume-col2 p {
     width: 90%;
     text-align: center;
+    padding-top: 0;
   }
-  
+  .resume-col2 h2{
+    margin-top: 15px;
+  }
   .resume-col1 img {
     margin-left: 0rem;
     width: 60%;

@@ -1017,6 +1017,9 @@ select.mb-3.input-field.form-select option{
     width: 100%;
   }
 }
+.jobdetails-modal{
+  margin-top: 1rem;
+}
 /* @media screen and (max-width: 600px) {
   .text {
     top: 10%;

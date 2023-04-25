@@ -131,13 +131,13 @@ const Detail = (props) => {
                 <Row className="share-row">
                   <Col sm={6} className="share-col ">
                     <div className="socials">
-                      <a href="/#">
+                      <a href="https://www.facebook.com/Neutrosys">
                         <i className="fa-brands">
                           <ImFacebook2 />
                         </i>
                       </a>
 
-                      <a href="/#">
+                      <a href="https://www.linkedin.com/company/neutrosys/">
                         <i className="fa-brands">
                           <ImLinkedin />
                         </i>

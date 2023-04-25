@@ -272,7 +272,7 @@ input:checked~.internal-viewmore:after{
         margin: 0;
     }
     .scrollbar-internaljob{
-        max-height: 330px;
+        max-height: 320px;
     }
 }
 @media only screen and (max-width: 850px){
@@ -294,7 +294,7 @@ input:checked~.internal-viewmore:after{
         max-height: 50rem;
     }
     .scrollbar-internaljob{
-        max-height: 40rem;
+        max-height: 39.5rem;
     }
     .internal-viewmore{
         margin-left: 3rem;

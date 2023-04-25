@@ -37,11 +37,11 @@ function Footer() {
         <h6>Socials</h6>
         <div className="social">
         <div style={{width:"30px", height:"30px",  margin:"0 .2rem 0 0"}}>
-          <img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt="" />
+          <a href="https://www.linkedin.com/company/neutrosys/"><img src="https://play-lh.googleusercontent.com/kMofEFLjobZy_bCuaiDogzBcUT-dz3BBbOrIEjJ-hqOabjK8ieuevGe6wlTD15QzOqw" alt=""/></a>
           </div>
          
           <div style={{width:"30px", height:"30px", margin:"0 .2rem"}} >
-          <img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" alt="" />
+          <a href="https://www.facebook.com/Neutrosys"><img src="https://logodownload.org/wp-content/uploads/2014/09/facebook-logo-3-1.png" alt=""/></a>
           </div>
           
         </div>
