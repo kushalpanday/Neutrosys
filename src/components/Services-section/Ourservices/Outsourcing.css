@@ -97,7 +97,7 @@
     .outsourcingbox{
         display: flex;
         flex-direction: column;
-    
+        padding: 0.3rem 1rem 1rem 1rem;
     }
     .box11{
         margin-top: 1%;
@@ -111,7 +111,7 @@
         margin-right: auto;
     }
     .outbox1 .box11:nth-child(2) , .outbox3 .box11:nth-child(2){
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
     .outbox2{
         margin: 1rem 0;

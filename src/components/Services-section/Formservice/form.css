@@ -205,7 +205,9 @@ div .css-gjbq6i-MuiInputBase-root-MuiFilledInput-root:focus{
  
 }
 
-
+.css-1xc3v61-indicatorContainer{
+  padding: 5px!important;
+}
  
 
 div .css-sghohy-MuiButtonBase-root-MuiButton-root{
@@ -461,8 +463,12 @@ div .css-9jq23d{
 #rc-anchor-alert, .rc-anchor-alert{
   display: none;
 }
-
-
+ .css-1fdsijx-ValueContainer{
+  height: 3.2rem!important;
+} 
+.css-qbdosj-Input {
+  margin: 6.2px 2px!important;
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -539,6 +545,23 @@ div .css-9jq23d{
   }
 }
 
+@media only screen and (max-width: 885px){
+  .css-1xc3v61-indicatorContainer{
+    padding: 4px!important;
+  }
+}
+@media only screen and (max-width: 874px){
+  .select__control.css-13cymwt-control{
+   height: auto!important; 
+    z-index: 1!important;
+  }
+  .css-1fdsijx-ValueContainer{
+    height: 3.2rem!important;
+  } 
+  .css-b62m3t-container{
+    height: auto!important;
+  }
+}
 @media only screen and (min-width: 412px) and (max-width: 914px) {
   #example-custom-modal-styling-title {
     margin-right: 160px;
