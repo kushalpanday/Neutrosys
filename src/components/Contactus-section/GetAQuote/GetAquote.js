@@ -139,7 +139,7 @@ export default function GetAquote() {
                   isMulti
                   name="colors"
                   options={optionSelect}
-                  className="basic-multi-select"
+                  className="basic-multi-select" style={{height:"50px"}}
                   classNamePrefix="select"
                   placeholder="Select Services"
                   menuPortalTarget={document.body} 

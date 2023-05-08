@@ -74,8 +74,8 @@ export default function LocationDetail() {
                         <h6>Socials</h6>
                         <p className='follow-para'>Follow us!</p>
                         <div className='socialsicon-div'>
-                            <a href='/#'><img src='./images/contact-us/linkedinicon.png' height={41} width={41} alt="icons"></img></a>
-                            <a href='/#'><img src='./images/contact-us/fbicon.png' className='image-class' height={40} width={40} alt="icons"></img></a>
+                            <a href="https://www.linkedin.com/company/neutrosys/" target="_blank" rel="noopener noreferrer"><img src='./images/contact-us/linkedinicon.png' height={41} width={41} alt="icons"></img></a>
+                            <a href="https://www.facebook.com/Neutrosys" target="_blank" rel="noopener noreferrer"><img src='./images/contact-us/fbicon.png' className='image-class' height={40} width={40} alt="icons"></img></a>
 
                         </div>
                     </Col>

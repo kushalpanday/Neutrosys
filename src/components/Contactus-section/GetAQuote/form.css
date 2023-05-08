@@ -186,6 +186,7 @@
   
     /* background-color: white; */
   }
+  
   .textfield{
     background-color:white;
     border-color:white;
@@ -204,8 +205,13 @@
     /* background-color: aqua; */
    
   }
-  
-  
+  .css-b62m3t-container{
+    height: auto!important;
+  }
+  .select__control.css-13cymwt-control, .select__control--is-focused{
+    height: auto!important;
+    padding: 5px 0!important;
+  }
    
   
   div .css-sghohy-MuiButtonBase-root-MuiButton-root{
