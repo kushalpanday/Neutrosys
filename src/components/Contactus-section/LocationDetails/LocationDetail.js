@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, Component } from 'react';
 import '../contactUs.css';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,11 +6,22 @@ import Modal from 'react-bootstrap/Modal';
 import { BsPrinterFill } from 'react-icons/bs';
 import { Button } from 'react-bootstrap';
 import ReactToPrint from "react-to-print";
+import GoogleMapReact from 'google-map-react';
 
+
+const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
 export default function LocationDetail() {
     const [show, setShow] = useState(false);
     const Componentref = useRef();
+
+    const defaultProps = {
+        center: {
+            lat: 32.890030,
+            lng: -96.976220
+        },
+        zoom: 10
+      };
 
     return(
         <>
@@ -47,21 +58,38 @@ export default function LocationDetail() {
                             Our Location 
                         </Modal.Title>
                         <Button className='map-btn' style={{background:"none", border:"none", paddingTop:"6px"}}>
+                        <ReactToPrint
+                        trigger={() => (
                             <p style={{color:"#00bbf9", marginLeft:"0.5rem"}}><BsPrinterFill/></p>
-                            <span className='tooltiptext'> <ReactToPrint
-                            trigger={() => (
+                            )}
+                            content={() => Componentref.current}/>
+                            <span className='tooltiptext'>
                               <span style={{ marginLeft: ".7rem" }}>
                                 Print 
                               </span>
-                            )}
-                            content={() => Componentref.current}
-                          /></span>
+                           </span>
                         </Button>
                         </Modal.Header>
-                        <Modal.Body>
+                        <Modal.Body  ref={Componentref}>
                         <div className="maod">
-                       <iframe ref={Componentref} title="map" style={{height:'60vh',width:'100%'}} id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                           
+                            <div style={{ height: '60vh', width: '100%' }}>
+                                <GoogleMapReact
+                                    bootstrapURLKeys={{ key: "AIzaSyDFagGbsBiNtvz8JwgzysXPxngb3Q62kn4" }}
+                                    defaultCenter={defaultProps.center}
+                                    defaultZoom={defaultProps.zoom}
+                                >
+                                    <AnyReactComponent
+                                    lat={32.890030}
+                                    lng={-96.976220}
+                                    text={"Neutrosys Inc."}
+                                    />
+                                </GoogleMapReact>
+                            </div>
+
+                        
+                        {/* <iframe  title="map" style={{height:'60vh',width:'100%'}} id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> */}
                         </div>
                         </Modal.Body>
                     </Modal>
