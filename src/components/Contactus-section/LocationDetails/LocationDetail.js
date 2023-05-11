@@ -7,21 +7,34 @@ import { BsPrinterFill } from 'react-icons/bs';
 import { Button } from 'react-bootstrap';
 import ReactToPrint from "react-to-print";
 import GoogleMapReact from 'google-map-react';
+import { Marker } from "google-maps-react"
 
 
-const AnyReactComponent = ({ text }) => <div>{text}</div>;
+const AnyReactComponent = ({ text }) => <div style={{color:"red", fontSize:"15px"}}>
+    {text}
+    </div>;
 
 export default function LocationDetail() {
+    const renderMarkers = (map, maps) => {
+        let marker = new maps.Marker({
+        position: { lat: 32.890030, lng: -96.976220 },
+        map,
+        title: 'Neutrosys Inc.'
+        });
+        return marker;
+       };
+
     const [show, setShow] = useState(false);
     const Componentref = useRef();
 
-    const defaultProps = {
-        center: {
-            lat: 32.890030,
-            lng: -96.976220
-        },
-        zoom: 10
-      };
+    // const defaultProps = {
+    //     center: {
+    //         lat: 32.890030,
+    //         lng: -96.976220
+    //     },
+    //     zoom: 10
+    //   };
+     
 
     return(
         <>
@@ -76,15 +89,21 @@ export default function LocationDetail() {
                             <div style={{ height: '60vh', width: '100%' }}>
                                 <GoogleMapReact
                                     bootstrapURLKeys={{ key: "AIzaSyDFagGbsBiNtvz8JwgzysXPxngb3Q62kn4" }}
-                                    defaultCenter={defaultProps.center}
-                                    defaultZoom={defaultProps.zoom}
+                                    defaultCenter={{ lat: 32.890030, lng: -96.976220 }}
+                                    defaultZoom={10}
+                                    yesIWantToUseGoogleMapApiInternals
+                                    onGoogleApiLoaded={({ map, maps }) => renderMarkers(map, maps)}
                                 >
-                                    <AnyReactComponent
+                                    
+                            
+                                     <AnyReactComponent
                                     lat={32.890030}
                                     lng={-96.976220}
                                     text={"Neutrosys Inc."}
-                                    />
+                                    /> 
+                                    
                                 </GoogleMapReact>
+                                
                             </div>
 
                         
