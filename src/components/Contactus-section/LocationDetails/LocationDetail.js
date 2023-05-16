@@ -34,7 +34,7 @@ export default function LocationDetail() {
     //     },
     //     zoom: 10
     //   };
-     
+      
 
     return(
         <>
@@ -70,12 +70,12 @@ export default function LocationDetail() {
                         <Modal.Title id="example-custom-modal-styling-title">
                             Our Location 
                         </Modal.Title>
-                        <Button className='map-btn' style={{background:"none", border:"none", paddingTop:"6px"}}>
-                        <ReactToPrint
-                        trigger={() => (
+                        <Button className='map-btn' style={{background:"none", border:"none", paddingTop:"6px"}}
+                         onClick={() => window.print()}>
+                       
                             <p style={{color:"#00bbf9", marginLeft:"0.5rem"}}><BsPrinterFill/></p>
-                            )}
-                            content={() => Componentref.current}/>
+                            
+                            
                             <span className='tooltiptext'>
                               <span style={{ marginLeft: ".7rem" }}>
                                 Print 
@@ -83,12 +83,12 @@ export default function LocationDetail() {
                            </span>
                         </Button>
                         </Modal.Header>
-                        <Modal.Body  ref={Componentref}>
-                        <div className="maod">
-                           
-                            <div style={{ height: '60vh', width: '100%' }}>
-                                <GoogleMapReact
-                                    bootstrapURLKeys={{ key: "AIzaSyDFagGbsBiNtvz8JwgzysXPxngb3Q62kn4" }}
+                        <Modal.Body className='printme'>
+                            <div style={{ height: '60vh', width: '100%' }}> 
+                             <iframe  title="map" style={{height:'60vh',width:'100%'}} id="gmap_canvas"
+                        src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                {/* <GoogleMapReact
+                                    bootstrapURLKeys={{ key: "AIzaSyDSbBgzgcR7cAerh02MJVWl9exdM7F9EsU" }}
                                     defaultCenter={{ lat: 32.890030, lng: -96.976220 }}
                                     defaultZoom={10}
                                     yesIWantToUseGoogleMapApiInternals
@@ -102,14 +102,13 @@ export default function LocationDetail() {
                                     text={"Neutrosys Inc."}
                                     /> 
                                     
-                                </GoogleMapReact>
+                                </GoogleMapReact>  */}
                                 
-                            </div>
+                            </div> 
 
                         
-                        {/* <iframe  title="map" style={{height:'60vh',width:'100%'}} id="gmap_canvas"
-                        src="https://maps.google.com/maps?q=neutrosys.Inc&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe> */}
-                        </div>
+                        
+                        
                         </Modal.Body>
                     </Modal>
                                     
